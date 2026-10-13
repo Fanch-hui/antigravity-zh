@@ -1,0 +1,756 @@
+[
+  {
+    "id": "ui.8a2da72d5a73",
+    "source": "Conversation History",
+    "target": "会话历史",
+    "context": "侧栏入口与会话历史标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3253039,
+        "end": 3253061,
+        "kind": "property:label"
+      },
+      {
+        "start": 6078078,
+        "end": 6078100,
+        "kind": "element:children"
+      },
+      {
+        "start": 6289199,
+        "end": 6289221,
+        "kind": "property:label"
+      },
+      {
+        "start": 6644723,
+        "end": 6644745,
+        "kind": "property:text"
+      },
+      {
+        "start": 6677533,
+        "end": 6677555,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"history-button\"], .flex.flex-col.gap-2.min-h-0.flex-1.w-full > .mx-3.text-sm.select-none.shrink-0.font-medium"
+  },
+  {
+    "id": "ui.e7e8f24de5bb",
+    "source": "Settings",
+    "target": "设置",
+    "context": "侧栏设置入口",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6352181,
+        "end": 6352191,
+        "kind": "property:text"
+      },
+      {
+        "start": 6354012,
+        "end": 6354022,
+        "kind": "element:children"
+      },
+      {
+        "start": 6403770,
+        "end": 6403780,
+        "kind": "element:children"
+      },
+      {
+        "start": 6405439,
+        "end": 6405449,
+        "kind": "property:tooltip"
+      },
+      {
+        "start": 6409776,
+        "end": 6409786,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 6646374,
+        "end": 6646384,
+        "kind": "property:text"
+      },
+      {
+        "start": 6830895,
+        "end": 6830905,
+        "kind": "property:aria-label"
+      }
+    ],
+    "selector": "[data-testid=\"settings-button\"]"
+  },
+  {
+    "id": "ui.cd5404740839",
+    "source": "Customizations",
+    "target": "自定义配置",
+    "context": "侧栏与自定义配置页面标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3258674,
+        "end": 3258690,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3258740,
+        "end": 3258756,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3258796,
+        "end": 3258812,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3258886,
+        "end": 3258902,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3531116,
+        "end": 3531132,
+        "kind": "property:screen"
+      },
+      {
+        "start": 4168018,
+        "end": 4168034,
+        "kind": "element:children"
+      },
+      {
+        "start": 4244490,
+        "end": 4244506,
+        "kind": "element:children"
+      },
+      {
+        "start": 6334118,
+        "end": 6334134,
+        "kind": "property:title"
+      },
+      {
+        "start": 6339654,
+        "end": 6339670,
+        "kind": "property:title"
+      },
+      {
+        "start": 6384419,
+        "end": 6384435,
+        "kind": "property:title"
+      },
+      {
+        "start": 6645418,
+        "end": 6645434,
+        "kind": "property:text"
+      },
+      {
+        "start": 9508853,
+        "end": 9508869,
+        "kind": "property:screen"
+      }
+    ],
+    "selector": "a[href=\"/customizations\"], .max-w-4xl.mx-auto.px-8.pt-8.pb-4 h1"
+  },
+  {
+    "id": "ui.fefd31c65e97",
+    "source": "Always Proceed",
+    "target": "无需审阅，直接继续",
+    "context": "计划产物无需审阅即可继续",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3226036,
+        "end": 3226052,
+        "kind": "property:label"
+      },
+      {
+        "start": 3249887,
+        "end": 3249903,
+        "kind": "option:display"
+      },
+      {
+        "start": 3256906,
+        "end": 3256922,
+        "kind": "option:display"
+      }
+    ],
+    "settingLabel": "Plan Review Policy"
+  },
+  {
+    "id": "ui.10ab0315c12e",
+    "source": "Always Ask",
+    "target": "每次询问",
+    "context": "访问工作目录以外文件前询问",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3226299,
+        "end": 3226311,
+        "kind": "property:label"
+      }
+    ],
+    "settingLabel": "Outside of folders file access policy"
+  },
+  {
+    "id": "ui.e5554d750ab3",
+    "source": "Always Ask",
+    "target": "每次询问",
+    "context": "访问工作目录以外文件前询问",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3226299,
+        "end": 3226311,
+        "kind": "property:label"
+      }
+    ],
+    "settingLabel": "Non-Workspace File Access"
+  },
+  {
+    "id": "ui.11a36f731e72",
+    "source": "Every command requires approval.",
+    "target": "每条命令都需要批准。",
+    "context": "权限预设下拉选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3238178,
+        "end": 3238212,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-select-popup], [role=\"listbox\"]"
+  },
+  {
+    "id": "ui.b6d2ef437c4d",
+    "source": "Ask before sensitive operations.",
+    "target": "在进行敏感操作前询问。",
+    "context": "权限预设下拉选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3238493,
+        "end": 3238527,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-select-popup], [role=\"listbox\"]"
+  },
+  {
+    "id": "ui.ceaba1e31b22",
+    "source": "Security agent decides if commands run.",
+    "target": "由安全智能体决定是否执行命令。",
+    "context": "权限预设下拉选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3238823,
+        "end": 3238864,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-select-popup], [role=\"listbox\"]"
+  },
+  {
+    "id": "ui.d7c8159dda6a",
+    "source": "Automatically decide if commands run.",
+    "target": "自动决定是否执行命令。",
+    "context": "权限预设下拉选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3239154,
+        "end": 3239193,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-select-popup], [role=\"listbox\"]"
+  },
+  {
+    "id": "ui.3809a55281e3",
+    "source": "Run all commands without restrictions.",
+    "target": "不受限制地执行所有命令。",
+    "context": "权限预设下拉选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3239460,
+        "end": 3239500,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-select-popup], [role=\"listbox\"]"
+  },
+  {
+    "id": "ui.8fd1faf0b481",
+    "source": "Ask anything, @ to mention",
+    "target": "随时提问，输入 @ 添加引用",
+    "context": "消息输入框的固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5567897,
+        "end": 5568134,
+        "kind": "template:display",
+        "component": "MCb"
+      }
+    ],
+    "selector": "[data-testid=\"agent-input-box\"] p.pointer-events-none.absolute.select-none.whitespace-nowrap",
+    "selectorMode": "self"
+  },
+  {
+    "id": "ui.d9de74c85286",
+    "source": "Ask anything, @ to mention, / for actions",
+    "target": "随时提问，@ 添加引用，/ 选择操作",
+    "context": "消息输入框的固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5567897,
+        "end": 5568134,
+        "kind": "template:display",
+        "component": "MCb"
+      }
+    ],
+    "selector": "[data-testid=\"agent-input-box\"] p.pointer-events-none.absolute.select-none.whitespace-nowrap",
+    "selectorMode": "self"
+  },
+  {
+    "id": "ui.033a5ee36bde",
+    "source": "Message subagent, @ to mention",
+    "target": "给子智能体发消息，输入 @ 添加引用",
+    "context": "消息输入框的固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5567897,
+        "end": 5568134,
+        "kind": "template:display",
+        "component": "MCb"
+      }
+    ],
+    "selector": "[data-testid=\"agent-input-box\"] p.pointer-events-none.absolute.select-none.whitespace-nowrap",
+    "selectorMode": "self"
+  },
+  {
+    "id": "ui.80278986ea3b",
+    "source": "Message subagent, @ to mention, / for actions",
+    "target": "给子智能体发消息，@ 添加引用，/ 选择操作",
+    "context": "消息输入框的固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5567897,
+        "end": 5568134,
+        "kind": "template:display",
+        "component": "MCb"
+      }
+    ],
+    "selector": "[data-testid=\"agent-input-box\"] p.pointer-events-none.absolute.select-none.whitespace-nowrap",
+    "selectorMode": "self"
+  },
+  {
+    "id": "ui.b299628260ed",
+    "source": "Gemini Models",
+    "target": "Gemini 模型",
+    "context": "模型用量分组与剩余额度",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "lAb / WTb"
+      }
+    ]
+  },
+  {
+    "id": "ui.c253735edd4e",
+    "source": "Claude and GPT models",
+    "target": "Claude 和 GPT 模型",
+    "context": "模型用量分组与剩余额度",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "lAb / WTb"
+      }
+    ]
+  },
+  {
+    "id": "ui.da6b2e1558c4",
+    "source": "Weekly Limit Remaining",
+    "target": "每周剩余额度",
+    "context": "模型用量分组与剩余额度",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "lAb / WTb"
+      }
+    ]
+  },
+  {
+    "id": "ui.7a879b1259e1",
+    "source": "Five Hour Limit Remaining",
+    "target": "5 小时周期剩余额度",
+    "context": "模型用量分组与剩余额度",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "lAb / WTb"
+      }
+    ]
+  },
+  {
+    "id": "ui.79e4481046dc",
+    "source": "Resets in <1m",
+    "target": "1 分钟内重置",
+    "context": "模型用量的重置时间",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1641755,
+        "end": 1641768,
+        "kind": "element:display"
+      }
+    ]
+  },
+  {
+    "id": "ui.598de0938a65",
+    "source": "Resets in {0}",
+    "target": "{0}后重置",
+    "context": "模型用量的重置时间",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "fla"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[0-9]+[dhm](?: [0-9]+[dhm])?)"
+    },
+    "captureFormats": {
+      "0": "duration"
+    }
+  },
+  {
+    "id": "ui.da5333b75e79",
+    "source": "You have used some of your weekly limit, it will fully refresh in {0}.",
+    "target": "您已使用部分每周额度，将在 {0}后完全恢复。",
+    "context": "模型额度恢复时间说明",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "VTb"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+ (?:days?|hours?|minutes?)(?:, [0-9]+ (?:days?|hours?|minutes?)){0,2}"
+    },
+    "captureFormats": {
+      "0": "duration"
+    }
+  },
+  {
+    "id": "ui.1d5db5c8115f",
+    "source": "You have used some of your 5-hour limit, it will fully refresh in {0}.",
+    "target": "您已使用部分 5 小时周期额度，将在 {0}后完全恢复。",
+    "context": "模型额度恢复时间说明",
+    "scope": "quota",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "service:display",
+        "component": "VTb"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+ (?:days?|hours?|minutes?)(?:, [0-9]+ (?:days?|hours?|minutes?)){0,2}"
+    },
+    "captureFormats": {
+      "0": "duration"
+    }
+  },
+  {
+    "id": "ui.8102b2eaa3a8",
+    "source": "No background tasks",
+    "target": "暂无后台任务",
+    "context": "概览侧栏的固定空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5721735,
+        "end": 5721756,
+        "kind": "element:children"
+      },
+      {
+        "start": 6581724,
+        "end": 6581745,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "ui.de329dbb14f2",
+    "source": "No file changes",
+    "target": "暂无文件更改",
+    "context": "概览侧栏的固定空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5707817,
+        "end": 5707834,
+        "kind": "element:children"
+      },
+      {
+        "start": 6584037,
+        "end": 6584054,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "ui.74ffd312d5a0",
+    "source": "Previous",
+    "target": "上一张",
+    "context": "幻灯片轮播导航",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3955594,
+        "end": 3955604,
+        "kind": "element:children"
+      },
+      {
+        "start": 4998119,
+        "end": 4998129,
+        "kind": "element:children"
+      },
+      {
+        "start": 6081665,
+        "end": 6081675,
+        "kind": "element:children"
+      },
+      {
+        "start": 6924334,
+        "end": 6924344,
+        "kind": "property:title"
+      }
+    ],
+    "selector": ".carousel button"
+  },
+  {
+    "id": "ui.c7667060f558",
+    "source": "Next",
+    "target": "下一张",
+    "context": "幻灯片轮播导航",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4998597,
+        "end": 4998603,
+        "kind": "element:children"
+      },
+      {
+        "start": 5960683,
+        "end": 5960689,
+        "kind": "element:children"
+      },
+      {
+        "start": 6081896,
+        "end": 6081902,
+        "kind": "element:children"
+      },
+      {
+        "start": 6493016,
+        "end": 6493022,
+        "kind": "element:children"
+      },
+      {
+        "start": 6925435,
+        "end": 6925441,
+        "kind": "property:title"
+      }
+    ],
+    "selector": ".carousel button"
+  },
+  {
+    "id": "ui.65270f07404f",
+    "source": "Fig share",
+    "target": "Fig 共享",
+    "context": "工作区共享方式选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4961828,
+        "end": 4961837,
+        "kind": "element:display"
+      }
+    ],
+    "selector": "button, [role=\"switch\"], [role=\"checkbox\"]"
+  },
+  {
+    "id": "ui.7552e48914de",
+    "source": "JJ worktree",
+    "target": "JJ 工作树",
+    "context": "工作区共享方式选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3261965,
+        "end": 3261976,
+        "kind": "element:display"
+      }
+    ],
+    "selector": "button, [role=\"switch\"], [role=\"checkbox\"]"
+  },
+  {
+    "id": "ui.b5e2a61c5f29",
+    "source": "e.g. \"gemini-api:/models/gemini-v3-byom\"",
+    "target": "例如 \"gemini-api:/models/gemini-v3-byom\"",
+    "context": "自定义模型地址输入提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5392046,
+        "end": 5392086,
+        "kind": "element:display"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder",
+    "selector": "input"
+  },
+  {
+    "id": "ui.3aa66c5e0621",
+    "source": "None",
+    "target": "不折叠",
+    "context": "时间轴空闲间隔不折叠",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5974872,
+        "end": 5974878,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "select[title=\"How long a quiet interval must be before it collapses\"] option[value=\"none\"], select[title=\"空闲间隔达到多长时才折叠\"] option[value=\"none\"]"
+  },
+  {
+    "id": "ui.bed0c2307822",
+    "source": "A {0} with this name already exists.",
+    "target": "已有同名{0}。",
+    "context": "项目或工作区重名错误",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6384178,
+        "end": 6384267,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "span.text-red-500",
+    "template": true,
+    "capturePatterns": {
+      "0": "project|workspace"
+    },
+    "captureMappings": {
+      "0": {
+        "project": "项目",
+        "workspace": "工作区"
+      }
+    }
+  },
+  {
+    "id": "ui.347be8a4037c",
+    "source": "the ",
+    "target": "",
+    "context": "自动化创建项目的说明冠词",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6267086,
+        "end": 6267273,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "allowEmpty": true
+  },
+  {
+    "id": "ui.fd95e4aae7e3",
+    "source": "an",
+    "target": "",
+    "context": "自动化创建项目的说明冠词",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6267086,
+        "end": 6267273,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "allowEmpty": true
+  },
+  {
+    "id": "ui.709def954475",
+    "source": "for {0}",
+    "target": "对应 {0}",
+    "context": "文件或目录标题栏的固定前缀",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6542560,
+        "end": 6543224,
+        "kind": "element:children",
+        "component": "pZb / rZb"
+      }
+    ],
+    "selector": ".flex.items-center.gap-1.min-w-0.w-full > span.text-xs.text-muted-foreground.shrink-0",
+    "template": true
+  }
+]

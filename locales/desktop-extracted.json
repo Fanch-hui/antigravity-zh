@@ -1,0 +1,1633 @@
+[
+  {
+    "id": "dcdcde120ec7",
+    "source": "Requires manual review for all terminal commands and file accesses outside of the working folders.",
+    "target": "所有终端命令，以及对工作文件夹以外文件的访问，都需要人工审阅。",
+    "context": "权限预设：默认模式的简要说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2115429,
+        "end": 2115529,
+        "kind": "property:shortDescription"
+      },
+      {
+        "start": 2116687,
+        "end": 2116787,
+        "kind": "property:shortDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "00119a149624",
+    "source": "Useful for typical development with an emphasis on security. It prioritizes safety over speed by requiring manual approval for all terminal commands and files outside the project directory.",
+    "target": "适用于注重安全的常规开发。此模式优先保障安全，所有终端命令，以及对项目目录以外文件的访问，都需要人工批准。",
+    "context": "权限预设：默认模式的完整说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2115547,
+        "end": 2115738,
+        "kind": "property:longDescription"
+      },
+      {
+        "start": 2116805,
+        "end": 2116996,
+        "kind": "property:longDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "83fdca3fffdc",
+    "source": "All terminal commands require review. The agent can read or write to any file in the machine.",
+    "target": "所有终端命令都需要审阅。智能体可以读取或写入本机的任何文件。",
+    "context": "权限预设：整机访问模式的简要说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2115853,
+        "end": 2115948,
+        "kind": "property:shortDescription"
+      },
+      {
+        "start": 2117114,
+        "end": 2117209,
+        "kind": "property:shortDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "4959d643e013",
+    "source": "Useful for tasks that require file access across your full machine. The agent has full read and write access to all local files, but all proposed terminal commands require manual review and approval before running.",
+    "target": "适用于需要访问本机各处文件的任务。智能体可以读取和写入所有本地文件，但所有拟执行的终端命令都必须经过人工审阅和批准后才能运行。",
+    "context": "权限预设：整机访问模式的完整说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2115965,
+        "end": 2116181,
+        "kind": "property:longDescription"
+      },
+      {
+        "start": 2117226,
+        "end": 2117442,
+        "kind": "property:longDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "9a70d0007209",
+    "source": "Disables all safety barriers for maximal iteration velocity.",
+    "target": "关闭所有安全防护，以实现最快的迭代速度。",
+    "context": "权限预设：Turbo 模式的简要说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2116295,
+        "end": 2116357,
+        "kind": "property:shortDescription"
+      },
+      {
+        "start": 2117559,
+        "end": 2117621,
+        "kind": "property:shortDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "d63c53f3ce16",
+    "source": "A high-risk mode that disables all safety barriers. The agent operates with full system access, auto-executes all terminal commands, and reads or writes to all local files without review prompts.",
+    "target": "这是一个会关闭所有安全防护的高风险模式。智能体拥有完整的系统访问权限，自动执行所有终端命令，并且在读取或写入任何本地文件时都不会提示审阅。",
+    "context": "权限预设：Turbo 模式的完整说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2116374,
+        "end": 2116571,
+        "kind": "property:longDescription"
+      },
+      {
+        "start": 2117638,
+        "end": 2117835,
+        "kind": "property:longDescription"
+      }
+    ],
+    "selector": "[role=\"menu\"],[role=\"listbox\"],[role=\"tooltip\"],#preset-learn-more-tooltip"
+  },
+  {
+    "id": "41d70bb0060e",
+    "source": "Scroll to Bottom",
+    "target": "滚动到底部",
+    "context": "会话滚动按钮",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2606343,
+        "end": 2606361,
+        "kind": "default:label"
+      }
+    ]
+  },
+  {
+    "id": "875e978a5343",
+    "source": "Leave a comment",
+    "target": "添加评论",
+    "context": "文件评论 Lexical 编辑器的独立占位段落；输入正文保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3194608,
+        "end": 3194625,
+        "kind": "default:placeholder"
+      }
+    ],
+    "selector": "p.pointer-events-none.absolute.left-2.right-2.top-2.select-none.whitespace-nowrap.leading-6",
+    "kind": "text"
+  },
+  {
+    "id": "1515883d8c55",
+    "source": "Some sites block embedding (via X-Frame-Options or CSP) and will show a fallback message. Blocked-page detection is best-effort (based on a load timeout), so it may occasionally be wrong. Use \"Open in new tab\" if a page doesn't load.",
+    "target": "部分网站通过 X-Frame-Options 或 CSP 阻止嵌入，此时会显示替代提示。系统根据加载超时尽力判断页面是否被阻止，因此偶尔可能误判。如果页面无法加载，请使用“在新标签页中打开”。",
+    "context": "内嵌浏览器的信息提示，说明嵌入限制与超时误判",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3393536,
+        "end": 3393772,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "4d1d1512718e",
+    "source": "No matching items",
+    "target": "没有匹配项",
+    "context": "搜索下拉菜单的空结果状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4040192,
+        "end": 4040211,
+        "kind": "default:emptyMessage"
+      }
+    ],
+    "selector": ".flex.items-center.justify-center.py-4.px-2.text-xs.text-muted-foreground.select-none"
+  },
+  {
+    "id": "151f4007e5ce",
+    "source": "Describe your changes, or leave empty to auto-generate",
+    "target": "描述你的更改，留空则自动生成",
+    "context": "Git 提交说明输入框的占位提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4261954,
+        "end": 4262010,
+        "kind": "default:placeholder"
+      }
+    ],
+    "selector": "input,textarea",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "a47882d8a918",
+    "source": "Open preview in embedded pane",
+    "target": "在内嵌面板中打开预览",
+    "context": "概览链接预览按钮的辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4426580,
+        "end": 4426611,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "selector": "button,[role=\"button\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "46d01394224b",
+    "source": "No artifacts generated",
+    "target": "尚未生成产物",
+    "context": "会话概览的产物空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4427998,
+        "end": 4428022,
+        "kind": "default:emptyText"
+      },
+      {
+        "start": 6580181,
+        "end": 6580205,
+        "kind": "default:emptyText"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "7ec934dcb160",
+    "source": "Unknown edit",
+    "target": "未知编辑操作",
+    "context": "工具步骤标题的编辑操作回退说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4577968,
+        "end": 4577982,
+        "kind": "property:content"
+      }
+    ],
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground"
+  },
+  {
+    "id": "7d6d6172910e",
+    "source": "Click to learn more about sources",
+    "target": "点击了解来源详情",
+    "context": "来源信息图标的提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4639452,
+        "end": 4639487,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "c0de42c8bd69",
+    "source": "Unknown file edit",
+    "target": "未知文件编辑操作",
+    "context": "工具步骤标题的文件编辑回退说明",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4657903,
+        "end": 4657922,
+        "kind": "property:content"
+      }
+    ],
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground"
+  },
+  {
+    "id": "1cf1bb4b55e7",
+    "source": "Mouse button released",
+    "target": "松开鼠标按键",
+    "context": "浏览器工具步骤的固定操作标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4676389,
+        "end": 4676412,
+        "kind": "property:content"
+      }
+    ],
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground"
+  },
+  {
+    "id": "018c57cf4a94",
+    "source": "Mouse button pressed",
+    "target": "按下鼠标按键",
+    "context": "浏览器工具步骤的固定操作标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4676619,
+        "end": 4676641,
+        "kind": "property:content"
+      }
+    ],
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground"
+  },
+  {
+    "id": "658a7ec8597e",
+    "source": "{0} question{1}",
+    "target": "{0} 个问题{1}",
+    "context": "提问工具步骤标题：问题数量及英文复数后缀",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4705533,
+        "end": 4705577,
+        "kind": "property:content"
+      }
+    ],
+    "template": true,
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "capturePatterns": {
+      "0": "[0-9]+",
+      "1": "s?"
+    },
+    "captureMappings": {
+      "1": {
+        "s": "",
+        "": ""
+      }
+    }
+  },
+  {
+    "id": "e4e0bdae4709",
+    "source": "Worktrees are a git feature. This folder is shared as is.",
+    "target": "工作树是 Git 的功能。此文件夹按原样共享。",
+    "context": "项目文件夹分支设置的提示，说明普通文件夹无法使用工作树",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4959694,
+        "end": 4959753,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "9a37d13fac3e",
+    "source": "Model must be available on the Gemini API and use the gemini-api scheme.",
+    "target": "该模型必须可通过 Gemini API 使用，并采用 gemini-api URL 方案。",
+    "context": "自定义模型 URL 格式提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5391592,
+        "end": 5391666,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "b401043d6bbd",
+    "source": "Recommended: 64,000–256,000 tokens. Actual compaction threshold may differ since max output tokens are subtracted.",
+    "target": "建议范围：64,000–256,000 tokens。计算时会扣除最大输出 token 数，因此实际触发压缩的阈值可能有所不同。",
+    "context": "自定义模型的上下文压缩阈值提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5392498,
+        "end": 5392619,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "fb0d6c0def61",
+    "source": "Finalizing...",
+    "target": "正在完成转写…",
+    "context": "语音输入完成转写时的按钮提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5427621,
+        "end": 5427636,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "#input-send-button-finalizing-tooltip,[role=\"tooltip\"]"
+  },
+  {
+    "id": "70f33e81e01c",
+    "source": "+{0} attachments",
+    "target": "+{0} 个附件",
+    "context": "排队消息的折叠附件数量提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5449325,
+        "end": 5449344,
+        "kind": "property:content"
+      }
+    ],
+    "template": true,
+    "selector": "[role=\"tooltip\"]",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "2e29820e72f6",
+    "source": "Stop Task",
+    "target": "停止任务",
+    "context": "后台任务停止按钮及提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5608855,
+        "end": 5608866,
+        "kind": "property:tooltipContent"
+      }
+    ]
+  },
+  {
+    "id": "d36a9d93a116",
+    "source": "No documents",
+    "target": "暂无文档",
+    "context": "会话概览的文档空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5726830,
+        "end": 5726844,
+        "kind": "property:emptyText"
+      },
+      {
+        "start": 6584733,
+        "end": 6584747,
+        "kind": "property:emptyText"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "6d155cf4d312",
+    "source": "No uploads",
+    "target": "暂无上传文件",
+    "context": "会话概览的上传文件空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5735854,
+        "end": 5735866,
+        "kind": "property:emptyText"
+      },
+      {
+        "start": 6586983,
+        "end": 6586995,
+        "kind": "property:emptyText"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "b749e205302c",
+    "source": "Copy to clipboard",
+    "target": "复制到剪贴板",
+    "context": "产物工具栏的复制提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5764026,
+        "end": 5764045,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "9186db7cf8be",
+    "source": "Export artifact",
+    "target": "导出产物",
+    "context": "产物工具栏的导出提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5764267,
+        "end": 5764284,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "78abd1421446",
+    "source": "Restore Conversation",
+    "target": "恢复会话",
+    "context": "归档会话的恢复按钮提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6068434,
+        "end": 6068456,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "0b6906e5247a",
+    "source": "Stop Execution",
+    "target": "停止执行",
+    "context": "正在运行的会话操作提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6068577,
+        "end": 6068593,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "4284b4c46051",
+    "source": "Archive Conversation",
+    "target": "归档会话",
+    "context": "会话列表的归档按钮提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6068649,
+        "end": 6068671,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "bed2cb4c0a5d",
+    "source": "Remote Control link",
+    "target": "远程控制链接",
+    "context": "远程控制二维码的辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6186864,
+        "end": 6186885,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "selector": "svg[role=\"img\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "7411e6c6ac16",
+    "source": "Enter command...",
+    "target": "输入命令…",
+    "context": "设置中的命令列表输入框占位提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6193817,
+        "end": 6193835,
+        "kind": "default:placeholder"
+      }
+    ],
+    "selector": "input,textarea",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "8fd7550713da",
+    "source": "Enter target...",
+    "target": "输入目标…",
+    "context": "权限规则目标输入框占位提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6236373,
+        "end": 6236390,
+        "kind": "default:placeholder"
+      }
+    ],
+    "selector": "input,textarea",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "fdd9d5053ccc",
+    "source": "Edit {0}",
+    "target": "编辑 {0}",
+    "context": "自定义配置编辑按钮及提示，名称变量原样保留",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6249695,
+        "end": 6249711,
+        "kind": "property:editTitle"
+      }
+    ],
+    "template": true,
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "3f140981c2a0",
+    "source": "Edit config",
+    "target": "编辑配置",
+    "context": "智能体、插件及自定义模型配置的编辑操作提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6250255,
+        "end": 6250268,
+        "kind": "property:editTitle"
+      },
+      {
+        "start": 6250809,
+        "end": 6250822,
+        "kind": "property:editTitle"
+      },
+      {
+        "start": 6312090,
+        "end": 6312103,
+        "kind": "property:editTitle"
+      }
+    ],
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "602cc4da981d",
+    "source": "Delete agent",
+    "target": "删除智能体",
+    "context": "自定义智能体的删除操作提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6250318,
+        "end": 6250332,
+        "kind": "property:deleteTitle"
+      }
+    ],
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "b090562f538c",
+    "source": "Delete plugin",
+    "target": "删除插件",
+    "context": "自定义插件的删除操作提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6250866,
+        "end": 6250881,
+        "kind": "property:deleteTitle"
+      }
+    ],
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "7e9464a23e43",
+    "source": "Delete server",
+    "target": "删除服务器",
+    "context": "MCP 服务器配置的删除操作提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6306447,
+        "end": 6306462,
+        "kind": "property:deleteTitle"
+      }
+    ],
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "5f8f1d5e55c6",
+    "source": "Folder doesn't exist",
+    "target": "文件夹不存在",
+    "context": "项目资源目录状态警告",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6372516,
+        "end": 6372538,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "b7e5fcaad889",
+    "source": "Cannot parse folder URI.",
+    "target": "无法解析文件夹 URI。",
+    "context": "项目资源目录 URI 状态警告",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6372779,
+        "end": 6372805,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "29979f3ab8c1",
+    "source": "Edit Conversation Title",
+    "target": "编辑会话标题",
+    "context": "会话标题编辑提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6392541,
+        "end": 6392566,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "51200287e5e7",
+    "source": "Group Actions",
+    "target": "分组操作",
+    "context": "会话分组菜单按钮及提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6510390,
+        "end": 6510405,
+        "kind": "property:ariaLabel"
+      },
+      {
+        "start": 6510421,
+        "end": 6510436,
+        "kind": "property:tooltipContent"
+      }
+    ],
+    "selector": "button,[role=\"button\"],[role=\"tooltip\"]"
+  },
+  {
+    "id": "441364c9561e",
+    "source": "Managed by the {0} automation",
+    "target": "由自动化任务“{0}”管理",
+    "context": "工作区的自动化任务管理提示，任务名称原样保留",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6523937,
+        "end": 6523983,
+        "kind": "property:content"
+      }
+    ],
+    "template": true,
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "90d8a7546552",
+    "source": "Project options",
+    "target": "项目选项",
+    "context": "项目操作菜单按钮的辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6528409,
+        "end": 6528426,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "selector": "button,[role=\"button\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "e081d5513607",
+    "source": "No links",
+    "target": "暂无链接",
+    "context": "会话概览的链接空状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6586144,
+        "end": 6586154,
+        "kind": "property:emptyText"
+      }
+    ],
+    "selector": ".text-muted-foreground.text-xs.px-2"
+  },
+  {
+    "id": "a4aa4d9ed2a9",
+    "source": "Select a folder.",
+    "target": "选择文件夹。",
+    "context": "新建项目的文件夹选择提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6818550,
+        "end": 6818568,
+        "kind": "property:tooltipText"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "e7b02829ac76",
+    "source": "Reset to preset",
+    "target": "重置为预设值",
+    "context": "设置恢复预设值的按钮提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8985432,
+        "end": 8985449,
+        "kind": "property:content"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]"
+  },
+  {
+    "id": "a465f1c306da",
+    "source": "square bounding box",
+    "target": "矩形边界框",
+    "context": "文档标注的矩形工具辅助标签，尺寸允许不同宽高",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9358338,
+        "end": 9358359,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "selector": ".bounding-box-rect",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "c6d07533ddcd",
+    "source": "line bounding box",
+    "target": "线段边界框",
+    "context": "文档标注的线段工具辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9359191,
+        "end": 9359210,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "selector": ".bounding-box-rect--line",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "1f3fbe4e39d8",
+    "source": "Comment on page {0}",
+    "target": "第 {0} 页的评论",
+    "context": "文档滚动条的评论标记辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9405860,
+        "end": 9405893,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "template": true,
+    "selector": ".custom-scrollbar-indicator.comment-indicator",
+    "attribute": "aria-label",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "35741ca5c1ed",
+    "source": "Search match on page {0}",
+    "target": "第 {0} 页的搜索匹配项",
+    "context": "文档滚动条的搜索标记辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9406350,
+        "end": 9406377,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "template": true,
+    "selector": ".custom-scrollbar-indicator.search-indicator",
+    "attribute": "aria-label",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "83ec290c5efb",
+    "source": "{0} annotation on page {1}",
+    "target": "第 {1} 页的{0}标注",
+    "context": "文档滚动条的标注辅助标签，标注类型保留原文",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9406736,
+        "end": 9406796,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "template": true,
+    "selector": ".custom-scrollbar-indicator.annotation-indicator",
+    "attribute": "aria-label",
+    "capturePatterns": {
+      "1": "[0-9]+"
+    }
+  },
+  {
+    "id": "35fecff7e4f2",
+    "source": "Bounding box on page {0}",
+    "target": "第 {0} 页的边界框",
+    "context": "文档滚动条的边界框标记辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9407402,
+        "end": 9407429,
+        "kind": "property:ariaLabel"
+      }
+    ],
+    "template": true,
+    "selector": ".custom-scrollbar-indicator.bbox-indicator",
+    "attribute": "aria-label",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "e596e6256a50",
+    "source": "Add Comment",
+    "target": "添加评论",
+    "context": "评论提交按钮",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3194640,
+        "end": 3194653,
+        "kind": "default:submitLabel"
+      }
+    ]
+  },
+  {
+    "id": "b0f3f6d9cec4",
+    "source": "New Preview",
+    "target": "新建预览",
+    "context": "辅助面板新建网页标签页菜单",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3524229,
+        "end": 3524242,
+        "kind": "property:newTabLabel"
+      }
+    ],
+    "selector": "[data-testid=\"aux-panel-plus-new-preview\"]",
+    "kind": "text"
+  },
+  {
+    "id": "e34e1b2e1c9a",
+    "source": "New Browser",
+    "target": "新建浏览器",
+    "context": "辅助面板新建网页标签页菜单",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3525783,
+        "end": 3525796,
+        "kind": "property:newTabLabel"
+      }
+    ],
+    "selector": "[data-testid=\"aux-panel-plus-new-preview\"]",
+    "kind": "text"
+  },
+  {
+    "id": "edfb25801e24",
+    "source": "Auxiliary Pane",
+    "target": "辅助面板",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5806403,
+        "end": 5806419,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6546706,
+        "end": 6546722,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "6f6817d96e83",
+    "source": "File Viewer",
+    "target": "文件查看器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5807193,
+        "end": 5807206,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6547459,
+        "end": 6547472,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "5e1de9db1fb2",
+    "source": "Directory Viewer",
+    "target": "目录查看器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5808124,
+        "end": 5808142,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6548382,
+        "end": 6548400,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "81937f69ee52",
+    "source": "Virtual File Viewer",
+    "target": "虚拟文件查看器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5808479,
+        "end": 5808500,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6548821,
+        "end": 6548842,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "4770713b32a9",
+    "source": "Artifact Viewer",
+    "target": "产物查看器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5809254,
+        "end": 5809271,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6549774,
+        "end": 6549791,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "2e699b59369c",
+    "source": "Browser Subagent Viewer",
+    "target": "浏览器子智能体查看器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5810350,
+        "end": 5810375,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6550931,
+        "end": 6550956,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "043d271c9455",
+    "source": "Subagent Conversation",
+    "target": "子智能体会话",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5813404,
+        "end": 5813427,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "22e179a0f9e4",
+    "source": "Custom View",
+    "target": "自定义视图",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5815373,
+        "end": 5815386,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6553101,
+        "end": 6553114,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "030ecef0d927",
+    "source": "Sidecar View",
+    "target": "Sidecar 视图",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5816140,
+        "end": 5816154,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6553942,
+        "end": 6553956,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "2e4112bc7e96",
+    "source": "Workspace File Explorer",
+    "target": "工作区文件浏览器",
+    "context": "辅助面板内容区域的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5816501,
+        "end": 5816526,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6554397,
+        "end": 6554422,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[role=\"region\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "1213394682bf",
+    "source": "Create Group",
+    "target": "创建分组",
+    "context": "新建会话分组的提交按钮",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5983897,
+        "end": 5983911,
+        "kind": "property:submitLabel"
+      }
+    ]
+  },
+  {
+    "id": "1359626e7b69",
+    "source": "Move Up",
+    "target": "上移",
+    "context": "会话分组菜单的固定操作标签",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6510493,
+        "end": 6510502,
+        "kind": "property:moveUpLabel"
+      }
+    ],
+    "selector": "[data-testid=\"group-header-move-up-item\"]",
+    "kind": "text"
+  },
+  {
+    "id": "b58330ac2505",
+    "source": "Move Down",
+    "target": "下移",
+    "context": "会话分组菜单的固定操作标签",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6510533,
+        "end": 6510544,
+        "kind": "property:moveDownLabel"
+      }
+    ],
+    "selector": "[data-testid=\"group-header-move-down-item\"]",
+    "kind": "text"
+  },
+  {
+    "id": "37bb6816a359",
+    "source": "Delete Group",
+    "target": "删除分组",
+    "context": "会话分组菜单的固定操作标签",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6510575,
+        "end": 6510589,
+        "kind": "property:deleteLabel"
+      }
+    ],
+    "selector": "[data-testid=\"group-header-delete-item\"]",
+    "kind": "text"
+  },
+  {
+    "id": "d0050e090ca8",
+    "source": "Issue numbers",
+    "target": "Issue 编号",
+    "context": "GitHub 权限规则范围输入框的固定辅助标签；编号及分支名值保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8935040,
+        "end": 8935055,
+        "kind": "property:scopeAriaLabel"
+      }
+    ],
+    "selector": "input",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "c3a622d346b2",
+    "source": "Issue actions",
+    "target": "Issue 操作",
+    "context": "GitHub 权限规则操作选择按钮的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8935073,
+        "end": 8935088,
+        "kind": "property:actionsAriaLabel"
+      }
+    ],
+    "selector": "button",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "a6460957ebb2",
+    "source": "Pull request numbers",
+    "target": "Pull Request 编号",
+    "context": "GitHub 权限规则范围输入框的固定辅助标签；编号及分支名值保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8936897,
+        "end": 8936919,
+        "kind": "property:scopeAriaLabel"
+      }
+    ],
+    "selector": "input",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "e3ac3682aa58",
+    "source": "Pull request actions",
+    "target": "Pull Request 操作",
+    "context": "GitHub 权限规则操作选择按钮的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8936937,
+        "end": 8936959,
+        "kind": "property:actionsAriaLabel"
+      }
+    ],
+    "selector": "button",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "da2614194c93",
+    "source": "Branch names",
+    "target": "分支名称",
+    "context": "GitHub 权限规则范围输入框的固定辅助标签；编号及分支名值保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8938398,
+        "end": 8938412,
+        "kind": "property:scopeAriaLabel"
+      }
+    ],
+    "selector": "input",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "26b5d309f403",
+    "source": "Branch actions",
+    "target": "分支操作",
+    "context": "GitHub 权限规则操作选择按钮的固定辅助标签",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8938430,
+        "end": 8938446,
+        "kind": "property:actionsAriaLabel"
+      }
+    ],
+    "selector": "button",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "fa6569156c0c",
+    "source": "Auxiliary Pane header",
+    "target": "辅助面板标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5806403,
+        "end": 5806419,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6546706,
+        "end": 6546722,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "7a8a2fd67a09",
+    "source": "File Viewer header",
+    "target": "文件查看器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5807193,
+        "end": 5807206,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6547459,
+        "end": 6547472,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "35537da1258c",
+    "source": "Directory Viewer header",
+    "target": "目录查看器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5808124,
+        "end": 5808142,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6548382,
+        "end": 6548400,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "1ac6b83e992f",
+    "source": "Virtual File Viewer header",
+    "target": "虚拟文件查看器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5808479,
+        "end": 5808500,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6548821,
+        "end": 6548842,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "b5299788c043",
+    "source": "Artifact Viewer header",
+    "target": "产物查看器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5809254,
+        "end": 5809271,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6549774,
+        "end": 6549791,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "795ae269404c",
+    "source": "Browser Subagent Viewer header",
+    "target": "浏览器子智能体查看器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5810350,
+        "end": 5810375,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6550931,
+        "end": 6550956,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "0cdb34e2312e",
+    "source": "Subagent Conversation header",
+    "target": "子智能体会话标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5813404,
+        "end": 5813427,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "cb541d1fabc9",
+    "source": "Custom View header",
+    "target": "自定义视图标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5815373,
+        "end": 5815386,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6553101,
+        "end": 6553114,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "232289f0a085",
+    "source": "Sidecar View header",
+    "target": "Sidecar 视图标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5816140,
+        "end": 5816154,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6553942,
+        "end": 6553956,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "378ebcd5fcd7",
+    "source": "Workspace File Explorer header",
+    "target": "工作区文件浏览器标题栏",
+    "context": "辅助面板标题栏的固定辅助标签；文件名及任务名保持原样",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5816501,
+        "end": 5816526,
+        "kind": "property:accessibilityLabel"
+      },
+      {
+        "start": 6554397,
+        "end": 6554422,
+        "kind": "property:accessibilityLabel"
+      }
+    ],
+    "selector": "[class~=\"group/file-row\"]",
+    "attribute": "aria-label"
+  }
+]

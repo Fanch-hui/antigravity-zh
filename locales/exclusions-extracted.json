@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dfc76edc9775",
+    "source": "Work in a CitC workspace.",
+    "reason": "CitC 内部工作区入口的提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "641dc0c81054",
+    "source": "Work in a Cog workspace.",
+    "reason": "Cog 内部工作区入口的提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "9eda8a7eba82",
+    "source": "Work in an ABFS workspace.",
+    "reason": "ABFS Alpha 内部工作区入口的提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "4e0908e5128b",
+    "source": "Create a new project using normal folders and/or citc workspaces.",
+    "reason": "包含 CitC 的内部项目创建入口提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "4678e03c61ba",
+    "source": "This is a CitC workspace (Fig share)",
+    "reason": "CitC / Fig 内部工作区共享状态提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "d6bd8c0aeee8",
+    "source": "Document",
+    "reason": "隐藏的打印 iframe 的默认文档标题；不在应用主页面呈现，且不应改写用户文档标题。"
+  },
+  {
+    "id": "be52fa53b5ea",
+    "source": "Work in Google3. Create conversations in new and existing workspaces.",
+    "reason": "Google3 内部工作区入口提示；首版本机桌面范围不覆盖内部专属工作流。"
+  },
+  {
+    "id": "8a927affdff4",
+    "source": "Deprecated: go/projects-jetski",
+    "reason": "Google 内部 go/ 链接的弃用提示；内部专属工作流不在首版适配范围。"
+  }
+]

@@ -1,0 +1,547 @@
+[
+  {
+    "id": "bd445c462b7e",
+    "source": "overview",
+    "reason": "视图类型内部标识"
+  },
+  {
+    "id": "05139394f6a3",
+    "source": "customView",
+    "reason": "视图类型内部标识"
+  },
+  {
+    "id": "580e794f3071",
+    "source": "sidecarView",
+    "reason": "视图类型内部标识"
+  },
+  {
+    "id": "c10bdee0b424",
+    "source": " need",
+    "reason": "拆分英文复数计数片段；由完整句模板处理"
+  },
+  {
+    "id": "0a165eaf8b9d",
+    "source": " input",
+    "reason": "拆分英文复数计数片段；由完整句模板处理"
+  },
+  {
+    "id": "9324c6c65a08",
+    "source": "o+rx",
+    "reason": "POSIX 权限表达式，保留命令语法"
+  },
+  {
+    "id": "2aca0c68ff3e",
+    "source": "sidebar",
+    "reason": "组件位置内部标识"
+  },
+  {
+    "id": "1e0584a25d9f",
+    "source": "header",
+    "reason": "列表条目类型内部标识"
+  },
+  {
+    "id": "634768dae147",
+    "source": "row",
+    "reason": "列表条目类型内部标识"
+  },
+  {
+    "id": "4a0a339b0c6d",
+    "source": "personal",
+    "reason": "登录方式内部枚举"
+  },
+  {
+    "id": "6bfbd709d5fd",
+    "source": "consumer",
+    "reason": "登录方式内部枚举"
+  },
+  {
+    "id": "3347d0bdd97e",
+    "source": "gcp",
+    "reason": "登录方式内部枚举"
+  },
+  {
+    "id": "652740e1be1c",
+    "source": "you@company.com",
+    "reason": "示例电子邮件地址"
+  },
+  {
+    "id": "f23421a8e914",
+    "source": "wif",
+    "reason": "登录方式内部枚举"
+  },
+  {
+    "id": "7384ac7d376e",
+    "source": "radialGradient",
+    "reason": "SVG 元素名称"
+  },
+  {
+    "id": "086e14fdeaaa",
+    "source": "feTurbulence",
+    "reason": "SVG 元素名称"
+  },
+  {
+    "id": "0bb6be914de4",
+    "source": "feColorMatrix",
+    "reason": "SVG 元素名称"
+  },
+  {
+    "id": "7c43c4defc2c",
+    "source": "feComponentTransfer",
+    "reason": "SVG 元素名称"
+  },
+  {
+    "id": "6477378a69c2",
+    "source": "feFuncA",
+    "reason": "SVG 元素名称"
+  },
+  {
+    "id": "9111a5c2a462",
+    "source": "Gemini Enterprise",
+    "reason": "产品品牌 Gemini Enterprise"
+  },
+  {
+    "id": "9b97ac5e767e",
+    "source": "enterprise",
+    "reason": "计费模式内部枚举"
+  },
+  {
+    "id": "79adb2a2fce5",
+    "source": "us",
+    "reason": "Google Cloud 区域代码"
+  },
+  {
+    "id": "4d0282941aaf",
+    "source": "eu",
+    "reason": "Google Cloud 区域代码"
+  },
+  {
+    "id": "b83efc0be6b0",
+    "source": "Google ",
+    "reason": "品牌前缀 Google"
+  },
+  {
+    "id": "b2183bba2a81",
+    "source": "paygo",
+    "reason": "计费模式内部枚举"
+  },
+  {
+    "id": "885036a0da3d",
+    "source": "br",
+    "reason": "HTML 换行元素"
+  },
+  {
+    "id": "27d4ccf6bb08",
+    "source": "projectPicker",
+    "reason": "设置视图内部标识"
+  },
+  {
+    "id": "223850d49e49",
+    "source": "datalist",
+    "reason": "HTML 元素名称"
+  },
+  {
+    "id": "ba3cb005cef1",
+    "source": "MacOS",
+    "reason": "操作系统名称"
+  },
+  {
+    "id": "d598026a9cbc",
+    "source": "Windows",
+    "reason": "操作系统名称"
+  },
+  {
+    "id": "4828e60247c1",
+    "source": "Linux",
+    "reason": "操作系统名称"
+  },
+  {
+    "id": "d87c9ca31f37",
+    "source": "Hub",
+    "reason": "产品名 Hub"
+  },
+  {
+    "id": "96d89e4bf526",
+    "source": "go/jetski-projects-migration",
+    "reason": "文档链接保留原值"
+  },
+  {
+    "id": "6283b8259f5e",
+    "source": "signedIn",
+    "reason": "登录状态内部枚举"
+  },
+  {
+    "id": "6cdfd271da63",
+    "source": "custom",
+    "reason": "权限模式内部枚举"
+  },
+  {
+    "id": "f911e414cf6b",
+    "source": "GitHub",
+    "reason": "GitHub 产品名称"
+  },
+  {
+    "id": "cf9faad23c4d",
+    "source": "use_global",
+    "reason": "权限预设内部枚举"
+  },
+  {
+    "id": "64879f7d6b96",
+    "source": "plan",
+    "reason": "斜杠命令名 plan"
+  },
+  {
+    "id": "aeaf9a308c3a",
+    "source": "run_command",
+    "reason": "工具代码 run_command"
+  },
+  {
+    "id": "793514a572a0",
+    "source": "go/jetski-chat",
+    "reason": "帮助文档链接"
+  },
+  {
+    "id": "89fd13346ce4",
+    "source": "folderInput",
+    "reason": "表单步骤内部标识"
+  },
+  {
+    "id": "77f930e4b1a5",
+    "source": "addition",
+    "reason": "差异行类型内部标识"
+  },
+  {
+    "id": "d901b9c1f0d3",
+    "source": "go/abfs-getting-started",
+    "reason": "帮助文档链接"
+  },
+  {
+    "id": "1382e3e5d0a6",
+    "source": "Android (main)",
+    "reason": "Android 仓库选项名称与分支标识"
+  },
+  {
+    "id": "ea3a570eb1f7",
+    "source": "googleplex-android/platform/superproject/main",
+    "reason": "GoB 仓库路径"
+  },
+  {
+    "id": "443373ad0b9d",
+    "source": "Chromium",
+    "reason": "Chromium 产品名称"
+  },
+  {
+    "id": "621fee2b0031",
+    "source": "chromium/chromium/src",
+    "reason": "仓库路径"
+  },
+  {
+    "id": "fb5af8da64e5",
+    "source": "go/cog-getting-started",
+    "reason": "帮助文档链接"
+  },
+  {
+    "id": "91f15f40390d",
+    "source": "projectName",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "e22a1d616c7a",
+    "source": "folderSelection",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "0cd2801a3a80",
+    "source": "duplicateWarning",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "d86cd8a1b359",
+    "source": "quickCitcSelection",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "2f078d3ffcbb",
+    "source": "createCitcWorkspace",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "9ddd633100b3",
+    "source": "quickCogSelection",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "12bcc733f917",
+    "source": "createCogWorkspace",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "eb94b6665c82",
+    "source": "quickAbfsSelection",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "74d2f0f92d69",
+    "source": "createAbfsWorkspace",
+    "reason": "创建项目步骤内部标识"
+  },
+  {
+    "id": "e564b4081d7a",
+    "source": "hidden",
+    "reason": "CSS 类名称"
+  },
+  {
+    "id": "cccbe264816d",
+    "source": "saving",
+    "reason": "保存状态内部枚举"
+  },
+  {
+    "id": "26f1de33979d",
+    "source": "extension",
+    "reason": "功能模式内部标识"
+  },
+  {
+    "id": "adea8dabffb2",
+    "source": "cl/{0}",
+    "reason": "变更列表引用格式保留"
+  },
+  {
+    "id": "65edbd4c5e07",
+    "source": " page",
+    "reason": "拆分英文复数计数片段；由完整句模板处理"
+  },
+  {
+    "id": "cf07194ee232",
+    "source": "prompt",
+    "reason": "调试页标签内部标识"
+  },
+  {
+    "id": "3e64cc41cf8e",
+    "source": "step",
+    "reason": "调试视图内部标识"
+  },
+  {
+    "id": "40493fe6739a",
+    "source": "invocation",
+    "reason": "调试视图内部标识"
+  },
+  {
+    "id": "a402c4336ebf",
+    "source": "execution",
+    "reason": "调试视图内部标识"
+  },
+  {
+    "id": "c32662785b59",
+    "source": "trajectory",
+    "reason": "调试视图内部标识"
+  },
+  {
+    "id": "2a51d3547c23",
+    "source": "earlier",
+    "reason": "加载方向内部枚举"
+  },
+  {
+    "id": "92083c699bd0",
+    "source": "{0} KB",
+    "reason": "文件大小单位 KB 保留"
+  },
+  {
+    "id": "a698208f1c3a",
+    "source": "{0} MB",
+    "reason": "文件大小单位 MB 保留"
+  },
+  {
+    "id": "6db7d803e74f",
+    "source": "before",
+    "reason": "时间轴方向内部枚举"
+  },
+  {
+    "id": "f39592393ef0",
+    "source": "after",
+    "reason": "时间轴方向内部枚举"
+  },
+  {
+    "id": "02195b8e9896",
+    "source": "phase",
+    "reason": "时间轴着色模式内部标识"
+  },
+  {
+    "id": "94d192b3a326",
+    "source": "timeline",
+    "reason": "调试视图内部标识"
+  },
+  {
+    "id": "26f11f3980b3",
+    "source": "google3/configs/jetski/recommended_skills/skills.json",
+    "reason": "推荐技能配置文件路径"
+  },
+  {
+    "id": "c99ddc744c2a",
+    "source": "agent-marketplace.corp.google.com",
+    "reason": "技能市场域名"
+  },
+  {
+    "id": "75a62d961131",
+    "source": "go/jetski-skills",
+    "reason": "内部帮助链接"
+  },
+  {
+    "id": "f1b26689234a",
+    "source": "[ProjectUpdates]",
+    "reason": "日志标签"
+  },
+  {
+    "id": "ab6b490cd66a",
+    "source": "Endpoint {0} not implemented",
+    "reason": "RPC 内部错误模板，非界面固定文案"
+  },
+  {
+    "id": "fcc72010527a",
+    "source": "gcert",
+    "reason": "凭据工具命令名 gcert"
+  },
+  {
+    "id": "a4c3ed04a95a",
+    "source": "done",
+    "reason": "上传状态内部枚举"
+  },
+  {
+    "id": "b5bea41b6c62",
+    "source": "true",
+    "reason": "布尔值序列化文本"
+  },
+  {
+    "id": "4f7959e96b6f",
+    "source": "~/.env",
+    "reason": "配置文件路径 ~/.env"
+  },
+  {
+    "id": "3aeb00246038",
+    "source": "github.com",
+    "reason": "GitHub 主机名"
+  },
+  {
+    "id": "5a2b97d0ec8f",
+    "source": "const ",
+    "reason": "语法高亮示例代码"
+  },
+  {
+    "id": "231bf89d7268",
+    "source": "greet",
+    "reason": "语法高亮示例代码"
+  },
+  {
+    "id": "82a3537ff0db",
+    "source": "name",
+    "reason": "语法高亮示例代码"
+  },
+  {
+    "id": "669696182ea8",
+    "source": "  return ",
+    "reason": "语法高亮示例代码"
+  },
+  {
+    "id": "50ce1a62663b",
+    "source": "\\Vert",
+    "reason": "LaTeX 数学命令"
+  },
+  {
+    "id": "53eecf4019ea",
+    "source": "Render math in display mode, which puts the math in display style (so \\int and \\sum are large, for example), and centers the math on the page on its own line.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "13275fd892f2",
+    "source": "Determines the markup language of the output.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "63a907f949ef",
+    "source": "Render display math in leqno style (left-justified tags).",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "e18248d1d3c7",
+    "source": "Render display math flush left.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "f8438c6ac20f",
+    "source": "Makes \\color behave like LaTeX's 2-argument \\textcolor, instead of LaTeX's one-argument \\color mode change.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "c217601f6535",
+    "source": "Turn on strict / LaTeX faithfulness mode, which throws an error if the input uses features that are not supported by LaTeX.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "4e578bc4caaf",
+    "source": "Trust the input, enabling all HTML features such as \\url.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "ecbca3975afc",
+    "source": "Limit the number of macro expansions to the specified number, to prevent e.g. infinite macro loops. If set to Infinity, the macro expander will try to fully expand as in LaTeX.",
+    "reason": "KaTeX 库命令行选项文档，非桌面 UI"
+  },
+  {
+    "id": "429a32e569f8",
+    "source": "\\fbox",
+    "reason": "LaTeX 数学命令"
+  },
+  {
+    "id": "221b0f4dae39",
+    "source": "\\angl",
+    "reason": "LaTeX 数学命令"
+  },
+  {
+    "id": "3f1b6dc519af",
+    "source": "\\prime",
+    "reason": "LaTeX 数学命令"
+  },
+  {
+    "id": "7c38fedf915e",
+    "source": "[AppState]",
+    "reason": "内部订阅日志标签"
+  },
+  {
+    "id": "e2b8296ae2cf",
+    "source": "[ExtensibilityPlugins]",
+    "reason": "内部订阅日志标签"
+  },
+  {
+    "id": "8d92bff2563e",
+    "source": "[SidecarLogs-{0}]",
+    "reason": "内部订阅日志标签"
+  },
+  {
+    "id": "66b3eb758ab2",
+    "source": "[FileWatch:{0} uris]",
+    "reason": "内部订阅日志标签"
+  },
+  {
+    "id": "05f8bb36f881",
+    "source": "No ",
+    "reason": "拆分动态句片段；使用完整句模板处理以保持中文语序"
+  },
+  {
+    "id": "710b0411e0e4",
+    "source": " found",
+    "reason": "拆分动态句片段；使用完整句模板处理以保持中文语序"
+  },
+  {
+    "id": "033eefff7069",
+    "source": " available",
+    "reason": "拆分动态句片段；使用完整句模板处理以保持中文语序"
+  },
+  {
+    "id": "d3a20f6550bd",
+    "source": "Cascade ID",
+    "reason": "内部接口 Cascade 的 ID 技术标签，保留原文"
+  },
+  {
+    "id": "b32672882407",
+    "source": " with this name already exists.",
+    "reason": "重名错误的拼接片段，使用限定的完整句模板翻译。"
+  }
+]

@@ -1,0 +1,692 @@
+[
+  {
+    "id": "d8961dfed95d",
+    "source": "Aborted due to condition callback returning false.",
+    "reason": "内部代码错误或日志标识，不属于用户界面文案"
+  },
+  {
+    "id": "a0af9f865bf6",
+    "source": "path",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "29d5e2a6384f",
+    "source": "projectManagementFeature is not available",
+    "reason": "内部代码错误或日志标识，不属于用户界面文案"
+  },
+  {
+    "id": "103ce5d9ce6f",
+    "source": "[TrajectorySummaries]",
+    "reason": "内部代码错误或日志标识，不属于用户界面文案"
+  },
+  {
+    "id": "acdb1373d176",
+    "source": "svg",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "48bf9b4f142a",
+    "source": "mask",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "c613c7687a30",
+    "source": "ellipse",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "5ff99e9124ac",
+    "source": "defs",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "dfc3376b8266",
+    "source": "filter",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "4125df683ecd",
+    "source": "feFlood",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "5822faf82fd2",
+    "source": "feBlend",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ba6f0084840d",
+    "source": "feGaussianBlur",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "510a89b3c9c0",
+    "source": "clipPath",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "0a473ebefc5a",
+    "source": "rect",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "fcba983de472",
+    "source": "linearGradient",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6c45cb72a36e",
+    "source": "stop",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ba40ff241db3",
+    "source": "Finder",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "aaf232064610",
+    "source": "title",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "3adca667b1ba",
+    "source": "jetski_logo",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "8a39178d327e",
+    "source": "circle",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "cb86eb2d914d",
+    "source": "style",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "cd35a2426062",
+    "source": "div",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "37a0025aa1f2",
+    "source": "span",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b29814cf5792",
+    "source": "img",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "78f9ac018e55",
+    "source": "function",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "245b630a86a9",
+    "source": "Chief of Staff",
+    "reason": "功能专名，保留原文并与相关说明保持一致"
+  },
+  {
+    "id": "c3e2d78f3ff3",
+    "source": "button",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "c96c6d5be8d0",
+    "source": "input",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "2e544a292f69",
+    "source": "Shift",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "c5fbb124ea5b",
+    "source": "cl/",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "1b52f3a2e151",
+    "source": "hr",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "360f84035942",
+    "source": "left",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "27042f4e6eca",
+    "source": "right",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "51db25342581",
+    "source": "ul",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "12a5913a6155",
+    "source": "kbd",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "177b7cb06867",
+    "source": "esc",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "d96a41b9d545",
+    "source": "Turbo",
+    "reason": "功能专名，保留原文并与相关说明保持一致"
+  },
+  {
+    "id": "09c6f7bf8cdf",
+    "source": "Project 4K",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "717a7244cc55",
+    "source": "example:\nsource ~/.jetski_shell_setup",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "90ddf1963abb",
+    "source": "Tab",
+    "reason": "功能专名，保留原文并与相关说明保持一致"
+  },
+  {
+    "id": "04369fee69d1",
+    "source": "~/.gemini/antigravity-browser-profile",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "80c5f7f3bb0b",
+    "source": "Fig",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "6c84b71778d8",
+    "source": "Piper (g4)",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "7dce7521f4dd",
+    "source": "JJ",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "07beed019f55",
+    "source": "Cog (GoB)",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "473287f8298d",
+    "source": "string",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "0cab1c961740",
+    "source": "video",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "19fa708d57b4",
+    "source": "code_line",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "64c2eea4f4dc",
+    "source": "comment_box",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "d260fe8e000c",
+    "source": "comment_thread",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "2ee5e5333fcb",
+    "source": "Sample GDoc",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "5694d08a2e53",
+    "source": "code",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "8dc7783322ff",
+    "source": "X-Frame-Options",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "eda15ce4834a",
+    "source": "strong",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "695252f664b9",
+    "source": "pre",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ee5c96a82456",
+    "source": "__root__",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "72e821f7feec",
+    "source": "Jetski Chat",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "00a9e4255a5b",
+    "source": "li",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "bf26e270cd49",
+    "source": "Workspace_1",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "240ab4ad1f16",
+    "source": "Conversation 1",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "44d3f2e0dfed",
+    "source": "Conversation 2",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "4939042e5db7",
+    "source": "Workspace_2",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "1ad58daeda3f",
+    "source": "Conversation 3",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "b8c88a287cf3",
+    "source": "Google3",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "6682ef3cde8b",
+    "source": "Workspace_3",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "abde96b3a741",
+    "source": "go/projects-jetski",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "21a3230e0377",
+    "source": "workspace",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "e20882595488",
+    "source": "ol",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "0301844ccd8e",
+    "source": "footer",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "1aca80e8b55c",
+    "source": "label",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "07397d633f25",
+    "source": "form",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "e169fde050e3",
+    "source": "workspaceArg",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "3d0e5865d8d4",
+    "source": "CRON_TZ={0} {1}",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "2f0177192e8b",
+    "source": "builtin",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "e7086a760e43",
+    "source": "go/jetski-agent-sidecars#trusted-locations",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6896191a14f6",
+    "source": "official",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "1c34f88707b5",
+    "source": "verified",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ae16e1714d8b",
+    "source": "[McpServerStates]",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b56d10b9128c",
+    "source": "[CustomizationsStore]",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "982d9e3eb996",
+    "source": "text",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b1a36d25d963",
+    "source": "select",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "a11a75e0feee",
+    "source": "option",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6c8b4535ccc8",
+    "source": "sidecar",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "3fb45623cb30",
+    "source": "section",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ee67f93d65ce",
+    "source": "textarea",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b4a070a2d341",
+    "source": "loading",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "aee408847d35",
+    "source": "success",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "ca00fccfb408",
+    "source": "error",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "1cdd151111a1",
+    "source": "bdi",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "3f267c2ab422",
+    "source": "confirm",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "507e98c562e1",
+    "source": "Google Docs",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "f109802a741f",
+    "source": "Google Sheets",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "6da41d861102",
+    "source": "Google Slides",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "915ef4bad59a",
+    "source": "Google Drive",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "67f0ad409468",
+    "source": "Buganizer",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "0197946cc322",
+    "source": "Critique",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "a7937b64b8ca",
+    "source": "first",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "16367aacb67a",
+    "source": "second",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "37d2b12d5d9a",
+    "source": "bash",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "4e686af7bdcc",
+    "source": "terminal",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "28e5ebabd9d8",
+    "source": "url",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "e1e6cf234f43",
+    "source": "Ctrl+D",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "3482fcfca2db",
+    "source": "⌘esc",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "93446e915267",
+    "source": "Ctrl+esc",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "4fb62348858c",
+    "source": "idle",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "33a3c91b44d2",
+    "source": "0px",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "4b5e57f6eb2f",
+    "source": "web",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "9e68f9a2b5b4",
+    "source": "collapsible",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6ed8919ce204",
+    "source": "audio",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "1bd7f5096b6e",
+    "source": "go/jetski-feedback",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "2fa6a0e4f02b",
+    "source": "userInput",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "0d4fc4a78d37",
+    "source": "table",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "d193afcb8729",
+    "source": "thead",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "7817bb812e82",
+    "source": "tr",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6bde0b830d8b",
+    "source": "th",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "493bab12bd43",
+    "source": "tbody",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "30fc9e3356c2",
+    "source": "td",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "20a56c9fb72c",
+    "source": "Jetski",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "4da276f5f11d",
+    "source": "Antigravity",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "7182ff6cedb6",
+    "source": "go/crd",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "84a47f61dd34",
+    "source": "em",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "0e99a87ff0da",
+    "source": "Google Chrome",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "a6a2fb362dd8",
+    "source": "sot",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "053b84659a28",
+    "source": "Ctrl+.",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "e61a3d78c651",
+    "source": "checked",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "2ca69efd4ea5",
+    "source": "dl",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "fefbdb67a3b2",
+    "source": "dt",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "9b7ecc6eeb83",
+    "source": "dd",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "262121c5372b",
+    "source": "edit",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b24d6d33736e",
+    "source": "ready",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "85ba32b9427c",
+    "source": "Best of N",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "3f07e0a30a80",
+    "source": "BoN",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b4425069cb94",
+    "source": "diff_row",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "53f4db5ab20d",
+    "source": "non_text_diff",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "b9958bd81722",
+    "source": "expansion_banner",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "6d6072cd5c85",
+    "source": "PID ",
+    "reason": "品牌、功能专名、命令、路径、示例名称或快捷键，保持原文"
+  },
+  {
+    "id": "6ab3e5feafea",
+    "source": "textSelection",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  },
+  {
+    "id": "f9a1ce696f4f",
+    "source": "log_line",
+    "reason": "HTML 标签、内部标识、状态枚举或技术标记，保持原文"
+  }
+]

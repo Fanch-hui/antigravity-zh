@@ -1,0 +1,56 @@
+const protectedSelectors = [
+  'script', 'style', 'noscript', 'iframe', 'webview', 'pre', 'code', 'kbd', 'samp',
+  '[contenteditable]:not([contenteditable="false"])', '.monaco-editor', '.xterm',
+  '.md-divider-spacing', '.markdown', '.markdown-body', '.notebook-cell', '.font-mono',
+  '[data-uri]', '[data-quotable-inline]', '[data-line-start]', '[dir="rtl"]',
+  '[data-testid="user-input-step"]', '[data-testid="planner-response-text"]',
+  '[data-testid="pending-user-messages"]', '[data-testid="side-question-question"]',
+  '[data-testid="side-question-answer"]', '[data-testid="overview-goals-body"]',
+  '[data-testid="sidecar-logs-content"]', '[data-testid="settings-error-messages-card"]',
+  '[data-testid="file-title-name"]', '[data-testid="breadcrumb-segment"]',
+  '[data-testid="comment-card-text"]', '[data-testid="browser-url-input"]',
+  '[data-testid="subagent-tab-header-title"]', '[data-testid="settings-nav-item-Account"]',
+  '[data-testid="project-selector-item"]', '[data-testid="branch-option"]',
+  '[data-testid="entity-pill"]', '[data-testid="activity-lane-label"]', 'button.truncate',
+  '[data-testid="model-selector-item"]', '[data-testid="input-attachment"]',
+  '[data-testid^="github-repo-option-"]',
+  '[data-testid="terminal-active"]', '[data-testid="terminal-tab-surface"]',
+  '[data-testid="terminal-tab-nux"] .xterm', '[data-testid="setup-script-output"]',
+  '.space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span > strong',
+  '.relative.flex.items-center.gap-3.p-3.rounded-xl > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"].pr-4 .font-medium.text-sm.text-foreground.truncate',
+  '.relative.flex.items-center.gap-3.p-3.rounded-xl > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"].pr-4 > .text-xs.text-muted-foreground.truncate',
+  'section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]) > .flex.flex-col.gap-1.px-3',
+  '[data-testid^="bundle-card-"] > .min-w-0.flex.flex-col.gap-2',
+  'h1.text-lg.font-medium.tracking-tight.leading-tight.text-foreground.truncate.min-w-0',
+  '.flex.flex-col.gap-3:has(h1.tracking-tight) > p.text-sm.text-muted-foreground.leading-relaxed'
+].join(',');
+const settingsSelector = '.max-w-2xl.mx-auto.flex-col.gap-4, [id^="dropdown-label-"], [id^="dropdown-description-"], [id^="dropdown-value-"], [data-testid^="settings-nav-item-"]';
+const scopes = {
+  settings: settingsSelector,
+  menu: '[role="menu"], [role="menuitem"], [role="option"], [role="listbox"], [data-testid="context-menu-popup"], [data-testid="menu-option-label"], [data-testid="menu-option-description"], [data-testid^="title-menu-bar"]',
+  permission: '[data-testid^="permissions-"], [data-testid="declared-permissions-modal"], [data-testid="autonomous-mode-row"], [data-testid="unauthenticated-standalone-overlay"], .border-l-orange-500 p.font-medium, .border-l-orange-500 button[aria-label], .border-l-orange-500 .justify-start button',
+  changes: '[data-testid="file-diff-accordion-toggle"], [data-testid^="diff-view-mode-"], [data-testid="review-changes-loading"]',
+  dialog: `[role="dialog"], [role="alertdialog"], .entrance-auth-panel, ${settingsSelector}`,
+  notification: '[role="status"], [role="alert"], [data-testid="toast-notification"]',
+  quota: settingsSelector + ', .flex.flex-col.max-h-80.overflow-y-auto.custom-scrollbar.select-none.p-1, [data-tooltip-id^="quota-bucket-tooltip-"], [role="tooltip"]'
+};
+const staticSurface = [
+  settingsSelector, scopes.menu, scopes.dialog, scopes.notification,
+  '[role="tooltip"]', '.entrance-auth-panel', '.border-l-orange-500 p.font-medium', '[data-testid="nux-card"]', '[data-testid="unauthenticated-standalone-overlay"]',
+  '[data-testid="browser-initial-state"]', '[data-testid="browser-unembeddable-state"]',
+  '[data-testid="builtin-browser-placeholder"]', '[data-testid="builtin-browser-caa-banner"]',
+  '[data-testid="terminal-empty"]', '[data-testid="terminal-creating"]',
+  '[data-testid="terminal-blocked-non-corp"]', '[data-testid="terminal-password-warning"]',
+  '[data-testid="sidecar-list-empty"]', '[data-testid="cloud-trigger-list-empty"]',
+  '[data-testid="plugin-suggestion-card-unavailable"]', '[data-testid="feature-banner"]',
+  '[data-testid="migration-warning-banner"]', '[data-testid="workspace-mismatch-banner"]',
+  '[data-testid="workflow-deprecation-banner"]', '[data-testid="google3-deprecation-banner"]',
+  '[data-testid="plan-command-fyi-alert"]', '[data-testid="settings-disabled-notice"]',
+  '[data-testid="empty-file-view"]', '[data-testid="non-text-diff-message"]',
+  '[data-testid="model-selector-empty"]', '[data-testid="model-selector-loading"]', '[data-testid="model-selector-header"]',
+  '[data-testid="setup-script-status"]', '[data-testid="input-card-drag-highlight"]',
+  '[data-testid="new-conversation-button"]', '[data-testid="plugins-tabs"]'
+].join(',');
+const controls = 'button, label, select, option, [role="button"], [role="tab"], [role="checkbox"], [role="switch"], [role="menuitem"], [role="option"]';
+
+export const surfaces = { protectedSelectors, scopes, staticSurface, controls };

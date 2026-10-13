@@ -1,0 +1,102 @@
+[
+  {
+    "id": "7e5608ab6100",
+    "source": "remove",
+    "reason": "内部安装状态枚举，不是显示文案。"
+  },
+  {
+    "id": "1e142e6277b1",
+    "source": "install",
+    "reason": "内部安装状态枚举，不是显示文案。"
+  },
+  {
+    "id": "ce770667e5f9",
+    "source": "Google",
+    "reason": "品牌名，保持原文。"
+  },
+  {
+    "id": "cae60a45163b",
+    "source": "Working directory: ",
+    "reason": "命令内容区域的工作目录提示，受命令/路径保护；避免修改终端内容。"
+  },
+  {
+    "id": "57c4b2997629",
+    "source": "{0} (ABFS)",
+    "reason": "工作区名称及内部 ABFS 标识，属于名称。"
+  },
+  {
+    "id": "fd138178ed59",
+    "source": "Get Anything Done with ",
+    "reason": "标题片段，使用完整限定模板翻译并保留产品名。"
+  },
+  {
+    "id": "f822c39aa5cc",
+    "source": " resources",
+    "reason": "资源标题片段，使用完整限定模板翻译并保留服务名。"
+  },
+  {
+    "id": "9dc282d6df69",
+    "source": "manager-mainContent",
+    "reason": "内部编辑器面板标识，不是显示文案。"
+  },
+  {
+    "id": "029036472fe7",
+    "source": " Settings",
+    "reason": "权限设置标题片段，完整标题由已有设置词条按语境处理。"
+  },
+  {
+    "id": "d4df985a9f58",
+    "source": "submitting",
+    "reason": "内部音频状态枚举，不是显示文案。"
+  },
+  {
+    "id": "12cf40777e3b",
+    "source": "finalizing",
+    "reason": "内部音频状态枚举，不是显示文案。"
+  },
+  {
+    "id": "3ebb153fb24e",
+    "source": "recording",
+    "reason": "内部音频状态枚举，不是显示文案。"
+  },
+  {
+    "id": "974366577aea",
+    "source": "Zipping ",
+    "reason": "压缩状态片段，使用完整限定模板并保留文件夹名。"
+  },
+  {
+    "id": "a9d501583656",
+    "source": "Remount workspace",
+    "reason": "ABFS 内部工作区重新挂载操作不在本机桌面适配范围。"
+  },
+  {
+    "id": "932bf5f9a537",
+    "source": "Remount workspace {0}",
+    "reason": "ABFS 内部工作区重新挂载操作不在本机桌面适配范围。"
+  },
+  {
+    "id": "a4e4c216220a",
+    "source": "Show temporary and forked workspaces",
+    "reason": "ABFS 内部临时工作区选项不在本机桌面适配范围。"
+  },
+  {
+    "id": "21f4c696f93f",
+    "source": "for ",
+    "reason": "文件标题前缀片段，已有完整 for {0} 模板处理并保留名称。"
+  },
+  {
+    "id": "8f6306f0eb05",
+    "source": "Refreshed credentials for \"{0}\".",
+    "reason": "内部云端触发器凭据工作流不在本机桌面适配范围。"
+  },
+  {
+    "id": "d39026177289",
+    "source": "Failed to refresh credentials for \"{0}\"",
+    "reason": "内部云端触发器凭据工作流不在本机桌面适配范围。"
+  },
+  {
+    "id": "3bab2ba642f0",
+    "source": "Refresh credentials for {0}",
+    "reason": "内部云端触发器凭据工作流不在本机桌面适配范围。"
+  }
+]

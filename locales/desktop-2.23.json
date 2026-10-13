@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "v223.12c9cf4b625f",
+    "source": "Mark This Conversation as Read",
+    "target": "将此会话标记为已读",
+    "context": "会话已读状态操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1781504,
+        "end": 1781536,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.cb82f484a0df",
+    "source": "Mark This Conversation as Unread",
+    "target": "将此会话标记为未读",
+    "context": "会话已读状态操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1781606,
+        "end": 1781640,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.e549e94bc93c",
+    "source": "{0} seconds",
+    "target": "{0} 秒",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3805923,
+        "end": 3805938,
+        "kind": "property:label"
+      }
+    ],
+    "template": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "v223.9262306ecc15",
+    "source": "2x playback speed",
+    "target": "2 倍速播放",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3811676,
+        "end": 3811695,
+        "kind": "property:aria-label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.67ae3405bcd4",
+    "source": "Seek",
+    "target": "播放进度",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3812393,
+        "end": 3812399,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.bb0c237a3cd4",
+    "source": "Back 5s (←)",
+    "target": "后退 5 秒（←）",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3812814,
+        "end": 3812832,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.628d6549d219",
+    "source": "Forward 5s (→)",
+    "target": "前进 5 秒（→）",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3812909,
+        "end": 3812930,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.b10fb966d720",
+    "source": "Volume",
+    "target": "音量",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3813357,
+        "end": 3813365,
+        "kind": "property:label"
+      },
+      {
+        "start": 5903246,
+        "end": 5903254,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.c959e19f5e2c",
+    "source": "Playback speed (< / >)",
+    "target": "播放速度（< / >）",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3813836,
+        "end": 3813860,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.10a9ff254765",
+    "source": "Playback speed {0}x",
+    "target": "播放速度 {0} 倍",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3813874,
+        "end": 3813896,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "capturePatterns": {
+      "0": "[0-9]+(?:\\.[0-9]+)?"
+    }
+  },
+  {
+    "id": "v223.537b0c1ff0b7",
+    "source": "Zoom {0}%, reset to fit",
+    "target": "缩放 {0}%，重置为适应窗口",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3817094,
+        "end": 3817120,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "v223.4500bda452f6",
+    "source": "Previous (←)",
+    "target": "上一项（←）",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3822509,
+        "end": 3822528,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.0a90057953c9",
+    "source": "Next (→)",
+    "target": "下一项（→）",
+    "context": "媒体预览与播放控件",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3822694,
+        "end": 3822709,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid^=\"media-modal-\"]"
+  },
+  {
+    "id": "v223.273cdb2e3989",
+    "source": "Fork conversation in this folder",
+    "target": "在此文件夹中创建会话分支",
+    "context": "在当前文件夹分支会话",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4380691,
+        "end": 4380725,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.635281f5120e",
+    "source": "Keeps working in this folder. Nothing is copied.",
+    "target": "继续在此文件夹中工作，不复制任何内容。",
+    "context": "在当前文件夹分支会话",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4380734,
+        "end": 4380784,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v223.aa215413057f",
+    "source": "New models have been enabled for you!",
+    "target": "新模型已为您启用！",
+    "context": "新模型提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4386446,
+        "end": 4386485,
+        "kind": "property:title"
+      }
+    ],
+    "selector": ".flex.flex-col.rounded-xl.overflow-hidden.border > .p-3.flex.flex-col[class~=\"gap-1.5\"]"
+  },
+  {
+    "id": "v223.0a586ab59e47",
+    "source": "Select model with {0}",
+    "target": "使用 {0} 选择模型",
+    "context": "新模型提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4386572,
+        "end": 4386596,
+        "kind": "element:children"
+      }
+    ],
+    "template": true,
+    "selector": ".flex.flex-col.rounded-xl.overflow-hidden.border > .p-3.flex.flex-col[class~=\"gap-1.5\"]"
+  },
+  {
+    "id": "v223.b9570a684c0d",
+    "source": "Select a model in the model selector",
+    "target": "在模型选择器中选择模型",
+    "context": "新模型提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4386597,
+        "end": 4386635,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.rounded-xl.overflow-hidden.border > .p-3.flex.flex-col[class~=\"gap-1.5\"]"
+  },
+  {
+    "id": "v223.3687638a08f8",
+    "source": "Create Cloud Project",
+    "target": "创建云端项目",
+    "context": "云端项目创建",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4415495,
+        "end": 4415517,
+        "kind": "property:label"
+      },
+      {
+        "start": 6921414,
+        "end": 6921436,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.4f055a135db1",
+    "source": "Create a project whose conversations run in the cloud.",
+    "target": "创建在云端运行会话的项目。",
+    "context": "云端项目创建",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4415530,
+        "end": 4415586,
+        "kind": "property:tooltipText"
+      }
+    ]
+  },
+  {
+    "id": "v223.d3e4103297c1",
+    "source": "Loading bundle...",
+    "target": "正在加载插件组合包...",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4475136,
+        "end": 4475155,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.1e2446696b52",
+    "source": "No bundle found for ",
+    "target": "未找到插件组合包：",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4475408,
+        "end": 4475430,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.60d18e42fd5a",
+    "source": "Removing...",
+    "target": "正在移除...",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4476455,
+        "end": 4476468,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.ef7b7e6abe66",
+    "source": "Remove all",
+    "target": "全部移除",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4476469,
+        "end": 4476481,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.913a8849b60d",
+    "source": "Adding...",
+    "target": "正在添加...",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4476729,
+        "end": 4476740,
+        "kind": "element:children"
+      },
+      {
+        "start": 4551846,
+        "end": 4551857,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.bfcc779f3002",
+    "source": "Add all · {0}",
+    "target": "全部添加 · {0}",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4476741,
+        "end": 4476762,
+        "kind": "element:children"
+      },
+      {
+        "start": 4551858,
+        "end": 4551879,
+        "kind": "element:children"
+      }
+    ],
+    "template": true,
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]",
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "v223.5e689e2b0167",
+    "source": "plugin",
+    "target": "个插件",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477163,
+        "end": 4477171,
+        "kind": "element:children"
+      },
+      {
+        "start": 4551318,
+        "end": 4551326,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight) .flex.flex-wrap.items-center, [data-testid^=\"bundle-card-\"] .text-muted-foreground.flex-shrink-0",
+    "kind": "text"
+  },
+  {
+    "id": "v223.92cd10e6b8b0",
+    "source": "plugins",
+    "target": "个插件",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477172,
+        "end": 4477181,
+        "kind": "element:children"
+      },
+      {
+        "start": 4551327,
+        "end": 4551336,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight) .flex.flex-wrap.items-center, [data-testid^=\"bundle-card-\"] .text-muted-foreground.flex-shrink-0",
+    "kind": "text"
+  },
+  {
+    "id": "v223.63741ffed8e8",
+    "source": "Removing the bundle removes all of its plugins.",
+    "target": "移除组合包会移除其中的全部插件。",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477269,
+        "end": 4477318,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.60114dc05dfd",
+    "source": "You can also add or remove each plugin below.",
+    "target": "您也可以在下方逐个添加或移除插件。",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477319,
+        "end": 4477366,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.ca0e8fca5e5d",
+    "source": "What's in this bundle",
+    "target": "组合包中的插件",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477411,
+        "end": 4477434,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 4477607,
+        "end": 4477630,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.8403994e1e51",
+    "source": "Each plugin can be managed on its own.",
+    "target": "每个插件都可以单独管理。",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477700,
+        "end": 4477740,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.37bcdacf0373",
+    "source": "This bundle has no plugins yet.",
+    "target": "此组合包还没有插件。",
+    "context": "插件组合包操作与状态",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4477835,
+        "end": 4477868,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]"
+  },
+  {
+    "id": "v223.5ed37de5191c",
+    "source": "Ask the agent to diagnose and fix this server",
+    "target": "让智能体诊断并修复此服务器",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4515231,
+        "end": 4515278,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v223.dada0d17867d",
+    "source": "Fix with Agent: {0}",
+    "target": "让智能体修复：{0}",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4515292,
+        "end": 4515314,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true
+  },
+  {
+    "id": "v223.ae6d7f53aa85",
+    "source": "Fix with Agent",
+    "target": "让智能体修复",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4515380,
+        "end": 4515396,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.288685d3684c",
+    "source": "Sign-in required",
+    "target": "需要登录",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4515553,
+        "end": 4515571,
+        "kind": "property:title"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "title",
+    "selector": "span.w-1\\.5.h-1\\.5.rounded-full"
+  },
+  {
+    "id": "v223.43341849a3a6",
+    "source": "No plugins found for \"{0}\".",
+    "target": "未找到与“{0}”匹配的插件。",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4544884,
+        "end": 4544914,
+        "kind": "element:children"
+      }
+    ],
+    "template": true,
+    "selector": ".flex.flex-col.items-center.gap-3.py-8.px-4.text-center.border.border-border.rounded-xl"
+  },
+  {
+    "id": "v223.ff042b6ded4e",
+    "source": "Bundles",
+    "target": "插件组合包",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4557270,
+        "end": 4557279,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 4557489,
+        "end": 4557498,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"]"
+  },
+  {
+    "id": "v223.40d078f2f5dd",
+    "source": "Paste the code shown after you sign in.",
+    "target": "粘贴登录后显示的代码。",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4575955,
+        "end": 4575996,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "p.mt-1.text-xs.text-muted-foreground"
+  },
+  {
+    "id": "v223.6829099ead05",
+    "source": "Paste code",
+    "target": "粘贴代码",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4576267,
+        "end": 4576279,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v223.9a7a11d8d163",
+    "source": "Authorization code for {0}",
+    "target": "{0} 的授权码",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4576293,
+        "end": 4576331,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selector": "input"
+  },
+  {
+    "id": "v223.49180669433e",
+    "source": "MCP Restart Error:",
+    "target": "MCP 重启错误：",
+    "context": "MCP 服务修复与登录操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4619810,
+        "end": 4619830,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.654249de8edd",
+    "source": "Cancel Sending Message",
+    "target": "取消发送消息",
+    "context": "消息及条款操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5172797,
+        "end": 5172821,
+        "kind": "property:tooltip"
+      },
+      {
+        "start": 5172835,
+        "end": 5172859,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.ea9ac3e0bdc3",
+    "source": "Accept and continue",
+    "target": "接受并继续",
+    "context": "消息及条款操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5593018,
+        "end": 5593039,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.1a049d155470",
+    "source": "Couldn't mark conversations as read",
+    "target": "无法将会话标记为已读",
+    "context": "会话历史操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5626518,
+        "end": 5626555,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.4a418fb992c4",
+    "source": "Mark All as Read",
+    "target": "全部标记为已读",
+    "context": "会话历史操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5626827,
+        "end": 5626845,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.6d2227555fcc",
+    "source": "Sort By",
+    "target": "排序方式",
+    "context": "会话历史操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5633489,
+        "end": 5633498,
+        "kind": "property:title"
+      },
+      {
+        "start": 5633589,
+        "end": 5633598,
+        "kind": "element:children"
+      },
+      {
+        "start": 6643366,
+        "end": 6643375,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.b2be04bb33ba",
+    "source": "View archived in the sidebar (![filter](icon://filter_list) menu).",
+    "target": "在侧栏的 ![筛选](icon://filter_list) 菜单中查看已归档会话。",
+    "context": "会话历史操作",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5641633,
+        "end": 5641701,
+        "kind": "property:message"
+      },
+      {
+        "start": 6676615,
+        "end": 6676683,
+        "kind": "property:message"
+      }
+    ]
+  },
+  {
+    "id": "v223.a47cc792eb22",
+    "source": "Drop to add to group",
+    "target": "拖放以添加到分组",
+    "context": "会话历史操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5745949,
+        "end": 5745971,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap"
+  },
+  {
+    "id": "v223.61e8d44ad423",
+    "source": "Get started",
+    "target": "开始使用",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5761113,
+        "end": 5761126,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.69fd538ee8a0",
+    "source": "The full developer experience with code and tooling.",
+    "target": "包含代码和工具的完整开发体验。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5761261,
+        "end": 5761315,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-testid^=\"role-option-\"]"
+  },
+  {
+    "id": "v223.0f0e99685d28",
+    "source": "General work",
+    "target": "日常工作",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5761341,
+        "end": 5761355,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[data-testid^=\"role-option-\"]"
+  },
+  {
+    "id": "v223.cacd50739f06",
+    "source": "Research, writing, and everyday tasks, without code.",
+    "target": "研究、写作和其他不涉及代码的日常任务。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5761368,
+        "end": 5761422,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "[data-testid^=\"role-option-\"]"
+  },
+  {
+    "id": "v223.9f1b40730a2c",
+    "source": "Last Used",
+    "target": "上次使用",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5764189,
+        "end": 5764200,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".entrance-auth-panel"
+  },
+  {
+    "id": "v223.a9f5fd8abc49",
+    "source": "Use Business Account",
+    "target": "使用企业账号",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5764867,
+        "end": 5764889,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.6a33fc2486ff",
+    "source": "Business Account Sign In",
+    "target": "企业账号登录",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5765051,
+        "end": 5765077,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".entrance-auth-panel"
+  },
+  {
+    "id": "v223.6b5097eb3b70",
+    "source": "Use Advanced SSO Config",
+    "target": "使用高级 SSO 配置",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5766065,
+        "end": 5766090,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.b725abffe3cd",
+    "source": "Use this if your admin gave you a WIF config. Paste it below to sign in.",
+    "target": "如果管理员向您提供了 WIF 配置，请将其粘贴到下方以登录。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5766444,
+        "end": 5766518,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".entrance-auth-panel"
+  },
+  {
+    "id": "v223.ad558bd934d4",
+    "source": "Sign In with SSO",
+    "target": "通过 SSO 登录",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5768117,
+        "end": 5768135,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.f7efbd3b5f38",
+    "source": "Having trouble signing in?",
+    "target": "登录遇到问题？",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5768283,
+        "end": 5768311,
+        "kind": "element:children"
+      },
+      {
+        "start": 5786877,
+        "end": 5786905,
+        "kind": "element:children"
+      },
+      {
+        "start": 5788509,
+        "end": 5788537,
+        "kind": "element:children"
+      },
+      {
+        "start": 5789990,
+        "end": 5790018,
+        "kind": "element:children"
+      },
+      {
+        "start": 5791010,
+        "end": 5791038,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.5d348581d7c4",
+    "source": "Select Billing Model",
+    "target": "选择计费方式",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5798353,
+        "end": 5798375,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".font-medium.mb-8.text-base.text-center.select-none"
+  },
+  {
+    "id": "v223.1369f28c9acb",
+    "source": "Pay As You Go",
+    "target": "按量付费",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5798655,
+        "end": 5798670,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[role=\"radiogroup\"][aria-label=\"Billing model\"]"
+  },
+  {
+    "id": "v223.9bf1b6ea863e",
+    "source": "Choose a License",
+    "target": "选择许可证",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5799973,
+        "end": 5799991,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".text-sm.font-medium.text-foreground.mb-1.select-none"
+  },
+  {
+    "id": "v223.3189fd2e67dd",
+    "source": "Build new features",
+    "target": "开发新功能",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811281,
+        "end": 5811301,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.846a5a6a9e5d",
+    "source": "Hand off a feature and come back to working code.",
+    "target": "交给智能体开发功能，稍后即可获得可运行的代码。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811314,
+        "end": 5811365,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.fa857fcd63e5",
+    "source": "Debug and fix",
+    "target": "调试与修复",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811401,
+        "end": 5811416,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.9fbd26ce119d",
+    "source": "Automatically reproduce bugs, trace causes, test fixes.",
+    "target": "自动复现问题、追踪原因并测试修复。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811429,
+        "end": 5811486,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.5d95b1278a62",
+    "source": "Research anything",
+    "target": "研究各类问题",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811528,
+        "end": 5811547,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.01b5ec8474d2",
+    "source": "Ask about your code or any topic, get clear answers.",
+    "target": "询问代码或任何主题，获得清晰解答。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811560,
+        "end": 5811614,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.6570bf36b957",
+    "source": "Write and edit docs",
+    "target": "撰写和编辑文档",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811646,
+        "end": 5811667,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.819cafeeae93",
+    "source": "Draft documents, emails, and notes that sound like you.",
+    "target": "起草符合您表达风格的文档、邮件和笔记。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811680,
+        "end": 5811737,
+        "kind": "property:description"
+      }
+    ],
+    "selector": "ul.w-full.max-w-\\[480px\\].list-none"
+  },
+  {
+    "id": "v223.8f6a2d283710",
+    "source": "What best describes you?",
+    "target": "哪一项最符合您的使用需求？",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5813718,
+        "end": 5813744,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "#role-selection-title"
+  },
+  {
+    "id": "v223.8ee1a3b34ce1",
+    "source": "We'll tailor the experience to you.",
+    "target": "我们会据此调整您的使用体验。",
+    "context": "初次使用、企业登录与计费选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5813815,
+        "end": 5813852,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "div:has(> #role-selection-title) > p"
+  },
+  {
+    "id": "v223.ac81c8f4334a",
+    "source": "Set the volume of agent sounds.",
+    "target": "设置智能体提示音的音量。",
+    "context": "声音与权限设置",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5903267,
+        "end": 5903300,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v223.f09e1c878dc3",
+    "source": "Chime volume",
+    "target": "提示音音量",
+    "context": "声音与权限设置",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5903412,
+        "end": 5903426,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.46124e023603",
+    "source": "Sound",
+    "target": "声音",
+    "context": "声音与权限设置",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5904288,
+        "end": 5904295,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.b756c60fc13c",
+    "source": "Permission Details",
+    "target": "权限详情",
+    "context": "声音与权限设置",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5953666,
+        "end": 5953686,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.67cd2fc88fa4",
+    "source": "Back to resource menu",
+    "target": "返回资源菜单",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6040903,
+        "end": 6040926,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.95a0bc0648b1",
+    "source": "Complete sign-in in the popup window, then click Continue.",
+    "target": "在弹出窗口中完成登录，然后点击“继续”。",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6041308,
+        "end": 6041368,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"google-drive-connect-view\"]"
+  },
+  {
+    "id": "v223.311d24693a8c",
+    "source": "Connect your Google Drive account to attach Docs, Sheets, Slides, files, and folders.",
+    "target": "连接您的 Google Drive 账号，以添加 Docs、Sheets、Slides、文件和文件夹。",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6041369,
+        "end": 6041456,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"google-drive-connect-view\"]"
+  },
+  {
+    "id": "v223.b19bb6f44869",
+    "source": "Opening...",
+    "target": "正在打开...",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6041717,
+        "end": 6041729,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.e27c80706eb6",
+    "source": "Re-open sign-in popup",
+    "target": "重新打开登录窗口",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6041924,
+        "end": 6041947,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.4406cf53eddd",
+    "source": "Connect Google Drive",
+    "target": "连接 Google Drive",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6042099,
+        "end": 6042121,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.f851843d3fed",
+    "source": "Loading resources...",
+    "target": "正在加载资源...",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6047389,
+        "end": 6047411,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.p-2.gap-2.w-full.max-h-96, [data-testid=\"google-drive-connect-view\"]"
+  },
+  {
+    "id": "v223.87126723ac5e",
+    "source": "Filter resources...",
+    "target": "筛选资源...",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6048159,
+        "end": 6048180,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v223.f77fd9f046df",
+    "source": "No matching resources found.",
+    "target": "未找到匹配的资源。",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6048592,
+        "end": 6048622,
+        "kind": "element:children"
+      }
+    ],
+    "selector": ".flex.flex-col.p-2.gap-2.w-full.max-h-96, [data-testid=\"google-drive-connect-view\"]"
+  },
+  {
+    "id": "v223.990578cf23b5",
+    "source": "Upload Files",
+    "target": "上传文件",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6050230,
+        "end": 6050244,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.f18c3db8ab25",
+    "source": "Add folder path",
+    "target": "添加文件夹路径",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6051702,
+        "end": 6051719,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.7274cee0e4c2",
+    "source": "Remove resource",
+    "target": "移除资源",
+    "context": "项目资源添加与登录",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6056169,
+        "end": 6056186,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.38defeabd437",
+    "source": "Chief of Staff Dashboard",
+    "target": "Chief of Staff 控制面板",
+    "context": "产物更新及会话通知",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6128878,
+        "end": 6128904,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid=\"overview-panel-row-chief-of-staff-dashboard\"]"
+  },
+  {
+    "id": "v223.33d37513db7a",
+    "source": "Artifact updated by agent",
+    "target": "智能体已更新产物",
+    "context": "产物更新及会话通知",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6185219,
+        "end": 6185246,
+        "kind": "element:children"
+      },
+      {
+        "start": 6185802,
+        "end": 6185829,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"artifact-update-notice\"], [role=\"status\"].sr-only"
+  },
+  {
+    "id": "v223.60486e41776f",
+    "source": "Dismiss artifact update notice",
+    "target": "关闭产物更新提示",
+    "context": "产物更新及会话通知",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6185911,
+        "end": 6185943,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.e53ca309f83a",
+    "source": "Uploading to Google Drive…",
+    "target": "正在上传到 Google Drive…",
+    "context": "产物更新及会话通知",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6198907,
+        "end": 6198940,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.567eb036ccb9",
+    "source": "Uploaded to Google Drive",
+    "target": "已上传到 Google Drive",
+    "context": "产物更新及会话通知",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6199250,
+        "end": 6199276,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.d9b162548431",
+    "source": "Link copied to clipboard.",
+    "target": "链接已复制到剪贴板。",
+    "context": "产物更新及会话通知",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6199285,
+        "end": 6199312,
+        "kind": "property:message"
+      }
+    ]
+  },
+  {
+    "id": "v223.765f40e4f1da",
+    "source": "Failed to upload HTML artifact to Drive",
+    "target": "无法将 HTML 产物上传到 Google Drive",
+    "context": "产物更新及会话通知",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6199505,
+        "end": 6199546,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v223.8e99d459d9af",
+    "source": "This conversation is also open in another app. Sending messages from both may cause conflicts.",
+    "target": "此会话也已在另一个应用中打开。在两处同时发送消息可能导致冲突。",
+    "context": "产物更新及会话通知",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6341117,
+        "end": 6341213,
+        "kind": "property:message"
+      }
+    ],
+    "selector": "[data-testid=\"conversation-open-elsewhere-banner\"]"
+  },
+  {
+    "id": "v223.f30c52dcf8c3",
+    "source": "Workflows are changing on October 19th—stay tuned for updates. You can use the agent to migrate your workflows.",
+    "target": "工作流将于 10 月 19 日调整，请关注后续更新。您可以让智能体迁移现有工作流。",
+    "context": "产物更新及会话通知",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6355365,
+        "end": 6355483,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"workflow-deprecation-banner\"]"
+  },
+  {
+    "id": "v223.f8080d457f8b",
+    "source": "Failed to save settings: {0}",
+    "target": "保存设置失败：{0}",
+    "context": "产物更新及会话通知",
+    "scope": "notification",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6366574,
+        "end": 6366609,
+        "kind": "property:title"
+      }
+    ],
+    "template": true
+  },
+  {
+    "id": "v223.74ccd4330384",
+    "source": "Folder",
+    "target": "文件夹",
+    "context": "附件与文件夹操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6482991,
+        "end": 6482999,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.a51b44650fe3",
+    "source": "View {0}",
+    "target": "查看 {0}",
+    "context": "附件与文件夹操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6485885,
+        "end": 6485896,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 6486638,
+        "end": 6486649,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selector": "[data-tooltip-id].cursor-pointer.flex-shrink-0"
+  },
+  {
+    "id": "v223.b3baa23fdf5a",
+    "source": "Custom Order",
+    "target": "自定义顺序",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6641088,
+        "end": 6641102,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v223.e23f3cc44a50",
+    "source": "Pinned Actions",
+    "target": "置顶项操作",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6645979,
+        "end": 6645995,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v223.e117e54ef166",
+    "source": "Full View",
+    "target": "完整视图",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6874453,
+        "end": 6874464,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.de7333bcd788",
+    "source": "Version Info",
+    "target": "版本信息",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6939141,
+        "end": 6939155,
+        "kind": "property:title"
+      },
+      {
+        "start": 6939346,
+        "end": 6939360,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.91bb05ec20eb",
+    "source": "More feedback options",
+    "target": "更多反馈选项",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6940373,
+        "end": 6940396,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v223.22e240a1bb46",
+    "source": "Upload Debug Bundle",
+    "target": "上传调试信息包",
+    "context": "侧栏与反馈操作",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6940913,
+        "end": 6940934,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v223.derived.108",
+    "source": "Add {0} resources",
+    "target": "添加 {0} 资源",
+    "context": "资源选择器标题",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": ".flex.flex-col.p-2.gap-2.w-full.max-h-96, [data-testid=\"google-drive-connect-view\"] > .flex.items-center.justify-between > span",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ],
+    "template": true
+  },
+  {
+    "id": "v223.derived.109",
+    "source": "Get Anything Done with {0}",
+    "target": "用 {0} 完成各类任务",
+    "context": "初次使用功能介绍标题",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "h2.text-lg.font-medium.text-center",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ],
+    "template": true
+  },
+  {
+    "id": "v223.derived.110",
+    "source": "Zipping {0}…",
+    "target": "正在压缩 {0}…",
+    "context": "文件夹附件压缩状态",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"agent-input-box\"] [role=\"status\"].text-xs.text-muted-foreground",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ],
+    "template": true
+  },
+  {
+    "id": "v223.derived.111",
+    "source": "Draws from your organization's pooled Gemini Enterprise usage.",
+    "target": "使用贵组织共享的 Gemini Enterprise 额度。",
+    "context": "企业计费选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[role=\"radiogroup\"][aria-label=\"Billing model\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.derived.112",
+    "source": "Pay only for the tokens you use, billed through Agent Platform (formerly Vertex AI).",
+    "target": "仅为实际使用的 token 付费，通过 Agent Platform（原 Vertex AI）计费。",
+    "context": "按量计费选项说明",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[role=\"radiogroup\"][aria-label=\"Billing model\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.derived.113",
+    "source": "Add {0} {1} from {2}",
+    "target": "添加来自 {2} 的 {0} 个{1}",
+    "context": "插件组合包添加按钮",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ],
+    "template": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "capturePatterns": {
+      "0": "[0-9]+",
+      "1": "plugins?"
+    },
+    "captureMappings": {
+      "1": {
+        "plugin": "插件",
+        "plugins": "插件"
+      }
+    }
+  },
+  {
+    "id": "v223.derived.114",
+    "source": "Adding plugins from {0}",
+    "target": "正在添加来自 {0} 的插件",
+    "context": "插件组合包添加状态",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": ".flex.flex-col.gap-3:has(h1.tracking-tight), section[aria-label=\"What's in this bundle\"], section[aria-label=\"组合包中的插件\"], [data-testid^=\"bundle-card-\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ],
+    "template": true,
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v223.derived.115",
+    "source": "See more in Bundles",
+    "target": "查看更多插件组合包",
+    "context": "插件组合包列表展开",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.derived.116",
+    "source": "See less in Bundles",
+    "target": "收起插件组合包列表",
+    "context": "插件组合包列表收起",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.derived.117",
+    "source": "Dismiss conversation open elsewhere warning",
+    "target": "关闭会话在其他应用中打开的警告",
+    "context": "会话冲突警告关闭按钮",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"conversation-open-elsewhere-banner\"]",
+    "origins": [
+      {
+        "kind": "derived:display",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.118",
+    "source": "Pause (k)",
+    "target": "暂停（k）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.119",
+    "source": "Play (k)",
+    "target": "播放（k）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.120",
+    "source": "Mute (m)",
+    "target": "静音（m）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.121",
+    "source": "Unmute (m)",
+    "target": "取消静音（m）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.122",
+    "source": "Exit fullscreen (f)",
+    "target": "退出全屏（f）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.media.123",
+    "source": "Fullscreen (f)",
+    "target": "全屏（f）",
+    "context": "媒体播放控件的完整快捷键提示",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid^=\"media-modal-\"]",
+    "origins": [
+      {
+        "kind": "property:label",
+        "assetHash": "867d1990b61d87f4b9ff8c5ecb1551c8688135267f32e56e02563f2d3e78fd68"
+      }
+    ]
+  },
+  {
+    "id": "v223.fork.historical-tooltip",
+    "source": "Rewinds the conversation only. Files in this folder stay as they are now.",
+    "target": "仅回退会话，此文件夹中的文件保持当前状态。",
+    "context": "从历史消息在当前文件夹中分支会话；说明文件不会回退",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4380803,
+        "end": 4380878,
+        "kind": "property:historicalTooltip"
+      }
+    ]
+  }
+]

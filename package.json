@@ -1,0 +1,29 @@
+{
+  "name": "agy-zh",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Antigravity macOS 简体中文汉化启动器",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fanch-hui/antigravity-zh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fanch-hui/antigravity-zh/issues"
+  },
+  "homepage": "https://github.com/Fanch-hui/antigravity-zh#readme",
+  "engines": { "node": ">=22.12.0" },
+  "bin": { "agy-zh": "bin/agy-zh.mjs" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check-locales.mjs",
+    "status": "node bin/agy-zh.mjs status",
+    "launch": "node bin/agy-zh.mjs launch",
+    "auto:enable": "node bin/agy-zh.mjs auto-enable",
+    "auto:disable": "node bin/agy-zh.mjs auto-disable",
+    "auto:status": "node bin/agy-zh.mjs auto-status",
+    "shortcut": "node scripts/create-launcher.mjs"
+  },
+  "devDependencies": { "acorn": "^8.15.0", "jsdom": "^26.1.0", "ws": "^8.18.3" }
+}

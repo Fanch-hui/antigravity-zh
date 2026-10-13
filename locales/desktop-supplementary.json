@@ -1,0 +1,479 @@
+[
+  {
+    "id": "840c08dc482a",
+    "source": "e.g., chromium/src",
+    "target": "例如 chromium/src",
+    "context": "静态设置输入提示及 Hook 工具选项",
+    "scope": "generic",
+    "reviewed": true
+  },
+  {
+    "id": "46930a9469c7",
+    "source": "e.g., main or refs/heads/main",
+    "target": "例如 main 或 refs/heads/main",
+    "context": "静态设置输入提示及 Hook 工具选项",
+    "scope": "generic",
+    "reviewed": true
+  },
+  {
+    "id": "2557e2793df4",
+    "source": "run_command or view_file",
+    "target": "run_command 或 view_file",
+    "context": "静态设置输入提示及 Hook 工具选项",
+    "scope": "generic",
+    "reviewed": true
+  },
+  {
+    "id": "composed.more-lines",
+    "source": "+{0} more {1}",
+    "target": "再显示 {0} {1}",
+    "context": "文件差异折叠行数按钮",
+    "scope": "generic",
+    "selector": "button.group.relative.border.rounded-md.bg-muted",
+    "template": true,
+    "captureMappings": {
+      "1": {
+        "line": "行",
+        "lines": "行"
+      }
+    },
+    "reviewed": true
+  },
+  {
+    "id": "composed.more-items",
+    "source": "...and {0} more",
+    "target": "…以及另外 {0} 项",
+    "context": "工具执行列表中的额外条目数量",
+    "scope": "generic",
+    "selector": "li.truncate.text-xs",
+    "template": true,
+    "reviewed": true
+  },
+  {
+    "id": "shared.21b111cbfe6e",
+    "source": "Default",
+    "target": "默认",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3238471,
+        "end": 3238480,
+        "kind": "property:label"
+      },
+      {
+        "start": 3244250,
+        "end": 3244259,
+        "kind": "option:display"
+      },
+      {
+        "start": 3254231,
+        "end": 3254240,
+        "kind": "option:display"
+      },
+      {
+        "start": 3254536,
+        "end": 3254545,
+        "kind": "option:display"
+      },
+      {
+        "start": 4154512,
+        "end": 4154521,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.75081b593d15",
+    "source": "Disabled",
+    "target": "已禁用",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3256784,
+        "end": 3256794,
+        "kind": "option:display"
+      },
+      {
+        "start": 4075400,
+        "end": 4075410,
+        "kind": "property:title"
+      },
+      {
+        "start": 4127067,
+        "end": 4127077,
+        "kind": "element:children"
+      },
+      {
+        "start": 4137143,
+        "end": 4137153,
+        "kind": "element:children"
+      },
+      {
+        "start": 4237727,
+        "end": 4237737,
+        "kind": "element:children"
+      },
+      {
+        "start": 4603034,
+        "end": 4603044,
+        "kind": "property:label"
+      },
+      {
+        "start": 4982491,
+        "end": 4982501,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.0286249762f7",
+    "source": "Auto",
+    "target": "自动",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3249951,
+        "end": 3249957,
+        "kind": "option:display"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.f691e8e4d6b2",
+    "source": "Request Review",
+    "target": "请求审阅",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3238149,
+        "end": 3238165,
+        "kind": "property:label"
+      },
+      {
+        "start": 3250004,
+        "end": 3250020,
+        "kind": "option:display"
+      },
+      {
+        "start": 3251670,
+        "end": 3251686,
+        "kind": "option:display"
+      },
+      {
+        "start": 3256844,
+        "end": 3256860,
+        "kind": "option:display"
+      },
+      {
+        "start": 3256937,
+        "end": 3256953,
+        "kind": "option:display"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.78f8596c0f05",
+    "source": "Always Ask",
+    "target": "始终请求审阅",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3226299,
+        "end": 3226311,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.d17d2d78d76e",
+    "source": "Models",
+    "target": "模型",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3244005,
+        "end": 3244013,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3531098,
+        "end": 3531106,
+        "kind": "property:screen"
+      },
+      {
+        "start": 9508904,
+        "end": 9508912,
+        "kind": "property:screen"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  },
+  {
+    "id": "shared.c910d474dcd7",
+    "source": "General",
+    "target": "常规",
+    "context": "菜单和设置复用的固定选项",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3242907,
+        "end": 3242916,
+        "kind": "property:title"
+      },
+      {
+        "start": 3243196,
+        "end": 3243205,
+        "kind": "property:title"
+      },
+      {
+        "start": 3243624,
+        "end": 3243633,
+        "kind": "property:title"
+      },
+      {
+        "start": 3243753,
+        "end": 3243762,
+        "kind": "property:title"
+      },
+      {
+        "start": 3244439,
+        "end": 3244448,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3245003,
+        "end": 3245012,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3245481,
+        "end": 3245490,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3245732,
+        "end": 3245741,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3246521,
+        "end": 3246530,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3246944,
+        "end": 3246953,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3247187,
+        "end": 3247196,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3247513,
+        "end": 3247522,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3248027,
+        "end": 3248036,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3248293,
+        "end": 3248302,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3248477,
+        "end": 3248486,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3248663,
+        "end": 3248672,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3248982,
+        "end": 3248991,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3251030,
+        "end": 3251039,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3251397,
+        "end": 3251406,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3252124,
+        "end": 3252133,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3252336,
+        "end": 3252345,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3252560,
+        "end": 3252569,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3252800,
+        "end": 3252809,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3253023,
+        "end": 3253032,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3253228,
+        "end": 3253237,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3253434,
+        "end": 3253443,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3255988,
+        "end": 3255997,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3256426,
+        "end": 3256435,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3257439,
+        "end": 3257448,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3257718,
+        "end": 3257727,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3258031,
+        "end": 3258040,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3260213,
+        "end": 3260222,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3260569,
+        "end": 3260578,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3260873,
+        "end": 3260882,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3261277,
+        "end": 3261286,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3261603,
+        "end": 3261612,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3261889,
+        "end": 3261898,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3262099,
+        "end": 3262108,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3262517,
+        "end": 3262526,
+        "kind": "property:screen"
+      },
+      {
+        "start": 3530975,
+        "end": 3530984,
+        "kind": "property:screen"
+      },
+      {
+        "start": 6163379,
+        "end": 6163388,
+        "kind": "property:title"
+      },
+      {
+        "start": 6221978,
+        "end": 6221987,
+        "kind": "property:title"
+      },
+      {
+        "start": 6289625,
+        "end": 6289634,
+        "kind": "element:children"
+      },
+      {
+        "start": 6294571,
+        "end": 6294580,
+        "kind": "property:title"
+      },
+      {
+        "start": 6294738,
+        "end": 6294747,
+        "kind": "property:screen"
+      },
+      {
+        "start": 6347364,
+        "end": 6347373,
+        "kind": "property:title"
+      },
+      {
+        "start": 9508670,
+        "end": 9508679,
+        "kind": "property:screen"
+      },
+      {
+        "start": 9509072,
+        "end": 9509081,
+        "kind": "property:screen"
+      }
+    ],
+    "selector": "button, [role=\"option\"], [role=\"menuitem\"], [role=\"tab\"]"
+  }
+]

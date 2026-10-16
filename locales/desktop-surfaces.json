@@ -1,0 +1,201 @@
+[
+  {
+    "id": "surface.e0e6e61f0b74",
+    "scope": "generic",
+    "source": "Auto (Preview)",
+    "target": "自动（预览）",
+    "selector": "[data-testid^=\"permissions-preset-option-\"]",
+    "context": "命令执行权限菜单的自动判断模式",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3494772,
+        "end": 3494786,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.8d198e8dd972",
+    "scope": "quota",
+    "source": "Gemini 4 Argon Weekly Limit",
+    "target": "Gemini 4 Argon 每周额度",
+    "context": "模型用量弹层中的服务端每周额度标签，保留模型名",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "screenshot:2.23.1-model-metadata"
+      }
+    ]
+  },
+  {
+    "id": "surface.221ed939aa61",
+    "scope": "generic",
+    "source": "New",
+    "target": "新增",
+    "selector": "[data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"].text-xs, [data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"].text-xs > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "context": "模型名称旁的上新标记",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "screenshot:2.23.1-model-metadata"
+      }
+    ]
+  },
+  {
+    "id": "surface.dfbc57a13dd6",
+    "scope": "generic",
+    "source": "Notice",
+    "target": "提示",
+    "selector": "[data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"].text-xs, [data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"].text-xs > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "context": "模型名称旁的说明提示标记",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "screenshot:2.23.1-model-metadata"
+      }
+    ]
+  },
+  {
+    "id": "surface.639d4b2e62fa",
+    "scope": "generic",
+    "source": "Search automations...",
+    "target": "搜索自动化任务...",
+    "kind": "attribute",
+    "attribute": "placeholder",
+    "context": "自动化任务列表搜索框的占位提示",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4484809,
+        "end": 4484830,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.5575e3cf440a",
+    "scope": "generic",
+    "source": "Show All",
+    "target": "显示全部",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "selectorMode": "self",
+    "context": "设置侧栏展开全部项目",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6031251,
+        "end": 6031259,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.faceeda5b8c0",
+    "scope": "generic",
+    "source": "Show Less",
+    "target": "收起",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "selectorMode": "self",
+    "context": "设置侧栏收起展开的项目",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6031239,
+        "end": 6031248,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.7f4e1fd73343",
+    "scope": "generic",
+    "source": "Not in Project",
+    "target": "未归入项目",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .px-4 > h2.m-0.text-xs.font-medium.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "context": "设置侧栏中未归入项目的会话分区",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6031439,
+        "end": 6031453,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.70b441cff667",
+    "scope": "generic",
+    "source": "View archived in the sidebar",
+    "target": "在侧栏中查看已归档会话",
+    "selector": ".sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none > .flex.flex-col > span",
+    "context": "会话历史停用提示中的归档入口，菜单图标由独立节点保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5748788,
+        "end": 5748816,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.c2f6fa94f368",
+    "scope": "generic",
+    "source": "(",
+    "target": "（",
+    "selector": ".sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none > .flex.flex-col > span > span.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "context": "会话历史停用提示内图标说明的左括号",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5748878,
+        "end": 5748879,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.e8f8e35c1276",
+    "scope": "generic",
+    "source": "menu)",
+    "target": "菜单）",
+    "selector": ".sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none > .flex.flex-col > span > span.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "context": "会话历史停用提示内图标说明的菜单及右括号",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5749026,
+        "end": 5749031,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  },
+  {
+    "id": "surface.3986683c29b1",
+    "scope": "generic",
+    "source": ".",
+    "target": "。",
+    "selector": ".sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none > .flex.flex-col > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "context": "会话历史停用提示中带图标的归档说明句末标点",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5749035,
+        "end": 5749036,
+        "kind": "static-ui:2.23.1"
+      }
+    ]
+  }
+]

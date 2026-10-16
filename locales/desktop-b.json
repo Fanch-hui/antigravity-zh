@@ -649,7 +649,7 @@
   {
     "id": "0d60084f056e",
     "source": "No conversations yet",
-    "target": "暂无对话",
+    "target": "暂无会话",
     "context": "文件、标签页与工作区导航控件",
     "scope": "generic",
     "reviewed": true,

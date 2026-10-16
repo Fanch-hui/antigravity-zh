@@ -34,6 +34,10 @@ function fixture({ bundles = true, pluginWrapper = false } = {}) {
     ...markers.map(name => element('div', '', 'value', `,"data-testid":${JSON.stringify(name)}`)),
     element('label', '', 'repo.name', ',"data-testid":`github-repo-option-${repo.id}`'),
     element('div', 'max-w-2xl mx-auto flex-col gap-4'), card, shelf, detail,
+    element('div', '', 'models', ',"data-testid":"model-selector-panel"'),
+    element('span', 'truncate text-xs text-left', 'model.label'),
+    element('span', 'truncate text-xs text-left', 'model.base', ',"data-testid":"model-selector-effort-group"'),
+    element('span', '', 'effort.label', ',"data-testid":"model-selector-effort-option"'),
     ...(bundles ? ['const path="/customizations/marketplaces/a/bundles/b"', bundle, bundleShelf] : []),
   ].join(';');
 }
@@ -88,6 +92,11 @@ test('changed plugin and bundle protection structures reject injection', () => {
   assert(checkUiCompatibility(fixture({ pluginWrapper: true })).missing.includes('plugin-card-content'));
 });
 
+test('model names must retain protected leaf structure independently of the group label', () => {
+  const source = fixture().replace('text-xs text-left"},model.label', 'text-xs text-right"},model.label');
+  assert(checkUiCompatibility(source).missing.includes('model-name-content'));
+});
+
 test('CDP validation executes a same-origin credential-free static GET and returns only compatibility', async () => {
   const { client, requests, calls } = executingClient(fixture());
   assert.deepEqual(await assertUiCompatibility(client, origin), { compatible: true, missing: [] });
@@ -121,4 +130,12 @@ test('a navigated page or iframe cannot trigger any static request', async () =>
     assert.equal(requests.length, 0);
   }
   await assert.rejects(assertUiCompatibility({}, 'https://example.com'), /地址无效/);
+});
+
+test('internal settings, history and conversation routes can validate the same static interface', async () => {
+  for (const pathname of ['/settings', '/history', '/c/example-conversation']) {
+    const { client, requests } = executingClient(fixture(), { location: { origin, pathname } });
+    assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+    assert.equal(requests.length, 1);
+  }
 });

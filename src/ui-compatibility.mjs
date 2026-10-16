@@ -1,3 +1,5 @@
+import { isAppPath } from './app-page.mjs';
+
 function closing(source, start, open, close) {
   let depth = 0;
   for (let index = start; index < source.length; index++) {
@@ -72,6 +74,12 @@ export function checkUiCompatibility(source) {
   }
   requireRule('github-repo-option', marker('github-repo-option-', true).length > 0);
   requireRule('settings-surface', matching(null, 'max-w-2xl mx-auto flex-col gap-4').length > 0);
+  const modelNames = matching('span', 'truncate text-xs text-left');
+  requireRule('model-name-content', marker('model-selector-panel').length > 0
+    && marker('model-selector-effort-group').some(group => modelNames.includes(group))
+    && marker('model-selector-effort-option').length > 0
+    && modelNames.some(node => /^,\s*[\w$]+\.label\s*$/.test(
+      source.slice(node.propsEnd + 1, closing(source, node.open, '(', ')')))));
   const cards = matching('div', 'relative flex items-center gap-3 p-3 rounded-xl');
   const bodies = matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5 pr-4');
   const titles = matching(null, 'font-medium text-sm text-foreground truncate');
@@ -103,7 +111,8 @@ export async function assertUiCompatibility(client, origin) {
   if (url.protocol !== 'https:' || url.hostname !== '127.0.0.1' || !url.port
     || url.origin !== origin) throw new Error('界面兼容检查地址无效。');
   const expression = `(async () => {
-    if (window.top !== window || location.origin !== ${JSON.stringify(origin)} || location.pathname !== '/') {
+    ${isAppPath.toString()}
+    if (window.top !== window || location.origin !== ${JSON.stringify(origin)} || !isAppPath(location.pathname)) {
       return { compatible: false, missing: ['application-page'] };
     }
     try {

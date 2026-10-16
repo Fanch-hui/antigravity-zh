@@ -12,7 +12,12 @@ const protectedSelectors = [
   '[data-testid="subagent-tab-header-title"]', '[data-testid="settings-nav-item-Account"]',
   '[data-testid="project-selector-item"]', '[data-testid="branch-option"]',
   '[data-testid="entity-pill"]', '[data-testid="activity-lane-label"]', 'button.truncate',
-  '[data-testid="model-selector-item"]', '[data-testid="input-attachment"]',
+  '[data-testid="model-selector-item"]:not(:has(span.truncate.text-xs.text-left))',
+  '[data-testid="model-selector-panel"] span.truncate.text-xs.text-left',
+  '[data-testid="model-selector-effort-group"]',
+  '[data-testid="model-selector-effort-group"] + span.shrink-0.opacity-70.text-xs',
+  '[data-testid="model-selector-effort-option"]', '[data-testid="input-attachment"]',
+  '[role="tooltip"] [class~="max-w-[200px]"]',
   '[data-testid^="github-repo-option-"]',
   '[data-testid="terminal-active"]', '[data-testid="terminal-tab-surface"]',
   '[data-testid="terminal-tab-nux"] .xterm', '[data-testid="setup-script-output"]',
@@ -49,7 +54,9 @@ const staticSurface = [
   '[data-testid="empty-file-view"]', '[data-testid="non-text-diff-message"]',
   '[data-testid="model-selector-empty"]', '[data-testid="model-selector-loading"]', '[data-testid="model-selector-header"]',
   '[data-testid="setup-script-status"]', '[data-testid="input-card-drag-highlight"]',
-  '[data-testid="new-conversation-button"]', '[data-testid="plugins-tabs"]'
+  '[data-testid="new-conversation-button"]', '[data-testid="plugins-tabs"]',
+  '.sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none',
+  '[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap'
 ].join(',');
 const controls = 'button, label, select, option, [role="button"], [role="tab"], [role="checkbox"], [role="switch"], [role="menuitem"], [role="option"]';
 

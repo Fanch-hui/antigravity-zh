@@ -55,9 +55,11 @@ async function until(predicate) {
   }
 }
 
-test('only the local root main page is eligible for translation', () => {
+test('only the local application routes are eligible for translation', () => {
   assert.equal(isAppTarget(page(9222), 9222), true);
   assert.equal(isAppTarget(page(9222, 'main', 'https://127.0.0.1:42424/?workspace=x#settings'), 9222), true);
+  assert.equal(isAppTarget(page(9222, 'main', 'https://127.0.0.1:42424/c/example-conversation'), 9222), true);
+  assert.equal(isAppTarget(page(9222, 'main', 'https://127.0.0.1:42424/settings'), 9222), true);
   const rejected = [
     { ...page(9222), type: 'iframe' }, { ...page(9222), type: 'webview' },
     page(9222, 'external', 'https://example.org/'), page(9222, 'login', 'https://127.0.0.1:42424/login'),
@@ -75,6 +77,7 @@ test('runtime script respects origin, path and top-level frame after navigation'
     return window.translated === true;
   }
   assert.equal(execute('https://127.0.0.1:42424'), true);
+  assert.equal(execute('https://127.0.0.1:42424', '/history'), true);
   assert.equal(execute('https://example.org'), false);
   assert.equal(execute('https://127.0.0.1:42424', '/login'), false);
   assert.equal(execute('https://127.0.0.1:42424', '/', false), false);

@@ -33,7 +33,7 @@
         "kind": "element:children"
       }
     ],
-    "selector": "[data-testid=\"history-button\"], .flex.flex-col.gap-2.min-h-0.flex-1.w-full > .mx-3.text-sm.select-none.shrink-0.font-medium"
+    "selector": "[data-testid=\"history-button\"], .flex.flex-col.gap-2.min-h-0.flex-1.w-full > .mx-3.text-sm.select-none.shrink-0.font-medium, .sticky.top-0.z-20.bg-background.pt-8.pb-4 > h1.text-lg.font-medium.text-foreground.px-3.select-none"
   },
   {
     "id": "ui.e7e8f24de5bb",
@@ -79,7 +79,7 @@
         "kind": "property:aria-label"
       }
     ],
-    "selector": "[data-testid=\"settings-button\"]"
+    "selector": "[data-testid=\"settings-button\"], .h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .px-4 > h1.m-0.text-xs.font-medium.text-muted-foreground.select-none"
   },
   {
     "id": "ui.cd5404740839",
@@ -224,7 +224,7 @@
         "kind": "property:description"
       }
     ],
-    "selector": "[data-select-popup], [role=\"listbox\"]"
+    "selector": "[data-select-popup], [role=\"listbox\"], [data-testid^=\"permissions-preset-option-\"]"
   },
   {
     "id": "ui.b6d2ef437c4d",
@@ -240,7 +240,7 @@
         "kind": "property:description"
       }
     ],
-    "selector": "[data-select-popup], [role=\"listbox\"]"
+    "selector": "[data-select-popup], [role=\"listbox\"], [data-testid^=\"permissions-preset-option-\"]"
   },
   {
     "id": "ui.ceaba1e31b22",
@@ -272,7 +272,7 @@
         "kind": "property:description"
       }
     ],
-    "selector": "[data-select-popup], [role=\"listbox\"]"
+    "selector": "[data-select-popup], [role=\"listbox\"], [data-testid^=\"permissions-preset-option-\"]"
   },
   {
     "id": "ui.3809a55281e3",
@@ -288,7 +288,7 @@
         "kind": "property:description"
       }
     ],
-    "selector": "[data-select-popup], [role=\"listbox\"]"
+    "selector": "[data-select-popup], [role=\"listbox\"], [data-testid^=\"permissions-preset-option-\"]"
   },
   {
     "id": "ui.8fd1faf0b481",

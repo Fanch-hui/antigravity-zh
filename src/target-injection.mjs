@@ -1,5 +1,6 @@
 import { CdpClient } from './cdp-client.mjs';
 import { assertUiCompatibility } from './ui-compatibility.mjs';
+import { isAppPath } from './app-page.mjs';
 
 export function isAppTarget(target, debugPort) {
   if (target.type !== 'page' || typeof target.id !== 'string') return false;
@@ -7,7 +8,7 @@ export function isAppTarget(target, debugPort) {
     const page = new URL(target.url);
     const socket = new URL(target.webSocketDebuggerUrl);
     return page.protocol === 'https:' && page.hostname === '127.0.0.1'
-      && Boolean(page.port) && page.pathname === '/' && !page.username && !page.password
+      && Boolean(page.port) && isAppPath(page.pathname) && !page.username && !page.password
       && socket.protocol === 'ws:' && socket.hostname === '127.0.0.1'
       && socket.port === String(debugPort) && !socket.username && !socket.password;
   } catch { return false; }
@@ -15,8 +16,9 @@ export function isAppTarget(target, debugPort) {
 
 export function scopedScript(script, origin) {
   return `(() => {
+${isAppPath.toString()}
 function loadChinese() {
-  if (window.top !== window || location.origin !== ${JSON.stringify(origin)} || location.pathname !== '/') {
+  if (window.top !== window || location.origin !== ${JSON.stringify(origin)} || !isAppPath(location.pathname)) {
     window.__AGY_ZH_BOOT__ = 'outside-app'; return;
   }
   window.__AGY_ZH_BOOT__ = 'initializing';

@@ -214,7 +214,7 @@
     observer.observe(document.body, {
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.1.0', translate });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.1.1', translate });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

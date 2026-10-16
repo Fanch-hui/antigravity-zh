@@ -20,7 +20,7 @@ async function stopSession(session) {
 
 export async function watchApp(appPath, { script, signal, onReady = () => {}, onError = () => {},
   interval = 2000, retryDelay = 10000, discover = discoverAppSession,
-  validate = validateApp, inject = runInjection } = {}) {
+  validate = validateApp, inject = runInjection, workDir, userDataPath } = {}) {
   if (typeof script !== 'string' || !script.trim()) throw new Error('汉化脚本为空。');
   let session = null;
   let checkedApp = null;
@@ -34,7 +34,7 @@ export async function watchApp(appPath, { script, signal, onReady = () => {}, on
   try {
     while (!signal.aborted) {
       try {
-        const found = await discover(appPath);
+        const found = await discover(appPath, { userDataPath });
         if (session && (!found || session.pid !== found.pid || session.port !== found.port || session.finished)) {
           if (session.error) { report(session.error); retryAt = Date.now() + retryDelay; }
           await stopSession(session);
@@ -42,7 +42,7 @@ export async function watchApp(appPath, { script, signal, onReady = () => {}, on
         }
         if (!found) { checkedApp = null; blockedPid = null; retryAt = 0; }
         if (found && found.pid !== checkedApp?.pid && found.pid !== blockedPid) {
-          try { checkedApp = { pid: found.pid, info: await validate(appPath) }; retryAt = 0; }
+          try { checkedApp = { pid: found.pid, info: await validate(appPath, { workDir }) }; retryAt = 0; }
           catch (error) { blockedPid = found.pid; report(error); }
         }
         if (found && !session && checkedApp?.pid === found.pid && Date.now() >= retryAt) {

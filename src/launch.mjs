@@ -2,16 +2,28 @@ import { validateApp, hasVerifiedFingerprint } from './app-info.mjs';
 import { listAppProcesses } from './processes.mjs';
 import { allocatePort, startApp } from './launch-process.mjs';
 import { runInjection } from './target-injection.mjs';
+import { mkdir } from 'node:fs/promises';
+import { windowsHelperPaths, windowsHelperEnvironment } from './windows/helper.mjs';
 
-export async function launchApp(appPath, { script, dryRun = false } = {}) {
-  const app = await validateApp(appPath);
+async function startOptions(workDir, userDataPath) {
+  if (process.platform !== 'win32') return {};
+  const paths = windowsHelperPaths(workDir);
+  if (userDataPath) windowsHelperPaths(userDataPath);
+  for (const directory of [paths.workDir, paths.temporary, paths.nodeCache, paths.npmCache]) {
+    await mkdir(directory, { recursive: true });
+  }
+  return { userDataPath, cwd: paths.workDir, env: windowsHelperEnvironment(paths) };
+}
+
+export async function launchApp(appPath, { script, dryRun = false, workDir, userDataPath } = {}) {
+  const app = await validateApp(appPath, { workDir });
   if ((await listAppProcesses(app.path)).length) {
     throw new Error('请先完全退出 Antigravity，再通过汉化入口启动。');
   }
   if (dryRun) return { state: 'would-launch', app };
   if (typeof script !== 'string' || !script.trim()) throw new Error('汉化脚本为空。');
   const port = await allocatePort();
-  const { exited } = startApp(app.executablePath, port);
+  const { exited } = startApp(app.executablePath, port, await startOptions(workDir, userDataPath));
   const controller = new AbortController();
   let release;
   const closed = new Promise(resolve => { release = resolve; });

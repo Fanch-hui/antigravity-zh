@@ -2,10 +2,12 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { realpath } from 'node:fs/promises';
 import path from 'node:path';
+import { listWindowsAppProcesses } from './windows/processes.mjs';
 
 const run = promisify(execFile);
 
 export async function listAppProcesses(appPath) {
+  if (process.platform === 'win32') return listWindowsAppProcesses(appPath);
   const resolved = await realpath(appPath);
   const { stdout } = await run('/bin/ps', ['-ww', '-axo', 'pid=,comm=']);
   const roots = [...new Set([path.resolve(appPath), resolved])];

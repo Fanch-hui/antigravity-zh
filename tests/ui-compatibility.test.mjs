@@ -12,13 +12,16 @@ const markers = ['user-input-step', 'planner-response-text', 'pending-user-messa
 function element(tag, classes, children = 'content', props = '') {
   return `A.createElement(${JSON.stringify(tag)},{className:${JSON.stringify(classes)}${props}},${children})`;
 }
-function fixture({ bundles = true, pluginWrapper = false } = {}) {
+function fixture({ bundles = true, pluginWrapper = false, legacy = false } = {}) {
   const title = element('div', 'font-medium text-sm text-foreground truncate', 'plugin.name');
-  const description = element('div', 'text-xs text-muted-foreground truncate', 'plugin.description');
-  const body = element('div', 'flex-1 min-w-0 flex flex-col gap-0.5 pr-4', `${title},${description}`);
-  const card = element('div', 'relative flex items-center gap-3 p-3 rounded-xl',
+  const description = element('div', `${legacy ? 'text-sm' : 'text-xs'} text-muted-foreground truncate`, 'plugin.description');
+  const body = element('div', `flex-1 min-w-0 flex flex-col gap-0.5${legacy ? '' : ' pr-4'}`, `${title},${description}`);
+  const card = element('div', `relative flex items-center gap-3 p-3 rounded-xl${legacy ? ' h-[72px]' : ''}`,
     pluginWrapper ? element('div', 'wrapper', body) : body);
-  const shelf = element('section', 'flex flex-col gap-3',
+  const shelf = legacy ? element('div', 'space-y-10', element('section', '',
+    `${element('h2', 'text-xl font-medium text-foreground', 'shelf.displayName')},`
+      + element('p', 'text-xs text-muted-foreground mt-1', 'shelf.description'), ',"aria-label":shelf.displayName'))
+    : element('section', 'flex flex-col gap-3',
     element('div', 'flex flex-col gap-1 px-3', 'shelf.name'), ',"aria-label":shelf.name');
   const bundle = element('div', 'group', element('div', 'min-w-0 flex flex-col gap-2',
     `${element('h3', 'font-medium text-sm text-foreground truncate', 'bundle.name')},`
@@ -26,13 +29,20 @@ function fixture({ bundles = true, pluginWrapper = false } = {}) {
   ',"data-testid":`bundle-card-${bundle.id}`');
   const bundleShelf = element('section', 'flex flex-col gap-3',
     element('div', 'flex flex-col gap-1 px-3'), ',"data-testid":"marketplace-bundles-shelf"');
-  const detail = element('div', 'flex flex-col gap-3',
+  const detail = element('div', legacy ? 'mt-2' : 'flex flex-col gap-3',
     `${element('div', 'flex', element('h1',
-      'text-lg font-medium tracking-tight leading-tight text-foreground truncate min-w-0', 'plugin.name'))},`
-      + element('p', 'text-sm text-muted-foreground leading-relaxed', 'plugin.description'));
+      `${legacy ? 'text-2xl font-bold' : 'text-lg font-medium'} tracking-tight leading-tight text-foreground truncate min-w-0`, 'plugin.name'))},`
+      + element('p', `text-sm text-muted-foreground${legacy ? ' mt-3' : ''} leading-relaxed`, 'plugin.description'));
+  const newerMarkers = ['terminal-tab-surface', 'entity-pill', 'subagent-tab-header-title'];
   return [
-    ...markers.map(name => element('div', '', 'value', `,"data-testid":${JSON.stringify(name)}`)),
-    element('label', '', 'repo.name', ',"data-testid":`github-repo-option-${repo.id}`'),
+    ...markers.filter(name => !legacy || !newerMarkers.includes(name))
+      .map(name => element('div', '', 'value', `,"data-testid":${JSON.stringify(name)}`)),
+    ...(legacy ? [element('div', '', 'terminal', ',"data-testid":"terminal-surface"'),
+      element('div', '', 'panes', ',"data-testid":"terminal-split-container"'),
+      element('span', '', 'file.name', ',"data-uri":file.uri,"data-quotable-inline":"true"'),
+      element('div', '', 'subagent', ',"data-testid":"subagent-node"'),
+      element('span', 'text-xs font-medium truncate flex-1 min-w-0', 'agent.toolSummary')]
+      : [element('label', '', 'repo.name', ',"data-testid":`github-repo-option-${repo.id}`')]),
     element('div', 'max-w-2xl mx-auto flex-col gap-4'), card, shelf, detail,
     element('div', '', 'models', ',"data-testid":"model-selector-panel"'),
     element('span', 'truncate text-xs text-left', 'model.label'),
@@ -66,6 +76,18 @@ test('compatible rendering structures accept additional and reordered classes an
   assert.deepEqual(checkUiCompatibility(`${source};${element('button', 'extra', '"New feature"')}`),
     { compatible: true, missing: [] });
   assert.deepEqual(checkUiCompatibility(fixture({ bundles: false })), { compatible: true, missing: [] });
+});
+
+test('the older customization layout checks its corresponding terminal, reference and subagent protection', () => {
+  assert.deepEqual(checkUiCompatibility(fixture({ bundles: false, legacy: true })), { compatible: true, missing: [] });
+  for (const [before, after, rule] of [
+    ['terminal-surface', 'changed-terminal', 'terminal-tab-surface'],
+    ['data-uri', 'changed-uri', 'entity-pill'],
+    ['subagent-node', 'changed-subagent', 'subagent-tab-header-title'],
+    ['h-[72px]', 'h-[80px]', 'plugin-card-content'],
+    ['text-xl font-medium', 'text-lg font-medium', 'marketplace-shelf-content'],
+    ['mt-3 leading-relaxed', 'mt-4 leading-relaxed', 'plugin-detail-content'],
+  ]) assert(checkUiCompatibility(fixture({ bundles: false, legacy: true }).replaceAll(before, after)).missing.includes(rule), rule);
 });
 
 test('missing critical content attributes reject injection even when marker strings remain elsewhere', () => {

@@ -5,6 +5,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import path from 'node:path';
 import { VERIFIED_RELEASES } from './versions.mjs';
+import { inspectWindowsApp, verifyWindowsApp } from './windows/app-info.mjs';
 
 const run = promisify(execFile);
 const officialRequirement = '=identifier "com.google.antigravity" and anchor apple generic and certificate leaf[subject.OU] = "EQHXZ8M8AV"';
@@ -21,6 +22,7 @@ async function readPlist(file, key) {
 }
 
 export async function inspectApp(appPath) {
+  if (process.platform === 'win32') return inspectWindowsApp(appPath);
   const resolved = path.resolve(appPath);
   const appStat = await stat(resolved);
   if (!appStat.isDirectory()) throw new Error('应用路径必须是 .app 目录。');
@@ -52,10 +54,15 @@ export function hasVerifiedFingerprint(info) {
 
 export function assertCompatibleApp(info) {
   if (info.id !== 'com.google.antigravity') throw new Error('应用标识不是 Antigravity。');
+  if (info.platform === 'win32') {
+    if (info.arch !== 'x64') throw new Error('当前汉化助手适用于 Windows x64。');
+    return;
+  }
   if (info.arch !== 'arm64') throw new Error('当前汉化助手适用于 macOS arm64。');
 }
 
-export async function verifyOriginalApp(appPath) {
+export async function verifyOriginalApp(appPath, { info, ...options } = {}) {
+  if (process.platform === 'win32') return verifyWindowsApp(info ?? await inspectWindowsApp(appPath), options);
   try {
     await run('/usr/bin/codesign', ['--verify', '--deep', '--strict', '-R', officialRequirement, appPath]);
   } catch {
@@ -63,9 +70,9 @@ export async function verifyOriginalApp(appPath) {
   }
 }
 
-export async function validateApp(appPath) {
+export async function validateApp(appPath, options = {}) {
   const app = await inspectApp(appPath);
   assertCompatibleApp(app);
-  await verifyOriginalApp(app.path);
+  app.trust = await verifyOriginalApp(app.path, { ...options, info: app });
   return app;
 }

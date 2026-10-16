@@ -4,6 +4,7 @@ import { promisify } from 'node:util';
 import { homedir } from 'node:os';
 import path from 'node:path';
 import { listAppProcesses } from './processes.mjs';
+import { discoverWindowsAppSession, windowsListeningPorts } from './windows/active-session.mjs';
 
 const run = promisify(execFile);
 
@@ -37,6 +38,7 @@ export function parseLoopbackPorts(output) {
 }
 
 export async function listeningPorts(pid) {
+  if (process.platform === 'win32') return windowsListeningPorts(pid);
   try {
     const { stdout } = await run('/usr/sbin/lsof', [
       '-nP', '-a', '-p', String(pid), '-iTCP', '-sTCP:LISTEN', '-Fn',
@@ -48,7 +50,8 @@ export async function listeningPorts(pid) {
   }
 }
 
-export async function discoverAppSession(appPath) {
+export async function discoverAppSession(appPath, options = {}) {
+  if (process.platform === 'win32') return discoverWindowsAppSession(appPath, options);
   const root = await realpath(appPath);
   const mainPath = path.join(root, 'Contents/MacOS/Antigravity');
   const processes = await listAppProcesses(appPath);

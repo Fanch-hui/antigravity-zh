@@ -20,13 +20,21 @@ const protectedSelectors = [
   '[role="tooltip"] [class~="max-w-[200px]"]',
   '[data-testid^="github-repo-option-"]',
   '[data-testid="terminal-active"]', '[data-testid="terminal-tab-surface"]',
+  '[data-testid="terminal-surface"]', '[data-testid="subagent-node"] span.truncate',
+  'span.text-xs.font-medium.truncate.flex-1.min-w-0',
   '[data-testid="terminal-tab-nux"] .xterm', '[data-testid="setup-script-output"]',
   '.space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span > strong',
   '.relative.flex.items-center.gap-3.p-3.rounded-xl > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"].pr-4 .font-medium.text-sm.text-foreground.truncate',
   '.relative.flex.items-center.gap-3.p-3.rounded-xl > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"].pr-4 > .text-xs.text-muted-foreground.truncate',
+  '.relative.flex.items-center.gap-3.p-3.rounded-xl[class~="h-[72px]"] > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"] .font-medium.text-sm.text-foreground.truncate',
+  '.relative.flex.items-center.gap-3.p-3.rounded-xl[class~="h-[72px]"] > .flex-1.min-w-0.flex.flex-col[class~="gap-0.5"] > .text-sm.text-muted-foreground.truncate',
+  '.space-y-10 > section[aria-label] > h2.text-xl.font-medium.text-foreground',
+  '.space-y-10 > section[aria-label] > p.text-xs.text-muted-foreground.mt-1',
   'section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]) > .flex.flex-col.gap-1.px-3',
   '[data-testid^="bundle-card-"] > .min-w-0.flex.flex-col.gap-2',
   'h1.text-lg.font-medium.tracking-tight.leading-tight.text-foreground.truncate.min-w-0',
+  'h1.text-2xl.font-bold.tracking-tight.leading-tight.text-foreground.truncate.min-w-0',
+  '.mt-2:has(h1.text-2xl.font-bold.tracking-tight) > p.text-sm.text-muted-foreground.mt-3.leading-relaxed',
   '.flex.flex-col.gap-3:has(h1.tracking-tight) > p.text-sm.text-muted-foreground.leading-relaxed'
 ].join(',');
 const settingsSelector = '.max-w-2xl.mx-auto.flex-col.gap-4, [id^="dropdown-label-"], [id^="dropdown-description-"], [id^="dropdown-value-"], [data-testid^="settings-nav-item-"]';

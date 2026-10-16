@@ -1,8 +1,9 @@
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 
-export function launchArguments(port) {
-  return [`--remote-debugging-port=${port}`, '--remote-debugging-address=127.0.0.1'];
+export function launchArguments(port, { userDataPath } = {}) {
+  return [`--remote-debugging-port=${port}`, '--remote-debugging-address=127.0.0.1',
+    ...(userDataPath ? [`--user-data-dir=${userDataPath}`] : [])];
 }
 
 export async function allocatePort() {
@@ -16,8 +17,10 @@ export async function allocatePort() {
   return port;
 }
 
-export function startApp(executable, port) {
-  const child = spawn(executable, launchArguments(port), { stdio: 'ignore' });
+export function startApp(executable, port, { userDataPath, env, cwd } = {}) {
+  const child = spawn(executable, launchArguments(port, { userDataPath }), {
+    stdio: 'ignore', windowsHide: true, env, cwd,
+  });
   const exited = new Promise((resolve, reject) => {
     child.once('exit', (code, signal) => resolve({ code, signal }));
     child.once('error', () => reject(new Error('Antigravity 无法启动，请核对应用路径。')));

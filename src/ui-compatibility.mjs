@@ -62,17 +62,60 @@ function structureQueries(source, nodes) {
   return { matching, contains, childOf, marker };
 }
 
+function customizationStructures({ matching, contains, childOf }) {
+  const cards = matching('div', 'relative flex items-center gap-3 p-3 rounded-xl');
+  const titles = matching(null, 'font-medium text-sm text-foreground truncate');
+  const protectedCard = (bodies, descriptions, candidates = cards) => candidates.some(card =>
+    bodies.some(body => childOf(card, body) && titles.some(title => contains(body, title))
+      && descriptions.some(description => childOf(body, description))));
+  const modernCard = protectedCard(matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5 pr-4'),
+    matching(null, 'text-xs text-muted-foreground truncate'));
+  const legacyCard = protectedCard(matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5')
+    .filter(body => !body.classes.has('pr-4')), matching(null, 'text-sm text-muted-foreground truncate'),
+  cards.filter(card => card.classes.has('h-[72px]')));
+  const dynamicSection = section => /["']aria-label["']\s*:\s*[\w$]+\.[\w$]+/.test(section.props);
+  const modernShelf = matching('section', 'flex flex-col gap-3').some(section =>
+    dynamicSection(section) && matching('div', 'flex flex-col gap-1 px-3').some(header => childOf(section, header)));
+  const legacyShelf = matching('div', 'space-y-10').some(parent => matching('section', '').some(section =>
+    childOf(parent, section) && dynamicSection(section)
+    && matching('h2', 'text-xl font-medium text-foreground').some(title => childOf(section, title))
+    && matching('p', 'text-xs text-muted-foreground mt-1').some(description => childOf(section, description))));
+  const detail = (parents, headings, descriptions) => parents.some(parent =>
+    headings.some(title => contains(parent, title)) && descriptions.some(description => childOf(parent, description)));
+  const modernDetail = detail(matching('div', 'flex flex-col gap-3'),
+    matching('h1', 'text-lg font-medium tracking-tight leading-tight text-foreground truncate min-w-0'),
+    matching('p', 'text-sm text-muted-foreground leading-relaxed'));
+  const legacyDetail = detail(matching('div', 'mt-2'),
+    matching('h1', 'text-2xl font-bold tracking-tight leading-tight text-foreground truncate min-w-0'),
+    matching('p', 'text-sm text-muted-foreground mt-3 leading-relaxed'));
+  return { modernCard, legacyCard, modernShelf, legacyShelf, modernDetail, legacyDetail,
+    legacy: legacyCard && legacyShelf && legacyDetail };
+}
+
 export function checkUiCompatibility(source) {
   const missing = [];
-  const { matching, contains, childOf, marker } = structureQueries(source, readElements(source));
+  const nodes = readElements(source);
+  const queries = structureQueries(source, nodes);
+  const { matching, childOf, marker } = queries;
+  const customizations = customizationStructures(queries);
   const requireRule = (name, valid) => { if (!valid) missing.push(name); };
   for (const name of ['user-input-step', 'planner-response-text', 'pending-user-messages',
-    'terminal-active', 'terminal-tab-surface', 'setup-script-output', 'file-title-name',
-    'breadcrumb-segment', 'project-selector-item', 'branch-option', 'entity-pill',
-    'activity-lane-label', 'subagent-tab-header-title', 'model-selector-item', 'input-attachment']) {
+    'terminal-active', 'setup-script-output', 'file-title-name',
+    'breadcrumb-segment', 'project-selector-item', 'branch-option',
+    'activity-lane-label', 'model-selector-item', 'input-attachment']) {
     requireRule(name, marker(name).length > 0);
   }
-  requireRule('github-repo-option', marker('github-repo-option-', true).length > 0);
+  for (const name of ['terminal-tab-surface', 'entity-pill', 'subagent-tab-header-title', 'github-repo-option']) {
+    const legacyReplacement = {
+      'terminal-tab-surface': marker('terminal-surface').length && marker('terminal-split-container').length,
+      'entity-pill': nodes.some(node => /["']data-uri["']\s*:/.test(node.props)
+        && /["']data-quotable-inline["']\s*:\s*["']true["']/.test(node.props)),
+      'subagent-tab-header-title': marker('subagent-node').length && matching('span', 'text-xs font-medium truncate flex-1 min-w-0').length,
+      'github-repo-option': true,
+    }[name];
+    requireRule(name, marker(name === 'github-repo-option' ? name + '-' : name,
+      name === 'github-repo-option').length > 0 || customizations.legacy && legacyReplacement);
+  }
   requireRule('settings-surface', matching(null, 'max-w-2xl mx-auto flex-col gap-4').length > 0);
   const modelNames = matching('span', 'truncate text-xs text-left');
   requireRule('model-name-content', marker('model-selector-panel').length > 0
@@ -80,29 +123,18 @@ export function checkUiCompatibility(source) {
     && marker('model-selector-effort-option').length > 0
     && modelNames.some(node => /^,\s*[\w$]+\.label\s*$/.test(
       source.slice(node.propsEnd + 1, closing(source, node.open, '(', ')')))));
-  const cards = matching('div', 'relative flex items-center gap-3 p-3 rounded-xl');
-  const bodies = matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5 pr-4');
-  const titles = matching(null, 'font-medium text-sm text-foreground truncate');
-  const descriptions = matching(null, 'text-xs text-muted-foreground truncate');
-  requireRule('plugin-card-content', cards.some(card => bodies.some(body => childOf(card, body)
-    && titles.some(title => contains(body, title))
-    && descriptions.some(description => childOf(body, description)))));
+  requireRule('plugin-card-content', customizations.modernCard || customizations.legacyCard);
   const shelfHeaders = matching('div', 'flex flex-col gap-1 px-3');
-  requireRule('marketplace-shelf-content', matching('section', 'flex flex-col gap-3')
-    .some(section => /["']aria-label["']\s*:\s*[\w$]+\.[\w$]+/.test(section.props)
-      && shelfHeaders.some(header => childOf(section, header))));
+  requireRule('marketplace-shelf-content', customizations.modernShelf || customizations.legacyShelf);
   if (source.includes('/bundles/') || marker('bundle-card-', true).length) {
     requireRule('bundle-shelf', marker('marketplace-bundles-shelf').some(section =>
       shelfHeaders.some(header => childOf(section, header))));
     requireRule('bundle-card-content', marker('bundle-card-', true).some(card =>
       matching('div', 'min-w-0 flex flex-col gap-2').some(body => childOf(card, body)
-        && matching('h3', 'font-medium text-sm text-foreground truncate').some(title => contains(body, title))
+        && matching('h3', 'font-medium text-sm text-foreground truncate').some(title => queries.contains(body, title))
         && matching('div', 'text-xs text-muted-foreground leading-relaxed').some(description => childOf(body, description)))));
   }
-  requireRule('plugin-detail-content', matching('div', 'flex flex-col gap-3').some(parent =>
-    matching('h1', 'text-lg font-medium tracking-tight leading-tight text-foreground truncate min-w-0')
-      .some(title => contains(parent, title))
-    && matching('p', 'text-sm text-muted-foreground leading-relaxed').some(description => childOf(parent, description))));
+  requireRule('plugin-detail-content', customizations.modernDetail || customizations.legacyDetail);
   return { compatible: missing.length === 0, missing };
 }
 
@@ -119,7 +151,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

@@ -1,9 +1,9 @@
 {
   "name": "agy-zh",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Antigravity macOS 简体中文汉化启动器",
+  "description": "Antigravity 简体中文界面工具",
   "license": "MIT",
   "repository": {
     "type": "git",

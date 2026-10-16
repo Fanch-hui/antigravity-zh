@@ -4,9 +4,10 @@ import { stat } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import path from 'node:path';
-import { SUPPORTED_VERSIONS } from './versions.mjs';
+import { VERIFIED_RELEASES } from './versions.mjs';
 
 const run = promisify(execFile);
+const officialRequirement = '=identifier "com.google.antigravity" and anchor apple generic and certificate leaf[subject.OU] = "EQHXZ8M8AV"';
 
 export async function sha256(file) {
   const hash = createHash('sha256');
@@ -44,18 +45,27 @@ export function fingerprint(info) {
     .map(key => [key, info[key]]));
 }
 
-export function assertFingerprint(info, expected) {
-  for (const key of ['id', 'version', 'arch', 'asarHash', 'languageServerHash']) {
-    if (info[key] !== expected?.[key]) throw new Error(`应用 ${key} 与适配指纹不匹配。`);
-  }
+export function hasVerifiedFingerprint(info) {
+  const expected = VERIFIED_RELEASES[info.version];
+  return Boolean(expected && Object.entries(fingerprint(info)).every(([key, value]) => expected[key] === value));
 }
 
 export function assertCompatibleApp(info) {
-  const expected = SUPPORTED_VERSIONS[info.version];
-  if (!expected) throw new Error(`尚未适配 Antigravity ${info.version}，需要更新汉化助手。`);
-  assertFingerprint(info, expected);
+  if (info.id !== 'com.google.antigravity') throw new Error('应用标识不是 Antigravity。');
+  if (info.arch !== 'arm64') throw new Error('当前汉化助手适用于 macOS arm64。');
 }
 
 export async function verifyOriginalApp(appPath) {
-  await run('/usr/bin/codesign', ['--verify', '--deep', '--strict', appPath]);
+  try {
+    await run('/usr/bin/codesign', ['--verify', '--deep', '--strict', '-R', officialRequirement, appPath]);
+  } catch {
+    throw new Error('官方应用签名校验失败，请使用 Google 官方 Antigravity 应用。');
+  }
+}
+
+export async function validateApp(appPath) {
+  const app = await inspectApp(appPath);
+  assertCompatibleApp(app);
+  await verifyOriginalApp(app.path);
+  return app;
 }

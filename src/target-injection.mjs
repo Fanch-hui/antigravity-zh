@@ -1,4 +1,5 @@
 import { CdpClient } from './cdp-client.mjs';
+import { assertUiCompatibility } from './ui-compatibility.mjs';
 
 export function isAppTarget(target, debugPort) {
   if (target.type !== 'page' || typeof target.id !== 'string') return false;
@@ -42,13 +43,19 @@ async function listTargets(port) {
   return targets;
 }
 
-async function injectTarget(target, script, signal) {
+async function injectTarget(target, script, signal, checkedOrigins, checkUi) {
   const client = await CdpClient.connect(target.webSocketDebuggerUrl);
   const close = () => client.close();
   signal.addEventListener('abort', close, { once: true });
   try {
     if (signal.aborted) throw new Error('汉化连接已停止。');
-    const source = scopedScript(script, new URL(target.url).origin);
+    const origin = new URL(target.url).origin;
+    if (checkUi && !checkedOrigins.has(origin)) {
+      await assertUiCompatibility(client, origin);
+      checkedOrigins.add(origin);
+    }
+    if (signal.aborted) throw new Error('汉化连接已停止。');
+    const source = scopedScript(script, origin);
     await client.call('Page.addScriptToEvaluateOnNewDocument', { source });
     const evaluated = await client.call('Runtime.evaluate', { expression: source, returnByValue: true });
     if (evaluated.exceptionDetails) throw new Error('界面汉化脚本执行失败。');
@@ -82,8 +89,9 @@ function pause(milliseconds, signal) {
   });
 }
 
-export async function runInjection({ port, script, signal, onReady = () => {}, interval = 1000 }) {
+export async function runInjection({ port, script, signal, onReady = () => {}, interval = 1000, checkUi = true }) {
   const sessions = new Map();
+  const checkedOrigins = new Set();
   let unavailableSince = Date.now();
   const startedAt = Date.now();
   let ready = false;
@@ -108,7 +116,7 @@ export async function runInjection({ port, script, signal, onReady = () => {}, i
       }
       for (const target of targets) {
         if (signal.aborted || !isAppTarget(target, port) || sessions.has(target.id)) continue;
-        const client = await injectTarget(target, script, signal);
+        const client = await injectTarget(target, script, signal, checkedOrigins, checkUi);
         if (signal.aborted) { client.close(); break; }
         sessions.set(target.id, { client, origin: new URL(target.url).origin });
       }

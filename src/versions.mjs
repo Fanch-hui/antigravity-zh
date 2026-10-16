@@ -1,4 +1,4 @@
-export const SUPPORTED_VERSIONS = Object.freeze({
+export const VERIFIED_RELEASES = Object.freeze({
   '2.22.0': Object.freeze({
     id: 'com.google.antigravity', version: '2.22.0', arch: 'arm64',
     asarHash: '259c83ffa266088dda6ede520a601bbf06cc5c34985cdf56c5d68549c98dbb0e',

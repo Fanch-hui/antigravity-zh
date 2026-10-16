@@ -7,6 +7,7 @@ import { createServer } from 'node:net';
 import { once } from 'node:events';
 import { readActivePort, parseLoopbackPorts, listeningPorts } from '../src/active-session.mjs';
 import { watchApp } from '../src/watch.mjs';
+import { VERIFIED_RELEASES } from '../src/versions.mjs';
 
 async function until(predicate) {
   const deadline = Date.now() + 3000;
@@ -39,8 +40,8 @@ test('port ownership is restricted to IPv4 loopback listeners of the given proce
 });
 
 function fakeInjection(calls) {
-  return async ({ port, signal, onReady }) => {
-    const call = { port, stopped: false };
+  return async ({ port, signal, onReady, checkUi }) => {
+    const call = { port, checkUi, stopped: false };
     calls.push(call);
     onReady();
     await new Promise(resolve => {
@@ -58,7 +59,10 @@ test('background watcher waits for launches, releases closed sessions and reconn
   const done = watchApp('/Applications/Antigravity.app', {
     script: 'window.translated = true;', signal: controller.signal, interval: 10,
     discover: async () => running,
-    validate: async () => { checked.push(running.pid); },
+    validate: async () => {
+      checked.push(running.pid);
+      return { ...VERIFIED_RELEASES['2.23.0'], ...(running.pid === 101 ? { version: '2.23.1' } : {}) };
+    },
     inject: fakeInjection(calls), onError: error => errors.push(error.message),
   });
   t.after(async () => { controller.abort(); await done; });
@@ -73,12 +77,13 @@ test('background watcher waits for launches, releases closed sessions and reconn
   running = { pid: 101, port: 9223 };
   await until(() => calls.length === 2);
   assert.deepEqual(checked, [100, 101]);
+  assert.deepEqual(calls.map(call => call.checkUi), [false, true]);
   assert.deepEqual(errors, []);
   controller.abort(); await done;
   assert.ok(calls.every(call => call.stopped));
 });
 
-test('unsupported app version is blocked once per launch without injection', async t => {
+test('an app failing validation is blocked once per launch without injection', async t => {
   let running = { pid: 100, port: 9222 };
   const calls = [], errors = [];
   let checks = 0;
@@ -86,7 +91,7 @@ test('unsupported app version is blocked once per launch without injection', asy
   const done = watchApp('/Applications/Antigravity.app', {
     script: 'window.translated = true;', signal: controller.signal, interval: 10,
     discover: async () => running,
-    validate: async () => { checks++; throw new Error('应用 version 与适配指纹不匹配。'); },
+    validate: async () => { checks++; throw new Error('官方应用签名校验失败。'); },
     inject: fakeInjection(calls), onError: error => errors.push(error.message),
   });
   t.after(async () => { controller.abort(); await done; });

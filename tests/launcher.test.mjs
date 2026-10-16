@@ -12,6 +12,7 @@ async function debuggerServer() {
   const calls = [];
   const connections = [];
   let initialized = true;
+  let compatible = true;
   const server = createServer((request, response) => {
     response.setHeader('Content-Type', 'application/json');
     response.end(JSON.stringify(targets));
@@ -22,8 +23,10 @@ async function debuggerServer() {
     socket.on('message', bytes => {
       const message = JSON.parse(bytes);
       calls.push({ ...message, target: request.url });
-      const result = message.params?.expression === 'Boolean(window.__AGY_ZH_RUNTIME__)'
-        ? { result: { type: 'boolean', value: initialized } } : { identifier: 'translation' };
+      const result = message.params?.awaitPromise
+        ? { result: { type: 'object', value: { compatible, missing: compatible ? [] : ['user-input-step'] } } }
+        : message.params?.expression === 'Boolean(window.__AGY_ZH_RUNTIME__)'
+          ? { result: { type: 'boolean', value: initialized } } : { identifier: 'translation' };
       socket.send(JSON.stringify({ id: message.id, result }));
     });
   });
@@ -32,6 +35,7 @@ async function debuggerServer() {
   const { port } = server.address();
   return { port, calls, connections, setTargets: value => { targets = value; },
     setInitialized: value => { initialized = value; },
+    setCompatible: value => { compatible = value; },
     async close() {
       for (const socket of sockets.clients) socket.terminate();
       await new Promise(resolve => sockets.close(resolve));
@@ -87,16 +91,32 @@ test('CDP registers reload script before current evaluation, then discovers new 
     signal: controller.signal, interval: 20, onReady: () => { ready = true; } });
   await until(() => ready);
   assert.deepEqual(debuggerApp.calls.map(call => call.method), [
-    'Page.addScriptToEvaluateOnNewDocument', 'Runtime.evaluate', 'Runtime.evaluate',
+    'Runtime.evaluate', 'Page.addScriptToEvaluateOnNewDocument', 'Runtime.evaluate', 'Runtime.evaluate',
   ]);
   debuggerApp.setTargets([page(debuggerApp.port), page(debuggerApp.port, 'second')]);
-  await until(() => debuggerApp.calls.length === 6);
-  assert.match(debuggerApp.calls[3].target, /second$/);
+  await until(() => debuggerApp.calls.length === 7);
+  assert.match(debuggerApp.calls[4].target, /second$/);
   debuggerApp.connections[0].close();
-  await until(() => debuggerApp.calls.length === 9);
-  assert.match(debuggerApp.calls[6].target, /main$/);
+  await until(() => debuggerApp.calls.length === 10);
+  assert.match(debuggerApp.calls[7].target, /main$/);
   controller.abort();
   await done;
+  await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
+});
+
+test('incompatible UI is rejected before registering or executing translation', async t => {
+  const debuggerApp = await debuggerServer();
+  t.after(() => debuggerApp.close());
+  debuggerApp.setTargets([page(debuggerApp.port)]);
+  debuggerApp.setCompatible(false);
+  const controller = new AbortController();
+  t.after(() => controller.abort());
+  let ready = false;
+  await assert.rejects(runInjection({ port: debuggerApp.port, script: 'window.test = true;',
+    signal: controller.signal, interval: 20, onReady: () => { ready = true; } }));
+  assert.equal(ready, false);
+  assert.equal(debuggerApp.calls.length, 1);
+  assert.equal(debuggerApp.calls[0].params.awaitPromise, true);
   await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
 });
 

@@ -1,19 +1,12 @@
 import { setTimeout as delay } from 'node:timers/promises';
-import { inspectApp, assertCompatibleApp, verifyOriginalApp } from './app-info.mjs';
+import { validateApp, hasVerifiedFingerprint } from './app-info.mjs';
 import { discoverAppSession } from './active-session.mjs';
 import { runInjection } from './target-injection.mjs';
 
-export async function validateWatchApp(appPath) {
-  const app = await inspectApp(appPath);
-  assertCompatibleApp(app);
-  await verifyOriginalApp(app.path);
-  return app;
-}
-
-function beginSession(found, script, inject, onReady) {
+function beginSession(found, script, inject, onReady, checkUi) {
   const controller = new AbortController();
   const session = { ...found, controller, finished: false, error: null };
-  session.done = inject({ port: found.port, script, signal: controller.signal, onReady })
+  session.done = inject({ port: found.port, script, signal: controller.signal, onReady, checkUi })
     .catch(error => { session.error = error; })
     .finally(() => { session.finished = true; });
   return session;
@@ -27,10 +20,10 @@ async function stopSession(session) {
 
 export async function watchApp(appPath, { script, signal, onReady = () => {}, onError = () => {},
   interval = 2000, retryDelay = 10000, discover = discoverAppSession,
-  validate = validateWatchApp, inject = runInjection } = {}) {
+  validate = validateApp, inject = runInjection } = {}) {
   if (typeof script !== 'string' || !script.trim()) throw new Error('汉化脚本为空。');
   let session = null;
-  let checkedPid = null;
+  let checkedApp = null;
   let blockedPid = null;
   let retryAt = 0;
   let lastError = '';
@@ -47,13 +40,14 @@ export async function watchApp(appPath, { script, signal, onReady = () => {}, on
           await stopSession(session);
           session = null;
         }
-        if (!found) { checkedPid = null; blockedPid = null; retryAt = 0; }
-        if (found && found.pid !== checkedPid && found.pid !== blockedPid) {
-          try { await validate(appPath); checkedPid = found.pid; retryAt = 0; }
+        if (!found) { checkedApp = null; blockedPid = null; retryAt = 0; }
+        if (found && found.pid !== checkedApp?.pid && found.pid !== blockedPid) {
+          try { checkedApp = { pid: found.pid, info: await validate(appPath) }; retryAt = 0; }
           catch (error) { blockedPid = found.pid; report(error); }
         }
-        if (found && !session && checkedPid === found.pid && Date.now() >= retryAt) {
-          session = beginSession(found, script, inject, () => { lastError = ''; onReady(); });
+        if (found && !session && checkedApp?.pid === found.pid && Date.now() >= retryAt) {
+          session = beginSession(found, script, inject, () => { lastError = ''; onReady(); },
+            !hasVerifiedFingerprint(checkedApp.info ?? {}));
         }
       } catch (error) { report(error); }
       await delay(interval, undefined, { signal }).catch(error => {

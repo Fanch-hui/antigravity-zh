@@ -1,11 +1,10 @@
-import { inspectApp, assertCompatibleApp } from './app-info.mjs';
+import { validateApp, hasVerifiedFingerprint } from './app-info.mjs';
 import { listAppProcesses } from './processes.mjs';
 import { allocatePort, startApp } from './launch-process.mjs';
 import { runInjection } from './target-injection.mjs';
 
 export async function launchApp(appPath, { script, dryRun = false } = {}) {
-  const app = await inspectApp(appPath);
-  assertCompatibleApp(app);
+  const app = await validateApp(appPath);
   if ((await listAppProcesses(app.path)).length) {
     throw new Error('请先完全退出 Antigravity，再通过汉化入口启动。');
   }
@@ -19,7 +18,8 @@ export async function launchApp(appPath, { script, dryRun = false } = {}) {
   const close = () => { controller.abort(); release(); };
   let markReady;
   const ready = new Promise(resolve => { markReady = resolve; });
-  const injecting = runInjection({ port, script, signal: controller.signal, onReady: markReady });
+  const injecting = runInjection({ port, script, signal: controller.signal, onReady: markReady,
+    checkUi: !hasVerifiedFingerprint(app) });
   const done = Promise.race([exited, closed, injecting]).finally(async () => {
     close();
     await injecting.catch(() => {});

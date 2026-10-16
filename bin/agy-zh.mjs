@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import path from 'node:path';
-import { inspectApp, assertCompatibleApp, verifyOriginalApp } from '../src/app-info.mjs';
+import { validateApp, hasVerifiedFingerprint } from '../src/app-info.mjs';
 import { launchApp } from '../src/launch.mjs';
 import { createRuntimeScript } from '../src/runtime-script.mjs';
-import { watchApp, validateWatchApp } from '../src/watch.mjs';
+import { watchApp } from '../src/watch.mjs';
 import { enableAutostart, disableAutostart, autostartStatus } from '../src/autostart.mjs';
 
 function argumentsOf(argv) {
@@ -26,14 +26,11 @@ try {
   if (['help', '--help', '-h'].includes(command)) {
     console.log('agy-zh status|launch|watch|auto-enable|auto-disable|auto-status [--app 应用.app] [--dry-run]');
   } else if (command === 'status') {
-    const app = await inspectApp(options.app);
-    assertCompatibleApp(app);
-    console.log(`已适配：Antigravity ${app.version} (${app.arch})`);
+    const app = await validateApp(options.app);
+    console.log(`官方签名检查通过：Antigravity ${app.version} (${app.arch})`);
+    console.log(hasVerifiedFingerprint(app) ? '文件指纹：与已验证版本一致。' : '文件指纹：新构建，将自动检查界面兼容性。');
     console.log(`应用：${app.path}`);
   } else if (command === 'launch') {
-    const info = await inspectApp(options.app);
-    assertCompatibleApp(info);
-    await verifyOriginalApp(info.path);
     const script = options.dryRun ? undefined : await createRuntimeScript();
     const result = await launchApp(options.app, { ...options, script });
     if (options.dryRun) console.log('检查通过，可以通过汉化入口启动。');
@@ -52,7 +49,7 @@ try {
     console.log(`自动汉化：${status.loaded ? '已启用' : status.installed ? '已安装，尚未加载' : '未启用'}`);
     console.log(`助手：${status.installation}`);
   } else if (command === 'auto-enable') {
-    await validateWatchApp(options.app);
+    await validateApp(options.app);
     const result = await enableAutostart({ appPath: options.app, dryRun: options.dryRun });
     console.log(options.dryRun ? '检查通过，可以启用自动汉化。' : '自动汉化已启用。今后直接打开原来的 Antigravity 即可。');
     console.log(`助手：${result.installation}`);
@@ -63,7 +60,7 @@ try {
   } else if (command === 'watch') {
     const script = await createRuntimeScript();
     if (options.dryRun) {
-      await validateWatchApp(options.app);
+      await validateApp(options.app);
       console.log('自动汉化助手检查通过。');
     } else {
       const controller = new AbortController();

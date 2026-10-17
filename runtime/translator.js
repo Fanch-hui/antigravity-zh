@@ -3,6 +3,7 @@
   const dictionary = /*__AGY_ZH_DICTIONARY__*/ null;
   if (!Array.isArray(dictionary) || window.__AGY_ZH_RUNTIME__) return;
   if (window.top !== window || location.protocol !== 'https:' || location.hostname !== '127.0.0.1') return;
+  const scriptStartedMs = performance.now();
 
   const attributes = ['title', 'placeholder', 'aria-label'];
   const { protectedSelectors, scopes, staticSurface, controls } = /*__AGY_ZH_SURFACES__*/ null;
@@ -198,7 +199,9 @@
   }
 
   function start() {
+    const firstPassStartedMs = performance.now();
     translate();
+    const firstPassMs = performance.now() - firstPassStartedMs;
     const observer = new MutationObserver(records => {
       const roots = new Set();
       for (const record of records) {
@@ -217,7 +220,8 @@
     observer.observe(document.body, {
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.1', translate });
+    const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.2', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

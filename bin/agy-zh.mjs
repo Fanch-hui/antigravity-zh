@@ -89,6 +89,7 @@ try {
       try {
         await watchApp(options.app, { script, signal: controller.signal, ...options,
           onReady: () => console.log('Antigravity 中文界面已自动加载。'),
+          onTiming: ({ stage, elapsedMs }) => console.log(`[启动计时] ${stage} ${elapsedMs} ms`),
           onError: error => console.error(`自动汉化暂不可用：${error.message}`) });
       } finally {
         process.removeListener('SIGINT', close);

@@ -161,7 +161,11 @@ export async function assertUiCompatibility(client, origin) {
   const value = result.result?.value;
   if (result.exceptionDetails || value?.compatible !== true) {
     const missing = Array.isArray(value?.missing) ? value.missing.filter(name => /^[a-z-]+$/.test(name)) : [];
-    throw new Error(`当前界面结构与汉化保护规则不兼容${missing.length ? `：${missing.join('、')}` : '。'}`);
+    const error = new Error(`当前界面结构与汉化保护规则不兼容${missing.length ? `：${missing.join('、')}` : '。'}`);
+    if (!result.exceptionDetails && missing.length === 1 && missing[0] === 'application-page') {
+      error.code = 'AGY_APPLICATION_PAGE_PENDING';
+    }
+    throw error;
   }
   return value;
 }

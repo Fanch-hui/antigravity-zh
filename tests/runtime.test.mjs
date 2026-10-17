@@ -42,6 +42,18 @@ function mount(html, url = 'https://127.0.0.1:42000/') {
 
 const settle = dom => new Promise(resolve => dom.window.setTimeout(resolve, 0));
 
+test('runtime startup timing ends after the first translation pass', () => {
+  const dom = mount('<button>Allow Once</button>');
+  const runtimeState = dom.window.__AGY_ZH_RUNTIME__;
+  assert.equal(dom.window.document.querySelector('button').textContent, '仅允许本次');
+  const { scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs } = runtimeState.timing;
+  assert.ok(firstPassStartedMs >= scriptStartedMs);
+  assert.ok(firstPassMs >= 0);
+  assert.ok(readyMs >= firstPassStartedMs + firstPassMs);
+  assert.ok(Object.isFrozen(runtimeState.timing));
+  dom.window.close();
+});
+
 test('generic phrases do not combine text around inline content without a specific label selector', () => {
   const dom = mount('<button id="control"><kbd>Enter</kbd></button>');
   const button = dom.window.document.getElementById('control');

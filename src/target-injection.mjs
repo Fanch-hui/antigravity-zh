@@ -45,20 +45,41 @@ async function listTargets(port) {
   return targets;
 }
 
-async function injectTarget(target, script, signal, checkedOrigins, checkUi) {
+async function waitForUiCompatibility(client, origin, signal, timing) {
+  const deadline = Date.now() + 20000;
+  let waiting = false;
+  timing('ui-check-start');
+  while (!signal.aborted) {
+    try {
+      await assertUiCompatibility(client, origin);
+      timing('ui-check-complete');
+      return;
+    } catch (error) {
+      const navigating = ['AGY_APPLICATION_PAGE_PENDING', 'AGY_CDP_CONTEXT_NAVIGATING'].includes(error.code);
+      if (!navigating || !client.isOpen || Date.now() >= deadline) throw error;
+      if (!waiting) { waiting = true; timing('application-page-wait'); }
+      await pause(150, signal);
+    }
+  }
+  throw new Error('汉化连接已停止。');
+}
+
+async function injectTarget(target, script, signal, checkedOrigins, checkUi, timing) {
   const client = await CdpClient.connect(target.webSocketDebuggerUrl);
+  timing('cdp-connected');
   const close = () => client.close();
   signal.addEventListener('abort', close, { once: true });
   try {
     if (signal.aborted) throw new Error('汉化连接已停止。');
     const origin = new URL(target.url).origin;
     if (checkUi && !checkedOrigins.has(origin)) {
-      await assertUiCompatibility(client, origin);
+      await waitForUiCompatibility(client, origin, signal, timing);
       checkedOrigins.add(origin);
     }
     if (signal.aborted) throw new Error('汉化连接已停止。');
     const source = scopedScript(script, origin);
     await client.call('Page.addScriptToEvaluateOnNewDocument', { source });
+    timing('script-registered');
     const evaluated = await client.call('Runtime.evaluate', { expression: source, returnByValue: true });
     if (evaluated.exceptionDetails) throw new Error('界面汉化脚本执行失败。');
     const deadline = Date.now() + 45000;
@@ -66,7 +87,7 @@ async function injectTarget(target, script, signal, checkedOrigins, checkUi) {
       const state = await client.call('Runtime.evaluate', {
         expression: 'Boolean(window.__AGY_ZH_RUNTIME__)', returnByValue: true,
       });
-      if (state.result?.value === true) return client;
+      if (state.result?.value === true) { timing('runtime-ready'); return client; }
       const retry = await client.call('Runtime.evaluate', { expression: source, returnByValue: true });
       if (retry.exceptionDetails) throw new Error('界面汉化模块初始化失败。');
       await new Promise(resolve => setTimeout(resolve, 200));
@@ -92,11 +113,12 @@ function pause(milliseconds, signal) {
 }
 
 export async function runInjection({ port, script, signal, onReady = () => {},
-  interval = 1000, startupInterval = 150, checkUi = true }) {
+  interval = 1000, startupInterval = 150, checkUi = true, onTiming = () => {} }) {
   const sessions = new Map();
   const checkedOrigins = new Set();
   let unavailableSince = Date.now();
   const startedAt = Date.now();
+  const timing = stage => onTiming({ stage, elapsedMs: Date.now() - startedAt });
   let ready = false;
   try {
     while (!signal.aborted) {
@@ -119,7 +141,8 @@ export async function runInjection({ port, script, signal, onReady = () => {},
       }
       for (const target of targets) {
         if (signal.aborted || !isAppTarget(target, port) || sessions.has(target.id)) continue;
-        const client = await injectTarget(target, script, signal, checkedOrigins, checkUi);
+        timing('target-found');
+        const client = await injectTarget(target, script, signal, checkedOrigins, checkUi, timing);
         if (signal.aborted) { client.close(); break; }
         sessions.set(target.id, { client, origin: new URL(target.url).origin });
       }

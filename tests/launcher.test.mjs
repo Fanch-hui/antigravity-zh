@@ -13,6 +13,7 @@ async function debuggerServer() {
   const connections = [];
   let initialized = true;
   let compatible = true;
+  let compatibilityResponses = [];
   const targetRequests = [];
   const server = createServer((request, response) => {
     targetRequests.push(Date.now());
@@ -25,6 +26,10 @@ async function debuggerServer() {
     socket.on('message', bytes => {
       const message = JSON.parse(bytes);
       calls.push({ ...message, target: request.url });
+      if (message.params?.awaitPromise && compatibilityResponses.length) {
+        socket.send(JSON.stringify({ id: message.id, ...compatibilityResponses.shift() }));
+        return;
+      }
       const result = message.params?.awaitPromise
         ? { result: { type: 'object', value: { compatible, missing: compatible ? [] : ['user-input-step'] } } }
         : message.params?.expression === 'Boolean(window.__AGY_ZH_RUNTIME__)'
@@ -38,6 +43,7 @@ async function debuggerServer() {
   return { port, calls, connections, targetRequests, setTargets: value => { targets = value; },
     setInitialized: value => { initialized = value; },
     setCompatible: value => { compatible = value; },
+    setCompatibilityResponses: value => { compatibilityResponses = value; },
     async close() {
       for (const socket of sockets.clients) socket.terminate();
       await new Promise(resolve => sockets.close(resolve));
@@ -125,6 +131,61 @@ test('incompatible UI is rejected before registering or executing translation', 
   await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
 });
 
+test('startup navigation waits in the same connection before checking and translating the application', async t => {
+  const debuggerApp = await debuggerServer(); t.after(() => debuggerApp.close());
+  debuggerApp.setTargets([page(debuggerApp.port)]);
+  const pendingPage = { result: { result: { value: { compatible: false, missing: ['application-page'] } } } };
+  debuggerApp.setCompatibilityResponses([pendingPage, {
+    error: { code: -32000, message: 'Execution context was destroyed.' },
+  }, pendingPage]);
+  const controller = new AbortController();
+  const timings = [];
+  let ready = false;
+  const done = runInjection({ port: debuggerApp.port, script: 'window.test = true;',
+    signal: controller.signal, onTiming: event => timings.push(event), onReady: () => { ready = true; } });
+  t.after(async () => { controller.abort(); await done; });
+  await until(() => ready);
+  assert.equal(debuggerApp.connections.length, 1);
+  assert.deepEqual(debuggerApp.calls.slice(0, 4).map(call => call.params.awaitPromise), [true, true, true, true]);
+  assert.equal(debuggerApp.calls[4].method, 'Page.addScriptToEvaluateOnNewDocument');
+  assert.equal(timings.filter(event => event.stage === 'application-page-wait').length, 1);
+  assert(timings.findIndex(event => event.stage === 'ui-check-complete')
+    < timings.findIndex(event => event.stage === 'script-registered'));
+  assert(timings.every(event => Number.isInteger(event.elapsedMs) && event.elapsedMs >= 0));
+});
+
+test('startup navigation does not retry actual incompatible application structures', async t => {
+  const debuggerApp = await debuggerServer(); t.after(() => debuggerApp.close());
+  debuggerApp.setTargets([page(debuggerApp.port)]);
+  debuggerApp.setCompatibilityResponses([
+    { result: { result: { value: { compatible: false, missing: ['application-page'] } } } },
+  ]);
+  debuggerApp.setCompatible(false);
+  const controller = new AbortController(); t.after(() => controller.abort());
+  await assert.rejects(runInjection({ port: debuggerApp.port, script: 'window.test = true;',
+    signal: controller.signal }), /user-input-step/);
+  assert.equal(debuggerApp.calls.length, 2);
+  assert(debuggerApp.calls.every(call => call.params.awaitPromise));
+  await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
+});
+
+test('cancelling the startup navigation wait closes its connection and stops retries', async t => {
+  const debuggerApp = await debuggerServer(); t.after(() => debuggerApp.close());
+  debuggerApp.setTargets([page(debuggerApp.port)]);
+  debuggerApp.setCompatibilityResponses([
+    { result: { result: { value: { compatible: false, missing: ['application-page'] } } } },
+  ]);
+  const controller = new AbortController(); t.after(() => controller.abort());
+  const timings = [];
+  const done = runInjection({ port: debuggerApp.port, script: 'window.test = true;',
+    signal: controller.signal, onTiming: event => timings.push(event) });
+  const stopped = done.catch(() => {});
+  await until(() => timings.some(event => event.stage === 'application-page-wait'));
+  controller.abort(); await stopped;
+  await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
+  assert.equal(debuggerApp.calls.length, 1);
+});
+
 test('initial window discovery is fast and returns to the normal interval after readiness', async t => {
   const debuggerApp = await debuggerServer();
   t.after(() => debuggerApp.close());
@@ -181,6 +242,32 @@ test('CDP failures and pending requests reject without exposing remote messages'
   const pending = client.call('Runtime.evaluate');
   serverSocket.close();
   await assert.rejects(pending, { message: '应用汉化连接已关闭。' });
+});
+
+test('CDP only classifies known context navigation errors as transient', async t => {
+  const debuggerApp = await debuggerServer(); t.after(() => debuggerApp.close());
+  const client = await CdpClient.connect(page(debuggerApp.port).webSocketDebuggerUrl);
+  t.after(() => client.close());
+  const socket = debuggerApp.connections[0];
+  socket.removeAllListeners('message');
+  for (const [code, message, expected] of [
+    [-32000, 'Cannot find default execution context', 'AGY_CDP_CONTEXT_NAVIGATING'],
+    [-32000, 'Cannot find context with specified id', 'AGY_CDP_CONTEXT_NAVIGATING'],
+    [-32000, 'Execution context was destroyed.', 'AGY_CDP_CONTEXT_NAVIGATING'],
+    [-32000, 'Execution context was destroyed, most likely because of a navigation.', 'AGY_CDP_CONTEXT_NAVIGATING'],
+    [-32000, 'private unrelated failure', undefined],
+    [-32602, 'Execution context was destroyed.', undefined],
+  ]) {
+    socket.once('message', bytes => {
+      const { id } = JSON.parse(bytes);
+      socket.send(JSON.stringify({ id, error: { code, message } }));
+    });
+    await assert.rejects(client.call('Runtime.evaluate'), error => {
+      assert.equal(error.code, expected);
+      assert.equal(error.message, '应用拒绝了汉化请求。');
+      return true;
+    });
+  }
 });
 
 test('stopping injection closes a page still waiting for runtime initialization', async t => {

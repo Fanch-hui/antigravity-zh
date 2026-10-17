@@ -59,7 +59,15 @@ export class CdpClient {
     if (!pending) return;
     clearTimeout(pending.timer);
     this.#pending.delete(message.id);
-    if (message.error) pending.reject(new Error('应用拒绝了汉化请求。'));
+    if (message.error) {
+      const error = new Error('应用拒绝了汉化请求。');
+      if (message.error.code === -32000 && [
+        'Cannot find default execution context', 'Cannot find context with specified id',
+        'Execution context was destroyed.',
+        'Execution context was destroyed, most likely because of a navigation.',
+      ].includes(message.error.message)) error.code = 'AGY_CDP_CONTEXT_NAVIGATING';
+      pending.reject(error);
+    }
     else pending.resolve(message.result ?? {});
   }
 

@@ -91,7 +91,9 @@ node scripts/extract-catalog.mjs /path/to/main.js .work/catalog.json 2.23.1
 
 已实测版本正常启动时自行开启随机端口的本地调试通道。后台助手在 `DevToolsActivePort` 文件变化时及时检查应用状态，同时保留每两秒一次的定时检查。仅读取文件的端口行，核对端口由官方应用主进程监听，再完成应用校验并接入。助手不启动或退出应用，不读取账号、会话和用户配置。
 
-汉化仅使用本机回环调试连接，在应用自身的顶层页面注册翻译脚本。首次等待主窗口时，每 150 毫秒检查一次；中文加载后恢复为每秒检查，以覆盖新窗口和连接恢复。DOM 翻译按变化增量处理。macOS 助手运行记录位于安装目录的 `assistant.stdout.log` 与 `assistant.stderr.log`；Windows 位于工作目录的 `logs\helper.stdout.log` 与 `logs\helper.stderr.log`，仅记录助手状态和错误。
+汉化仅使用本机回环调试连接，在应用自身的顶层页面注册翻译脚本。首次等待主窗口时，每 150 毫秒检查一次；页面切换期间在当前连接内等待主页面就绪，完成兼容检查后加载中文。中文加载后恢复为每秒检查，以覆盖新窗口和连接恢复。DOM 翻译按变化增量处理。
+
+macOS 助手运行记录位于安装目录的 `assistant.stdout.log` 与 `assistant.stderr.log`；Windows 位于工作目录的 `logs\helper.stdout.log` 与 `logs\helper.stderr.log`。日志包含助手状态、错误和启动阶段耗时；`[启动计时]` 后依次为固定阶段名和距本次发现应用的毫秒数。运行模块另行记录首次翻译耗时，供排查启动延迟。
 
 ## 验收
 

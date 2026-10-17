@@ -104,3 +104,26 @@ test('an app failing validation is blocked once per launch without injection', a
   await until(() => checks === 2);
   assert.equal(calls.length, 0);
 });
+
+test('startup timings include validation before injection on the same launch timeline', async t => {
+  const controller = new AbortController();
+  const timings = [];
+  let ready = false;
+  const done = watchApp('/Applications/Antigravity.app', {
+    script: 'window.translated = true;', signal: controller.signal, interval: 10,
+    discover: async () => ({ pid: 100, port: 9222 }),
+    validate: async () => VERIFIED_RELEASES['2.23.0'],
+    inject: async ({ signal, onTiming, onReady }) => {
+      onTiming({ stage: 'runtime-ready', elapsedMs: 7 });
+      onReady();
+      await new Promise(resolve => signal.addEventListener('abort', resolve, { once: true }));
+    },
+    onTiming: event => timings.push(event), onReady: () => { ready = true; },
+  });
+  t.after(async () => { controller.abort(); await done; });
+  await until(() => ready);
+  assert.deepEqual(timings.map(event => event.stage), [
+    'app-found', 'validation-start', 'validation-complete', 'runtime-ready',
+  ]);
+  assert.ok(timings[3].elapsedMs >= timings[2].elapsedMs + 7);
+});

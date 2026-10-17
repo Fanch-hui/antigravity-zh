@@ -1,7 +1,7 @@
-import { setTimeout as delay } from 'node:timers/promises';
 import { validateApp, hasVerifiedFingerprint } from './app-info.mjs';
-import { discoverAppSession } from './active-session.mjs';
+import { appActivePortFile, discoverAppSession } from './active-session.mjs';
 import { runInjection } from './target-injection.mjs';
+import { watchActivePort } from './startup-wakeup.mjs';
 
 function beginSession(found, script, inject, onReady, checkUi) {
   const controller = new AbortController();
@@ -20,8 +20,10 @@ async function stopSession(session) {
 
 export async function watchApp(appPath, { script, signal, onReady = () => {}, onError = () => {},
   interval = 2000, retryDelay = 10000, discover = discoverAppSession,
-  validate = validateApp, inject = runInjection, workDir, userDataPath } = {}) {
+  validate = validateApp, inject = runInjection, workDir, userDataPath,
+  createWakeup = watchActivePort } = {}) {
   if (typeof script !== 'string' || !script.trim()) throw new Error('汉化脚本为空。');
+  const wakeup = createWakeup(appActivePortFile({ userDataPath }));
   let session = null;
   let checkedApp = null;
   let blockedPid = null;
@@ -50,9 +52,7 @@ export async function watchApp(appPath, { script, signal, onReady = () => {}, on
             !hasVerifiedFingerprint(checkedApp.info ?? {}));
         }
       } catch (error) { report(error); }
-      await delay(interval, undefined, { signal }).catch(error => {
-        if (error.name !== 'AbortError') throw error;
-      });
+      await wakeup.wait(interval, signal);
     }
-  } finally { await stopSession(session); }
+  } finally { wakeup.close(); await stopSession(session); }
 }

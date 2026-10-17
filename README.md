@@ -1,6 +1,6 @@
 # Antigravity 中文 · antigravity-zh
 
-社区维护的简体中文界面工具，面向 macOS Apple Silicon 和 Windows x64 上的 Antigravity 独立桌面应用。通过后台助手或独立启动入口动态加载汉化，保留原应用文件。macOS 已实测 2.22.0、2.23.0 和 2.23.1，Windows x64 已实测 2.15.0，后续更新由助手自动检查兼容性。
+社区维护的简体中文界面工具，面向 macOS Apple Silicon 和 Windows x64 上的 Antigravity 独立桌面应用。通过后台助手或独立启动入口动态加载汉化，保留原应用文件。macOS 已适配 2.22.0、2.23.0、2.23.1 和 2.24.0，Windows x64 已实测 2.15.0，后续更新由助手自动检查兼容性。
 
 翻译按完整文案、组件定位和设置语境匹配，支持界面动态更新。权限、删除、计费和错误提示按操作含义校审；token、品牌及必要技术术语保留英文。
 
@@ -89,9 +89,9 @@ npm test
 node scripts/extract-catalog.mjs /path/to/main.js .work/catalog.json 2.23.1
 ```
 
-已实测版本正常启动时自行开启随机端口的本地调试通道。后台助手每两秒检查应用状态，仅读取 `DevToolsActivePort` 的端口行，并核对端口由官方应用主进程监听，然后接入。它不启动或退出应用，不读取账号、会话和用户配置。
+已实测版本正常启动时自行开启随机端口的本地调试通道。后台助手在 `DevToolsActivePort` 文件变化时及时检查应用状态，同时保留每两秒一次的定时检查。仅读取文件的端口行，核对端口由官方应用主进程监听，再完成应用校验并接入。助手不启动或退出应用，不读取账号、会话和用户配置。
 
-汉化仅使用本机回环调试连接，在应用自身的顶层页面注册翻译脚本。DOM 翻译按变化增量处理；窗口发现每秒检查一次，以覆盖新窗口和连接恢复。macOS 助手运行记录位于安装目录的 `assistant.stdout.log` 与 `assistant.stderr.log`；Windows 位于工作目录的 `logs\helper.stdout.log` 与 `logs\helper.stderr.log`，仅记录助手状态和错误。
+汉化仅使用本机回环调试连接，在应用自身的顶层页面注册翻译脚本。首次等待主窗口时，每 150 毫秒检查一次；中文加载后恢复为每秒检查，以覆盖新窗口和连接恢复。DOM 翻译按变化增量处理。macOS 助手运行记录位于安装目录的 `assistant.stdout.log` 与 `assistant.stderr.log`；Windows 位于工作目录的 `logs\helper.stdout.log` 与 `logs\helper.stderr.log`，仅记录助手状态和错误。
 
 ## 验收
 

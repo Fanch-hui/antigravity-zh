@@ -91,7 +91,8 @@ function pause(milliseconds, signal) {
   });
 }
 
-export async function runInjection({ port, script, signal, onReady = () => {}, interval = 1000, checkUi = true }) {
+export async function runInjection({ port, script, signal, onReady = () => {},
+  interval = 1000, startupInterval = 150, checkUi = true }) {
   const sessions = new Map();
   const checkedOrigins = new Set();
   let unavailableSince = Date.now();
@@ -104,7 +105,7 @@ export async function runInjection({ port, script, signal, onReady = () => {}, i
       catch {
         if (signal.aborted) break;
         if (Date.now() - unavailableSince > 20000) throw new Error('无法建立汉化连接，请退出 Antigravity 后重新启动汉化入口。');
-        await pause(interval, signal);
+        await pause(ready ? interval : Math.min(interval, startupInterval), signal);
         continue;
       }
       unavailableSince = Date.now();
@@ -126,7 +127,7 @@ export async function runInjection({ port, script, signal, onReady = () => {}, i
       if (!ready && Date.now() - startedAt > 20000) {
         throw new Error('未找到 Antigravity 主界面，请退出应用后重新启动汉化入口。');
       }
-      await pause(interval, signal);
+      await pause(ready ? interval : Math.min(interval, startupInterval), signal);
     }
   } finally {
     for (const { client } of sessions.values()) client.close();

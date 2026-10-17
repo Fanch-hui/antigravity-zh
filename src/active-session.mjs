@@ -4,12 +4,17 @@ import { promisify } from 'node:util';
 import { homedir } from 'node:os';
 import path from 'node:path';
 import { listAppProcesses } from './processes.mjs';
-import { discoverWindowsAppSession, windowsListeningPorts } from './windows/active-session.mjs';
+import { discoverWindowsAppSession, windowsActivePortFile, windowsListeningPorts } from './windows/active-session.mjs';
 
 const run = promisify(execFile);
 
 export function activePortFile(home = homedir()) {
   return path.join(home, 'Library/Application Support/Antigravity/DevToolsActivePort');
+}
+
+export function appActivePortFile({ userDataPath } = {}) {
+  if (process.platform === 'win32') return windowsActivePortFile(userDataPath);
+  return userDataPath ? path.join(userDataPath, 'DevToolsActivePort') : activePortFile();
 }
 
 export async function readActivePort(file = activePortFile()) {
@@ -52,13 +57,14 @@ export async function listeningPorts(pid) {
 
 export async function discoverAppSession(appPath, options = {}) {
   if (process.platform === 'win32') return discoverWindowsAppSession(appPath, options);
+  const port = await readActivePort(appActivePortFile(options));
+  if (!port) return null;
   const root = await realpath(appPath);
   const mainPath = path.join(root, 'Contents/MacOS/Antigravity');
   const processes = await listAppProcesses(appPath);
   const main = processes.find(process => process.path === mainPath
     || process.path === path.join(path.resolve(appPath), 'Contents/MacOS/Antigravity'));
   if (!main) return null;
-  const port = await readActivePort();
-  if (!port || !(await listeningPorts(main.pid)).includes(port)) return null;
+  if (!(await listeningPorts(main.pid)).includes(port)) return null;
   return { pid: main.pid, port };
 }

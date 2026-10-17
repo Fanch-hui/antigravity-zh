@@ -65,3 +65,11 @@ test('Windows session matches the first DevToolsActivePort line to its verified 
   owner = 99;
   assert.equal(await discoverWindowsAppSession(app, { userDataPath: directory, run }), null);
 });
+
+test('Windows discovery avoids PowerShell while the active-port file is absent', async t => {
+  const directory = await mkdtemp(path.join(tmpdir(), 'agy-win-no-port-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const result = await discoverWindowsAppSession(app, { userDataPath: directory,
+    run: async () => { throw new Error('PowerShell must not run without a port'); } });
+  assert.equal(result, null);
+});

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "v224.popover.copy-project",
+    "source": "Copy Project Name",
+    "target": "复制项目名称",
+    "context": "侧栏项目菜单：复制项目名称，保持复制动作不变",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-copy-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6865942,
+        "end": 6865980,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.copy-workspace",
+    "source": "Copy Workspace Name",
+    "target": "复制工作区名称",
+    "context": "侧栏工作区菜单：复制工作区名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-copy-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6865942,
+        "end": 6865980,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.reveal-finder",
+    "source": "Reveal in Finder",
+    "target": "在 Finder 中显示",
+    "context": "侧栏项目菜单：在 macOS Finder 中定位项目目录",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-reveal-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2013247,
+        "end": 2013271,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.reveal-explorer",
+    "source": "Show in File Explorer",
+    "target": "在文件资源管理器中显示",
+    "context": "侧栏项目菜单：在 Windows 文件资源管理器中定位项目目录",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-reveal-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2013287,
+        "end": 2013316,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.delete-project",
+    "source": "Delete Project",
+    "target": "删除项目",
+    "context": "侧栏项目菜单：删除项目操作的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-delete-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6866254,
+        "end": 6866291,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.delete-workspace",
+    "source": "Delete Workspace",
+    "target": "删除工作区",
+    "context": "侧栏工作区菜单：打开删除工作区确认",
+    "scope": "generic",
+    "selector": "[data-testid=\"group-header-delete-item\"] > span.truncate",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6866254,
+        "end": 6866291,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.pin",
+    "source": "Pin",
+    "target": "置顶",
+    "context": "会话置顶操作的鼠标悬停提示",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5888522,
+        "end": 5888538,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.unpin",
+    "source": "Unpin",
+    "target": "取消置顶",
+    "context": "取消会话置顶的鼠标悬停提示",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5888522,
+        "end": 5888538,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.settings",
+    "source": "Settings",
+    "target": "设置",
+    "context": "侧栏设置入口提示，快捷键单独保留",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"], [role=\"tooltip\"] > div.text-xs > span:first-child",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7134644,
+        "end": 7134666,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.new-project-conversation",
+    "source": "New Conversation in Project",
+    "target": "在项目中新建会话",
+    "context": "项目加号按钮提示：在当前项目中新建会话",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6871730,
+        "end": 6871759,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.new-workspace-conversation",
+    "source": "New Conversation in Workspace",
+    "target": "在工作区中新建会话",
+    "context": "工作区加号按钮提示：在当前工作区中新建会话",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6871698,
+        "end": 6871729,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.history",
+    "source": "Conversation History",
+    "target": "会话历史",
+    "context": "侧栏会话历史入口提示，快捷键单独保留",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"], [role=\"tooltip\"] > div.text-xs > span:first-child",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7132878,
+        "end": 7132912,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.send-message-key",
+    "source": "Send Message {0}",
+    "target": "发送消息 {0}",
+    "context": "发送按钮提示：直接发送消息，保留 Enter 或回车符号",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"], [role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6647574,
+        "end": 6647593,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:⏎|↩|Enter)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.send-message",
+    "source": "Send Message",
+    "target": "发送消息",
+    "context": "发送按钮提示或发送菜单固定操作",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"], [role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6647809,
+        "end": 6647841,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.popover.idle",
+    "source": "Idle",
+    "target": "空闲",
+    "context": "会话详情悬浮卡的空闲状态；用固定状态图标区分项目及分支名称",
+    "scope": "generic",
+    "selector": ".bg-card.text-foreground.border.flex.flex-col[class~=\"gap-1.5\"].w-72.outline-none.animate-slideIn[class~=\"!p-0\"][class~=\"!gap-0\"].overflow-hidden > .flex.flex-col[class~=\"gap-1.5\"].p-3 > .flex.flex-col[class~=\"gap-1.5\"] > .flex.items-center.gap-1.text-xs.text-muted-foreground:has(> span.shrink-0.flex.items-center > svg > path[d^=\"M423.23-309.85L692.15-578.77L650-620.92\"]) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5811028,
+        "end": 5811089,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.popover.updated",
+    "source": "Updated {0}",
+    "target": "更新于 {0}",
+    "context": "会话详情悬浮卡的更新时间；日期、时间和本地化格式保留原样",
+    "scope": "generic",
+    "selector": ".bg-card.text-foreground.border.flex.flex-col[class~=\"gap-1.5\"].w-72.outline-none.animate-slideIn[class~=\"!p-0\"][class~=\"!gap-0\"].overflow-hidden > .flex.flex-col[class~=\"gap-1.5\"].p-3 > .flex.flex-col[class~=\"gap-1.5\"] > .flex.items-center.gap-1.text-xs.text-muted-foreground:has(> span.shrink-0.flex.items-center > svg > path[d^=\"M618.92-298.92l42.15-42.15L510-492.16V-680\"]) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5810179,
+        "end": 5810193,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  }
+]

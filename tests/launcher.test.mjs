@@ -13,7 +13,9 @@ async function debuggerServer() {
   const connections = [];
   let initialized = true;
   let compatible = true;
+  const targetRequests = [];
   const server = createServer((request, response) => {
+    targetRequests.push(Date.now());
     response.setHeader('Content-Type', 'application/json');
     response.end(JSON.stringify(targets));
   });
@@ -33,7 +35,7 @@ async function debuggerServer() {
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   const { port } = server.address();
-  return { port, calls, connections, setTargets: value => { targets = value; },
+  return { port, calls, connections, targetRequests, setTargets: value => { targets = value; },
     setInitialized: value => { initialized = value; },
     setCompatible: value => { compatible = value; },
     async close() {
@@ -121,6 +123,23 @@ test('incompatible UI is rejected before registering or executing translation', 
   assert.equal(debuggerApp.calls.length, 1);
   assert.equal(debuggerApp.calls[0].params.awaitPromise, true);
   await until(() => debuggerApp.connections.every(socket => socket.readyState >= 2));
+});
+
+test('initial window discovery is fast and returns to the normal interval after readiness', async t => {
+  const debuggerApp = await debuggerServer();
+  t.after(() => debuggerApp.close());
+  const controller = new AbortController();
+  let ready = false;
+  const done = runInjection({ port: debuggerApp.port, script: 'window.test = true;',
+    signal: controller.signal, interval: 2000, onReady: () => { ready = true; } });
+  t.after(async () => { controller.abort(); await done; });
+  await until(() => debuggerApp.targetRequests.length >= 2);
+  assert.ok(debuggerApp.targetRequests[1] - debuggerApp.targetRequests[0] < 1000);
+  debuggerApp.setTargets([page(debuggerApp.port)]);
+  await until(() => ready);
+  const requestsAtReady = debuggerApp.targetRequests.length;
+  await new Promise(resolve => setTimeout(resolve, 250));
+  assert.equal(debuggerApp.targetRequests.length, requestsAtReady);
 });
 
 test('initial loading defers origin check until DOMContentLoaded and readiness waits for initialization', async t => {

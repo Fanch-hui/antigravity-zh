@@ -98,14 +98,16 @@
     });
   }
 
-  function localized(value, element, attribute) {
+  function localized(value, element, attribute, selfOnly = false) {
     const text = value.trim();
     if (!text || !safe(element, attribute)) return value;
     let target;
-    const record = (index.get(text) || []).find(item => matches(item, element, attribute));
+    const eligible = item => (!selfOnly || item.selector && item.selectorMode === 'self')
+      && matches(item, element, attribute);
+    const record = (index.get(text) || []).find(eligible);
     if (record) target = record.target.trim();
     else {
-      const template = templates.find(item => item.regex.test(text) && matches(item, element, attribute));
+      const template = templates.find(item => item.regex.test(text) && eligible(item));
       if (template) target = applyTemplate(template, text).trim();
     }
     if (target === undefined) return value;
@@ -133,14 +135,15 @@
     let snapshot = combinedParents.get(parent);
     const sameNodes = snapshot && nodes.length === snapshot.entries.length &&
       nodes.every((node, position) => node === snapshot.entries[position].node);
-    if (snapshot && (!sameNodes || parent.children.length || !safe(parent))) {
+    if (snapshot && (!sameNodes || !safe(parent))) {
       recoverCombined(parent, snapshot);
       snapshot = undefined;
     }
-    if (nodes.length < 2 || parent.children.length || !safe(parent)) return false;
+    if (nodes.length < 2 || !safe(parent)) return false;
     const sources = nodes.map((node, position) => sourceText(node, snapshot?.entries[position]));
     const source = sources.join('');
-    const target = localized(source, parent);
+    // Joining around inline shortcuts requires an exact label selector.
+    const target = localized(source, parent, undefined, parent.children.length > 0);
     if (target === source) {
       if (snapshot) recoverCombined(parent, snapshot);
       return false;
@@ -214,7 +217,7 @@
     observer.observe(document.body, {
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.0', translate });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.1', translate });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

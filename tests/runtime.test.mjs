@@ -42,6 +42,17 @@ function mount(html, url = 'https://127.0.0.1:42000/') {
 
 const settle = dom => new Promise(resolve => dom.window.setTimeout(resolve, 0));
 
+test('generic phrases do not combine text around inline content without a specific label selector', () => {
+  const dom = mount('<button id="control"><kbd>Enter</kbd></button>');
+  const button = dom.window.document.getElementById('control');
+  const shortcut = button.querySelector('kbd');
+  button.prepend(...['Allow ', 'Once'].map(text => dom.window.document.createTextNode(text)));
+  dom.window.__AGY_ZH_RUNTIME__.translate(button);
+  assert.equal(button.textContent, 'Allow OnceEnter');
+  assert.equal(button.querySelector('kbd'), shortcut);
+  dom.window.close();
+});
+
 test('uses actual settings structure and contextual options; retains whitespace and long descriptions', () => {
   const dom = mount(`<div class="max-w-2xl mx-auto flex-col gap-4">
     <span id="policy" >  Review Policy\n</span><span id="specific">Review</span>

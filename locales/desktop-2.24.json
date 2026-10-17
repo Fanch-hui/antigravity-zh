@@ -1,0 +1,405 @@
+[
+  {
+    "id": "v224.queue.send",
+    "source": "{0} Sends immediately",
+    "target": "{0} 立即发送",
+    "context": "消息排队策略的快捷键说明；保留平台快捷键",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > span.flex.flex-col.gap-1.whitespace-nowrap > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6036167,
+        "end": 6036184,
+        "kind": "static-template:2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|Alt\\+Enter|⏎|⌥⏎)"
+    }
+  },
+  {
+    "id": "v224.queue.queue",
+    "source": "{0} Queues after the turn",
+    "target": "{0} 在当前轮次结束后发送",
+    "context": "消息排队策略的快捷键说明；保留平台快捷键",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > span.flex.flex-col.gap-1.whitespace-nowrap > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6036192,
+        "end": 6036213,
+        "kind": "static-template:2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|Alt\\+Enter|⏎|⌥⏎)"
+    }
+  },
+  {
+    "id": "v224.queue.next",
+    "source": "{0} On empty prompt, sends next in queue",
+    "target": "{0} 输入框为空时，发送队列中的下一条消息",
+    "context": "消息排队策略的快捷键说明；保留平台快捷键",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > span.flex.flex-col.gap-1.whitespace-nowrap > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6036326,
+        "end": 6036362,
+        "kind": "static-template:2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|Alt\\+Enter|⏎|⌥⏎)"
+    }
+  },
+  {
+    "id": "v224.group.models",
+    "source": "Models within this group: {0}",
+    "target": "此分组中的模型：{0}",
+    "context": "模型额度分组提示；仅处理截图确认的两组模型列表，名称保持原样",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "server-ui:2.24.0",
+        "field": "group.description",
+        "assetHash": "7a0bf9576e8ffd8e9fb39716368b1c79c2ccd965da65e049fe846100f34edf88"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Gemini Flash, Gemini Pro|Claude Opus, Claude Sonnet, GPT-OSS)"
+    }
+  },
+  {
+    "id": "v224.argon.quota",
+    "source": "For paid Pro plans, Argon quota is separate. Higher Argon quota (included as part of the larger Gemini quota bucket) is available on Ultra plans.",
+    "target": "付费 Pro 方案的 Argon 额度单独计算。Ultra 方案提供更高的 Argon 额度，计入其更大的 Gemini 总额度。",
+    "context": "模型额度分组说明；Pro 单独计算 Argon，Ultra 将 Argon 纳入 Gemini 总额度",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "server-ui:2.24.0",
+        "field": "group.description",
+        "assetHash": "7a0bf9576e8ffd8e9fb39716368b1c79c2ccd965da65e049fe846100f34edf88"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.bug",
+    "source": "Bug Report",
+    "target": "问题报告",
+    "context": "反馈表单的问题类型；Auth 指身份验证，包含登录相关问题",
+    "scope": "generic",
+    "selector": "label.flex.items-center.gap-2.text-sm.cursor-pointer:has(input[type=\"radio\"][name=\"feedbackType\"]) > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5756566,
+        "end": 5756576,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.feature",
+    "source": "Feature Request",
+    "target": "功能建议",
+    "context": "反馈表单的问题类型；Auth 指身份验证，包含登录相关问题",
+    "scope": "generic",
+    "selector": "label.flex.items-center.gap-2.text-sm.cursor-pointer:has(input[type=\"radio\"][name=\"feedbackType\"]) > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5756597,
+        "end": 5756612,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.auth",
+    "source": "Auth and Billing",
+    "target": "身份验证与计费",
+    "context": "反馈表单的问题类型；Auth 指身份验证，包含登录相关问题",
+    "scope": "generic",
+    "selector": "label.flex.items-center.gap-2.text-sm.cursor-pointer:has(input[type=\"radio\"][name=\"feedbackType\"]) > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5756634,
+        "end": 5756650,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.remote",
+    "source": "Remote Control Issue",
+    "target": "远程控制问题",
+    "context": "反馈表单的问题类型；Auth 指身份验证，包含登录相关问题",
+    "scope": "generic",
+    "selector": "label.flex.items-center.gap-2.text-sm.cursor-pointer:has(input[type=\"radio\"][name=\"feedbackType\"]) > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5756676,
+        "end": 5756696,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.general",
+    "source": "General Feedback",
+    "target": "其他反馈",
+    "context": "反馈表单的问题类型；Auth 指身份验证，包含登录相关问题",
+    "scope": "generic",
+    "selector": "label.flex.items-center.gap-2.text-sm.cursor-pointer:has(input[type=\"radio\"][name=\"feedbackType\"]) > span",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5756718,
+        "end": 5756734,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.feedback.placeholder.bug",
+    "source": "Describe the bug you encountered...",
+    "target": "请描述您遇到的问题...",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5758972,
+        "end": 5759007,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.feedback.placeholder.feature",
+    "source": "Describe the feature you would like to see...",
+    "target": "请描述您希望增加的功能...",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5759028,
+        "end": 5759073,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.feedback.placeholder.auth",
+    "source": "Describe your auth or billing issue...",
+    "target": "请描述您的身份验证或计费问题...",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5759095,
+        "end": 5759133,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.feedback.placeholder.remote",
+    "source": "Describe your Remote Control issue...",
+    "target": "请描述您的远程控制问题...",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5759159,
+        "end": 5759196,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.feedback.placeholder.general",
+    "source": "Enter your feedback here...",
+    "target": "请在此处填写反馈...",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5759219,
+        "end": 5759246,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.feedback.placeholder.steps",
+    "source": "Please list the steps to reproduce the issue",
+    "target": "请列出问题的复现步骤",
+    "context": "反馈表单的输入提示；不修改用户填写的正文",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4:has(input[type=\"radio\"][name=\"feedbackType\"]) textarea",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5762668,
+        "end": 5762712,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.settings.show-all",
+    "source": "Show All",
+    "target": "显示全部",
+    "context": "设置侧栏项目列表的展开和收起按钮",
+    "scope": "generic",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6191193,
+        "end": 6191201,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.settings.show-less",
+    "source": "Show Less",
+    "target": "收起",
+    "context": "设置侧栏项目列表的展开和收起按钮",
+    "scope": "generic",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6191181,
+        "end": 6191190,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.plan.upgrade",
+    "source": "You can upgrade to a Google AI Ultra plan to receive higher rate limits.",
+    "target": "您可以升级到 Google AI Ultra 方案，以获得更高的使用限额。",
+    "context": "订阅方案说明；rate limits 在订阅用量语境指使用限额，不承诺模型速度",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 .py-2.px-3.justify-between > .flex-1.flex.flex-col[class~=\"gap-0.5\"] > span.text-xs.text-muted-foreground.whitespace-pre-wrap",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "server-ui:2.24.0",
+        "field": "userTier.upgradeSubscriptionText",
+        "assetHash": "7a0bf9576e8ffd8e9fb39716368b1c79c2ccd965da65e049fe846100f34edf88"
+      }
+    ]
+  },
+  {
+    "id": "v224.project.select-tooltip",
+    "source": "Select Project",
+    "target": "选择项目",
+    "context": "项目选择按钮的提示；相邻快捷键和项目名称保持原样",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > div.text-xs > span:first-child",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6777339,
+        "end": 6777353,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "selectorMode": "self"
+  },
+  {
+    "id": "v224.project.search",
+    "source": "Search Projects",
+    "target": "搜索项目",
+    "context": "项目选择器的搜索输入提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-search\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6770786,
+        "end": 6770801,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v224.sidebar.display-tooltip",
+    "source": "Display Options",
+    "target": "显示选项",
+    "context": "会话侧栏和历史记录的显示选项提示",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5908725,
+        "end": 5908740,
+        "kind": "static-ui:2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "v224.sidebar.display-label",
+    "source": "Display Options",
+    "target": "显示选项",
+    "context": "会话侧栏和历史记录的显示选项按钮",
+    "scope": "generic",
+    "selector": "button[data-tooltip-id]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5792545,
+        "end": 5792560,
+        "kind": "static-ui:2.24.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  }
+]

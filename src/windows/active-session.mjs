@@ -54,10 +54,10 @@ export async function windowsListeningPorts(pid, { run = runPowerShell } = {}) {
 export async function discoverWindowsAppSession(appPath, {
   userDataPath, run = runPowerShell,
 } = {}) {
-  const processes = await listWindowsAppProcesses(appPath, { mainOnly: true, run });
-  if (!processes.length) return null;
   const port = await readWindowsActivePort(windowsActivePortFile(userDataPath));
   if (!port) return null;
+  const processes = await listWindowsAppProcesses(appPath, { mainOnly: true, run });
+  if (!processes.length) return null;
   const listeners = await loopbackListeners(processes.map(({ pid }) => pid), run);
   return listeners.find(listener => listener.port === port) || null;
 }

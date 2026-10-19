@@ -78,10 +78,10 @@
   {
     "id": "work-feedback.message-from",
     "source": "Message from {0}",
-    "target": "来自 {0} 的消息",
+    "target": "消息来自 {0}",
     "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
     "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -89,6 +89,14 @@
       {
         "start": 46825768,
         "kind": "static:language-server-2.24.0"
+      },
+      {
+        "start": 5288471,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5400858,
+        "kind": "static:ui-2.24.0"
       }
     ],
     "template": true,
@@ -99,10 +107,10 @@
   {
     "id": "work-feedback.error-from",
     "source": "Error from {0}",
-    "target": "来自 {0} 的错误",
+    "target": "错误来自 {0}",
     "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
     "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -110,6 +118,14 @@
       {
         "start": 46671314,
         "kind": "static:language-server-2.24.0"
+      },
+      {
+        "start": 5288471,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5400858,
+        "kind": "static:ui-2.24.0"
       }
     ],
     "template": true,
@@ -123,7 +139,7 @@
     "target": "个人额度已用尽。请升级订阅以提高额度。将在 {0} 后重置。",
     "context": "服务端固定个人额度错误提示，仅允许数字和既有时间单位，保留原时长",
     "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.flex-row.flex-wrap.items-center.gap-1:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.flex-row.flex-wrap.items-center.gap-1 > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -219,6 +235,245 @@
     "template": true,
     "capturePatterns": {
       "0": "\\d+(?:mo|[mhdwy])"
+    }
+  },
+  {
+    "id": "work-feedback.message-from-prefix",
+    "source": "Message from",
+    "target": "消息来自",
+    "context": "官方工作反馈的固定提示，与智能体引用分开渲染；只改提示节点，保留名称和交互",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 46825768,
+        "kind": "static:language-server-2.24.0"
+      },
+      {
+        "start": 5288471,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5400858,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.error-from-prefix",
+    "source": "Error from",
+    "target": "错误来自",
+    "context": "官方工作反馈的固定提示，与智能体引用分开渲染；只改提示节点，保留名称和交互",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 46671314,
+        "kind": "static:language-server-2.24.0"
+      },
+      {
+        "start": 5288471,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5400858,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.reference-label",
+    "source": "Open Subagent: {0}",
+    "target": "打开子智能体：{0}",
+    "context": "官方子智能体引用的打开提示，名称及类型保持原文",
+    "scope": "generic",
+    "selector": ".inline-flex.items-center.gap-1.max-w-full.overflow-hidden.rounded-sm[role=\"button\"][data-tooltip-id]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5397550,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "work-feedback.reference-tooltip",
+    "source": "Open Subagent: {0}",
+    "target": "打开子智能体：{0}",
+    "context": "官方子智能体引用的打开提示，名称及类型保持原文",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5397550,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "work-feedback.baseline-quota-date",
+    "source": "Your plan's baseline quota will refresh on {0}.",
+    "target": "您的订阅方案基础额度将于 {0} 重置。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    }
+  },
+  {
+    "id": "work-feedback.baseline-quota-overages",
+    "source": "To continue using this model now, enable AI Credit overages.",
+    "target": "如需立即继续使用此模型，请启用超额用量（使用 AI 点数）。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.credits-minimum",
+    "source": "You need at least {0} AI Credits to send messages. To continue using {1} now, purchase more AI Credits.",
+    "target": "发送消息至少需要 {0} AI 点数。如需立即继续使用 {1}，请购买更多 AI 点数。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "[^\\r\\n]{1,120}"
+    },
+    "captureMappings": {
+      "1": {
+        "this model": "此模型"
+      }
+    }
+  },
+  {
+    "id": "work-feedback.credits-minimum-refresh",
+    "source": "You need at least {0} AI Credits to send messages. To continue using {1} now, purchase more AI Credits. Your plan's baseline quota will refresh on {2}.",
+    "target": "发送消息至少需要 {0} AI 点数。如需立即继续使用 {1}，请购买更多 AI 点数。 您的订阅方案基础额度将于 {2} 重置。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "[^\\r\\n]{1,120}",
+      "2": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    },
+    "captureMappings": {
+      "1": {
+        "this model": "此模型"
+      }
+    }
+  },
+  {
+    "id": "work-feedback.credits-more",
+    "source": "You need more AI Credits to send messages. To continue using {0} now, purchase more AI Credits.",
+    "target": "发送消息需要更多 AI 点数。如需立即继续使用 {0}，请购买更多 AI 点数。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,120}"
+    },
+    "captureMappings": {
+      "0": {
+        "this model": "此模型"
+      }
+    }
+  },
+  {
+    "id": "work-feedback.credits-more-refresh",
+    "source": "You need more AI Credits to send messages. To continue using {0} now, purchase more AI Credits. Your plan's baseline quota will refresh on {1}.",
+    "target": "发送消息需要更多 AI 点数。如需立即继续使用 {0}，请购买更多 AI 点数。 您的订阅方案基础额度将于 {1} 重置。",
+    "context": "官方额度通知说明的固定分支，保留模型名称、点数数量及重置日期",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537633,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,120}",
+      "1": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    },
+    "captureMappings": {
+      "0": {
+        "this model": "此模型"
+      }
     }
   }
 ]

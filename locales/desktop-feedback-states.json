@@ -1,0 +1,2549 @@
+[
+  {
+    "id": "feedback-states.prefix-1",
+    "source": "Editing",
+    "target": "正在编辑",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340642,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-2",
+    "source": "Canceled edit to",
+    "target": "已取消编辑",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340654,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-3",
+    "source": "Edited",
+    "target": "已编辑",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340673,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-4",
+    "source": "Creating",
+    "target": "正在创建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340831,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-5",
+    "source": "Canceled creation of",
+    "target": "已取消创建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340844,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-6",
+    "source": "Created",
+    "target": "已创建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340867,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-7",
+    "source": "Deleting",
+    "target": "正在删除",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340981,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-8",
+    "source": "Canceled deletion of",
+    "target": "已取消删除",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340994,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-9",
+    "source": "Deleted",
+    "target": "已删除",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5341017,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-10",
+    "source": "Bookmarking",
+    "target": "正在添加书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340588,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-11",
+    "source": "Canceled bookmark of",
+    "target": "已取消添加书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340604,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-12",
+    "source": "Bookmarked",
+    "target": "已添加书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340627,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-13",
+    "source": "Removing bookmark",
+    "target": "正在移除书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340906,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-14",
+    "source": "Canceled removal of bookmark",
+    "target": "已取消移除书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340928,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-15",
+    "source": "Removed bookmark",
+    "target": "已移除书签",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5340960,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-16",
+    "source": "Building",
+    "target": "正在构建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5368336,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-17",
+    "source": "Failed to build",
+    "target": "构建失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5368349,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-18",
+    "source": "Built",
+    "target": "已构建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5368367,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-19",
+    "source": "Testing",
+    "target": "正在测试",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5369787,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-20",
+    "source": "Test failed",
+    "target": "测试失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5369799,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-21",
+    "source": "Tested",
+    "target": "已测试",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5369813,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-22",
+    "source": "Build Cleaner completed for",
+    "target": "已完成构建清理",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5371535,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-23",
+    "source": "Build Cleaner is running on",
+    "target": "正在清理构建",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5371565,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-24",
+    "source": "Analyzing",
+    "target": "正在分析",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5373081,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-25",
+    "source": "Analyzed",
+    "target": "已分析",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5373093,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-26",
+    "source": "Searching Moma for",
+    "target": "正在搜索 Moma",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5374638,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-27",
+    "source": "Searched Moma for",
+    "target": "已搜索 Moma",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5374659,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-28",
+    "source": "Retrieving findings for",
+    "target": "正在获取检查结果",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5377940,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-29",
+    "source": "Retrieved findings for",
+    "target": "已获取检查结果",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5377966,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-30",
+    "source": "Semantic searching",
+    "target": "正在进行语义搜索",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5470387,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-31",
+    "source": "Semantic searched",
+    "target": "已完成语义搜索",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5470408,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-32",
+    "source": "Analyzing content",
+    "target": "正在分析内容",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5478029,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-33",
+    "source": "Analyzed content",
+    "target": "已分析内容",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5478050,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-34",
+    "source": "Run",
+    "target": "运行",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5474501,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-35",
+    "source": "Ran",
+    "target": "已运行",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5407739,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-36",
+    "source": "Rejected",
+    "target": "已拒绝",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5407752,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-37",
+    "source": "Canceled",
+    "target": "已取消",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5407765,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-38",
+    "source": "Errored",
+    "target": "执行出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5474962,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-39",
+    "source": "Scrolled",
+    "target": "已滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5490045,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-40",
+    "source": "Searching",
+    "target": "正在搜索",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5351285,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-41",
+    "source": "Searched",
+    "target": "已搜索",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5351297,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-42",
+    "source": "Reading page",
+    "target": "正在读取页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5494666,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-43",
+    "source": "Created outline",
+    "target": "已生成大纲",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5494685,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-44",
+    "source": "Read page",
+    "target": "已读取页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5494703,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-45",
+    "source": "Failed to edit",
+    "target": "编辑失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5515403,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-46",
+    "source": "Failed to read",
+    "target": "读取失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5516993,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-47",
+    "source": "Reading",
+    "target": "正在读取",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5483678,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-48",
+    "source": "Read",
+    "target": "已读取",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5483688,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-49",
+    "source": "Asking",
+    "target": "正在提问",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5520198,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-50",
+    "source": "Asked",
+    "target": "已提问",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5520207,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-51",
+    "source": "Failed to execute notebook",
+    "target": "执行 Notebook 失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5384447,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-52",
+    "source": "Executing notebook",
+    "target": "正在执行 Notebook",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5384447,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-53",
+    "source": "Executed notebook",
+    "target": "已执行 Notebook",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5384447,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-54",
+    "source": "Failed to execute notebook cells",
+    "target": "执行 Notebook 单元格失败",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5385975,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-55",
+    "source": "Executing notebook cells",
+    "target": "正在执行 Notebook 单元格",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5385975,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.prefix-56",
+    "source": "Executed notebook cells",
+    "target": "已执行 Notebook 单元格",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5385975,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-57",
+    "source": "Invalid tool call",
+    "target": "工具调用无效",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5289512,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-58",
+    "source": "Error editing file",
+    "target": "编辑文件时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5289722,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-59",
+    "source": "Error viewing file",
+    "target": "查看文件时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5289923,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-60",
+    "source": "Error editing notebook",
+    "target": "编辑 Notebook 时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290144,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-61",
+    "source": "Error reading notebook",
+    "target": "读取 Notebook 时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290368,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-62",
+    "source": "Error while searching",
+    "target": "搜索时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290830,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-63",
+    "source": "Error while searching filesystem",
+    "target": "搜索文件系统时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290872,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-64",
+    "source": "Error while running command",
+    "target": "运行命令时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290931,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-65",
+    "source": "Error while semantic searching",
+    "target": "语义搜索时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290981,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-66",
+    "source": "Error while analyzing directory",
+    "target": "分析目录时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5291042,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-67",
+    "source": "Error while searching the web",
+    "target": "搜索网页时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5291099,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-68",
+    "source": "Error while running MCP tool",
+    "target": "运行 MCP 工具时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5291152,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-69",
+    "source": "Error during tool execution",
+    "target": "执行工具时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5291289,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-file-70",
+    "source": "Error while editing",
+    "target": "编辑时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1 > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5289667,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-file-71",
+    "source": "Error while viewing",
+    "target": "查看时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1 > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5289868,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-file-72",
+    "source": "Error while editing notebook",
+    "target": "编辑 Notebook 时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1 > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290080,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-file-73",
+    "source": "Error while reading notebook",
+    "target": "读取 Notebook 时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span.flex.flex-row.items-center.gap-1 > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5290304,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-74",
+    "source": "Moving Mouse in Browser",
+    "target": "正在浏览器中移动鼠标",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5485804,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-75",
+    "source": "Moved Mouse in Browser",
+    "target": "已在浏览器中移动鼠标",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5485830,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-76",
+    "source": "Typing into Browser",
+    "target": "正在浏览器中输入",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5486236,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-77",
+    "source": "Typed into Browser",
+    "target": "已在浏览器中输入",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5486258,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-78",
+    "source": "Selecting Option in Browser",
+    "target": "正在浏览器中选择选项",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5486670,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-79",
+    "source": "Selected Option in Browser",
+    "target": "已在浏览器中选择选项",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5486700,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-80",
+    "source": "Scrolling in Browser",
+    "target": "正在浏览器中滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487100,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-81",
+    "source": "Scrolled in Browser",
+    "target": "已在浏览器中滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487123,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-82",
+    "source": "Scrolling up in Browser",
+    "target": "正在浏览器中向上滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487477,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-83",
+    "source": "Scrolled up in Browser",
+    "target": "已在浏览器中向上滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487503,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-84",
+    "source": "Scrolling down in Browser",
+    "target": "正在浏览器中向下滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487864,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-85",
+    "source": "Scrolled down in Browser",
+    "target": "已在浏览器中向下滚动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5487892,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-86",
+    "source": "Resizing Browser window",
+    "target": "正在调整浏览器窗口大小",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5488208,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-87",
+    "source": "Resized Browser window",
+    "target": "已调整浏览器窗口大小",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5488234,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-88",
+    "source": "Taking Screenshot",
+    "target": "正在截屏",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5488681,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-89",
+    "source": "Took Screenshot",
+    "target": "已截屏",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5488701,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-90",
+    "source": "Clicking in Browser",
+    "target": "正在浏览器中点击",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5489222,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-91",
+    "source": "Clicked in Browser",
+    "target": "已在浏览器中点击",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5489244,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-92",
+    "source": "Dragging in Browser",
+    "target": "正在浏览器中拖动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5489595,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-93",
+    "source": "Dragged in Browser",
+    "target": "已在浏览器中拖动",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5489617,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-94",
+    "source": "Mouse button released",
+    "target": "已释放鼠标按键",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5490464,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-95",
+    "source": "Mouse button pressed",
+    "target": "已按下鼠标按键",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5490694,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-96",
+    "source": "Opening URL in Browser",
+    "target": "正在浏览器中打开网址",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5493915,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-97",
+    "source": "Opened URL in Browser",
+    "target": "已在浏览器中打开网址",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5493940,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-98",
+    "source": "Reading Browser Page in Browser",
+    "target": "正在读取浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5497738,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-99",
+    "source": "Read Browser Page in Browser",
+    "target": "已读取浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5497772,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-100",
+    "source": "Retrieving Browser Pages",
+    "target": "正在获取浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5511113,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-101",
+    "source": "Retrieved Browser Pages",
+    "target": "已获取浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5511140,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-102",
+    "source": "Retrieving Console Logs from Browser",
+    "target": "正在获取浏览器控制台日志",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5511518,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-103",
+    "source": "Retrieved Console Logs from Browser",
+    "target": "已获取浏览器控制台日志",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5511557,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-104",
+    "source": "Refreshing Browser page",
+    "target": "正在刷新浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5516579,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-105",
+    "source": "Refreshed Browser page",
+    "target": "已刷新浏览器页面",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5516605,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.send-input-106",
+    "source": "Rejected sending {0} to command",
+    "target": "已拒绝向命令发送{0}",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475995,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "captureMappings": {
+      "0": {
+        "termination request": "终止请求",
+        "input": "输入"
+      }
+    },
+    "capturePatterns": {
+      "0": "(?:input|termination request)"
+    }
+  },
+  {
+    "id": "feedback-states.send-input-107",
+    "source": "Sent {0} to command",
+    "target": "已向命令发送{0}",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475995,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "captureMappings": {
+      "0": {
+        "termination request": "终止请求",
+        "input": "输入"
+      }
+    },
+    "capturePatterns": {
+      "0": "(?:input|termination request)"
+    }
+  },
+  {
+    "id": "feedback-states.send-input-108",
+    "source": "Suggested sending {0} to command",
+    "target": "建议向命令发送{0}",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475995,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "captureMappings": {
+      "0": {
+        "termination request": "终止请求",
+        "input": "输入"
+      }
+    },
+    "capturePatterns": {
+      "0": "(?:input|termination request)"
+    }
+  },
+  {
+    "id": "feedback-states.send-input-109",
+    "source": "Error sending {0} to command",
+    "target": "向命令发送{0}时出错",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475995,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "captureMappings": {
+      "0": {
+        "termination request": "终止请求",
+        "input": "输入"
+      }
+    },
+    "capturePatterns": {
+      "0": "(?:input|termination request)"
+    }
+  },
+  {
+    "id": "feedback-states.send-input-110",
+    "source": "Sending {0} to command",
+    "target": "正在向命令发送{0}",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475995,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "captureMappings": {
+      "0": {
+        "termination request": "终止请求",
+        "input": "输入"
+      }
+    },
+    "capturePatterns": {
+      "0": "(?:input|termination request)"
+    }
+  },
+  {
+    "id": "feedback-states.questions-111",
+    "source": "{0} question{1}",
+    "target": "{0} 个问题{1}",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot])), .rounded-xl.border.border-border[class~=\"mt-0.5\"] > .flex.items-center[class~=\"gap-1.5\"].border-b.border-border.px-2[class~=\"py-1.5\"].text-xs.text-secondary-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5520215,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "s?"
+    },
+    "captureMappings": {
+      "1": {
+        "s": "",
+        "": ""
+      }
+    }
+  },
+  {
+    "id": "feedback-states.wait-112",
+    "source": "Wait for",
+    "target": "等待",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span:has(> span.font-medium)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5514992,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.waiting-113",
+    "source": "Waiting for user input",
+    "target": "等待用户输入",
+    "context": "官方工作步骤固定状态，名称、文件路径、命令及工具正文原样保留",
+    "scope": "generic",
+    "selector": ".flex.flex-col > .flex.flex-col > .mt-0\\.5.px-2.h-8.text-sm.text-muted-foreground.select-none.flex.items-center",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5283556,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.relative-114",
+    "source": "just now",
+    "target": "刚刚",
+    "context": "消息底部固定相对时间状态，其他时间保留原单位",
+    "scope": "generic",
+    "selector": "[data-testid=\"cascade-system-message-toolbar\"] span[data-screenshot-volatile][data-tooltip-id].text-xs.text-muted-foreground.select-none.px-1.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3630589,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-115",
+    "source": "Verification required",
+    "target": "需要验证",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6521208,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-116",
+    "source": "Action required",
+    "target": "需要采取行动",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6521711,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-117",
+    "source": "Authentication expired",
+    "target": "登录已过期",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6521894,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-118",
+    "source": "Agent terminated due to error",
+    "target": "智能体因错误终止",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6522109,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-119",
+    "source": "Insufficient AI Credits",
+    "target": "AI 点数不足",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6524468,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-120",
+    "source": "Model quota reached",
+    "target": "已达模型配额上限",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6525202,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-121",
+    "source": "Error Loading Models",
+    "target": "加载模型时出错",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6527448,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-122",
+    "source": "No Models Available",
+    "target": "没有可用模型",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6527554,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-123",
+    "source": "Select Model to Send Message",
+    "target": "选择模型以发送消息",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6527756,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-124",
+    "source": "Your AI credits balance is too low to continue.",
+    "target": "您的 AI 点数余额不足，无法继续使用。",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6520905,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-125",
+    "source": "Your session has expired. Please log back in to continue.",
+    "target": "您的登录已过期。请重新登录以继续使用。",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6521927,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-126",
+    "source": "This error is likely temporary. You can prompt the model to try again after some time.",
+    "target": "此错误可能是暂时的。稍等片刻后，可以提示模型重试。",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6522166,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-127",
+    "source": "You can prompt the model to try again or start a new conversation if the error persists.",
+    "target": "您可以提示模型重试；如果错误持续出现，请开始新会话。",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6522479,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-128",
+    "source": "No models are available for your current project or account. Please check your project settings and IAM permissions.",
+    "target": "当前项目或账户没有可用模型。请检查项目设置和 IAM 权限。",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6527584,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-129",
+    "source": "Select a model using the model selector in the input box",
+    "target": "请使用输入框中的模型选择器选择模型",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6527795,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-130",
+    "source": "Too many requests, please try again in a bit!",
+    "target": "请求过于频繁，请稍后重试！",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3538472,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-131",
+    "source": "Please verify your account to continue using",
+    "target": "请验证账户以继续使用",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"] > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6521268,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.notice-132",
+    "source": "Log back in",
+    "target": "重新登录",
+    "context": "官方输入框通知卡的固定标题或说明，保留动态账户、模型及错误内容",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.flex-row.items-center.justify-end > button",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6522010,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-133",
+    "source": "Extracting DOM elements",
+    "target": "正在提取 DOM 元素",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5507957,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-134",
+    "source": "Extracted DOM elements",
+    "target": "已提取 DOM 元素",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5507983,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-135",
+    "source": "Fetching network requests",
+    "target": "正在获取网络请求",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5509290,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-136",
+    "source": "Fetched network requests",
+    "target": "已获取网络请求",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5509318,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-137",
+    "source": "Fetching network request",
+    "target": "正在获取网络请求",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5510352,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.fragment-138",
+    "source": "Fetched network request",
+    "target": "已获取网络请求",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5510379,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-139",
+    "source": "Analyzing Task Log",
+    "target": "正在分析任务日志",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5472645,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.content-140",
+    "source": "Analyzed Task Log",
+    "target": "已分析任务日志",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5472666,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.error-141",
+    "source": "Error",
+    "target": "错误",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex), :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.text-muted-foreground:first-child:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot]))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5291209,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.unknown-142",
+    "source": "Unknown Notebook",
+    "target": "未知 Notebook",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ":is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.truncate.text-muted-foreground, :is(.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground, .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > span > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground) > span.inline-flex.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5384585,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.plain-state-143",
+    "source": "Checking command status",
+    "target": "正在检查命令状态",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1 > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475746,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.plain-state-144",
+    "source": "Checked command status",
+    "target": "已检查命令状态",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1 > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475772,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.plain-state-145",
+    "source": "Knowledge Generation",
+    "target": "知识生成",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1 > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5512975,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "feedback-states.plain-state-146",
+    "source": "Waiting for command completion (up to {0} seconds)",
+    "target": "等待命令完成（最多 {0} seconds）",
+    "context": "官方工作反馈固定状态，数字、原时长单位、路径、名称和正文原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1 > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5475500,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  }
+]

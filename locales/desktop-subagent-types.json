@@ -1,0 +1,62 @@
+[
+  {
+    "id": "subagent-type.research",
+    "source": "research",
+    "target": "调研",
+    "context": "子智能体输入框底部的内置类型显示标签，内部名称及调用标识保持不变",
+    "scope": "generic",
+    "selector": "[data-testid=\"agent-input-box\"] [class~=\"@container/input-footer\"] > .flex.min-w-0.flex-1.items-center.gap-0 > .flex.items-center.gap-0.min-w-0 > .py-1.px-2.flex.items-center.gap-1.rounded-md.text-secondary-foreground:is([title=\"Subagent\"], [title=\"子智能体\"]) > span.text-xs.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6661117,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 48771792,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "subagent-type.self",
+    "source": "self",
+    "target": "通用",
+    "context": "子智能体输入框底部的内置类型显示标签，内部名称及调用标识保持不变",
+    "scope": "generic",
+    "selector": "[data-testid=\"agent-input-box\"] [class~=\"@container/input-footer\"] > .flex.min-w-0.flex-1.items-center.gap-0 > .flex.items-center.gap-0.min-w-0 > .py-1.px-2.flex.items-center.gap-1.rounded-md.text-secondary-foreground:is([title=\"Subagent\"], [title=\"子智能体\"]) > span.text-xs.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6661117,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 48649938,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "subagent-type.tooltip",
+    "source": "Subagent",
+    "target": "子智能体",
+    "context": "子智能体输入框底部类型徽标的原生提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"agent-input-box\"] [class~=\"@container/input-footer\"] > .flex.min-w-0.flex-1.items-center.gap-0 > .flex.items-center.gap-0.min-w-0 > .py-1.px-2.flex.items-center.gap-1.rounded-md.text-secondary-foreground:is([title=\"Subagent\"], [title=\"子智能体\"])",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "title",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6661117,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  }
+]

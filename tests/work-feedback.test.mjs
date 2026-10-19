@@ -8,6 +8,17 @@ const header = content => `<div class="group flex w-full min-w-0 items-center mi
   <div class="flex min-w-0 items-center gap-x-1 text-sm"><span class="truncate">${content}</span></div></div>`;
 const title = (id, text) => header(`<div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground">
   <span class="text-muted-foreground">Error</span><span class="truncate text-muted-foreground" id="${id}">${text}</span></div>`);
+const agentReference = name => `<div role="button" aria-label="Open Subagent: ${name}" data-tooltip-id="agent-reference" class="inline-flex items-center gap-1 max-w-full overflow-hidden rounded-sm group/agent-ref">
+  <svg></svg><span class="truncate min-w-0 text-muted-foreground group-hover/agent-ref:text-foreground transition-colors">${name}</span></div>`;
+const eventTitle = (id, text, { structured = false, generic = false, transitions = false, custom = false } = {}) => {
+  const content = structured
+    ? `<span class="inline-flex text-muted-foreground"><span class="inline-flex items-center gap-1 overflow-hidden text-muted-foreground">
+      <span id="${id}" class="truncate min-w-0 text-muted-foreground">${text}</span>${agentReference('Settings (research)')}</span></span>`
+    : custom ? `<span class="truncate" id="${id}">${text}</span>`
+      : `<span class="truncate text-muted-foreground"${transitions ? '' : ` id="${id}"`}>${transitions ? `<span id="${id}">${text}</span>` : text}</span>`;
+  const view = `<div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground">${content}</div>`;
+  return header(generic ? `<span>${view}</span>` : view);
+};
 const launched = (id, status, count) => header(`<div class="flex items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground" id="${id}">
   <span>${status}</span><span>${count} subagents</span></div>`);
 const banner = content => `<div class="flex flex-col p-2.5 pl-3 rounded-2xl border bg-card max-h-[300px] overflow-y-auto shadow-md">${content}</div>`;
@@ -48,25 +59,73 @@ test('subagent startup preserves separate status and count nodes', () => {
   dom.window.close();
 });
 
-test('work event headers preserve complete agent names and type identifiers', () => {
-  const dom = mount(title('message', 'Message from Example Reviewer (self)') + title('error', 'Error from Example Analyst (research)') +
+test('event headers cover plain, transitioning, generic and structured official title renderers', () => {
+  const dom = mount(eventTitle('message', 'Message from Example Reviewer (self)') +
+    eventTitle('transition', 'Error from Example Analyst (research)', { generic: true, transitions: true }) +
+    eventTitle('custom', 'Message from Example Reviewer (self)', { custom: true }) +
+    eventTitle('structured-message', 'Message from', { structured: true, generic: true }) +
+    eventTitle('structured-error', 'Error from', { structured: true }) +
     '<div data-testid="subagent-tab-header-title">research</div><div data-testid="planner-response-text">Message from Example Reviewer (self)</div>');
   const doc = dom.window.document;
-  assert.equal(doc.querySelector('#message').textContent, '来自 Example Reviewer (self) 的消息');
-  assert.equal(doc.querySelector('#error').textContent, '来自 Example Analyst (research) 的错误');
+  assert.equal(doc.querySelector('#message').textContent, '消息来自 Example Reviewer (self)');
+  assert.equal(doc.querySelector('#transition').textContent, '错误来自 Example Analyst (research)');
+  assert.equal(doc.querySelector('#custom').textContent, '消息来自 Example Reviewer (self)');
+  assert.equal(doc.querySelector('#structured-message').textContent, '消息来自');
+  assert.equal(doc.querySelector('#structured-error').textContent, '错误来自');
+  for (const name of doc.querySelectorAll('.group\\/agent-ref > span')) assert.equal(name.textContent, 'Settings (research)');
   assert.equal(doc.querySelector('[data-testid="subagent-tab-header-title"]').textContent, 'research');
   assert.equal(doc.querySelector('[data-testid="planner-response-text"]').textContent, 'Message from Example Reviewer (self)');
   dom.window.close();
 });
 
+test('event headers translate after official text transitions settle and preserve reference nodes', async () => {
+  const dom = mount(eventTitle('transition-text', '', { transitions: true, generic: true }) +
+    eventTitle('event-prefix', 'Message from', { structured: true }));
+  const doc = dom.window.document;
+  const reference = doc.querySelector('.group\\/agent-ref');
+  const label = reference.lastElementChild;
+  const transition = doc.querySelector('#transition-text');
+  transition.innerHTML = '<span data-slot><span data-slot-in>Error from Example Analyst (research)</span><span data-slot-out="Message from Example Analyst (research)" aria-hidden="true"></span></span>';
+  await new Promise(resolve => dom.window.setTimeout(resolve, 0));
+  assert.equal(transition.textContent, 'Error from Example Analyst (research)');
+  transition.textContent = 'Error from Example Analyst (research)';
+  doc.querySelector('#event-prefix').textContent = 'Error from';
+  await new Promise(resolve => dom.window.setTimeout(resolve, 0));
+  assert.equal(transition.textContent, '错误来自 Example Analyst (research)');
+  assert.equal(doc.querySelector('#event-prefix').textContent, '错误来自');
+  assert.equal(doc.querySelector('.group\\/agent-ref'), reference);
+  assert.equal(reference.lastElementChild, label);
+  assert.equal(label.textContent, 'Settings (research)');
+  assert.equal(reference.getAttribute('aria-label'), '打开子智能体：Settings (research)');
+  dom.window.close();
+});
+
+test('subagent reference tooltips keep complete names and type identifiers', () => {
+  const dom = mount(eventTitle('prefix', 'Message from', { structured: true }) +
+    '<div role="tooltip" id="reference-tooltip">Open Subagent: Settings (research)</div>' +
+    '<div data-testid="planner-response-text"><div role="tooltip" id="body-tooltip">Open Subagent: Settings (research)</div></div>');
+  const doc = dom.window.document;
+  assert.equal(doc.querySelector('#reference-tooltip').textContent, '打开子智能体：Settings (research)');
+  assert.equal(doc.querySelector('#body-tooltip').textContent, 'Open Subagent: Settings (research)');
+  dom.window.close();
+});
+
 test('fixed quota errors preserve reset duration and split error identifiers', () => {
   const text = 'Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 149h29m49s.';
-  const dom = mount(title('quota', text) + `<div class="text-xs text-muted-foreground select-none pb-1 flex flex-col gap-y-0.5"><div id="error-id"></div></div>
+  const dom = mount(title('quota', text) + title('quota-transition', `<span>${text}</span>`) +
+    header(`<div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground">
+      <span class="text-muted-foreground">Error</span><span class="inline-flex text-muted-foreground">
+      <span class="flex-row flex-wrap items-center gap-1" id="quota-parts"></span></span></div>`) +
+    `<div class="text-xs text-muted-foreground select-none pb-1 flex flex-col gap-y-0.5"><div id="error-id"></div></div>
     <div data-testid="terminal-tab-surface">${text}</div><pre>${text}</pre>`, doc => {
     doc.querySelector('#error-id').append('Error ID: ', 'example-error-42');
+    doc.querySelector('#quota-parts').append('Error ', text);
   });
   const doc = dom.window.document;
-  assert.equal(doc.querySelector('#quota').textContent, '个人额度已用尽。请升级订阅以提高额度。将在 149h29m49s 后重置。');
+  const translated = '个人额度已用尽。请升级订阅以提高额度。将在 149h29m49s 后重置。';
+  assert.equal(doc.querySelector('#quota').textContent, translated);
+  assert.equal(doc.querySelector('#quota-transition').textContent, translated);
+  assert.ok(doc.querySelector('#quota-parts').textContent.endsWith(translated));
   assert.equal(doc.querySelector('#error-id').textContent, '错误 ID：example-error-42');
   assert.equal(doc.querySelector('[data-testid="terminal-tab-surface"]').textContent, text);
   assert.equal(doc.querySelector('pre').textContent, text);
@@ -86,6 +145,16 @@ test('baseline quota notification preserves locale date strings and clarifies cr
   doc.querySelector('#refresh').textContent = "Your plan's baseline quota will refresh on 10/23/2026, 9:05:48 AM. To continue using this model now, enable AI Credit overages.";
   dom.window.__AGY_ZH_RUNTIME__.translate();
   assert.match(doc.querySelector('#refresh').textContent, /将于 10\/23\/2026, 9:05:48 AM 重置/);
+  for (const [source, target] of [
+    ["Your plan's baseline quota will refresh on 2026/10/23 09:05:48.", '您的订阅方案基础额度将于 2026/10/23 09:05:48 重置。'],
+    ['To continue using this model now, enable AI Credit overages.', '如需立即继续使用此模型，请启用超额用量（使用 AI 点数）。'],
+    ['You need at least 15 AI Credits to send messages. To continue using Gemini 4 Argon now, purchase more AI Credits.', '发送消息至少需要 15 AI 点数。如需立即继续使用 Gemini 4 Argon，请购买更多 AI 点数。'],
+    ["You need more AI Credits to send messages. To continue using this model now, purchase more AI Credits. Your plan's baseline quota will refresh on 2026/10/23 09:05:48.", '发送消息需要更多 AI 点数。如需立即继续使用 此模型，请购买更多 AI 点数。 您的订阅方案基础额度将于 2026/10/23 09:05:48 重置。']
+  ]) {
+    doc.querySelector('#refresh').textContent = source;
+    dom.window.__AGY_ZH_RUNTIME__.translate();
+    assert.equal(doc.querySelector('#refresh').textContent, target);
+  }
   dom.window.close();
 });
 

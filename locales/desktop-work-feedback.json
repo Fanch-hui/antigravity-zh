@@ -79,9 +79,9 @@
     "id": "work-feedback.message-from",
     "source": "Message from {0}",
     "target": "消息来自 {0}",
-    "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
-    "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "context": "官方工具及系统消息标题的固定提示，动态名称、角色和类型保持原文",
+    "scope": "work-feedback",
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -91,11 +91,11 @@
         "kind": "static:language-server-2.24.0"
       },
       {
-        "start": 5288471,
+        "start": 5514416,
         "kind": "static:ui-2.24.0"
       },
       {
-        "start": 5400858,
+        "start": 4545533,
         "kind": "static:ui-2.24.0"
       }
     ],
@@ -108,9 +108,9 @@
     "id": "work-feedback.error-from",
     "source": "Error from {0}",
     "target": "错误来自 {0}",
-    "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
-    "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "context": "官方工具及系统消息标题的固定提示，动态名称、角色和类型保持原文",
+    "scope": "work-feedback",
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -120,11 +120,11 @@
         "kind": "static:language-server-2.24.0"
       },
       {
-        "start": 5288471,
+        "start": 5514416,
         "kind": "static:ui-2.24.0"
       },
       {
-        "start": 5400858,
+        "start": 4545533,
         "kind": "static:ui-2.24.0"
       }
     ],
@@ -241,9 +241,9 @@
     "id": "work-feedback.message-from-prefix",
     "source": "Message from",
     "target": "消息来自",
-    "context": "官方工作反馈的固定提示，与智能体引用分开渲染；只改提示节点，保留名称和交互",
-    "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "context": "官方工具及系统消息标题的固定提示，动态名称、角色和类型保持原文",
+    "scope": "work-feedback",
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.inline-flex.items-center.gap-1:not(.overflow-hidden):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.inline-flex.items-center.gap-1:not(.overflow-hidden) > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -253,11 +253,11 @@
         "kind": "static:language-server-2.24.0"
       },
       {
-        "start": 5288471,
+        "start": 5514416,
         "kind": "static:ui-2.24.0"
       },
       {
-        "start": 5400858,
+        "start": 4545533,
         "kind": "static:ui-2.24.0"
       }
     ]
@@ -266,9 +266,9 @@
     "id": "work-feedback.error-from-prefix",
     "source": "Error from",
     "target": "错误来自",
-    "context": "官方工作反馈的固定提示，与智能体引用分开渲染；只改提示节点，保留名称和交互",
-    "scope": "generic",
-    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot]))",
+    "context": "官方工具及系统消息标题的固定提示，动态名称、角色和类型保持原文",
+    "scope": "work-feedback",
+    "selector": ".flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.text-muted-foreground:not(.truncate):not(.inline-flex) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground:not(.text-xs) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate:not(.text-muted-foreground) > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground:not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground span.inline-flex.items-center.gap-1.overflow-hidden.text-muted-foreground > span.truncate.min-w-0.text-muted-foreground > span:not([class]):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.inline-flex.items-center.gap-1:not(.overflow-hidden):not(:has([data-slot])), .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.inline-flex.text-muted-foreground > span.inline-flex.items-center.gap-1:not(.overflow-hidden) > span:not([class]):not(:has([data-slot]))",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,
@@ -278,11 +278,11 @@
         "kind": "static:language-server-2.24.0"
       },
       {
-        "start": 5288471,
+        "start": 5514416,
         "kind": "static:ui-2.24.0"
       },
       {
-        "start": 5400858,
+        "start": 4545533,
         "kind": "static:ui-2.24.0"
       }
     ]

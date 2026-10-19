@@ -46,6 +46,11 @@ const scopes = {
   changes: '[data-testid="file-diff-accordion-toggle"], [data-testid^="diff-view-mode-"], [data-testid="review-changes-loading"]',
   dialog: `[role="dialog"], [role="alertdialog"], .entrance-auth-panel, ${settingsSelector}`,
   notification: '[role="status"], [role="alert"], [data-testid="toast-notification"]',
+  'work-feedback': [
+    '.group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate',
+    '.w-full[class~="my-0.5"] > .relative > button.group.flex.items-center.gap-1.w-full.text-left.text-sm.px-2.min-h-8.py-1.rounded-lg.tabular-nums.select-none[aria-expanded]',
+    '.w-full[class~="my-0.5"].px-2.min-h-8.py-1.flex.items-center.select-none.text-sm',
+  ].join(','),
   quota: settingsSelector + ', .flex.flex-col.max-h-80.overflow-y-auto.custom-scrollbar.select-none.p-1, [data-tooltip-id^="quota-bucket-tooltip-"], [role="tooltip"]'
 };
 const staticSurface = [

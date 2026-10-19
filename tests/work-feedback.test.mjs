@@ -19,6 +19,20 @@ const eventTitle = (id, text, { structured = false, generic = false, transitions
   const view = `<div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground">${content}</div>`;
   return header(generic ? `<span>${view}</span>` : view);
 };
+const systemMessage = (text, { expanded = false, plain = false, structured = false, prefixed = false } = {}) => {
+  let content = `<span>${text}</span>`;
+  if (structured) {
+    const prefix = prefixed ? '' : `<span class="truncate min-w-0 text-muted-foreground">${text}</span>`;
+    content = `<span class="inline-flex items-center gap-1 overflow-hidden text-muted-foreground">${prefix}${agentReference('Storage and performance reviewer (research)')}</span>`;
+  }
+  if (prefixed) content = `<span class="inline-flex items-center gap-1">${text}${content}</span>`;
+  const view = `<div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground">
+    <span class="${structured ? 'inline-flex' : 'truncate'} text-muted-foreground [&_.text-foreground]:text-muted-foreground">${content}</span></div>`;
+  if (plain) return `<div class="w-full my-0.5 px-2 min-h-8 py-1 flex items-center select-none text-sm">${view}</div>`;
+  return `<div class="w-full my-0.5"><div class="relative">
+    <button type="button" aria-expanded="${expanded}" class="group flex items-center gap-1 w-full text-left text-sm px-2 min-h-8 py-1 rounded-lg tabular-nums select-none cursor-pointer text-foreground hover:bg-muted transition-[opacity,background-color]">${view}<svg></svg></button>
+    ${expanded ? '<div class="overflow-y-auto outline-none focus-visible:ring-1 focus-visible:ring-ring rounded bleed-contain pl-3 pt-0.5"><div><div class="text-secondary-foreground pl-2"><div class="markdown">Diagnostic output</div></div></div></div>' : ''}</div></div>`;
+};
 const launched = (id, status, count) => header(`<div class="flex items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground" id="${id}">
   <span>${status}</span><span>${count} subagents</span></div>`);
 const banner = content => `<div class="flex flex-col p-2.5 pl-3 rounded-2xl border bg-card max-h-[300px] overflow-y-auto shadow-md">${content}</div>`;
@@ -97,6 +111,39 @@ test('event headers translate after official text transitions settle and preserv
   assert.equal(reference.lastElementChild, label);
   assert.equal(label.textContent, 'Settings (research)');
   assert.equal(reference.getAttribute('aria-label'), '打开子智能体：Settings (research)');
+  dom.window.close();
+});
+
+test('system-message titles use the official collapsible and plain frames outside tool-step headers', () => {
+  const cases = [
+    ['Message from Parent Agent', {}, '消息来自 Parent Agent'],
+    ['Error from Storage and performance reviewer (research)', { expanded: true }, '错误来自 Storage and performance reviewer (research)'],
+    ['Message from Parent Agent', { plain: true }, '消息来自 Parent Agent'],
+    ['Message from', { structured: true }, '消息来自'],
+    ['Error from', { structured: true, prefixed: true }, '错误来自']
+  ];
+  for (const [source, options, expected] of cases) {
+    const dom = mount(systemMessage(source, options));
+    const doc = dom.window.document;
+    const title = doc.querySelector('.flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground');
+    assert.ok(title.textContent.trim().startsWith(expected), title.textContent);
+    const name = doc.querySelector('.group\\/agent-ref > span');
+    if (name) assert.equal(name.textContent, 'Storage and performance reviewer (research)');
+    const diagnostic = doc.querySelector('.markdown');
+    if (diagnostic) assert.equal(diagnostic.textContent, 'Diagnostic output');
+    dom.window.close();
+  }
+});
+
+test('system-message title rules preserve matching user content and unrelated controls', () => {
+  const source = 'Message from Example Reviewer (research)';
+  const dom = mount(['planner-response-text', 'user-input-step'].map(id =>
+    `<div data-testid="${id}">${systemMessage(source)}</div>`).join('') +
+    '<button><div class="flex flex-row items-center gap-1 overflow-hidden whitespace-nowrap text-muted-foreground"><span class="truncate text-muted-foreground"><span>Message from Example Reviewer (research)</span></span></div></button>');
+  const doc = dom.window.document;
+  for (const title of doc.querySelectorAll('.flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground')) {
+    assert.equal(title.textContent.trim(), source);
+  }
   dom.window.close();
 });
 

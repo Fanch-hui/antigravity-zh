@@ -1,0 +1,110 @@
+[
+  {
+    "context": "错误展开区的官方额度说明，日期、模型品牌与订阅链接保持原值；只匹配额度消息组件",
+    "scope": "generic",
+    "selector": ".flex.flex-col.gap-y-1 > .flex.flex-col.gap-1 > .flex.items-center.justify-between > span.shrink.overflow-hidden.flex.flex-col.gap-1 > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3538072,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5291426,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "field": "userTier.upgradeSubscriptionText",
+        "kind": "server-ui:2.24.0"
+      }
+    ],
+    "id": "error-details.quota-refresh-upgrade",
+    "source": "Your plan's baseline quota will refresh on {0}. You can upgrade to a Google AI Ultra plan to receive higher rate limits.",
+    "target": "您的订阅方案基础额度将于 {0} 重置。您可以升级到 Google AI Ultra 方案，以获得更高的使用限额。",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    }
+  },
+  {
+    "context": "错误展开区的官方额度说明，日期、模型品牌与订阅链接保持原值；只匹配额度消息组件",
+    "scope": "generic",
+    "selector": ".flex.flex-col.gap-y-1 > .flex.flex-col.gap-1 > .flex.items-center.justify-between > span.shrink.overflow-hidden.flex.flex-col.gap-1 > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3538072,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5291426,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "field": "userTier.upgradeSubscriptionText",
+        "kind": "server-ui:2.24.0"
+      }
+    ],
+    "id": "error-details.quota-refresh",
+    "source": "Your plan's baseline quota will refresh on {0}.",
+    "target": "您的订阅方案基础额度将于 {0} 重置。",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    }
+  },
+  {
+    "context": "错误展开区的官方额度说明，日期、模型品牌与订阅链接保持原值；只匹配额度消息组件",
+    "scope": "generic",
+    "selector": ".flex.flex-col.gap-y-1 > .flex.flex-col.gap-1 > .flex.items-center.justify-between > span.shrink.overflow-hidden.flex.flex-col.gap-1 > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3538072,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5291426,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "field": "userTier.upgradeSubscriptionText",
+        "kind": "server-ui:2.24.0"
+      }
+    ],
+    "id": "error-details.quota-upgrade",
+    "source": "You can upgrade to a Google AI Ultra plan to receive higher rate limits.",
+    "target": "您可以升级到 Google AI Ultra 方案，以获得更高的使用限额。"
+  },
+  {
+    "context": "错误展开区的官方额度说明，日期、模型品牌与订阅链接保持原值；只匹配额度消息组件",
+    "scope": "generic",
+    "selector": ".flex.flex-col.gap-y-1 > .flex.flex-col.gap-1 > .flex.items-center.justify-between > span.shrink.overflow-hidden.flex.flex-col.gap-1 > span > a.underline.opacity-70.transition-opacity.cursor-pointer.underline-offset-2[target=\"_blank\"][rel=\"noopener noreferrer\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3538072,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 5291426,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "field": "userTier.upgradeSubscriptionText",
+        "kind": "server-ui:2.24.0"
+      }
+    ],
+    "id": "error-details.see-plans",
+    "source": "See plans",
+    "target": "查看订阅方案"
+  }
+]

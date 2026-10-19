@@ -1,0 +1,192 @@
+[
+  {
+    "id": "slash.goal.description",
+    "source": "Run until the specified goal is completely finished.",
+    "target": "持续执行，直到指定目标全部完成。",
+    "context": "官方内置 /goal 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "goal",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48186564,
+        "end": 48186616,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.compact.description",
+    "source": "Compact the conversation now (summarize history to free up the context window).",
+    "target": "立即压缩会话（总结历史记录，释放上下文窗口空间）。",
+    "context": "官方内置 /compact 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "compact",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48457158,
+        "end": 48457237,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.schedule.description",
+    "source": "Run an instruction on a recurring schedule or as a one-time timer.",
+    "target": "按固定计划重复执行指令，或设置一次性定时任务。",
+    "context": "官方内置 /schedule 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "schedule",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48360529,
+        "end": 48360595,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.browser.description",
+    "source": "Invoke a browser agent for web tasks.",
+    "target": "调用浏览器智能体执行网页任务。",
+    "context": "官方内置 /browser 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "browser",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 47898913,
+        "end": 47898950,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.plan.description",
+    "source": "Plan carefully before executing a task.",
+    "target": "执行任务前先仔细规划。",
+    "context": "官方内置 /plan 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "plan",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 47946028,
+        "end": 47946067,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.grill-me.description",
+    "source": "Interview me to align on a plan.",
+    "target": "通过提问与我商定计划。",
+    "context": "官方内置 /grill-me 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "grill-me",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 47758203,
+        "end": 47758235,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.teamwork-preview.description",
+    "source": "Invoke a team of agents to autonomously tackle large projects.",
+    "target": "调用智能体团队，自主处理大型项目。",
+    "context": "官方内置 /teamwork-preview 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "teamwork-preview",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48315063,
+        "end": 48315125,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.learn.description",
+    "source": "Reflect on recent successes or corrections to capture reusable skills or rules.",
+    "target": "回顾近期的成功经验或纠正意见，提炼可复用的技能或规则。",
+    "context": "官方内置 /learn 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "learn",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48457237,
+        "end": 48457316,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.boost.description",
+    "source": "Invoke the Boost multi-agent orchestrator for complex tasks.",
+    "target": "调用 Boost 多智能体协调器处理复杂任务。",
+    "context": "官方内置 /boost 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "boost",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 48292334,
+        "end": 48292394,
+        "kind": "static:language-server-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "slash.btw.description",
+    "source": "Ask a quick question without interrupting the main conversation.",
+    "target": "快速提问，不打断主会话。",
+    "context": "官方内置 /btw 命令的菜单说明；保留命令标识及调用方式",
+    "scope": "generic",
+    "slashCommand": "btw",
+    "selector": "[data-mention-menu] [role=\"option\"] [data-testid=\"menu-option-description\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6699142,
+        "end": 6699206,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  }
+]

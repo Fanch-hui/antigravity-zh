@@ -21237,6 +21237,10 @@
     "context": "归档确认中的对话计数",
     "scope": "generic",
     "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+",
+      "1": "s?"
+    },
     "captureMappings": {
       "1": {
         "s": "",

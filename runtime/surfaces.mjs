@@ -21,6 +21,7 @@ const protectedSelectors = [
   '[data-testid^="github-repo-option-"]',
   '[data-testid="terminal-active"]', '[data-testid="terminal-tab-surface"]',
   '[data-testid="terminal-surface"]', '[data-testid="subagent-node"] span.truncate',
+  '.inline-flex.items-center.gap-1.max-w-full.overflow-hidden.rounded-sm > span.truncate.min-w-0.text-muted-foreground',
   'span.text-xs.font-medium.truncate.flex-1.min-w-0',
   '[data-testid="terminal-tab-nux"] .xterm', '[data-testid="setup-script-output"]',
   '.space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span > strong',
@@ -67,5 +68,11 @@ const staticSurface = [
   '[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap'
 ].join(',');
 const controls = 'button, label, select, option, [role="button"], [role="tab"], [role="checkbox"], [role="switch"], [role="menuitem"], [role="option"]';
+const commandMenu = {
+  option: '[data-mention-menu] [role="option"]',
+  label: '[data-testid="menu-option-label"]',
+  description: '[data-testid="menu-option-description"]',
+  source: '[data-testid="menu-option-trailing-label"]',
+};
 
-export const surfaces = { protectedSelectors, scopes, staticSurface, controls };
+export const surfaces = { protectedSelectors, scopes, staticSurface, controls, commandMenu };

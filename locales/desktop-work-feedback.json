@@ -1,0 +1,224 @@
+[
+  {
+    "id": "work-feedback.worked-for",
+    "source": "Worked for {0}",
+    "target": "耗时 {0}",
+    "context": "已结束工作回合折叠标题，仅翻译固定前缀，耗时及原单位保持不变",
+    "scope": "generic",
+    "selector": "[data-testid=\"worked-for-collapsible\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6414875,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d+[dhms])(?:\\s*\\d+[dhms])*"
+    }
+  },
+  {
+    "id": "work-feedback.started",
+    "source": "Started",
+    "target": "已启动",
+    "context": "启动子智能体反馈中的完成状态，独立名称节点不变",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span:first-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5518014,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.starting",
+    "source": "Starting",
+    "target": "正在启动",
+    "context": "启动子智能体反馈中的进行状态，独立名称节点不变",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span:first-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5518004,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.subagent-count",
+    "source": "{0} subagents",
+    "target": "{0} 个子智能体",
+    "context": "启动子智能体反馈的数量标签，只接受数字",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span:nth-child(2):last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5518072,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "work-feedback.message-from",
+    "source": "Message from {0}",
+    "target": "来自 {0} 的消息",
+    "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 46825768,
+        "kind": "static:language-server-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "work-feedback.error-from",
+    "source": "Error from {0}",
+    "target": "来自 {0} 的错误",
+    "context": "官方工作反馈标题，动态智能体角色、名称和类型整体原样保留",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 46671314,
+        "kind": "static:language-server-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "work-feedback.individual-quota",
+    "source": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in {0}.",
+    "target": "个人额度已用尽。请升级订阅以提高额度。将在 {0} 后重置。",
+    "context": "服务端固定个人额度错误提示，仅允许数字和既有时间单位，保留原时长",
+    "scope": "generic",
+    "selector": ".group.flex.w-full.min-w-0.items-center.min-h-8.py-1.px-2.select-none > .flex.min-w-0.items-center.gap-x-1.text-sm > span.truncate > .flex.flex-row.items-center.gap-1.overflow-hidden.whitespace-nowrap.text-muted-foreground > span.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "screenshot:2.24.0-individual-quota-error"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d+[dhms])(?:\\s*\\d+[dhms])*"
+    }
+  },
+  {
+    "id": "work-feedback.error-id",
+    "source": "Error ID: {0}",
+    "target": "错误 ID：{0}",
+    "context": "官方错误反馈编号标签，编号原样保留",
+    "scope": "generic",
+    "selector": ".text-xs.text-muted-foreground.select-none.pb-1.flex.flex-col[class~=\"gap-y-0.5\"] > div",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5294013,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[A-Za-z0-9][A-Za-z0-9_-]{0,127}"
+    }
+  },
+  {
+    "id": "work-feedback.baseline-quota-title",
+    "source": "Baseline model quota reached",
+    "target": "模型基础额度已用尽",
+    "context": "输入框上方额度通知：指模型的基础额度，非基础模型类别",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .flex.items-center.justify-between.gap-2 > .flex.items-center.select-none > .flex.items-center.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6525632,
+        "kind": "static:ui-2.24.0"
+      }
+    ]
+  },
+  {
+    "id": "work-feedback.baseline-quota-refresh",
+    "source": "Your plan's baseline quota will refresh on {0}. To continue using this model now, enable AI Credit overages.",
+    "target": "您的订阅方案基础额度将于 {0} 重置。如需立即继续使用此模型，请启用超额用量（使用 AI 点数）。",
+    "context": "输入框上方模型基础额度通知，日期时间保持原文，准确说明启用 AI 点数超额用量",
+    "scope": "generic",
+    "selector": ".flex.flex-col[class~=\"p-2.5\"].pl-3.rounded-2xl.border.bg-card[class~=\"max-h-[300px]\"].overflow-y-auto.shadow-md > .text-sm.text-foreground > .flex.flex-col.gap-2[class~=\"pt-1.5\"][class~=\"pb-0.5\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3537866,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:\\d{1,4}[/.-]){2}\\d{1,4},?\\s+\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AP]M)?"
+    }
+  },
+  {
+    "id": "work-feedback.relative-time",
+    "source": "{0} ago",
+    "target": "{0} 前",
+    "context": "消息底部操作栏中的相对时间，只翻译 ago，数字及原单位保持不变",
+    "scope": "generic",
+    "selector": "[data-testid=\"cascade-system-message-toolbar\"] span[data-screenshot-volatile][data-tooltip-id].text-xs.text-muted-foreground.select-none.px-1.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5660572,
+        "kind": "static:ui-2.24.0"
+      },
+      {
+        "start": 3630572,
+        "kind": "static:ui-2.24.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+(?:mo|[mhdwy])"
+    }
+  }
+]

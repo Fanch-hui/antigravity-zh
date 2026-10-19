@@ -6,7 +6,7 @@
   const scriptStartedMs = performance.now();
 
   const attributes = ['title', 'placeholder', 'aria-label'];
-  const { protectedSelectors, scopes, staticSurface, controls } = /*__AGY_ZH_SURFACES__*/ null;
+  const { protectedSelectors, scopes, staticSurface, controls, commandMenu } = /*__AGY_ZH_SURFACES__*/ null;
   const index = new Map();
   const templates = [];
   const originals = new WeakMap();
@@ -31,7 +31,7 @@
   }
 
   function closest(element, selector) {
-    return selector ? element.closest(selector) : null;
+    return selector ? element?.closest(selector) : null;
   }
 
   function safe(element, attribute) {
@@ -66,7 +66,16 @@
     return settingLabels(element).some(label => accepted.has(label.textContent.trim()));
   }
 
+  function matchesSlashCommand(record, element, attribute) {
+    const option = closest(element, commandMenu.option);
+    if (!option && !record.slashCommand) return true;
+    return !attribute && !!record.slashCommand && !!option
+      && element.matches(commandMenu.description) && !option.querySelector(commandMenu.source)
+      && option.querySelector(commandMenu.label)?.textContent.trim() === record.slashCommand;
+  }
+
   function matches(record, element, attribute) {
+    if (!matchesSlashCommand(record, element, attribute)) return false;
     if (record.kind === 'attribute' && (!attribute || (record.attribute && record.attribute !== attribute))) return false;
     if (record.kind === 'text' && attribute) return false;
     if (record.attribute && record.attribute !== attribute) return false;
@@ -131,7 +140,7 @@
   }
 
   function translateCombined(parent) {
-    if (!parent) return false;
+    if (!parent || closest(parent, commandMenu.option)) return false;
     const nodes = [...parent.childNodes].filter(node => node.nodeType === Node.TEXT_NODE);
     let snapshot = combinedParents.get(parent);
     const sameNodes = snapshot && nodes.length === snapshot.entries.length &&
@@ -158,8 +167,28 @@
     return true;
   }
 
+  function translateCommandDescription(element) {
+    const description = closest(element, commandMenu.description);
+    if (!description || !closest(description, commandMenu.option)) return false;
+    if (description.querySelector(protectedSelectors)) return true;
+    const walker = document.createTreeWalker(description, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) nodes.push(node);
+    const sources = nodes.map(node => sourceText(node));
+    const source = sources.join('');
+    const target = localized(source, description);
+    for (let i = 0; i < nodes.length; i++) {
+      const value = target === source ? sources[i] : i === 0 ? target : '';
+      originals.set(nodes[i], { source: sources[i], target: value });
+      if (nodes[i].nodeValue !== value) nodes[i].nodeValue = value;
+    }
+    return true;
+  }
+
   function translateText(node) {
     const element = node.parentElement;
+    if (translateCommandDescription(element)) return;
     if (translateCombined(element)) return;
     const value = node.nodeValue;
     const previous = originals.get(node);
@@ -205,6 +234,9 @@
     const observer = new MutationObserver(records => {
       const roots = new Set();
       for (const record of records) {
+        const element = record.target.nodeType === Node.ELEMENT_NODE ? record.target : record.target.parentElement;
+        const option = closest(element, commandMenu.option);
+        if (option) roots.add(option);
         if (record.type === 'childList') {
           if (combinedParents.has(record.target)) roots.add(record.target);
           for (const node of record.addedNodes) roots.add(node);
@@ -221,7 +253,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.2', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.3', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

@@ -35,6 +35,7 @@ export function runtimeDictionary(records) {
     ...(record.kind ? { kind: record.kind } : {}),
     ...(record.attribute ? { attribute: record.attribute } : {}),
     ...(record.settingLabel ? { settingLabel: record.settingLabel } : {}),
+    ...(record.slashCommand ? { slashCommand: record.slashCommand } : {}),
     ...(record.captureMappings ? { captureMappings: record.captureMappings } : {}),
     ...(record.captureFormats ? { captureFormats: record.captureFormats } : {}),
     ...(record.template ? { template: compileTemplate(record) } : {}),

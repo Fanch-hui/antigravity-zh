@@ -22,7 +22,7 @@ await writeFile(path.join(bundle, 'Contents/Info.plist'), `<?xml version="1.0" e
 <key>CFBundleExecutable</key><string>agy-zh</string>
 <key>CFBundleIconFile</key><string>icon.icns</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>0.2.2</string>
+<key>CFBundleShortVersionString</key><string>0.2.3</string>
 <key>LSUIElement</key><true/>
 </dict></plist>\n`);
 execFileSync('/usr/bin/codesign', ['--force', '--sign', '-', bundle]);

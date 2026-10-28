@@ -116,6 +116,52 @@ function checkPluginConfiguration(source, nodes, queries, requireRule) {
   }
 }
 
+function hasActivityRows(source, nodes) {
+  function component(pattern) {
+    const node = nodes.find(item => pattern.test(item.props) && /\blabel\s*:\s*[\w$]+/.test(item.props));
+    return node && source.slice(node.open + 1).match(/^\s*([\w$]+)/)?.[1];
+  }
+  const accumulated = component(/\btestId\s*:\s*`accumulated-item-\$\{/);
+  const background = component(/\btestId\s*:\s*["']background-task-row["']/);
+  if (!accumulated || accumulated !== background) return false;
+  const escaped = accumulated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const start = new RegExp(`\\b${escaped}\\s*=\\s*[\\w$]+\\.forwardRef\\s*\\(`).exec(source);
+  if (!start) return false;
+  const open = start.index + start[0].lastIndexOf('(');
+  const end = closing(source, open, '(', ')');
+  if (end < 0) return false;
+  const renderer = source.slice(open, end + 1);
+  const fields = renderer.match(/\btestId\s*:\s*([\w$]+)[\s\S]*?\blabel\s*:\s*([\w$]+)/);
+  if (!fields || !new RegExp(`["']data-testid["']\\s*:\\s*${fields[1]}\\b`).test(renderer)
+    || !/\blabelClassName\s*:\s*[\w$]+\(\s*["']min-w-0 truncate["']/.test(renderer)) return false;
+  const content = renderer.match(/\.createElement\s*\(\s*([\w$]+)\s*,\s*\{[^}]*\blabel\s*:\s*[\w$]+[^}]*\blabelClassName\s*:/);
+  if (!content) return false;
+  const contentVar = content[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const rowContent = renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*[\\w$]+\\.createElement\\(\\s*[\\w$]+\\.Fragment\\s*,\\s*null\\s*,\\s*[\\w$]+\\.createElement\\(\\s*${contentVar}\\s*,`))?.[1];
+  const rowProps = renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*\\{[^{}]*["']data-testid["']\\s*:\\s*${fields[1]}\\b`))?.[1];
+  if (!rowContent || !rowProps) return false;
+  const rowNodes = readElements(renderer).filter(node => ['a', 'button', 'div'].includes(node.tag)
+    && new RegExp(`^\\{\\s*\\.\\.\\.${rowProps}(?:[,}])`).test(node.props));
+  if (!rowNodes.length || rowNodes.some(node => !new RegExp(`^,\\s*${rowContent}\\s*$`).test(
+    renderer.slice(node.propsEnd + 1, closing(renderer, node.open, '(', ')'))))) return false;
+  const contentName = content[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const declaration = new RegExp(`function\\s+${contentName}\\s*\\(\\s*\\{[^}]*\\blabel\\s*:\\s*([\\w$]+)[^}]*\\blabelClassName\\s*:\\s*([\\w$]+)[^}]*\\}\\s*\\)\\s*\\{`).exec(source);
+  if (!declaration) return false;
+  const bodyStart = declaration.index + declaration[0].length - 1;
+  const bodyEnd = closing(source, bodyStart, '{', '}');
+  const body = source.slice(bodyStart, bodyEnd + 1);
+  const fragment = /\breturn\s+[\w$]+\.createElement\(\s*[\w$]+\.Fragment\s*,\s*null\s*,/.exec(body);
+  if (!fragment) return false;
+  const fragmentOpen = body.indexOf('(', fragment.index);
+  const fragmentEnd = closing(body, fragmentOpen, '(', ')');
+  const contentNodes = readElements(body);
+  const label = contentNodes.find(node => node.tag === 'span' && node.start > fragmentOpen && node.start < fragmentEnd
+    && new RegExp(`^\\{\\s*className\\s*:\\s*${declaration[2]}\\s*\\}$`).test(node.props)
+    && new RegExp(`^,\\s*${declaration[1]}\\s*$`).test(body.slice(node.propsEnd + 1, closing(body, node.open, '(', ')'))));
+  return !!label && !contentNodes.some(node => node !== label && node.start > fragmentOpen && node.start < label.start
+    && closing(body, node.open, '(', ')') > label.start);
+}
+
 export function checkUiCompatibility(source) {
   const missing = [];
   const nodes = readElements(source);
@@ -127,9 +173,10 @@ export function checkUiCompatibility(source) {
   for (const name of ['user-input-step', 'planner-response-text', 'pending-user-messages',
     'terminal-active', 'setup-script-output', 'file-title-name',
     'breadcrumb-segment', 'project-selector-item', 'branch-option',
-    'activity-lane-label', 'model-selector-item', 'input-attachment']) {
+    'model-selector-item', 'input-attachment']) {
     requireRule(name, marker(name).length > 0);
   }
+  requireRule('activity-lane-label', marker('activity-lane-label').length > 0 || hasActivityRows(source, nodes));
   for (const name of ['terminal-tab-surface', 'entity-pill', 'subagent-tab-header-title', 'github-repo-option']) {
     const legacyReplacement = {
       'terminal-tab-surface': marker('terminal-surface').length && marker('terminal-split-container').length,
@@ -176,7 +223,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

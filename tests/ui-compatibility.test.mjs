@@ -198,3 +198,32 @@ test('runtime compatibility evaluation includes plugin configuration protection 
   const { client } = executingClient(fixture() + ';' + configurationFixture());
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
 });
+
+function activityRowsFixture() {
+  return [
+    'function RowContent({testId:a,icon:b,label:d,labelClassName:f}){return A.createElement(A.Fragment,null,A.createElement("span",{className:f},d))}',
+    'const Row=A.forwardRef(({testId:a,icon:b,label:d},ref)=>{const label=A.createElement(A.Fragment,null,A.createElement(RowContent,{testId:a,icon:b,label:d,labelClassName:join("min-w-0 truncate")}));const props={"data-testid":a,ref};return A.createElement("button",{...props},label)});Row.displayName="PanelItemRow"',
+    'A.createElement(Row,{testId:`accumulated-item-${section.key}`,label:item.label})',
+    'A.createElement(Row,{testId:"background-task-row",label:task.label})',
+  ].join(';');
+}
+
+test('2.27 activity rows require the shared dynamic label and test-id rendering structure', async () => {
+  const source = fixture().replace('activity-lane-label', 'removed-marker') + ';' + activityRowsFixture();
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after] of [
+    ['background-task-row', 'changed-task-row'],
+    ['accumulated-item-${', 'changed-item-${'],
+    ['min-w-0 truncate', 'min-w-0'],
+    ['"data-testid":a', '"data-row-id":a'],
+    ['className:f},d', 'className:f},other'],
+    ['null,A.createElement(\"span\",{className:f},d)', 'null,A.createElement(\"div\",{},A.createElement(\"span\",{className:f},d))'],
+    ['{...props},label)', '{...props},A.createElement(\"div\",{},label))'],
+    ['A.createElement(Row,{testId:"background-task-row"', 'A.createElement(Other,{testId:"background-task-row"'],
+  ]) {
+    const changed = source.replace(before, after);
+    assert(checkUiCompatibility(changed).missing.includes('activity-lane-label'), before);
+  }
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});

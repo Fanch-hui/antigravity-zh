@@ -12,6 +12,7 @@ const protectedSelectors = [
   '[data-testid="subagent-tab-header-title"]', '[data-testid="settings-nav-item-Account"]',
   '[data-testid="project-selector-item"]', '[data-testid="branch-option"]',
   '[data-testid="entity-pill"]', '[data-testid="activity-lane-label"]', 'button.truncate',
+  '[data-testid^="accumulated-item-"] > span', '[data-testid="background-task-row"] > span',
   '[data-testid="model-selector-item"]:not(:has(span.truncate.text-xs.text-left))',
   '[data-testid="model-selector-panel"] span.truncate.text-xs.text-left',
   '[data-testid="model-selector-effort-group"]',
@@ -45,6 +46,7 @@ const protectedSelectors = [
   '.mt-2:has(h1.text-2xl.font-bold.tracking-tight) > p.text-sm.text-muted-foreground.mt-3.leading-relaxed',
   '.flex.flex-col.gap-3:has(h1.tracking-tight) > p.text-sm.text-muted-foreground.leading-relaxed'
 ].join(',');
+const protectedAttributeSelectors = '[data-testid^="accumulated-item-"], [data-testid="background-task-row"]';
 const settingsSelector = '.max-w-2xl.mx-auto.flex-col.gap-4, [id^="dropdown-label-"], [id^="dropdown-description-"], [id^="dropdown-value-"], [data-testid^="settings-nav-item-"]';
 const scopes = {
   settings: settingsSelector,
@@ -88,4 +90,4 @@ const commandMenu = {
   source: '[data-testid="menu-option-trailing-label"]',
 };
 
-export const surfaces = { protectedSelectors, scopes, staticSurface, controls, commandMenu };
+export const surfaces = { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu };

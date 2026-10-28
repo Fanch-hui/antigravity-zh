@@ -6,7 +6,7 @@
   const scriptStartedMs = performance.now();
 
   const attributes = ['title', 'placeholder', 'aria-label'];
-  const { protectedSelectors, scopes, staticSurface, controls, commandMenu } = /*__AGY_ZH_SURFACES__*/ null;
+  const { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu } = /*__AGY_ZH_SURFACES__*/ null;
   const index = new Map();
   const templates = [];
   const originals = new WeakMap();
@@ -36,6 +36,7 @@
 
   function safe(element, attribute) {
     if (!element || closest(element, protectedSelectors)) return false;
+    if (attribute && element.matches(protectedAttributeSelectors)) return false;
     const toast = closest(element, '.border-l-orange-500');
     const button = closest(element, 'button');
     if (toast && button && !button.hasAttribute('aria-label') && !closest(button, '.justify-start')) return false;
@@ -256,7 +257,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.6', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.7', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

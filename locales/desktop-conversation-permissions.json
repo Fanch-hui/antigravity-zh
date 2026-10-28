@@ -1,0 +1,55 @@
+[
+  {
+    "id": "conversation-settings.outside-projects.description",
+    "source": "Agent settings and permissions for conversations outside of projects.",
+    "target": "项目外会话的智能体设置和权限。",
+    "context": "项目外会话设置页的说明",
+    "scope": "settings",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "reviewed": true,
+    "origins": [{"start": 4472907, "kind": "static-template:2.27.0"}]
+  },
+  {
+    "id": "conversation-settings.outside-workspaces.description",
+    "source": "Agent settings and permissions for conversations outside of workspaces.",
+    "target": "工作区外会话的智能体设置和权限。",
+    "context": "工作区外会话设置页的说明",
+    "scope": "settings",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "reviewed": true,
+    "origins": [{"start": 4472907, "kind": "static-template:2.27.0"}]
+  },
+  {
+    "id": "conversation-settings.global.conversations",
+    "source": "when working in these conversations.",
+    "target": "（在这些会话中工作时）。",
+    "context": "会话权限说明中，全局权限链接后的固定说明",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span:has(> span.text-link)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{"start": 4300977, "kind": "static-children:2.27.0"}]
+  },
+  {
+    "id": "conversation-settings.global.project",
+    "source": "when working in this project.",
+    "target": "（在此项目中工作时）。",
+    "context": "项目权限说明中，全局权限链接后的固定说明",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed > span:has(> span.text-link)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{"start": 4300977, "kind": "static-children:2.27.0"}]
+  },
+  {
+    "id": "conversation-settings.inherit.conversations",
+    "source": "Inherits your Global Permissions when working in these conversations.",
+    "target": "在这些会话中工作时，继承你的全局权限。",
+    "context": "项目外会话权限预设的固定说明",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [{"start": 4298187, "kind": "static-template:2.27.0"}]
+  }
+]

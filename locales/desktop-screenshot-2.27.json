@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v227.screenshot.1",
+    "source": "Extensions",
+    "target": "扩展",
+    "selector": "[data-testid=\"plugins-submenu-trigger\"], [data-testid=\"overview-panel-row-plugins\"]",
+    "scope": "generic",
+    "context": "2.27 扩展入口及用量面板固定标签；插件名、模型名及百分比原值保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6916714,
+        "kind": "static:2.27.0"
+      }
+    ]
+  },
+  {
+    "id": "v227.screenshot.2",
+    "source": "Daily limit",
+    "target": "每日额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md.text-xs > span.truncate",
+    "scope": "quota",
+    "context": "2.27 扩展入口及用量面板固定标签；插件名、模型名及百分比原值保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1886866,
+        "kind": "static:2.27.0"
+      }
+    ]
+  },
+  {
+    "id": "v227.screenshot.3",
+    "source": "Weekly limit",
+    "target": "每周额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md.text-xs > span.truncate",
+    "scope": "quota",
+    "context": "2.27 扩展入口及用量面板固定标签；插件名、模型名及百分比原值保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1886887,
+        "kind": "static:2.27.0"
+      }
+    ]
+  },
+  {
+    "id": "v227.screenshot.4",
+    "source": "{0}h limit",
+    "target": "{0} 小时额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md.text-xs > span.truncate",
+    "scope": "quota",
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9]\\d*"
+    },
+    "context": "2.27 扩展入口及用量面板固定标签；插件名、模型名及百分比原值保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1886990,
+        "kind": "static:2.27.0"
+      }
+    ]
+  },
+  {
+    "id": "v227.screenshot.5",
+    "source": "{0}% left",
+    "target": "剩余 {0}%",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md.text-xs > span.flex.items-center.justify-end > span",
+    "scope": "quota",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:100|[1-9]?\\d)"
+    },
+    "selectorMode": "self",
+    "context": "2.27 扩展入口及用量面板固定标签；插件名、模型名及百分比原值保留",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7174395,
+        "kind": "static:2.27.0"
+      }
+    ]
+  }
+]

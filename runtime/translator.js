@@ -190,10 +190,31 @@
     return true;
   }
 
+  function translateTextRun(node) {
+    const parent = node.parentElement;
+    if (!parent?.children.length || !safe(parent)) return false;
+    let first = node;
+    while (first.previousSibling?.nodeType === Node.TEXT_NODE) first = first.previousSibling;
+    const nodes = [];
+    for (let current = first; current?.nodeType === Node.TEXT_NODE; current = current.nextSibling) nodes.push(current);
+    if (nodes.length < 2) return false;
+    const sources = nodes.map(current => sourceText(current));
+    const source = sources.join('');
+    const target = localized(source, parent, undefined, true);
+    if (target === source) return false;
+    for (let i = 0; i < nodes.length; i++) {
+      const value = i === 0 ? target : '';
+      originals.set(nodes[i], { source: sources[i], target: value });
+      if (nodes[i].nodeValue !== value) nodes[i].nodeValue = value;
+    }
+    return true;
+  }
+
   function translateText(node) {
     const element = node.parentElement;
     if (translateCommandDescription(element)) return;
     if (translateCombined(element)) return;
+    if (translateTextRun(node)) return;
     const value = node.nodeValue;
     const previous = originals.get(node);
     const source = previous?.target === value ? previous.source : value;
@@ -257,7 +278,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.7', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.8', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

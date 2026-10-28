@@ -161,3 +161,40 @@ test('internal settings, history and conversation routes can validate the same s
     assert.equal(requests.length, 1);
   }
 });
+
+function configurationFixture() {
+  const conflict = element('div', '', element('div', 'flex items-start gap-3',
+    element('div', 'flex-1 min-w-0',
+      element('span', 'font-medium text-sm text-foreground truncate', 'name') + ','
+      + element('div', 'text-xs text-muted-foreground truncate', 'description'))), ',"data-testid":testId');
+  const variable = element('div', 'flex flex-col gap-1',
+    element('div', 'flex', element('label', 'text-xs font-semibold', 'variable.title')) + ','
+      + element('span', 'text-xs text-muted-foreground', 'variable.description') + ','
+      + element('input', 'w-full', '', ',"data-testid":"mcp-config-variable-input"'),
+    ',"data-testid":"mcp-config-variable"');
+  const provider = element('div', 'flex flex-col',
+    element('div', 'flex', element('span', 'text-sm font-medium text-foreground truncate', 'provider.label')) + ','
+      + element('p', 'text-xs text-muted-foreground leading-relaxed', 'provider.description'),
+    ',"data-testid":`plugin-context-provider-${provider.id}`');
+  return [conflict, variable, element('div', '', provider, ',"data-testid":"plugin-context-provider-list"'),
+    element('div', '', 'content', ',"data-testid":"plugin-install-conflict-modal"'),
+    'const ids=["conflict-current-plugin","conflict-incoming-plugin"]'].join(';');
+}
+
+test('2.26 plugin configuration content structures are checked when the feature exists', () => {
+  const source = fixture() + ';' + configurationFixture();
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after, rule] of [
+    ['flex items-start gap-3', 'flex items-center gap-3', 'plugin-conflict-content'],
+    ['mcp-config-variable-input', 'changed-variable-input', 'mcp-configuration-content'],
+    ['text-sm font-medium text-foreground truncate', 'text-sm font-medium text-foreground', 'context-provider-content'],
+  ]) {
+    const changed = fixture() + ';' + configurationFixture().replaceAll(before, after);
+    assert.ok(checkUiCompatibility(changed).missing.includes(rule), rule);
+  }
+});
+
+test('runtime compatibility evaluation includes plugin configuration protection checks', async () => {
+  const { client } = executingClient(fixture() + ';' + configurationFixture());
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});

@@ -1,0 +1,661 @@
+[
+  {
+    "id": "v226.ui.1",
+    "source": "Play a sound when your action is needed or the agent finishes.",
+    "target": "需要你操作或智能体完成工作时播放提示音。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3622862,
+        "end": 3622926,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.2",
+    "source": "Show system notifications when your action is needed or the agent finishes.",
+    "target": "需要你操作或智能体完成工作时显示系统通知。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3623084,
+        "end": 3623161,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.3",
+    "source": "Undo to Here",
+    "target": "撤销到此处",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5548006,
+        "end": 5548020,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.4",
+    "source": "Fork in Shared Workspace",
+    "target": "在共享工作区中分叉",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5899755,
+        "end": 5899781,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.5",
+    "source": "Fork in New Workspace",
+    "target": "在新工作区中分叉",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5899810,
+        "end": 5899833,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.6",
+    "source": "Replace with New",
+    "target": "替换为新会话",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6078167,
+        "end": 6078185,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.7",
+    "source": "Snooze for 24 Hours",
+    "target": "暂缓 24 小时",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6857913,
+        "end": 6857934,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.8",
+    "source": "Show in Sidebar",
+    "target": "在侧边栏显示",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7438299,
+        "end": 7438316,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.9",
+    "source": "Only Archived",
+    "target": "仅已归档",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"palette-filter-archived\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5999747,
+        "end": 5999762,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.10",
+    "source": "Only Automations",
+    "target": "仅自动任务",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"palette-filter-scheduled\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5999929,
+        "end": 5999947,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.11",
+    "source": "Only Scheduled",
+    "target": "仅定时任务",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"palette-filter-scheduled\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5999948,
+        "end": 5999964,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.12",
+    "source": "Auto Pin",
+    "target": "自动置顶",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"view-option-auto-pin\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6063996,
+        "end": 6064006,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.13",
+    "source": "Start voice",
+    "target": "开始语音",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-start-button\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6940372,
+        "end": 6940385,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.14",
+    "source": "Voice on",
+    "target": "语音已开启",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-pill\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6941835,
+        "end": 6941845,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.15",
+    "source": "End voice",
+    "target": "结束语音",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-end-button\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6942816,
+        "end": 6942827,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.16",
+    "source": "Search tabs, files, extensions, subagents, artifacts, tasks...",
+    "target": "搜索标签页、文件、扩展、子智能体、产物、任务…",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-tab-search-input\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7388682,
+        "end": 7388746,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.17",
+    "source": "Remote Control Instances",
+    "target": "远程控制实例",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"instance-selector-instances-heading\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10131230,
+        "end": 10131256,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.18",
+    "source": "Get started with Remote Control",
+    "target": "开始使用远程控制",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"instance-selector-set-up\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10129183,
+        "end": 10129216,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.19",
+    "source": "Refresh all credentials",
+    "target": "刷新全部凭据",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-renew-all-credentials\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7516964,
+        "end": 7516989,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 7517151,
+        "end": 7517176,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.20",
+    "source": "Disk is full. Search will no longer match in conversation bodies until you clear up space and restart.",
+    "target": "磁盘已满。清理空间并重启后，才能继续搜索会话正文。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"status\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5996639,
+        "end": 5996743,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.21",
+    "source": "No instances yet.",
+    "target": "暂无实例。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "div[role=\"presentation\"]:has(> [data-testid=\"instance-selector-set-up\"]) > span.text-muted-foreground",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10129064,
+        "end": 10129083,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.22",
+    "source": "Download File",
+    "target": "下载文件",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "button, [role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7274479,
+        "end": 7274494,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.23",
+    "source": "Show or Hide Plugins",
+    "target": "显示或隐藏插件",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "button, [role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7438004,
+        "end": 7438026,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 7438624,
+        "end": 7438646,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.24",
+    "source": "Cancel Questionnaire and Stop the Agent",
+    "target": "取消问卷并停止智能体",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "button, [role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5601346,
+        "end": 5601387,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.25",
+    "source": "Queue Message",
+    "target": "将消息加入队列",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"menuitem\"], [role=\"tooltip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944860,
+        "end": 6944875,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.26",
+    "source": "Send Message {0}",
+    "target": "发送消息 {0}",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944750,
+        "end": 6944766,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|⏎)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v226.ui.27",
+    "source": "Queue Message {0}",
+    "target": "将消息加入队列 {0}",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944750,
+        "end": 6944767,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|⏎)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v226.ui.28",
+    "source": "Queue Message ({0})",
+    "target": "将消息加入队列（{0}）",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944750,
+        "end": 6944769,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Alt\\+Enter|⌥⏎)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v226.ui.29",
+    "source": "Send Immediately {0}",
+    "target": "立即发送 {0}",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944750,
+        "end": 6944770,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Enter|⏎)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v226.ui.30",
+    "source": "Send Immediately ({0})",
+    "target": "立即发送（{0}）",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] > .flex.flex-col.text-xs.text-left > div",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6944750,
+        "end": 6944772,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Alt\\+Enter|⌥⏎)"
+    },
+    "selectorMode": "self"
+  },
+  {
+    "id": "v226.ui.31",
+    "source": "Context window",
+    "target": "上下文窗口",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-context-window-submenu\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6917502,
+        "end": 6917518,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.32",
+    "source": "Expensive",
+    "target": "用量较高",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-context-window-badge\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6916807,
+        "end": 6916818,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.33",
+    "source": "512K context uses about 1.3x quota per turn because each request sends more tokens.",
+    "target": "512K 上下文每轮约消耗 1.3 倍额度，因为每次请求发送的 token 更多。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-context-window-tooltip\"], [data-testid=\"model-selector-context-window-option\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4908169,
+        "end": 4908252,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.34",
+    "source": "900K context uses about 1.8x quota per turn because each request sends more tokens.",
+    "target": "900K 上下文每轮约消耗 1.8 倍额度，因为每次请求发送的 token 更多。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-context-window-tooltip\"], [data-testid=\"model-selector-context-window-option\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4908262,
+        "end": 4908345,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.35",
+    "source": "Go to turn {0} of {1}",
+    "target": "跳转到第 {0} 轮，共 {1} 轮",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"conversation-navigator-card\"], [data-testid=\"conversation-navigator-turn\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6764803,
+        "end": 6764828,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9]\\d*",
+      "1": "[1-9]\\d*"
+    },
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v226.ui.36",
+    "source": "Turn {0} of {1}",
+    "target": "第 {0} 轮，共 {1} 轮",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"conversation-navigator-card\"], [data-testid=\"conversation-navigator-turn\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6767161,
+        "end": 6767182,
+        "kind": "property:aria-label"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9]\\d*",
+      "1": "[1-9]\\d*"
+    },
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v226.ui.37",
+    "source": "Refreshed credentials for all automations.",
+    "target": "已刷新全部自动任务的凭据。",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"alert\"], [role=\"status\"], [data-testid=\"toast-notification\"], .border-l-orange-500 p.font-medium",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6788031,
+        "end": 6788075,
+        "kind": "property:title"
+      },
+      {
+        "start": 7514162,
+        "end": 7514206,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.ui.38",
+    "source": "Failed to refresh credentials",
+    "target": "刷新凭据失败",
+    "context": "Antigravity 2.26.0 固定界面文案；限定实际组件并保留动态内容",
+    "scope": "generic",
+    "selector": "[role=\"alert\"], [role=\"status\"], [data-testid=\"toast-notification\"], .border-l-orange-500 p.font-medium",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6788180,
+        "end": 6788211,
+        "kind": "property:title"
+      },
+      {
+        "start": 7514315,
+        "end": 7514346,
+        "kind": "property:title"
+      }
+    ]
+  }
+]

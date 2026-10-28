@@ -76,6 +76,9 @@
 
   function matches(record, element, attribute) {
     if (!matchesSlashCommand(record, element, attribute)) return false;
+    // Permission options use the same Markdown renderer as agent-authored questions.
+    if (closest(element, '[data-testid="ask-question-option-text"] > .md-divider-spacing')
+      && (record.scope !== 'permission-request' || record.selectorMode !== 'self')) return false;
     if (record.kind === 'attribute' && (!attribute || (record.attribute && record.attribute !== attribute))) return false;
     if (record.kind === 'text' && attribute) return false;
     if (record.attribute && record.attribute !== attribute) return false;
@@ -253,7 +256,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.5', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.6', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

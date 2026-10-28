@@ -1,0 +1,774 @@
+[
+  {
+    "id": "permission-request.1",
+    "source": "Allow read access to this path?",
+    "target": "是否允许读取此路径？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794688,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.2",
+    "source": "Save rule to always allow read access to this path?",
+    "target": "是否保存规则，始终允许读取此路径？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794688,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.3",
+    "source": "Allow write access to this path?",
+    "target": "是否允许写入此路径？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794726,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.4",
+    "source": "Save rule to always allow write access to this path?",
+    "target": "是否保存规则，始终允许写入此路径？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794726,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.5",
+    "source": "Allow reading this URL?",
+    "target": "是否允许读取此网址？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794763,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.6",
+    "source": "Save rule to always allow reading this URL?",
+    "target": "是否保存规则，始终允许读取此网址？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794763,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.7",
+    "source": "Allow executing actions on this URL?",
+    "target": "是否允许在此网址执行操作？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794794,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.8",
+    "source": "Save rule to always allow executing actions on this URL?",
+    "target": "是否保存规则，始终允许在此网址执行操作？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794794,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.9",
+    "source": "Allow running this command?",
+    "target": "是否允许运行此命令？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794834,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.10",
+    "source": "Save rule to always allow running this command?",
+    "target": "是否保存规则，始终允许运行此命令？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794834,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.11",
+    "source": "Allow running this command outside the sandbox?",
+    "target": "是否允许在沙盒外运行此命令？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794869,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.12",
+    "source": "Save rule to always allow running this command outside the sandbox?",
+    "target": "是否保存规则，始终允许在沙盒外运行此命令？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794869,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.13",
+    "source": "Allow using this MCP tool?",
+    "target": "是否允许使用此 MCP 工具？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794916,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.14",
+    "source": "Save rule to always allow using this MCP tool?",
+    "target": "是否保存规则，始终允许使用此 MCP 工具？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794916,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.15",
+    "source": "Allow a one-time administrator (UAC) elevation?",
+    "target": "是否允许本次提升至管理员权限（UAC）？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794953,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.16",
+    "source": "Save rule to always allow a one-time administrator (UAC) elevation?",
+    "target": "是否保存规则，始终允许本次提升至管理员权限（UAC）？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6794953,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.17",
+    "source": "Allow access to this resource?",
+    "target": "是否允许访问此资源？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6795257,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.18",
+    "source": "Save rule to always allow access to this resource?",
+    "target": "是否保存规则，始终允许访问此资源？",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6795257,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.21",
+    "source": "Yes, allow",
+    "target": "是，允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800582,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.22",
+    "source": "Yes, allow this time",
+    "target": "是，仅允许本次",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800622,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.23",
+    "source": "Yes, save rule in this conversation",
+    "target": "是，在此对话中保存规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800757,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.24",
+    "source": "Yes, save rule in this project",
+    "target": "是，在此项目中保存规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801035,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.25",
+    "source": "Yes, save rule when not in a project",
+    "target": "是，在不属于项目时保存规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801035,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.26",
+    "source": "Yes, save rule in this workspace",
+    "target": "是，在此工作区中保存规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801385,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.27",
+    "source": "Yes, save rule globally",
+    "target": "是，全局保存规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801603,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.28",
+    "source": "Yes, and always allow in this conversation",
+    "target": "是，在此对话中始终允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800852,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.29",
+    "source": "Yes, and always allow in this project",
+    "target": "是，在此项目中始终允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801035,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.30",
+    "source": "Yes, and always allow when not in a project",
+    "target": "是，在不属于项目时始终允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801035,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.31",
+    "source": "Yes, and always allow in this workspace",
+    "target": "是，在此工作区中始终允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801473,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.32",
+    "source": "Yes, and always allow",
+    "target": "是，始终允许",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801664,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.33",
+    "source": "Yes, save rule for '{0}' in this conversation",
+    "target": "是，在此对话中保存‘{0}’的规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800708,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.34",
+    "source": "Yes, save rule for '{0}' in this project",
+    "target": "是，在此项目中保存‘{0}’的规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801002,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.35",
+    "source": "Yes, save rule for '{0}' when not in a project",
+    "target": "是，在不属于项目时保存‘{0}’的规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801002,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.36",
+    "source": "Yes, save rule for '{0}' in this workspace",
+    "target": "是，在此工作区中保存‘{0}’的规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801339,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.37",
+    "source": "Yes, save rule for '{0}' globally",
+    "target": "是，全局保存‘{0}’的规则",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801566,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.38",
+    "source": "Yes, and always allow '{0}' in this conversation",
+    "target": "是，在此对话中始终允许‘{0}’",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6800800,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.39",
+    "source": "Yes, and always allow '{0}' in this project",
+    "target": "是，在此项目中始终允许‘{0}’",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801147,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.40",
+    "source": "Yes, and always allow '{0}' when not in a project",
+    "target": "是，在不属于项目时始终允许‘{0}’",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801147,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.41",
+    "source": "Yes, and always allow '{0}' in this workspace",
+    "target": "是，在此工作区中始终允许‘{0}’",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801424,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.42",
+    "source": "Yes, and always allow '{0}'",
+    "target": "是，始终允许‘{0}’",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6801633,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": [
+      "[\\s\\S]+"
+    ]
+  },
+  {
+    "id": "permission-request.43",
+    "source": "No",
+    "target": "否",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "label > div.flex.gap-1.flex-1.min-w-0.items-baseline:has([data-testid=\"ask-question-writein\"]) > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6803961,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "permission-request.44",
+    "source": "(tell the agent what to do instead)",
+    "target": "（告诉智能体接下来该怎么做）",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-writein\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6803979,
+        "kind": "static:ui-2.26.0"
+      }
+    ],
+    "attribute": "placeholder"
+  },
+  {
+    "id": "permission-request.45",
+    "source": "Confirm the command is safe to run outside of the sandbox with full network and disk access.",
+    "target": "请确认：在拥有完整网络和磁盘访问权限的情况下，此命令可以安全地在沙盒外运行。",
+    "context": "权限请求的固定界面文案与授权范围；动态操作描述和规则内容保持原文",
+    "scope": "permission-request",
+    "selector": ".text-amber-500 > span.leading-relaxed.truncate.block",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6799136,
+        "kind": "static:ui-2.26.0"
+      }
+    ]
+  }
+]

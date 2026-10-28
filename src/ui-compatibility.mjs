@@ -92,6 +92,30 @@ function customizationStructures({ matching, contains, childOf }) {
     legacy: legacyCard && legacyShelf && legacyDetail };
 }
 
+function checkPluginConfiguration(source, nodes, queries, requireRule) {
+  const { matching, marker, contains, childOf } = queries;
+  if (marker('plugin-install-conflict-modal').length) {
+    const cards = nodes.filter(node => /["']data-testid["']\s*:\s*[\w$]+\s*}/.test(node.props));
+    requireRule('plugin-conflict-content', ['conflict-current-plugin', 'conflict-incoming-plugin']
+      .every(name => source.includes(`"${name}"`))
+      && cards.some(card => matching('div', 'flex items-start').some(body => childOf(card, body)
+        && matching('span', 'font-medium text-sm text-foreground truncate').some(title => contains(body, title))
+        && matching('div', 'text-xs text-muted-foreground truncate').some(description => contains(body, description)))));
+  }
+  if (marker('mcp-config-variable').length) {
+    requireRule('mcp-configuration-content', marker('mcp-config-variable').some(variable =>
+      nodes.some(label => label.tag === 'label' && contains(variable, label))
+      && matching('span', 'text-xs text-muted-foreground').some(description => childOf(variable, description))
+      && marker('mcp-config-variable-input').some(input => childOf(variable, input))));
+  }
+  if (marker('plugin-context-provider-list').length) {
+    requireRule('context-provider-content', marker('plugin-context-provider-list').some(list =>
+      marker('plugin-context-provider-', true).some(card => contains(list, card)
+        && matching('span', 'text-sm font-medium text-foreground truncate').some(title => contains(card, title))
+        && matching('p', 'text-xs text-muted-foreground leading-relaxed').some(description => childOf(card, description)))));
+  }
+}
+
 export function checkUiCompatibility(source) {
   const missing = [];
   const nodes = readElements(source);
@@ -99,6 +123,7 @@ export function checkUiCompatibility(source) {
   const { matching, childOf, marker } = queries;
   const customizations = customizationStructures(queries);
   const requireRule = (name, valid) => { if (!valid) missing.push(name); };
+  checkPluginConfiguration(source, nodes, queries, requireRule);
   for (const name of ['user-input-step', 'planner-response-text', 'pending-user-messages',
     'terminal-active', 'setup-script-output', 'file-title-name',
     'breadcrumb-segment', 'project-selector-item', 'branch-option',
@@ -151,7 +176,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, customizationStructures, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

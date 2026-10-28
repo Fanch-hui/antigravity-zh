@@ -1,0 +1,460 @@
+[
+  {
+    "id": "v226.onboarding.1",
+    "source": "Build with one agent or a team",
+    "target": "让一个智能体或团队协作完成工作",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6032695,
+        "end": 6032727,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.2",
+    "source": "Describe what you want. Your agent plans and builds it, and brings in other agents when needed.",
+    "target": "描述你的需求。智能体会制定计划并执行，必要时邀请其他智能体协作。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6032740,
+        "end": 6032837,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.3",
+    "source": "Review plans and walkthroughs",
+    "target": "审阅计划与成果说明",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6032857,
+        "end": 6032888,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.4",
+    "source": "Comment on the plan before your agent starts, and get a walkthrough when it finishes.",
+    "target": "智能体开始前，你可以对计划提出意见；完成后可查看成果说明。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6032901,
+        "end": 6032988,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.5",
+    "source": "Set the rules, define the boundaries.",
+    "target": "设定规则，明确边界。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6033009,
+        "end": 6033048,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.6",
+    "source": "By default, agents work in folders you choose and ask before sensitive changes. Adjust this anytime in Settings.",
+    "target": "默认情况下，智能体在你选择的文件夹中工作，并在进行敏感修改前征求许可。你可以随时在设置中调整。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6033061,
+        "end": 6033175,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.7",
+    "source": "Here's how you and your agents work together",
+    "target": "了解如何与智能体协作",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6034131,
+        "end": 6034177,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.8",
+    "source": "Tip:",
+    "target": "提示：",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6035022,
+        "end": 6035028,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.9",
+    "source": " Press",
+    "target": " 按下",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6035030,
+        "end": 6035038,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.10",
+    "source": "to switch to the Gemini app. Your agents keep working in the background.",
+    "target": "即可切换到 Gemini 应用。智能体会继续在后台工作。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"post-onboarding-welcome-modal\"], [data-testid=\"post-onboarding-welcome-tip\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6035303,
+        "end": 6035377,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.11",
+    "source": "Getting started with Google Antigravity",
+    "target": "开始使用 Google Antigravity",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"post-onboarding-welcome-modal\"])",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6033899,
+        "end": 6033940,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.12",
+    "source": "Stored and mounted in your cloud environment",
+    "target": "存储并挂载到你的云端环境",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494459,
+        "end": 6494505,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.13",
+    "source": "Uploaded project files and in-chat attachments are stored on Google servers and mounted into your cloud sandbox so your agent can read and work with them.",
+    "target": "上传的项目文件和会话附件存储在 Google 服务器上，并挂载到你的云端沙盒，供智能体读取和处理。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494518,
+        "end": 6494674,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.14",
+    "source": "Connected Google Drive and GitHub resources",
+    "target": "已连接的 Google Drive 和 GitHub 资源",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494698,
+        "end": 6494743,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.15",
+    "source": "Files, folders, and repositories you connect are accessible to your agent in this project, including during background or scheduled runs.",
+    "target": "智能体可以访问你为此项目连接的文件、文件夹和仓库，包括在后台运行或执行定时任务时。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494756,
+        "end": 6494895,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.16",
+    "source": "Manage and delete your data anytime",
+    "target": "随时管理和删除数据",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494917,
+        "end": 6494954,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.17",
+    "source": "Remove individual uploaded files or connected resources in Project Settings, or delete a project or conversation to remove its stored files.",
+    "target": "在项目设置中移除单个上传文件或已连接资源，也可删除项目或会话以移除其存储的文件。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6494968,
+        "end": 6495110,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.18",
+    "source": "Here's how uploaded files, attachments, and connected resources work in your cloud environment",
+    "target": "了解上传文件、附件和已连接资源在云端环境中的使用方式",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6496919,
+        "end": 6497015,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.19",
+    "source": "Avoid uploading highly sensitive data and verify actions taken by your agent. Make sure you have the",
+    "target": "请避免上传高度敏感的数据，并核实智能体执行的操作。对于上传的任何内容或文件，包括未成年人的内容，请确保你拥有",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6497816,
+        "end": 6497918,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.20",
+    "source": "necessary rights",
+    "target": "必要权利",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6498075,
+        "end": 6498093,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.21",
+    "source": "to any content or files that you upload, including content of minors. Don't generate content that infringes on others' rights, including content that deceives, harasses, or harms. When using Antigravity, you must comply with Google's",
+    "target": "。请勿生成侵犯他人权利的内容，包括欺骗、骚扰或伤害他人的内容。使用 Antigravity 时，你必须遵守 Google 的",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6498099,
+        "end": 6498334,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.22",
+    "source": "Prohibited Use Policy",
+    "target": "禁止使用政策",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6498499,
+        "end": 6498522,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.23",
+    "source": ". Your use is subject to the",
+    "target": "。你的使用须遵守",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6498525,
+        "end": 6498553,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.24",
+    "source": "Google Antigravity Terms of Service",
+    "target": "Google Antigravity 服务条款",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6498692,
+        "end": 6498729,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.25",
+    "source": "and",
+    "target": "和",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6030523,
+        "end": 6030528,
+        "kind": "element:children"
+      },
+      {
+        "start": 6498735,
+        "end": 6498740,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.26",
+    "source": "Google Privacy Policy",
+    "target": "Google 隐私权政策",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-modal\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6030659,
+        "end": 6030682,
+        "kind": "element:children"
+      },
+      {
+        "start": 6498881,
+        "end": 6498904,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.27",
+    "source": "Files and resources in cloud workspaces",
+    "target": "云端工作区中的文件与资源",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"cloud-resource-disclosure-modal\"])",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6496670,
+        "end": 6496711,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v226.onboarding.28",
+    "source": "Uploaded files and connected resources are mounted in your cloud environment.",
+    "target": "上传的文件和已连接的资源会挂载到你的云端环境。",
+    "context": "Antigravity 2.26.0 欢迎及云端资源说明中的固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-resource-disclosure-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6499388,
+        "end": 6499467,
+        "kind": "element:children"
+      }
+    ]
+  }
+]

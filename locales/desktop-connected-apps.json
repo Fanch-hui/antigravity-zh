@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "connected.conflict.title",
+    "source": "Install folder \"{0}\" is already in use",
+    "target": "安装文件夹“{0}”已被占用",
+    "context": "插件安装冲突标题；保留文件夹名称",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"plugin-install-conflict-modal\"]) .text-md.font-medium.text-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4771592,
+        "end": 4771631,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,512}"
+    }
+  },
+  {
+    "id": "connected.conflict.description",
+    "source": "Replacing removes the currently installed plugin and installs the new one in its place.",
+    "target": "替换会移除当前安装的插件，并安装新插件。",
+    "context": "插件安装冲突说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-install-conflict-modal\"] > .text-secondary-foreground.text-sm.mb-4",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4771826,
+        "end": 4771913,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.conflict.current",
+    "source": "Currently installed",
+    "target": "当前已安装",
+    "context": "插件安装冲突操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"conflict-current-plugin\"] > .text-xs.font-medium.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4772006,
+        "end": 4772025,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.conflict.new",
+    "source": "Replace with",
+    "target": "替换为",
+    "context": "插件安装冲突操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"conflict-incoming-plugin\"] > .text-xs.font-medium.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4772306,
+        "end": 4772318,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.conflict.replacing",
+    "source": "Replacing...",
+    "target": "正在替换...",
+    "context": "插件安装冲突操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"replace-conflicting-plugin\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4772954,
+        "end": 4772966,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.conflict.replace",
+    "source": "Replace",
+    "target": "替换",
+    "context": "插件安装冲突操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"replace-conflicting-plugin\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4771417,
+        "end": 4771424,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.conflict.cancel",
+    "source": "Cancel",
+    "target": "取消",
+    "context": "插件安装冲突操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"cancel-plugin-install-conflict\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4771429,
+        "end": 4771435,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.kind.cloud",
+    "source": "Runs in the cloud",
+    "target": "在云端运行",
+    "context": "自动化任务运行位置图标提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-icon\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4812482,
+        "end": 4812499,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "connected.kind.computer",
+    "source": "Runs on this computer",
+    "target": "在此电脑上运行",
+    "context": "自动化任务运行位置图标提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-icon\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4814415,
+        "end": 4814436,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "connected.intro.single",
+    "source": "Services this plugin connects to on your behalf. Credentials stay on this machine and are only sent to the domains listed.",
+    "target": "此插件代表你连接的服务。凭据保存在本机，仅发送至列出的域名。",
+    "context": "插件账户的凭据使用说明",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4867359,
+        "end": 4867481,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.intro.multiple",
+    "source": "Services this plugin connects to on your behalf. Credentials stay on this machine and are only sent to the domains listed. If you add multiple accounts, MCP servers use the one marked Default.",
+    "target": "此插件代表你连接的服务。凭据保存在本机，仅发送至列出的域名。添加多个账户时，MCP 服务器使用标记为默认的账户。",
+    "context": "插件账户的凭据使用及默认账户说明",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4867359,
+        "end": 4867481,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.intro.enable",
+    "source": "Enable this plugin to manage its accounts.",
+    "target": "启用此插件后才能管理其账户。",
+    "context": "插件账户管理禁用说明",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) > p.mt-1.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4867635,
+        "end": 4867677,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.make-default",
+    "source": "Make default",
+    "target": "设为默认",
+    "context": "设为插件默认账户",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4871124,
+        "end": 4871136,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.default-label",
+    "source": "Make {0} the default {1} account",
+    "target": "将 {0} 设为默认的 {1} 账户",
+    "context": "设置默认账户；保留账户和服务名称",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) button[aria-label^=\"Make \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4871022,
+        "end": 4871086,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}?",
+      "1": "[^\\n]{1,200}"
+    }
+  },
+  {
+    "id": "connected.account.secret",
+    "source": "New secret for {0}",
+    "target": "{0} 的新机密凭据",
+    "context": "凭据输入无障碍说明；保留账户名称",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) input[aria-label^=\"New secret for \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4870608,
+        "end": 4870647,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}"
+    }
+  },
+  {
+    "id": "connected.account.no-sign-in",
+    "source": "No sign-in needed",
+    "target": "无需登录",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) span.rounded.bg-muted.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4872896,
+        "end": 4872913,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.checking",
+    "source": "Checking…",
+    "target": "正在检查…",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) [role=\"status\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4873616,
+        "end": 4873630,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.sign-in-enable",
+    "source": "Enable the plugin to sign in.",
+    "target": "启用插件后才能登录。",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4873238,
+        "end": 4873267,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.default",
+    "source": "Default",
+    "target": "默认",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) ul[class~=\"space-y-1.5\"] li span.rounded.bg-muted.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4867549,
+        "end": 4867556,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.reauth",
+    "source": "Needs re-auth",
+    "target": "需要重新验证身份",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) ul[class~=\"space-y-1.5\"] li span.rounded.bg-muted.text-amber-500",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4870342,
+        "end": 4870355,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.connected",
+    "source": "Connected",
+    "target": "已连接",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) span.rounded.bg-muted.text-green-500",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4868599,
+        "end": 4868608,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.domains",
+    "source": "Domains:",
+    "target": "域名：",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) p.mt-1.truncate.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4868691,
+        "end": 4868699,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.scopes",
+    "source": "Scopes:",
+    "target": "权限范围：",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) div[class~=\"mt-0.5\"].text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4874032,
+        "end": 4874039,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.waiting",
+    "source": "Waiting for you to finish signing in…",
+    "target": "正在等待你完成登录…",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) p.mt-1.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4868843,
+        "end": 4868885,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.reopen",
+    "source": "Reopen sign-in page",
+    "target": "重新打开登录页面",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) a.text-link",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4869006,
+        "end": 4869025,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.cancel",
+    "source": "Cancel",
+    "target": "取消",
+    "context": "插件账户与认证状态",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4871766,
+        "end": 4871772,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.account.count",
+    "source": "{0} accounts",
+    "target": "{0} 个账户",
+    "context": "插件账户数量",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) span.rounded.bg-muted.text-green-500",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4868574,
+        "end": 4868595,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "connected.account.signed-in",
+    "source": "Signed-in accounts",
+    "target": "已登录的账户",
+    "context": "插件已登录账户列表的无障碍名称",
+    "scope": "generic",
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) ul[aria-label=\"Signed-in accounts\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4869678,
+        "end": 4869696,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "connected.card.sign-in",
+    "source": "Sign in required",
+    "target": "需要登录",
+    "context": "已安装插件卡片登录状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"customization-card\"] span.select-none.text-amber-600",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4878640,
+        "end": 4878656,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.account",
+    "source": "Account",
+    "target": "账户",
+    "context": "云端应用账户列表标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] .p-3.rounded-md.border.text-sm.text-foreground.flex.flex-col.gap-2 > .flex.items-center.justify-between.gap-3 > span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4897214,
+        "end": 4897221,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.default",
+    "source": "Default",
+    "target": "默认",
+    "context": "云端应用默认账户标记",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] .p-3.rounded-md.border.text-sm.text-foreground.flex.flex-col.gap-2 .flex.items-center.gap-2.min-w-0 > span.inline-flex.rounded-full",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4897650,
+        "end": 4897657,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.needs-reconnect",
+    "source": "Needs reconnect",
+    "target": "需要重新连接",
+    "context": "云端应用账户状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] .p-3.rounded-md.border.text-sm.text-foreground.flex.flex-col.gap-2 .flex.items-center.gap-2.min-w-0 > span.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4897732,
+        "end": 4897747,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.reconnect-label",
+    "source": "Reconnect {0}",
+    "target": "重新连接 {0}",
+    "context": "云端应用操作无障碍说明；保留名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] button[aria-label^=\"Reconnect \"], [data-testid=\"customization-card\"] > .relative.z-10.flex-shrink-0.flex.items-center > button[aria-label^=\"Reconnect \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4897896,
+        "end": 4897910,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}"
+    }
+  },
+  {
+    "id": "connected.remote.disconnect-label",
+    "source": "Disconnect {0}",
+    "target": "断开与 {0} 的连接",
+    "context": "云端应用操作无障碍说明；保留名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] button[aria-label^=\"Disconnect \"], [data-testid=\"customization-card\"] > .relative.z-10.flex-shrink-0.flex.items-center > button[aria-label^=\"Disconnect \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4898010,
+        "end": 4898025,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}"
+    }
+  },
+  {
+    "id": "connected.remote.connect-label",
+    "source": "Connect {0}",
+    "target": "连接 {0}",
+    "context": "云端应用操作无障碍说明；保留名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] button[aria-label^=\"Connect \"], [data-testid=\"customization-card\"] > .relative.z-10.flex-shrink-0.flex.items-center > button[aria-label^=\"Connect \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4962706,
+        "end": 4962718,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}"
+    }
+  },
+  {
+    "id": "connected.remote.connect",
+    "source": "Connect",
+    "target": "连接",
+    "context": "云端应用连接账户操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail\"] button[aria-label^=\"Connect \"], [data-testid=\"plugin-detail\"] button[aria-label^=\"连接 \"], [data-testid=\"customization-card\"] > .relative.z-10.flex-shrink-0.flex.items-center > button[aria-label^=\"Connect \"], [data-testid=\"customization-card\"] > .relative.z-10.flex-shrink-0.flex.items-center > button[aria-label^=\"连接 \"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4961966,
+        "end": 4961973,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.connected",
+    "source": "Account connected.",
+    "target": "账户已连接。",
+    "context": "应用账户状态提示",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) .p-3.rounded-md.border.text-sm.text-foreground.flex.items-center.justify-between > .flex.items-center.gap-2 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4962463,
+        "end": 4962481,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.connect-hint",
+    "source": "Connect an account so the agent can use this app.",
+    "target": "连接账户，让智能体使用此应用。",
+    "context": "应用账户状态提示",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) .p-3.rounded-md.border.text-sm.text-foreground.flex.items-center.justify-between > .flex.items-center.gap-2 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4962620,
+        "end": 4962669,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.sign-in-required",
+    "source": "Sign in required.",
+    "target": "需要登录。",
+    "context": "应用账户状态提示",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) .p-3.rounded-md.border.text-sm.text-foreground.flex.items-center.justify-between > .flex.items-center.gap-2 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4957340,
+        "end": 4957357,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.remote.go-accounts",
+    "source": "Go to Accounts",
+    "target": "前往账户",
+    "context": "插件详情登录提示操作",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) .p-3.rounded-md.border.text-sm.text-foreground.flex.items-center.justify-between > button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4957374,
+        "end": 4957388,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.provider.unauthenticated",
+    "source": "Unauthenticated",
+    "target": "未验证身份",
+    "context": "插件上下文提供者状态",
+    "scope": "generic",
+    "selector": "[data-testid^=\"plugin-context-provider-status-\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4898696,
+        "end": 4898711,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.provider.app-update",
+    "source": "App update required",
+    "target": "需要更新应用",
+    "context": "插件上下文提供者状态",
+    "scope": "generic",
+    "selector": "[data-testid^=\"plugin-context-provider-status-\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4898798,
+        "end": 4898817,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.provider.plugin-update",
+    "source": "Plugin update required",
+    "target": "需要更新插件",
+    "context": "插件上下文提供者状态",
+    "scope": "generic",
+    "selector": "[data-testid^=\"plugin-context-provider-status-\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4898904,
+        "end": 4898926,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.section.providers",
+    "source": "Context Providers",
+    "target": "上下文提供者",
+    "context": "插件详情的内容分组标题",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) section.flex.flex-col.gap-3 > div > h3 > button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4939302,
+        "end": 4939319,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.section.themes",
+    "source": "Themes",
+    "target": "主题",
+    "context": "插件详情的内容分组标题",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"plugin-detail\"], [role=\"dialog\"]) section.flex.flex-col.gap-3 > div > h3 > button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4939429,
+        "end": 4939435,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.mcp.config-hint",
+    "source": "Enter the configuration values this MCP server needs. Saving restarts the server with them.",
+    "target": "输入此 MCP 服务器所需的配置值。保存后服务器会使用新配置重启。",
+    "context": "MCP 服务器配置说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-config-modal\"] > .text-secondary-foreground.text-xs.select-none",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4960097,
+        "end": 4960188,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.source.local",
+    "source": "On this computer",
+    "target": "此电脑",
+    "context": "自定义内容来源切换名称",
+    "scope": "generic",
+    "selector": "[data-testid^=\"plugins-source-\"], .compact-tooltip[role=\"tooltip\"] > div.flex.flex-col[class~=\"gap-0.5\"][class~=\"max-w-[220px]\"] > span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4965064,
+        "end": 4965080,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.source.remote",
+    "source": "Connected apps",
+    "target": "已连接的应用",
+    "context": "自定义内容来源切换名称",
+    "scope": "generic",
+    "selector": "[data-testid^=\"plugins-source-\"], .compact-tooltip[role=\"tooltip\"] > div.flex.flex-col[class~=\"gap-0.5\"][class~=\"max-w-[220px]\"] > span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4965189,
+        "end": 4965203,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.source.label",
+    "source": "Customizations source",
+    "target": "自定义内容来源",
+    "context": "自定义内容来源切换的无障碍名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugins-source\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4965409,
+        "end": 4965430,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "connected.source.local-hint",
+    "source": "Plugins, skills and MCP servers installed here. They run locally.",
+    "target": "在此电脑安装的插件、技能和 MCP 服务器，均在本地运行。",
+    "context": "本地自定义内容来源说明",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > div.flex.flex-col[class~=\"gap-0.5\"][class~=\"max-w-[220px]\"] > span.opacity-80",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4965088,
+        "end": 4965153,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.source.remote-hint",
+    "source": "Sign in once and your agent can use these apps on any device. Nothing is installed on this computer.",
+    "target": "登录一次，智能体即可在任何设备上使用这些应用，当前电脑无需安装。",
+    "context": "已连接应用来源说明",
+    "scope": "generic",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > div.flex.flex-col[class~=\"gap-0.5\"][class~=\"max-w-[220px]\"] > span.opacity-80",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4965211,
+        "end": 4965311,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.title",
+    "source": "Apps connected to your account",
+    "target": "与账户连接的应用",
+    "context": "已连接应用列表介绍标题",
+    "scope": "generic",
+    "selector": ".max-w-4xl.w-full.mx-auto.px-8.py-6 > .flex.flex-col.gap-6 > .flex.gap-3.items-start.px-4.py-3.rounded-xl.border.border-border > .flex.flex-col.gap-1 > p.text-sm.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4968192,
+        "end": 4968222,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.hint",
+    "source": "Sign in to an app once and your agent can use it on any device. Open an app to see the account it uses or to disconnect it.",
+    "target": "登录应用一次，智能体即可在任何设备上使用。打开应用可查看其使用的账户或断开连接。",
+    "context": "已连接应用列表介绍",
+    "scope": "generic",
+    "selector": ".max-w-4xl.w-full.mx-auto.px-8.py-6 > .flex.flex-col.gap-6 > .flex.gap-3.items-start.px-4.py-3.rounded-xl.border.border-border > .flex.flex-col.gap-1 > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4968294,
+        "end": 4968417,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.apps",
+    "source": "Apps",
+    "target": "应用",
+    "context": "应用列表标题",
+    "scope": "generic",
+    "selector": ".max-w-4xl.w-full.mx-auto.px-8.py-6 > .flex.flex-col.gap-6 > section.flex.flex-col.gap-3 > div > h3 > button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4966999,
+        "end": 4967003,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.loading",
+    "source": "Loading apps...",
+    "target": "正在加载应用...",
+    "context": "加载云端应用列表",
+    "scope": "generic",
+    "selector": ".max-w-4xl.w-full.mx-auto.px-8.py-6 > .flex.flex-col.gap-6 > section.flex.flex-col.gap-3 > div.flex.items-center.justify-center.gap-2 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4967824,
+        "end": 4967839,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.empty",
+    "source": "No apps available.",
+    "target": "暂无可用应用。",
+    "context": "应用市场空状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-empty-state\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4966794,
+        "end": 4966812,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.empty-connected",
+    "source": "No apps connected yet. Connect one from Marketplace.",
+    "target": "尚未连接应用。请从应用市场连接。",
+    "context": "已连接应用空状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-empty-state\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4966815,
+        "end": 4966867,
+        "kind": "static:2.26.0"
+      }
+    ]
+  },
+  {
+    "id": "connected.list.not-found",
+    "source": "No apps found for \"{0}\".",
+    "target": "未找到与“{0}”匹配的应用。",
+    "context": "应用搜索空状态；保留搜索内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-empty-state\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4966753,
+        "end": 4966778,
+        "kind": "static:2.26.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,200}"
+    }
+  }
+]

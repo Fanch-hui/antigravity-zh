@@ -1,0 +1,654 @@
+[
+  {
+    "id": "v228.ui.66",
+    "source": "This chat's environment is paused",
+    "target": "此会话的环境已暂停",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"vm-paused-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7003925,
+        "end": 7003960,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.67",
+    "source": "Resuming environment…",
+    "target": "正在恢复环境…",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"vm-paused-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7004242,
+        "end": 7004270,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.68",
+    "source": "Resume environment",
+    "target": "恢复环境",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"vm-paused-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7004271,
+        "end": 7004291,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.69",
+    "source": "Resume it to load this file.",
+    "target": "恢复环境以加载此文件。",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"vm-paused-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7004599,
+        "end": 7004629,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.70",
+    "source": "Resume it to open a new terminal. Anything that was running in this one has stopped.",
+    "target": "恢复环境以打开新终端。原终端中运行的内容已停止。",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"vm-paused-notice\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7949337,
+        "end": 7949423,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.71",
+    "source": "No extensions available",
+    "target": "暂无可用扩展",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugins-submenu-empty\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7141654,
+        "end": 7141679,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.72",
+    "source": "Show or Hide Extensions",
+    "target": "显示或隐藏扩展",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugins-visibility-trigger\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8046970,
+        "end": 8046995,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 8047593,
+        "end": 8047618,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.73",
+    "source": "Website",
+    "target": "网站",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail-footer-homepage\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6872986,
+        "end": 6872995,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.74",
+    "source": "Repository",
+    "target": "代码仓库",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-detail-footer-repository\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6873075,
+        "end": 6873087,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.75",
+    "source": "Execution Identity",
+    "target": "执行身份",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-editor-panel\"] label",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8089186,
+        "end": 8089206,
+        "kind": "element:children"
+      },
+      {
+        "start": 8120407,
+        "end": 8120427,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.76",
+    "source": "Conversation turns",
+    "target": "会话轮次",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"conversation-navigator\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7799682,
+        "end": 7799702,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.77",
+    "source": "Loading conversations...",
+    "target": "正在加载会话…",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidebar-list-skeleton\"] [role=\"status\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7865681,
+        "end": 7865707,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.78",
+    "source": "Select Resource(s)",
+    "target": "选择资源",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-folder-selection-step\"] > div.text-sm",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7887539,
+        "end": 7887559,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.79",
+    "source": "Close Other Tabs",
+    "target": "关闭其他标签页",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7978633,
+        "end": 7978651,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.80",
+    "source": "Close Tabs to the Right",
+    "target": "关闭右侧标签页",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7978747,
+        "end": 7978772,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.81",
+    "source": "Live chat in progress",
+    "target": "正在进行实时聊天",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8023771,
+        "end": 8023794,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.82",
+    "source": "Drag to move",
+    "target": "拖动以移动",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock\"] > [role=\"status\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8026008,
+        "end": 8026022,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.83",
+    "source": "Add files",
+    "target": "添加文件",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock-composer\"] button[data-tooltip-id=\"voice-dock-add-tooltip\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8027732,
+        "end": 8027743,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 8027976,
+        "end": 8027987,
+        "kind": "property:content"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.84",
+    "source": "Message this chat",
+    "target": "向此会话发送消息",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock-input\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8028119,
+        "end": 8028138,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.85",
+    "source": "Send",
+    "target": "发送",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock-send\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8028646,
+        "end": 8028652,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.86",
+    "source": "End Live chat",
+    "target": "结束实时聊天",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-dock-end\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8031910,
+        "end": 8031925,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 8032441,
+        "end": 8032456,
+        "kind": "property:content"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.87",
+    "source": "Reconnecting…",
+    "target": "正在重新连接…",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-link-status\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7442650,
+        "end": 7442670,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.88",
+    "source": "Still connecting…",
+    "target": "仍在连接…",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-link-status\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7442686,
+        "end": 7442710,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.89",
+    "source": "Connecting…",
+    "target": "正在连接…",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-link-status\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7442711,
+        "end": 7442729,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.90",
+    "source": "Commands",
+    "target": "命令",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5075478,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.91",
+    "source": "Unsandboxed commands",
+    "target": "沙盒外命令",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255205,
+        "end": 6255227,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.92",
+    "source": "Read files",
+    "target": "读取文件",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255273,
+        "end": 6255285,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.93",
+    "source": "Write files",
+    "target": "写入文件",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255333,
+        "end": 6255346,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.94",
+    "source": "Read URLs",
+    "target": "读取网址",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4431905,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.95",
+    "source": "Browser actions",
+    "target": "浏览器操作",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255414,
+        "end": 6255431,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.96",
+    "source": "MCP tools",
+    "target": "MCP 工具",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255453,
+        "end": 6255464,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.97",
+    "source": "Admin escalation",
+    "target": "管理员权限提升",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255497,
+        "end": 6255515,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.98",
+    "source": "Custom",
+    "target": "自定义",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4428301,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.99",
+    "source": "Other",
+    "target": "其他",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"] span.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6255926,
+        "end": 6255933,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.100",
+    "source": "{0}, {1} grant",
+    "target": "{0}，{1} 项授权",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Commands|Unsandboxed commands|Read files|Write files|Read URLs|Browser actions|MCP tools|Admin escalation|Custom|Other)",
+      "1": "[1-9]\\d*"
+    },
+    "captureMappings": {
+      "0": {
+        "Commands": "命令",
+        "Unsandboxed commands": "沙盒外命令",
+        "Read files": "读取文件",
+        "Write files": "写入文件",
+        "Read URLs": "读取网址",
+        "Browser actions": "浏览器操作",
+        "MCP tools": "MCP 工具",
+        "Admin escalation": "管理员权限提升",
+        "Custom": "自定义",
+        "Other": "其他"
+      }
+    },
+    "origins": [
+      {
+        "start": 6256470,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v228.ui.101",
+    "source": "{0}, {1} grants",
+    "target": "{0}，{1} 项授权",
+    "context": "Antigravity 2.28.2 环境、扩展、语音及授权固定控件；动态内容保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"access-grant-group-toggle\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Commands|Unsandboxed commands|Read files|Write files|Read URLs|Browser actions|MCP tools|Admin escalation|Custom|Other)",
+      "1": "[1-9]\\d*"
+    },
+    "captureMappings": {
+      "0": {
+        "Commands": "命令",
+        "Unsandboxed commands": "沙盒外命令",
+        "Read files": "读取文件",
+        "Write files": "写入文件",
+        "Read URLs": "读取网址",
+        "Browser actions": "浏览器操作",
+        "MCP tools": "MCP 工具",
+        "Admin escalation": "管理员权限提升",
+        "Custom": "自定义",
+        "Other": "其他"
+      }
+    },
+    "origins": [
+      {
+        "start": 6256470,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "reviewed": true
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "id": "v228.ui.38",
+    "source": "Connection is secure",
+    "target": "连接安全",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937178,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.39",
+    "source": "Your connection to this site is not secure",
+    "target": "你与此网站的连接不安全",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937409,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.40",
+    "source": "Connection security information is not available for this page",
+    "target": "此页面的连接安全信息不可用",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937961,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.41",
+    "source": "Not secure",
+    "target": "不安全",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-indicator\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937367,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.42",
+    "source": "Your information (for example, passwords or credit card numbers) is private when it is sent to this site.",
+    "target": "发送到此网站的信息（例如密码或信用卡号码）会保持私密。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-summary\"] + span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937213,
+        "end": 3937320,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.43",
+    "source": "You should not enter any sensitive information on this site (for example, passwords or credit cards), because it could be stolen by attackers.",
+    "target": "请勿在此网站输入任何敏感信息（例如密码或信用卡信息），否则可能被攻击者窃取。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-summary\"] + span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3937466,
+        "end": 3937610,
+        "kind": "property:description"
+      },
+      {
+        "start": 3937751,
+        "end": 3937895,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.44",
+    "source": "Security",
+    "target": "安全",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] > .flex.items-center.gap-2.px-1.pt-2.pb-2.border-b.border-border > .flex.flex-col.min-w-0 > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3991766,
+        "end": 3991776,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.45",
+    "source": "Certificate is valid",
+    "target": "证书有效",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-foreground, [data-testid=\"url-security-certificate-row\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938727,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.46",
+    "source": "Certificate details",
+    "target": "证书详情",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-foreground, [data-testid=\"url-security-certificate-row\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938750,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.47",
+    "source": "The certificate has expired or is not yet valid.",
+    "target": "证书已过期或尚未生效。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938062,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.48",
+    "source": "The certificate is not issued by a trusted authority.",
+    "target": "证书并非由受信任的机构颁发。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938147,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.49",
+    "source": "The certificate is not valid for this site.",
+    "target": "证书对该网站无效。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938240,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.50",
+    "source": "The certificate has been revoked.",
+    "target": "证书已被吊销。",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3938310,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.51",
+    "source": "Issued to",
+    "target": "颁发给",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-certificate\"] > dt",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3989176,
+        "end": 3989187,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.52",
+    "source": "Issued by",
+    "target": "颁发者",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-certificate\"] > dt",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3989296,
+        "end": 3989307,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.53",
+    "source": "Valid until",
+    "target": "有效期至",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-certificate\"] > dt",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3989410,
+        "end": 3989423,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.54",
+    "source": "Protocol",
+    "target": "协议",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-certificate\"] > dt",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3989983,
+        "end": 3989993,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.55",
+    "source": "View site information",
+    "target": "查看网站信息",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-indicator\"]",
+    "kind": "attribute",
+    "attribute": "title",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3990827,
+        "end": 3990850,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.56",
+    "source": "Connection is secure. View site information",
+    "target": "连接安全。查看网站信息",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-indicator\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 3990798,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v228.ui.57",
+    "source": "Not secure. View site information",
+    "target": "不安全。查看网站信息",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-indicator\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 3990798,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v228.ui.58",
+    "source": "Connection security information is not available for this page. View site information",
+    "target": "此页面的连接安全信息不可用。查看网站信息",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-indicator\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 3990798,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v228.ui.59",
+    "source": "Add screenshot to conversation",
+    "target": "将截图添加到会话",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-url-bar-screenshot\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3994689,
+        "end": 3994721,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 3994728,
+        "end": 3994760,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.60",
+    "source": "Open Link in New Tab",
+    "target": "在新标签页打开链接",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4034922,
+        "end": 4034944,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.61",
+    "source": "Open Link in External Browser",
+    "target": "在外部浏览器中打开链接",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4035076,
+        "end": 4035107,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.62",
+    "source": "Copy Link Address",
+    "target": "复制链接地址",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4035230,
+        "end": 4035249,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.63",
+    "source": "Open Image in New Tab",
+    "target": "在新标签页打开图片",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4035463,
+        "end": 4035486,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.64",
+    "source": "Copy Image Address",
+    "target": "复制图片地址",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4035618,
+        "end": 4035638,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.65",
+    "source": "Open in External Browser",
+    "target": "在外部浏览器中打开",
+    "context": "Antigravity 2.28.2 内置浏览器安全信息与菜单固定文案；证书和站点原值保留",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4037211,
+        "end": 4037237,
+        "kind": "property:label"
+      },
+      {
+        "start": 4039892,
+        "end": 4039918,
+        "kind": "element:children"
+      }
+    ]
+  }
+]

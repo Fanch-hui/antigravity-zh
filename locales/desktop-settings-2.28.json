@@ -1,0 +1,570 @@
+[
+  {
+    "id": "v228.ui.1",
+    "source": "The agent auto-executes commands matched by an allow list entry. For Unix shells, an allow list entry matches a command if its space-separated tokens form a prefix of the command's tokens. For PowerShell, the entry tokens may match any contiguous subsequence of the command tokens.",
+    "target": "智能体会自动执行与允许列表条目匹配的命令。对于 Unix shell，如果条目中以空格分隔的 token 构成命令 token 的前缀，即视为匹配。对于 PowerShell，条目 token 可匹配命令 token 中的任意连续子序列。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4053203,
+        "end": 4053486,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.2",
+    "source": "The agent asks for permission before executing commands matched by a deny list entry. The deny list follows the same matching rules as the allow list and takes precedence over the allow list.",
+    "target": "执行与拒绝列表条目匹配的命令前，智能体会请求授权。拒绝列表遵循与允许列表相同的匹配规则，并且优先于允许列表。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4053643,
+        "end": 4053836,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.3",
+    "source": "Controls whether terminal commands require your approval before running.\n\nNote: A change to this setting will only apply to new messages sent to the agent. In-progress responses will use the previous setting value.",
+    "target": "控制终端命令运行前是否需要你的批准。\n\n注意：更改仅对发送给智能体的新消息生效，正在进行的回复仍使用之前的设置。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4056447,
+        "end": 4056665,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.4",
+    "source": "Open Links In",
+    "target": "打开链接的位置",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4060544,
+        "end": 4060559,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.5",
+    "source": "Choose where links open by default when clicked.",
+    "target": "选择点击链接时默认打开的位置。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4060572,
+        "end": 4060622,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.6",
+    "source": "Remote Agents Data",
+    "target": "远程智能体数据",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4093563,
+        "end": 4093583,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.7",
+    "source": "Delete All Remote Agents Data",
+    "target": "删除所有远程智能体数据",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4093635,
+        "end": 4093666,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.8",
+    "source": "Permanently delete your remote conversations, projects, scheduled tasks, connected plugins and settings. Data in the desktop app and your Google account are not affected.",
+    "target": "永久删除远程会话、项目、定时任务、已连接的插件和设置。桌面应用及 Google 账号中的数据不受影响。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4093679,
+        "end": 4093851,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.9",
+    "source": "Delete All Data",
+    "target": "删除所有数据",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"delete-all-user-data-button\"], [data-testid=\"confirm-delete-all-user-data\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4093983,
+        "end": 4094000,
+        "kind": "element:children"
+      },
+      {
+        "start": 4094961,
+        "end": 4094978,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.10",
+    "source": "Delete All Remote Agents Data?",
+    "target": "删除所有远程智能体数据？",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4094081,
+        "end": 4094113,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.11",
+    "source": "This permanently deletes all of your Remote Agents conversations, projects, scheduled tasks, connected plugins and settings, and stops any running remote agents. It can't be undone. Data in the desktop app and your Google account are not affected, and you can keep using Remote Agents afterwards.",
+    "target": "这会永久删除所有远程智能体会话、项目、定时任务、已连接的插件和设置，并停止正在运行的远程智能体。此操作无法撤销。桌面应用及 Google 账号中的数据不受影响，之后仍可使用远程智能体。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4094232,
+        "end": 4094530,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.12",
+    "source": "Couldn't delete your data. Try again.",
+    "target": "无法删除数据，请重试。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4094607,
+        "end": 4094646,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.13",
+    "source": "Console Telemetry",
+    "target": "控制台遥测",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4261123,
+        "end": 4261142,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.14",
+    "source": "Print telemetry to the console",
+    "target": "将遥测信息输出到控制台",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4261194,
+        "end": 4261226,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.15",
+    "source": "Logs each telemetry event to the browser's DevTools console as it fires, with the click or key that caused it. Stays on across reloads until you turn it off.",
+    "target": "将每个遥测事件及其触发的点击或按键实时记录到浏览器的 DevTools 控制台。重新加载后仍保持开启，直到手动关闭。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4261249,
+        "end": 4261408,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.16",
+    "source": "Enable New Themes",
+    "target": "启用新主题",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9933694,
+        "end": 9933713,
+        "kind": "property:title"
+      },
+      {
+        "start": 9933765,
+        "end": 9933784,
+        "kind": "property:label"
+      },
+      {
+        "start": 9933939,
+        "end": 9933958,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.17",
+    "source": "Use the experimental visual themes instead of standard presets",
+    "target": "使用实验性视觉主题替代标准预设",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9933798,
+        "end": 9933862,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.18",
+    "source": "Use Google Sans instead of the default Inter typeface",
+    "target": "使用 Google Sans 字体替代默认的 Inter 字体",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 9934205,
+        "end": 9934260,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.19",
+    "source": "Browser Subagent",
+    "target": "浏览器子智能体",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447635,
+        "end": 4447653,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.20",
+    "source": "Mute Live Chat Mic",
+    "target": "将实时聊天麦克风静音",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1833949,
+        "end": 1833969,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.21",
+    "source": "Toggle Maximize Auxiliary Pane",
+    "target": "切换辅助面板最大化",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1834504,
+        "end": 1834536,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.22",
+    "source": "Reopen Closed Tab",
+    "target": "重新打开已关闭的标签页",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1835714,
+        "end": 1835733,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.23",
+    "source": "Move Conversation Up",
+    "target": "上移会话",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1837995,
+        "end": 1838017,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.24",
+    "source": "Move Conversation Down",
+    "target": "下移会话",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1838079,
+        "end": 1838103,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.25",
+    "source": "Cancel Generation",
+    "target": "取消生成",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1840614,
+        "end": 1840633,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.26",
+    "source": "Open Conversation in New Tab",
+    "target": "在新标签页打开会话",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4333230,
+        "end": 4333260,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.27",
+    "source": "Press keys...",
+    "target": "按下按键…",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4324975,
+        "end": 4324990,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.28",
+    "source": "Search shortcuts...",
+    "target": "搜索快捷键…",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4329871,
+        "end": 4329892,
+        "kind": "default:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.29",
+    "source": "Search shortcuts",
+    "target": "搜索快捷键",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4330234,
+        "end": 4330252,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.30",
+    "source": "Reset all shortcuts to defaults",
+    "target": "将所有快捷键重置为默认设置",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4338851,
+        "end": 4338884,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.31",
+    "source": "No keyboard shortcuts found matching your filter.",
+    "target": "没有找到与筛选条件匹配的快捷键。",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4339280,
+        "end": 4339331,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.32",
+    "source": "Edit Shortcut",
+    "target": "编辑快捷键",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4327119,
+        "end": 4327134,
+        "kind": "property:label"
+      },
+      {
+        "start": 4327834,
+        "end": 4327849,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.33",
+    "source": "Add Shortcut",
+    "target": "添加快捷键",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4327216,
+        "end": 4327230,
+        "kind": "property:label"
+      },
+      {
+        "start": 4328355,
+        "end": 4328369,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.34",
+    "source": "Remove Shortcut",
+    "target": "移除快捷键",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4327317,
+        "end": 4327334,
+        "kind": "property:label"
+      },
+      {
+        "start": 4328068,
+        "end": 4328085,
+        "kind": "property:tooltip"
+      }
+    ]
+  },
+  {
+    "id": "v228.ui.35",
+    "source": "Reset to Default",
+    "target": "恢复默认设置",
+    "context": "Antigravity 2.28.2 设置、终端执行策略与远程数据管理固定文案",
+    "scope": "menu",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4327445,
+        "end": 4327463,
+        "kind": "property:label"
+      },
+      {
+        "start": 4328969,
+        "end": 4328987,
+        "kind": "property:tooltip"
+      }
+    ]
+  }
+]

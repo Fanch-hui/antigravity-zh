@@ -137,12 +137,13 @@ function hasActivityRows(source, nodes) {
   const content = renderer.match(/\.createElement\s*\(\s*([\w$]+)\s*,\s*\{[^}]*\blabel\s*:\s*[\w$]+[^}]*\blabelClassName\s*:/);
   if (!content) return false;
   const contentVar = content[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const rowContent = renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*[\\w$]+\\.createElement\\(\\s*[\\w$]+\\.Fragment\\s*,\\s*null\\s*,\\s*[\\w$]+\\.createElement\\(\\s*${contentVar}\\s*,`))?.[1];
+  const rowContent = renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*[\\w$]+\\.createElement\\(\\s*[\\w$]+\\.Fragment\\s*,\\s*null\\s*,\\s*[\\w$]+\\.createElement\\(\\s*${contentVar}\\s*,`))?.[1]
+    ?? renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*[\\w$]+\\.createElement\\(\\s*${contentVar}\\s*,`))?.[1];
   const rowProps = renderer.match(new RegExp(`([\\w$]+)\\s*=\\s*\\{[^{}]*["']data-testid["']\\s*:\\s*${fields[1]}\\b`))?.[1];
   if (!rowContent || !rowProps) return false;
   const rowNodes = readElements(renderer).filter(node => ['a', 'button', 'div'].includes(node.tag)
     && new RegExp(`^\\{\\s*\\.\\.\\.${rowProps}(?:[,}])`).test(node.props));
-  if (!rowNodes.length || rowNodes.some(node => !new RegExp(`^,\\s*${rowContent}\\s*$`).test(
+  if (!rowNodes.length || rowNodes.some(node => !new RegExp(`^,\\s*${rowContent}(?:\\s*,\\s*[\\w$]+)?\\s*$`).test(
     renderer.slice(node.propsEnd + 1, closing(renderer, node.open, '(', ')'))))) return false;
   const contentName = content[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const declaration = new RegExp(`function\\s+${contentName}\\s*\\(\\s*\\{[^}]*\\blabel\\s*:\\s*([\\w$]+)[^}]*\\blabelClassName\\s*:\\s*([\\w$]+)[^}]*\\}\\s*\\)\\s*\\{`).exec(source);

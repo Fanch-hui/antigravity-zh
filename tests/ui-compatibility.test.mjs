@@ -227,3 +227,26 @@ test('2.27 activity rows require the shared dynamic label and test-id rendering 
   const { client } = executingClient(source);
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
 });
+
+function activityRows228Fixture() {
+  return [
+    'function Content({testId:a,label:d,labelClassName:f,detail:h,detailClassName:k,trailing:l}){return A.createElement(A.Fragment,null,A.createElement("span",{className:f},d),h&&A.createElement("span",{"data-testid":a?`${a}-detail`:void 0,className:k},h),l)}',
+    'const Row=A.forwardRef(({testId:a,label:d,detail:f,hoverAction:h,href:n,onClick:q,...t},ref)=>{var b=A.createElement(Content,{testId:a,label:d,labelClassName:join("min-w-0 truncate"),detail:f});var v=h?A.createElement("div",{},A.createElement("button",{"aria-label":h.ariaLabel})):null;var props={...t,ref,"data-testid":a};return n?A.createElement("a",{...props,href:n},b):q?v?A.createElement("div",{...props,role:"button"},b,v):A.createElement("button",{...props},b):A.createElement("div",{...props},b,v)});',
+    'A.createElement(Row,{testId:`accumulated-item-${section.key}`,label:item.label})',
+    'A.createElement(Row,{testId:"background-task-row",label:task.label})',
+  ].join(';');
+}
+
+test('2.28 rows keep labels as direct spans with optional sibling hover actions', async () => {
+  const source = fixture().replace('activity-lane-label', 'removed-marker') + ';' + activityRows228Fixture();
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after] of [
+    ['className:f},d', 'className:f},other'],
+    ['"data-testid":a}', '"data-row-id":a}'],
+    ['{...props,role:"button"},b,v)', '{...props,role:"button"},A.createElement("div",{},b),v)'],
+    ['{...props},b,v)', '{...props},v,b)'],
+    ['null,A.createElement("span",{className:f},d)', 'null,A.createElement("div",{},A.createElement("span",{className:f},d))'],
+  ]) assert(checkUiCompatibility(source.replace(before, after)).missing.includes('activity-lane-label'), before);
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});

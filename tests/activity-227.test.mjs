@@ -23,3 +23,22 @@ test('2.27 activity rows protect generated labels and titles while translating f
   assert.equal(doc.querySelector('[data-testid="activity-lane-label"]').textContent, 'Review');
   dom.window.close();
 });
+
+test('2.28 direct row content protects dynamic detail siblings and nested labels', async () => {
+  const dom = new JSDOM(`<!DOCTYPE html><body>
+    <div data-testid="background-task-row" role="button" title="Review">
+      <span class="min-w-0 truncate"><span>Review</span></span>
+      <span data-testid="background-task-row-detail">Open</span>
+      <div><button aria-label="Cancel Task">Cancel Task</button></div>
+    </div><button>Review</button>
+  </body>`, { url: 'https://127.0.0.1:42000/', runScripts: 'outside-only' });
+  dom.window.eval(await createRuntimeScript());
+  const row = dom.window.document.querySelector('[data-testid="background-task-row"]');
+  assert.equal(row.title, 'Review');
+  assert.equal(row.querySelector('span').textContent, 'Review');
+  assert.equal(row.querySelector('[data-testid$="-detail"]').textContent, 'Open');
+  assert.equal(row.querySelector('button').textContent, '取消任务');
+  assert.equal(row.querySelector('button').getAttribute('aria-label'), '取消任务');
+  assert.equal(dom.window.document.querySelector('body > button').textContent, '审阅');
+  dom.window.close();
+});

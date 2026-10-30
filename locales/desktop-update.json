@@ -1,0 +1,107 @@
+[
+  {
+    "id": "v228.update.1",
+    "source": "Update Available",
+    "target": "有可用更新",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1900994,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.2",
+    "source": "Downloading Update",
+    "target": "正在下载更新",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1901038,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.3",
+    "source": "Install Update",
+    "target": "安装更新",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1901083,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.4",
+    "source": "Installing Update",
+    "target": "正在安装更新",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1901122,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.5",
+    "source": "Restart to Update",
+    "target": "重启以更新",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1901161,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.6",
+    "source": "Updating…",
+    "target": "正在更新…",
+    "context": "Antigravity 2.28.2 应用更新状态与会话恢复提示；任务名称保持原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"app-update-button\"], [data-testid=\"manual-update-button\"], [role=\"tooltip\"], [role=\"dialog\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7734400,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.update.7",
+    "source": "Cancel",
+    "target": "取消",
+    "context": "对话框中的取消操作按钮",
+    "scope": "dialog",
+    "selector": "button, [role=\"button\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7738426,
+        "kind": "static:2.28.2"
+      }
+    ]
+  }
+]

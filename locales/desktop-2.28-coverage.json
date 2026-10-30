@@ -1,0 +1,442 @@
+[
+  {
+    "id": "v228.coverage.1",
+    "source": "The voice Jetski speaks with.",
+    "target": "Jetski 使用的语音。",
+    "context": "语音设置的固定说明",
+    "scope": "settings",
+    "selector": "div.flex-1.flex.flex-col[class~=\"gap-0.5\"] > span.text-xs.text-muted-foreground.whitespace-pre-wrap",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4387594,
+        "end": 4387625,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.2",
+    "source": "Input device for voice mode.",
+    "target": "语音模式使用的输入设备。",
+    "context": "语音设置的固定说明",
+    "scope": "settings",
+    "selector": "div.flex-1.flex.flex-col[class~=\"gap-0.5\"] > span.text-xs.text-muted-foreground.whitespace-pre-wrap",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4388467,
+        "end": 4388497,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.3",
+    "source": "How loud Jetski's voice is.",
+    "target": "Jetski 语音的音量。",
+    "context": "语音设置的固定说明",
+    "scope": "settings",
+    "selector": "div.flex-1.flex.flex-col[class~=\"gap-0.5\"] > span.text-xs.text-muted-foreground.whitespace-pre-wrap",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4389122,
+        "end": 4389151,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.4",
+    "source": "Uploads logs, settings, conversation summaries, and voice call traces to your Drive. Voice call traces are left out when telemetry is off.",
+    "target": "将日志、设置、会话摘要和语音通话记录上传到你的云端硬盘。关闭遥测后，不会上传语音通话记录。",
+    "context": "上传调试包前的固定说明",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4521009,
+        "end": 4521149,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.5",
+    "source": "Browser Configuration Required",
+    "target": "需要配置浏览器",
+    "context": "浏览器配置提示对话框标题",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.6",
+    "source": "Remote Debugging Required",
+    "target": "需要启用远程调试",
+    "context": "浏览器调试提示对话框标题",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.7",
+    "source": "DevTools port is still closed. Please make sure Chrome is running with remote debugging enabled.",
+    "target": "DevTools 端口仍未开放。请确认 Chrome 正在运行且已启用远程调试。",
+    "context": "浏览器调试提示对话框的重新检查结果",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.8",
+    "source": "Failed to revert conversation",
+    "target": "恢复会话失败",
+    "context": "会话操作的固定错误标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4955654,
+        "end": 4955685,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"error\"] .text-sm.font-medium.leading-normal > span",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v228.coverage.9",
+    "source": "Could not create Cog workspace",
+    "target": "无法创建 Cog 工作区",
+    "context": "创建工作区的固定错误标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6070989,
+        "end": 6071021,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"cog-pseudo-project-create-error\"] .text-sm.font-medium.leading-normal > span",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v228.coverage.10",
+    "source": "Failed to create cloud project",
+    "target": "创建云端项目失败",
+    "context": "创建云端项目的固定错误标题",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7266585,
+        "end": 7266617,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"new-cloud-project-error\"] .text-sm.font-medium.leading-normal > span",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v228.coverage.11",
+    "source": "This site can’t be reached",
+    "target": "无法访问此网站",
+    "context": "内置浏览器访问失败标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-error-overlay\"] h1",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4028056,
+        "end": 4028089,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.12",
+    "source": "Open in External Browser",
+    "target": "在外部浏览器中打开",
+    "context": "内置浏览器访问失败操作",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-error-open-external-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4037211,
+        "end": 4037237,
+        "kind": "property:label"
+      },
+      {
+        "start": 4039892,
+        "end": 4039918,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.13",
+    "source": "New: Per-Conversation Telemetry",
+    "target": "新增：按会话设置遥测",
+    "context": "会话遥测功能提示标题",
+    "scope": "generic",
+    "selector": "div.flex.flex-col.rounded-xl.overflow-hidden.border:has(a[href=\"http://go/jetski-conversation-telemetry\"]) h3",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7301286,
+        "end": 7301319,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.14",
+    "source": "Working with sensitive data? You can now disable telemetry on a per-conversation basis.",
+    "target": "正在处理敏感数据？现在可以按会话关闭遥测。",
+    "context": "会话遥测功能提示说明",
+    "scope": "generic",
+    "selector": "div.flex.flex-col.rounded-xl.overflow-hidden.border:has(a[href=\"http://go/jetski-conversation-telemetry\"]) div.text-sm.text-secondary-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7301391,
+        "end": 7301480,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.15",
+    "source": "This shortcut is reserved by browser tabs and may not trigger in Web mode. It works in the Desktop Hub or installed PWA.",
+    "target": "此快捷键已被浏览器标签页占用，在网页版中可能无法触发；可在桌面应用或已安装的 PWA 中使用。",
+    "context": "快捷键冲突状态提示",
+    "scope": "generic",
+    "selector": "[data-testid^=\"shortcut-row-\"] [role=\"status\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.16",
+    "source": "Credentials expiring soon. Refresh credentials to keep this automation running",
+    "target": "凭据即将过期，请刷新凭据以使此自动化继续运行。",
+    "context": "自动化凭据状态提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-credential-warning\"], [id^=\"cloud-trigger-credential-warning-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.17",
+    "source": "Credentials expired. This automation will not run until credentials are refreshed",
+    "target": "凭据已过期。刷新凭据前，此自动化不会运行。",
+    "context": "自动化凭据状态提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-credential-warning\"], [id^=\"cloud-trigger-credential-warning-\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.18",
+    "source": "Credentials expire in {0}. Refresh credentials to keep this automation running",
+    "target": "凭据将在 {0} 后过期，请刷新凭据以使此自动化继续运行。",
+    "context": "自动化凭据状态提示，保留原时间单位",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-credential-warning\"], [id^=\"cloud-trigger-credential-warning-\"]",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[0-9]+s|[0-9]+m|[0-9]+h(?: [0-9]+m)?|[0-9]+d [0-9]+h [0-9]+m)"
+    },
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.19",
+    "source": "Disabled. Open Details to finish setup or enable.",
+    "target": "已禁用。打开详情以完成设置或启用。",
+    "context": "精选插件操作状态提示",
+    "scope": "generic",
+    "selector": "[data-testid=\"featured-carousel-primary-action\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7635198,
+        "end": 7635249,
+        "kind": "property:title"
+      },
+      {
+        "start": 7635263,
+        "end": 7635314,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.20",
+    "source": "Disabled",
+    "target": "已禁用",
+    "context": "精选插件操作状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"featured-carousel-primary-action\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4061715,
+        "end": 4061725,
+        "kind": "option:display"
+      },
+      {
+        "start": 6838159,
+        "end": 6838169,
+        "kind": "element:children"
+      },
+      {
+        "start": 6844877,
+        "end": 6844887,
+        "kind": "property:title"
+      },
+      {
+        "start": 6867333,
+        "end": 6867343,
+        "kind": "property:label"
+      },
+      {
+        "start": 6867526,
+        "end": 6867536,
+        "kind": "property:label"
+      },
+      {
+        "start": 6920012,
+        "end": 6920022,
+        "kind": "element:children"
+      },
+      {
+        "start": 7590139,
+        "end": 7590149,
+        "kind": "element:children"
+      },
+      {
+        "start": 7622880,
+        "end": 7622890,
+        "kind": "element:children"
+      },
+      {
+        "start": 7635316,
+        "end": 7635326,
+        "kind": "element:children"
+      },
+      {
+        "start": 7648094,
+        "end": 7648104,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.21",
+    "source": "Background Commands",
+    "target": "后台命令",
+    "context": "运行中项目面板的固定栏目标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"running-items-tasks\"] > div > span.text-xs.opacity-50.font-medium, [data-testid=\"new-tab-group-Background Commands\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7693643,
+        "end": 7693664,
+        "kind": "property:title"
+      },
+      {
+        "start": 7722718,
+        "end": 7722739,
+        "kind": "property:title"
+      },
+      {
+        "start": 7958405,
+        "end": 7958426,
+        "kind": "property:label"
+      },
+      {
+        "start": 7989444,
+        "end": 7989465,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.22",
+    "source": "No background commands",
+    "target": "暂无后台命令",
+    "context": "运行中项目面板的空状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"running-items-tasks\"] .flex.flex-col[class~=\"gap-px\"] > .text-muted-foreground.text-xs.px-2",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7697725,
+        "end": 7697749,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v228.coverage.23",
+    "source": "Learn more",
+    "target": "了解详情",
+    "context": "会话遥测功能提示链接",
+    "scope": "generic",
+    "selector": "a[href=\"http://go/jetski-conversation-telemetry\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "element:children",
+        "start": 7301662,
+        "end": 7301674
+      }
+    ]
+  }
+]

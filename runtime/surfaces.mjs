@@ -9,6 +9,8 @@ const protectedSelectors = [
   '[data-testid="sidecar-logs-content"]', '[data-testid="settings-error-messages-card"]',
   '[data-testid="file-title-name"]', '[data-testid="breadcrumb-segment"]',
   '[data-testid="comment-card-text"]', '[data-testid="browser-url-input"]',
+  '[data-testid="featured-carousel-headline"]', '[data-testid="featured-carousel-description"]',
+  '[role="dialog"] .mt-3.border.rounded.p-2.overflow-y-auto[class~="bg-background/50"][class~="border-border/50"][class~="max-h-40"] > ul.space-y-1 > li.text-xs.text-muted-foreground.truncate[class~="max-w-[340px]"]',
   '[data-testid="subagent-tab-header-title"]', '[data-testid="settings-nav-item-Account"]',
   '[data-testid="project-selector-item"]', '[data-testid="branch-option"]',
   '[data-testid="entity-pill"]', '[data-testid="activity-lane-label"]', 'button.truncate',

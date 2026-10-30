@@ -250,3 +250,17 @@ test('2.28 rows keep labels as direct spans with optional sibling hover actions'
   const { client } = executingClient(source);
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
 });
+
+test('carousel metadata and active update task names retain their content protection structure', async () => {
+  const metadata = 'A.createElement("h3",{"data-testid":shown?"featured-carousel-headline":void 0},plugin.name);'
+    + 'A.createElement("p",{"data-testid":shown?"featured-carousel-description":void 0},plugin.description);'
+    + 'A.createElement("div",{"data-testid":shown?"featured-carousel-actions":void 0},actions);';
+  const taskNames = element('div', 'mt-3 bg-background/50 border border-border/50 rounded p-2 max-h-40 overflow-y-auto',
+    element('span', '', '"Active Tasks & Conversations:"') + ',' + element('ul', 'space-y-1',
+      element('li', 'text-xs text-muted-foreground truncate max-w-[340px]', 'task.title')));
+  const source = fixture() + ';' + metadata + taskNames;
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+  assert(checkUiCompatibility(source.replace('featured-carousel-headline', 'changed-headline')).missing.includes('featured-carousel-content'));
+  assert(checkUiCompatibility(source.replace('max-w-[340px]', 'max-w-[360px]')).missing.includes('update-task-content'));
+});

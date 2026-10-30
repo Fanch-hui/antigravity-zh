@@ -1,0 +1,149 @@
+[
+  {
+    "id": "v228.screenshot.1",
+    "source": "Built-in Browser",
+    "target": "内置浏览器",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3266036,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.2",
+    "source": "External Browser",
+    "target": "外部浏览器",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2973957,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.3",
+    "source": "Side Panel Preview",
+    "target": "侧边面板预览",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447348,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.4",
+    "source": "Side Panel",
+    "target": "侧边面板",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2971955,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.5",
+    "source": "Configure link opening and side panel preview preferences.",
+    "target": "配置链接打开方式及侧边面板预览偏好。",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447399,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.6",
+    "source": "Configure link opening and built-in browser preferences.",
+    "target": "配置链接打开方式及内置浏览器偏好。",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447460,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.7",
+    "source": "The browser subagent has been disabled by your administrator. Contact your administrator to enable browser use.",
+    "target": "管理员已禁用浏览器子智能体。请联系管理员以启用浏览器。",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447666,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.8",
+    "source": "to be installed. The browser subagent can be invoked by typing /browser in the conversation input box.",
+    "target": "才可使用。在对话输入框中输入 /browser，即可调用浏览器子智能体。",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 > .text-xs.text-muted-foreground.leading-relaxed",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4448035,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.9",
+    "source": "Details",
+    "target": "详情",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"featured-carousel-actions\"] > a",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 546233,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "v228.screenshot.10",
+    "source": "Details for {0}",
+    "target": "查看 {0} 的详情",
+    "context": "Antigravity 2.28.2 浏览器设置与市场轮播固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"featured-carousel-actions\"] > a",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7636608,
+        "kind": "static:2.28.2"
+      }
+    ]
+  }
+]

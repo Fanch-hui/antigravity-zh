@@ -10017,7 +10017,8 @@
         "kind": "property:title"
       }
     ],
-    "template": true
+    "template": true,
+    "selector": "[role=\"dialog\"]:has([data-testid=\"mcp-config-modal\"]), [data-testid=\"mcp-server-configure\"]"
   },
   {
     "id": "0a909b0bd870",
@@ -20260,7 +20261,9 @@
         "kind": "property:title"
       }
     ],
-    "template": true
+    "template": true,
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"new-environment-error\"] .text-sm.font-medium.leading-normal > span",
+    "selectorMode": "self"
   },
   {
     "id": "1d50c4a48906",

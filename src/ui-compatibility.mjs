@@ -171,6 +171,15 @@ export function checkUiCompatibility(source) {
   const customizations = customizationStructures(queries);
   const requireRule = (name, valid) => { if (!valid) missing.push(name); };
   checkPluginConfiguration(source, nodes, queries, requireRule);
+  if (source.includes('"featured-carousel-actions"')) {
+    requireRule('featured-carousel-content', ['headline', 'description'].every(name =>
+      nodes.some(node => new RegExp(`["']data-testid["']\\s*:\\s*[\\w$]+\\s*\\?\\s*["']featured-carousel-${name}["']`).test(node.props))));
+  }
+  if (source.includes('"Active Tasks & Conversations:"')) {
+    requireRule('update-task-content', matching('div', 'mt-3 bg-background/50 border border-border/50 rounded p-2 max-h-40 overflow-y-auto')
+      .some(panel => matching('ul', 'space-y-1').some(list => childOf(panel, list)
+        && matching('li', 'text-xs text-muted-foreground truncate max-w-[340px]').some(item => childOf(list, item)))));
+  }
   for (const name of ['user-input-step', 'planner-response-text', 'pending-user-messages',
     'terminal-active', 'setup-script-output', 'file-title-name',
     'breadcrumb-segment', 'project-selector-item', 'branch-option',

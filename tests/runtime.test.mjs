@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { JSDOM } from 'jsdom';
 import { surfaces } from '../runtime/surfaces.mjs';
+import { createOwnedLabels } from '../runtime/owned-labels.mjs';
 
 const runtime = await readFile(new URL('../runtime/translator.js', import.meta.url), 'utf8');
 const longSource = "Specifies the agent's behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience.";
@@ -35,7 +36,8 @@ const records = [
 function mount(html, url = 'https://127.0.0.1:42000/') {
   const dom = new JSDOM(`<!DOCTYPE html><html><body>${html}</body></html>`, { url, runScripts: 'outside-only' });
   const script = runtime.replace('/*__AGY_ZH_DICTIONARY__*/ null', () => JSON.stringify(records))
-    .replace('/*__AGY_ZH_SURFACES__*/ null', () => JSON.stringify(surfaces));
+    .replace('/*__AGY_ZH_SURFACES__*/ null', () => JSON.stringify(surfaces))
+    .replace('/*__AGY_ZH_OWNED_LABELS__*/ null', () => createOwnedLabels.toString());
   dom.window.eval(script);
   return dom;
 }

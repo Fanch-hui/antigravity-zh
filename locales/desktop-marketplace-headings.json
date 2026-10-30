@@ -1,0 +1,221 @@
+[
+  {
+    "id": "marketplace.headings.1",
+    "source": "More Plugins",
+    "target": "更多插件",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > .flex.flex-col.gap-1.px-3 > h2.text-base.font-medium.text-foreground",
+    "selectorMode": "self",
+    "context": "市场固定分组标题",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7652783,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin"
+  },
+  {
+    "id": "marketplace.headings.2",
+    "source": "More Plugins",
+    "target": "更多插件",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3",
+    "selectorMode": "self",
+    "context": "市场固定分组的无障碍标签",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7652783,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "marketplace.headings.3",
+    "source": "Plugins",
+    "target": "插件",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > .flex.flex-col.gap-1.px-3 > h2.text-base.font-medium.text-foreground",
+    "selectorMode": "self",
+    "context": "市场固定分组标题",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4367761,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin"
+  },
+  {
+    "id": "marketplace.headings.4",
+    "source": "Plugins",
+    "target": "插件",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3",
+    "selectorMode": "self",
+    "context": "市场固定分组的无障碍标签",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4367761,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "marketplace.headings.5",
+    "source": "Skills",
+    "target": "技能",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > .flex.flex-col.gap-1.px-3 > h2.text-base.font-medium.text-foreground",
+    "selectorMode": "self",
+    "context": "市场固定分组标题",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4367355,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin"
+  },
+  {
+    "id": "marketplace.headings.6",
+    "source": "Skills",
+    "target": "技能",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3",
+    "selectorMode": "self",
+    "context": "市场固定分组的无障碍标签",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4367355,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "marketplace.headings.7",
+    "source": "Explore other marketplace customizations",
+    "target": "探索市场中的其他自定义内容",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > .flex.flex-col.gap-1.px-3 > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "context": "市场固定分组说明",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653046,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin"
+  },
+  {
+    "id": "marketplace.headings.8",
+    "source": "See more in Plugins",
+    "target": "查看更多插件",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > div.flex.justify-start > button",
+    "selectorMode": "self",
+    "context": "市场固定分组操作的无障碍标签",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653997,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "marketplace.headings.9",
+    "source": "See less in Plugins",
+    "target": "收起插件列表",
+    "scope": "generic",
+    "selector": "[data-testid=\"customizations-marketplace\"] section.flex.flex-col.gap-3 > div.flex.justify-start > button",
+    "selectorMode": "self",
+    "context": "市场固定分组操作的无障碍标签",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7654020,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "marketplaceShelf": "builtin",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "marketplace.headings.10",
+    "source": "Curated sets of plugins for common workflows and roles.",
+    "target": "为常见工作流程和角色精选的插件组合。",
+    "scope": "generic",
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"] > .flex.flex-col.gap-1.px-3 > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "context": "市场组合包固定说明",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7651415,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "marketplace.headings.11",
+    "source": "{0} matching bundle",
+    "target": "找到 {0} 个匹配的插件组合包",
+    "scope": "generic",
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"] > .flex.flex-col.gap-1.px-3 > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "context": "市场组合包搜索结果数量",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653344,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "marketplace.headings.12",
+    "source": "{0} matching bundles",
+    "target": "找到 {0} 个匹配的插件组合包",
+    "scope": "generic",
+    "selector": "[data-testid=\"marketplace-bundles-shelf\"] > .flex.flex-col.gap-1.px-3 > p.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "context": "市场组合包搜索结果数量",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653344,
+        "kind": "static:2.28.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  }
+]

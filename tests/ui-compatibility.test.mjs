@@ -264,3 +264,33 @@ test('carousel metadata and active update task names retain their content protec
   assert(checkUiCompatibility(source.replace('featured-carousel-headline', 'changed-headline')).missing.includes('featured-carousel-content'));
   assert(checkUiCompatibility(source.replace('max-w-[340px]', 'max-w-[360px]')).missing.includes('update-task-content'));
 });
+
+test('marketplace ownership requires dynamic shelves to remain nested array children', async () => {
+  const fixed = element('section', 'flex flex-col gap-3', '"More Plugins"', ',"aria-label":"More Plugins"');
+  const dynamic = element('section', 'flex flex-col gap-3', 'item.displayName', ',key:item.id,"aria-label":item.displayName');
+  const dynamicArgument = `items.map(item=>{return ${dynamic}})`;
+  const source = fixture() + ';' + element('div', 'flex flex-col gap-10', `banner,${dynamicArgument}`)
+    + ';' + element('div', 'flex flex-col gap-10', `banner,${fixed}`);
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+  for (const changed of [source.replace('banner,items.map', 'items.map'),
+    source.replace('items.map(item=>', 'items.flatMap(item=>'),
+    source.replace('key:item.id', 'key:other.id'), fixture() + ';'
+      + element('div', 'flex flex-col gap-10', `banner,${dynamicArgument}`) + ';'
+      + element('div', 'flex flex-col gap-10', `banner,wrap(${fixed})`)]) {
+    assert(checkUiCompatibility(changed).missing.includes('marketplace-heading-source'));
+  }
+});
+
+test('system heading ownership validates event mappings and renderer step props together', async () => {
+  const system = 'const view={systemMessage:{renderer:({step:s,debugMode:d})=>{const uri=s.metadata?.auto_proceed_uri;return A.createElement(Body,{renderInfo:s.renderInfo,fallbackMarkdown:s.message})}}};'
+    + 'function label(s){switch(s.eventType){case "goal_stop":return"Goal Verification";case "idle_no_message":return"Idle Guard Warning";case "fork_notice":return"Fork Environment Notice"}};'
+    + 'A.createElement(view.renderer,{step:a.step.value})';
+  const source = fixture() + ';' + system;
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+  for (const [before, after] of [['step:a.step.value', 'step:a.value'], ['goal_stop', 'goal_check'],
+    ['fallbackMarkdown', 'bodyMarkdown'], ['systemMessage', 'otherMessage']]) {
+    assert(checkUiCompatibility(source.replace(before, after)).missing.includes('system-heading-source'), before);
+  }
+});

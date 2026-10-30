@@ -1,4 +1,5 @@
 import { isAppPath } from './app-page.mjs';
+import { checkOwnedLabelCompatibility } from './owned-label-compatibility.mjs';
 
 function closing(source, start, open, close) {
   let depth = 0;
@@ -166,6 +167,7 @@ function hasActivityRows(source, nodes) {
 export function checkUiCompatibility(source) {
   const missing = [];
   const nodes = readElements(source);
+  missing.push(...checkOwnedLabelCompatibility(source, nodes, closing));
   const queries = structureQueries(source, nodes);
   const { matching, childOf, marker } = queries;
   const customizations = customizationStructures(queries);
@@ -233,7 +235,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkOwnedLabelCompatibility, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

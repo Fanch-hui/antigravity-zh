@@ -1,0 +1,83 @@
+[
+  {
+    "id": "checkout.228.1",
+    "source": "Local Checkout",
+    "target": "本地工作副本",
+    "context": "本地工作副本选择器的固定标签与说明；资源名称和路径原样保留",
+    "scope": "generic",
+    "selector": "button.main-row-trigger:has(> div.flex.items-center.justify-start.w-full > div.shrink-0.flex.items-center.justify-center > svg > path[d^=\"M55.39-150.77v-60\"]) > div.flex.items-center.justify-start.w-full > span.truncate.flex-grow.min-w-0, button:is([aria-label=\"Select Environment\"], [aria-label=\"选择环境\"]):has(> svg > path[d^=\"M55.39-150.77v-60\"]) > span.select-none.truncate[class~=\"max-w-36\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7393611,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "checkout.228.2",
+    "source": "Work locally on {0}",
+    "target": "在本地使用 {0}",
+    "context": "本地工作副本选择器的固定标签与说明；资源名称和路径原样保留",
+    "scope": "generic",
+    "selector": "button.main-row-trigger:has(> div.flex.items-center.justify-start.w-full > div.shrink-0.flex.items-center.justify-center > svg > path[d^=\"M55.39-150.77v-60\"]) > span.text-xs.text-muted-foreground.whitespace-normal.break-words.leading-tight",
+    "selectorMode": "self",
+    "template": true,
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7393523,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "checkout.228.3",
+    "source": "Worktrees are available for Git repositories",
+    "target": "Git 仓库可使用工作树",
+    "context": "本地工作副本选择器的固定标签与说明；资源名称和路径原样保留",
+    "scope": "generic",
+    "selector": "button.main-row-trigger[disabled] > span.text-xs.text-muted-foreground.whitespace-normal.break-words.leading-tight",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7479910,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "checkout.228.4",
+    "source": "Worktrees are not available for this project",
+    "target": "此项目无法使用工作树",
+    "context": "本地工作副本选择器的固定标签与说明；资源名称和路径原样保留",
+    "scope": "generic",
+    "selector": "button.main-row-trigger[disabled] > span.text-xs.text-muted-foreground.whitespace-normal.break-words.leading-tight",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7479958,
+        "kind": "static:2.28.2"
+      }
+    ]
+  },
+  {
+    "id": "checkout.228.5",
+    "source": "Workspaces are not available for this project",
+    "target": "此项目无法使用工作区",
+    "context": "本地工作副本选择器的固定标签与说明；资源名称和路径原样保留",
+    "scope": "generic",
+    "selector": "button.main-row-trigger[disabled] > span.text-xs.text-muted-foreground.whitespace-normal.break-words.leading-tight",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7479855,
+        "kind": "static:2.28.2"
+      }
+    ]
+  }
+]

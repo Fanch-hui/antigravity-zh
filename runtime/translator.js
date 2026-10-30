@@ -11,6 +11,7 @@
   const templates = [];
   const originals = new WeakMap();
   const combinedParents = new WeakMap();
+  const ownedLabels = (/*__AGY_ZH_OWNED_LABELS__*/ null)(dictionary, protectedSelectors, element => translate(element));
 
   for (const record of dictionary) {
     if (typeof record.source !== 'string' || typeof record.target !== 'string') continue;
@@ -34,9 +35,9 @@
     return selector ? element?.closest(selector) : null;
   }
 
-  function safe(element, attribute) {
-    if (!element || closest(element, protectedSelectors)) return false;
-    if (attribute && element.matches(protectedAttributeSelectors)) return false;
+  function safe(element, attribute, record) {
+    if (!element || ownedLabels.isProtected(element, record)) return false;
+    if (attribute && element.matches(protectedAttributeSelectors) && !record?.marketplaceShelf) return false;
     const toast = closest(element, '.border-l-orange-500');
     const button = closest(element, 'button');
     if (toast && button && !button.hasAttribute('aria-label') && !closest(button, '.justify-start')) return false;
@@ -76,6 +77,7 @@
   }
 
   function matches(record, element, attribute) {
+    if (!ownedLabels.matches(record, element)) return false;
     if (!matchesSlashCommand(record, element, attribute)) return false;
     // Permission options use the same Markdown renderer as agent-authored questions.
     if (closest(element, '[data-testid="ask-question-option-text"] > .md-divider-spacing')
@@ -114,19 +116,22 @@
 
   function localized(value, element, attribute, selfOnly = false) {
     const text = value.trim();
-    if (!text || !safe(element, attribute)) return value;
+    if (!text) return value;
     let target;
+    let applied;
     const eligible = item => (!selfOnly || item.selector && item.selectorMode === 'self')
-      && matches(item, element, attribute);
+      && matches(item, element, attribute) && safe(element, attribute, item);
     const record = (index.get(text) || []).find(eligible);
-    if (record) target = record.target.trim();
+    if (record) { target = record.target.trim(); applied = record; }
     else {
       const template = templates.find(item => item.regex.test(text) && eligible(item));
-      if (template) target = applyTemplate(template, text).trim();
+      if (template) { target = applyTemplate(template, text).trim(); applied = template; }
     }
     if (target === undefined) return value;
     const start = value.indexOf(text);
-    return value.slice(0, start) + target + value.slice(start + text.length);
+    const result = value.slice(0, start) + target + value.slice(start + text.length);
+    ownedLabels.remember(element, attribute, applied, value, result);
+    return result;
   }
 
   function recoverCombined(parent, snapshot) {
@@ -237,6 +242,7 @@
     if (!root || !root.isConnected) return;
     if (root.nodeType === Node.TEXT_NODE) return translateText(root);
     if (root.nodeType !== Node.ELEMENT_NODE) return;
+    ownedLabels.visit(root, translateText, translateAttributes);
     translateAttributes(root);
     translateCombined(root);
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, {
@@ -278,7 +284,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.10', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.11', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

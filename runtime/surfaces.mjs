@@ -1,5 +1,5 @@
 const protectedSelectors = [
-  'script', 'style', 'noscript', 'iframe', 'webview', 'pre', 'code', 'kbd', 'samp',
+  'script', 'style', 'noscript', 'iframe', 'webview', 'pre', 'code', 'kbd', 'samp', '[data-slot-in]', '[data-slot-out]',
   '[contenteditable]:not([contenteditable="false"])', '.monaco-editor', '.xterm',
   '.md-divider-spacing:not([data-testid="ask-question-option-text"] > .md-divider-spacing)', '.markdown', '.markdown-body', '.notebook-cell', '.font-mono',
   '[data-uri]', '[data-quotable-inline]', '[data-line-start]', '[dir="rtl"]',
@@ -48,7 +48,7 @@ const protectedSelectors = [
   '.mt-2:has(h1.text-2xl.font-bold.tracking-tight) > p.text-sm.text-muted-foreground.mt-3.leading-relaxed',
   '.flex.flex-col.gap-3:has(h1.tracking-tight) > p.text-sm.text-muted-foreground.leading-relaxed'
 ].join(',');
-const protectedAttributeSelectors = '[data-testid^="accumulated-item-"], [data-testid="background-task-row"]';
+const protectedAttributeSelectors = '[data-testid^="accumulated-item-"], [data-testid="background-task-row"], [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]), [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]) > div.flex.justify-start > button';
 const settingsSelector = '.max-w-2xl.mx-auto.flex-col.gap-4, [id^="dropdown-label-"], [id^="dropdown-description-"], [id^="dropdown-value-"], [data-testid^="settings-nav-item-"]';
 const scopes = {
   settings: settingsSelector,

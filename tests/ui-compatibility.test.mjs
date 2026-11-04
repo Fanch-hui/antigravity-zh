@@ -251,6 +251,75 @@ test('2.28 rows keep labels as direct spans with optional sibling hover actions'
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
 });
 
+test('2.29 dynamic settings classes and activity labels retain their protected structure', async () => {
+  const settings = 'A.createElement("div",{className:join(compact?"p-4":"p-6","flex flex-col gap-4 w-full max-w-2xl mx-auto")},settings)';
+  const rows = activityRows228Fixture().replace('className:f},d', 'className:join("agy-hover-label",f)},d');
+  const source = fixture().replace('activity-lane-label', 'removed-marker')
+    .replace(element('div', 'max-w-2xl mx-auto flex-col gap-4'), settings) + ';' + rows;
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  assert(checkUiCompatibility(source.replace('"agy-hover-label",f', '"agy-hover-label",other'))
+    .missing.includes('activity-lane-label'));
+  assert(checkUiCompatibility(source.replace('gap-4 w-full max-w-2xl', 'gap-2 w-full max-w-2xl'))
+    .missing.includes('settings-surface'));
+  assert(checkUiCompatibility(source.replace('compact?"p-4":"p-6","flex flex-col gap-4 w-full max-w-2xl mx-auto"',
+    'compact?"p-4":"p-6 flex flex-col gap-4 w-full max-w-2xl mx-auto"'))
+    .missing.includes('settings-surface'));
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});
+
+function newContentFixture() {
+  const primary = element('span', 'truncate text-foreground font-normal', 'item.primaryText');
+  const secondary = element('span', 'truncate text-muted-foreground font-normal', '"— ",item.secondaryText');
+  const option = element('div', '', element('div', '', `${primary},${secondary}`),
+    ',"data-testid":"browser-autocomplete-option","data-suggestion-kind":item.kind');
+  const autocomplete = element('div', '', option, ',"data-testid":"browser-autocomplete-dropdown"');
+  const filename = element('span', '', 'name', ',"data-testid":"webview-download-filename"');
+  const open = element('button', '', filename, ',"data-testid":"webview-download-open",title:name');
+  const download = element('div', '', `${open},${element('span', '', 'name',
+    ',"data-testid":"webview-download-filename",title:name')}`, ',"data-testid":"webview-download-item"');
+  const github = 'A.createElement(MenuItem,{"data-testid":"project-selector-github-loading"},"Loading")'
+    + ';A.createElement(MenuItem,{"data-testid":"project-selector-github-repo-item","data-repo-slug":slug},'
+    + element('span', 'truncate flex-1 min-w-0', 'repo.displayName||slug') + ')';
+  const voice = [element('span', '', 'voice||"Not set"', ',"data-testid":"voice-settings-name"'),
+    element('button', '', '"Change"', ',"data-testid":"voice-settings-change"'),
+    element('div', '', 'A.createElement(Select,{options:items,displayResolver:x=>x.label,ariaLabelledBy:"voice-microphone-label"})',
+      ',"data-testid":"voice-settings-mic"'), 'const popup={"data-select-popup":"","aria-expanded":false}'].join(';');
+  const running = element('section', '', element('div', 'flex items-center',
+    element('span', 'truncate font-medium', 'group.title')) + ','
+    + element('div', '', element('span', 'text-sm text-foreground truncate', 'item.title'),
+      ',"data-testid":"running-row"'), ',"data-testid":"running-group","aria-label":group.title');
+  const automation = [element('div', 'col-start-1 row-start-1 min-w-0',
+    `${element('div', 'flex', element('div', 'truncate', 'name', ',"data-testid":"automation-name"'))},`
+      + element('div', 'truncate text-muted-foreground', 'metadata')),
+  element('button', '', element('span', 'truncate', 'summary'), ',"data-testid":"automation-run"'),
+  element('div', '', element('div', '', 'prompt', ',"data-testid":"automation-instructions-markdown"'),
+    ',"data-testid":"automation-instructions-text"'),
+  element('div', '', element('p', 'm-0 text-[15px] leading-7 text-secondary-foreground', 'description') + ','
+    + element('p', 'm-0 text-[13px] text-muted-foreground', 'error'), ',"data-testid":"sidecar-detail"')].join(';');
+  return [autocomplete, 'const search={kind:"search-web",secondaryText:"Google Search"}', github, download,
+    voice, running, automation].join(';');
+}
+
+test('new browser, voice, running and automation content retains protective structure', async () => {
+  const source = fixture() + ';' + newContentFixture();
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after, rule] of [
+    ['item.primaryText', 'item.title', 'browser-autocomplete-content'],
+    ['data-suggestion-kind', 'changed-kind', 'browser-autocomplete-content'],
+    ['secondaryText:"Google Search"', 'secondaryText:item.title', 'browser-autocomplete-content'],
+    ['repo.displayName||slug', 'repo.displayName||other', 'project-selector-github-content'],
+    ['"data-testid":"project-selector-github-repo-item"', '"data-testid":"changed-repo-item"', 'project-selector-github-content'],
+    ['"data-testid":"webview-download-filename",title:name', '"data-testid":"webview-download-filename",title:other', 'webview-download-content'],
+    ['ariaLabelledBy:"voice-microphone-label"', 'ariaLabelledBy:"other-label"', 'voice-settings-content'],
+    ['text-sm text-foreground truncate"},item.title', 'text-sm text-foreground"},item.title', 'running-content'],
+    ['"aria-label":group.title', '"aria-label":"Running"', 'running-content'],
+    ['automation-instructions-markdown', 'changed-instructions', 'automation-content'],
+  ]) assert(checkUiCompatibility(source.replace(before, after)).missing.includes(rule), before);
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});
+
 test('carousel metadata and active update task names retain their content protection structure', async () => {
   const metadata = 'A.createElement("h3",{"data-testid":shown?"featured-carousel-headline":void 0},plugin.name);'
     + 'A.createElement("p",{"data-testid":shown?"featured-carousel-description":void 0},plugin.description);'

@@ -284,7 +284,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.11', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.12', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

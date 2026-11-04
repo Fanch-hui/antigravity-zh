@@ -1,9 +1,10 @@
-import { mkdir, writeFile, copyFile, cp } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, copyFile, cp } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const { version } = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
 const bundle = path.join(root, 'Antigravity 中文.app');
 const macos = path.join(bundle, 'Contents/MacOS');
 const resources = path.join(bundle, 'Contents/Resources');
@@ -22,7 +23,7 @@ await writeFile(path.join(bundle, 'Contents/Info.plist'), `<?xml version="1.0" e
 <key>CFBundleExecutable</key><string>agy-zh</string>
 <key>CFBundleIconFile</key><string>icon.icns</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>0.2.5</string>
+<key>CFBundleShortVersionString</key><string>${version}</string>
 <key>LSUIElement</key><true/>
 </dict></plist>\n`);
 execFileSync('/usr/bin/codesign', ['--force', '--sign', '-', bundle]);

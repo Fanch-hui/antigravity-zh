@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "v229.chat.1",
+    "source": "Nothing said yet",
+    "target": "还没有语音内容",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"live-transcript-pane\"] > .flex.h-full.items-center.justify-center.p-6",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.2",
+    "source": "Copy transcript",
+    "target": "复制文字记录",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"copy-voice-transcript\"], [role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.3",
+    "source": "Copied transcript",
+    "target": "已复制文字记录",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"copy-voice-transcript\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.4",
+    "source": "This link wants to open an app on your device.",
+    "target": "此链接将打开你设备上的应用。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"external-link-confirm-modal\"] > p",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.5",
+    "source": "Open link",
+    "target": "打开链接",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"external-link-confirm-open\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.6",
+    "source": "Canvas · written by your Chief of Staff · display only",
+    "target": "画布 · 由 Chief of Staff 编写 · 仅供查看",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"cos-canvas-label\"] > span",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.7",
+    "source": "Canvas page · display only",
+    "target": "画布页面 · 仅供查看",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"cos-canvas-label\"] > span",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.8",
+    "source": "Copy Message",
+    "target": "复制消息",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-menu-popup\"] [role=\"menuitem\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.9",
+    "source": "Capture Screenshot",
+    "target": "截取屏幕截图",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menuitem\"].flex.cursor-pointer.items-center.gap-2.whitespace-nowrap.px-3",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.10",
+    "source": "Capture Console Logs",
+    "target": "获取控制台日志",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menuitem\"].flex.cursor-pointer.items-center.gap-2.whitespace-nowrap.px-3",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.11",
+    "source": "Expand Questionnaire",
+    "target": "展开问卷",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.12",
+    "source": "Collapse Questionnaire",
+    "target": "收起问卷",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.13",
+    "source": "Expand questionnaire",
+    "target": "展开问卷",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"ask-question-collapse-button\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.14",
+    "source": "Collapse questionnaire",
+    "target": "收起问卷",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"ask-question-collapse-button\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.15",
+    "source": "Cancel Questionnaire and Stop the Agent ({0})",
+    "target": "取消问卷并停止智能体（{0}）",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "template": true,
+    "capturePatterns": [
+      "[^()\\n]{1,30}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.16",
+    "source": "Hide earlier steps",
+    "target": "隐藏较早的步骤",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-subagent-steps-earlier\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.17",
+    "source": "Show 1 earlier step",
+    "target": "显示 1 个较早的步骤",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-subagent-steps-earlier\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.18",
+    "source": "Show {0} earlier steps",
+    "target": "显示 {0} 个较早的步骤",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-subagent-steps-earlier\"]",
+    "template": true,
+    "capturePatterns": [
+      "\\d+"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.19",
+    "source": "Browser steps",
+    "target": "浏览器步骤",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "ol[aria-label=\"Browser steps\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.20",
+    "source": "Failed to send side question",
+    "target": "附加问题发送失败",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"send-side-question-error\"] .text-sm.font-medium.leading-normal",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.21",
+    "source": "Failed to start side question",
+    "target": "附加问题启动失败",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"start-side-question-error\"] .text-sm.font-medium.leading-normal",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.22",
+    "source": "Conversation Unarchived",
+    "target": "会话已取消归档",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag^=\"restore-conversation-\"] .text-sm.font-medium.leading-normal",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.23",
+    "source": "Open in side pane",
+    "target": "在侧栏打开",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-app-open-in-side-pane\"], [role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.24",
+    "source": "Open in New Window",
+    "target": "在新窗口中打开",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.25",
+    "source": "Local only",
+    "target": "仅限本地",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-suggestion-card\"] .relative.z-10.flex-shrink-0.flex.items-center > span.inline-flex.items-center.rounded-full",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.26",
+    "source": "Remote only",
+    "target": "仅限远程",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-suggestion-card\"] .relative.z-10.flex-shrink-0.flex.items-center > span.inline-flex.items-center.rounded-full",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.27",
+    "source": "Sign in needed",
+    "target": "需要登录",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-suggestion-card\"] .relative.z-10.flex-shrink-0.flex.items-center > span.inline-flex.items-center.rounded-full",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.28",
+    "source": "Sign in to finish setting up this plugin.",
+    "target": "登录以完成此插件的设置。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-suggestion-card\"] .relative.z-10.flex-shrink-0.flex.items-center > span.inline-flex.items-center.rounded-full",
+    "kind": "attribute",
+    "attribute": "title",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.29",
+    "source": "Sign in to {0}",
+    "target": "登录 {0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"plugin-suggestion-card\"] button",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,200}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.30",
+    "source": "Account this MCP server uses: {0}",
+    "target": "此 MCP 服务器使用的账户：{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-server-account-select\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.31",
+    "source": "Where the agent runs, current: {0}",
+    "target": "智能体运行位置，当前：{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"location-selector-trigger\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,200}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.32",
+    "source": "More cloud environments",
+    "target": "更多云环境",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"location-more-cloud\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.33",
+    "source": "Create a new project from one or more folders.",
+    "target": "从一个或多个文件夹创建项目。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.34",
+    "source": "New Remote Project",
+    "target": "新建远程项目",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "span.truncate.min-w-0[title=\"Create a project whose conversations run remotely.\"], [data-testid^=\"title-menu-bar\"] [role=\"menuitem\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.35",
+    "source": "Create a project whose conversations run remotely.",
+    "target": "创建会话在远程运行的项目。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.36",
+    "source": "Connect GitHub",
+    "target": "连接 GitHub",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-connect-github\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.37",
+    "source": "GitHub Repositories",
+    "target": "GitHub 仓库",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": ".text-xs.pb-1.text-muted-foreground.font-medium.select-none",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.38",
+    "source": "Loading Repositories…",
+    "target": "正在加载仓库…",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-github-loading\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.39",
+    "source": "No matching repositories",
+    "target": "没有匹配的仓库",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": ".text-xs.px-2.py-2.text-muted-foreground",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.40",
+    "source": "No repositories found",
+    "target": "未找到仓库",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": ".text-xs.px-2.py-2.text-muted-foreground",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.41",
+    "source": "Remote Projects",
+    "target": "远程项目",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": ".text-xs.pb-1.text-muted-foreground.font-medium.select-none",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.42",
+    "source": "Failed to create remote project",
+    "target": "创建远程项目失败",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"new-cloud-project-error\"] .text-sm.font-medium.leading-normal",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.43",
+    "source": "Remove context from {0}",
+    "target": "从 {0} 移除上下文",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"attached-context-pill-remove\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.44",
+    "source": "{0}% of the context window used",
+    "target": "已使用 {0}% 的上下文窗口",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] [role=\"img\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "\\d+(?:\\.\\d+)?"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.45",
+    "source": "{0} of {1} tokens used",
+    "target": "已使用 {0} / {1} token",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] > div.text-foreground.tabular-nums",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "\\d+(?:\\.\\d+)?[KM]?",
+      "\\d+(?:\\.\\d+)?[KM]?"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.46",
+    "source": "Instructions and tools",
+    "target": "指令和工具",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] dt",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.47",
+    "source": "Free",
+    "target": "剩余",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] dt",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.48",
+    "source": "Compacted since the last response; counts update after the next one.",
+    "target": "上次回复后已压缩上下文；数量将在下次回复后更新。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] > p",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.49",
+    "source": "When it fills up, older turns are summarized to make room.",
+    "target": "上下文填满后，较早的对话轮次将被总结以腾出空间。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"context-usage-panel\"] > p",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.50",
+    "source": "Connectors",
+    "target": "连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"composer-connectors-submenu\"] > span.flex-1.truncate",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.51",
+    "source": "Connectors",
+    "target": "连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": "div.flex.items-baseline.justify-between.gap-2.px-2.pt-1.pb-2 > div.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.52",
+    "source": "Search connectors",
+    "target": "搜索连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "input[placeholder=\"Search connectors\"], input[aria-label=\"Search connectors\"]",
+    "kind": "attribute",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.53",
+    "source": "Fix",
+    "target": "修复",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"composer-connector-row\"] button",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.54",
+    "source": "No connectors match “{0}”",
+    "target": "没有与“{0}”匹配的连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": "div.px-2.py-3.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.55",
+    "source": "No connectors available in this project",
+    "target": "此项目中没有可用的连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": "div.px-2.py-3.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.56",
+    "source": "Loading connectors…",
+    "target": "正在加载连接器…",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "menu",
+    "selector": "div.px-2.py-3.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.57",
+    "source": "Browse Connectors",
+    "target": "浏览连接器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"] div.flex.items-center.justify-between.gap-2.border-t.border-border > button",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.58",
+    "source": "Search branches",
+    "target": "搜索分支",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"branch-search\"]",
+    "kind": "attribute",
+    "attribute": "placeholder",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.59",
+    "source": "Work in a New Worktree",
+    "target": "在新 worktree 中工作",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menuitemcheckbox\"] .truncate, [role=\"menuitem\"] .truncate",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.60",
+    "source": "Keeps your checkout untouched",
+    "target": "保持当前检出状态不变",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menuitemcheckbox\"] .truncate, [role=\"menuitem\"] .truncate",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.61",
+    "source": "Branch, current: {0}",
+    "target": "分支，当前：{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"branch-pill-trigger\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.62",
+    "source": "View Branches",
+    "target": "查看分支",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "button[title=\"View Branches\"], button[title=\"查看分支\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.63",
+    "source": "Select model, current: {0}",
+    "target": "选择模型，当前：{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-trigger\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,400}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.64",
+    "source": "Switch mic",
+    "target": "切换麦克风",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-mic-warning-switch\"] > span.font-medium",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.65",
+    "source": "Dismiss microphone warning",
+    "target": "关闭麦克风提示",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-mic-warning-dismiss\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.66",
+    "source": "Voice speed",
+    "target": "语音速度",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-speed-panel\"], [data-testid=\"voice-speed-slider\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.67",
+    "source": "Voice Speed",
+    "target": "语音速度",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.68",
+    "source": "Voice Speed, {0}",
+    "target": "语音速度，{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-speed-button\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "\\d+(?:\\.\\d+)?x"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.69",
+    "source": "Voice speed, {0}",
+    "target": "语音速度，{0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-call-speed\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "\\d+(?:\\.\\d+)?x"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.70",
+    "source": "You",
+    "target": "你",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"live-turn-speaker\"][data-speaker=\"you\"] > span",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.71",
+    "source": "Couldn't edit queued message",
+    "target": "无法编辑排队中的消息",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"queued-edit-failed\"] .text-sm.font-medium.leading-normal",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.72",
+    "source": "It was already sent or couldn't be removed from the queue.",
+    "target": "消息已发送，或无法从队列中移除。",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"queued-edit-failed\"] .text-sm.text-secondary-foreground",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.73",
+    "source": "Welcome to {0}",
+    "target": "欢迎使用 {0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": ".entrance-title",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,200}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.74",
+    "source": "Run {0} now",
+    "target": "立即运行 {0}",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"cloud-trigger-run-now\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.75",
+    "source": "Marketplace notice",
+    "target": "市场公告",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"marketplace-footer\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.76",
+    "source": "Toggle Terminal Panel",
+    "target": "切换终端面板",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"toggle-bottom-terminal-panel\"], [role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.77",
+    "source": "Switch environment ({0})",
+    "target": "切换环境（{0}）",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mobile-environment-switcher\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": [
+      "[^()\\n]{1,300}"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.78",
+    "source": "Previous card",
+    "target": "上一张卡片",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"card-deck-counter\"] ~ button, button:has(+ [data-testid=\"card-deck-counter\"])",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.79",
+    "source": "Next card",
+    "target": "下一张卡片",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"card-deck-counter\"] ~ button, button:has(+ [data-testid=\"card-deck-counter\"])",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.80",
+    "source": "Kill Terminal",
+    "target": "终止终端",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid^=\"bottom-terminal-panel-kill-\"], [data-testid=\"bottom-terminal-panel-menu-kill\"], [role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.81",
+    "source": "Close Panel",
+    "target": "关闭面板",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"bottom-terminal-panel-close\"], [role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.82",
+    "source": "Starting terminal…",
+    "target": "正在启动终端…",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"bottom-terminal-panel-starting\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.83",
+    "source": "Ask a side question without interrupting the main conversation",
+    "target": "提出附加问题，不会中断主会话",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"side-question-tab-empty\"] > span",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.84",
+    "source": "Stop side question",
+    "target": "停止附加问题",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"side-question-tab-stop\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.85",
+    "source": "Stop Side Question",
+    "target": "停止附加问题",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.86",
+    "source": "Promote to conversation",
+    "target": "转为会话",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"side-question-tab-promote\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.87",
+    "source": "Close Tabs to the Left",
+    "target": "关闭左侧标签页",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menuitem\"]",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.88",
+    "source": "Browser is currently being operated by this conversation in another Hub window",
+    "target": "当前会话正在另一个 Hub 窗口中操作浏览器",
+    "context": "Antigravity 2.29.0 会话、连接器及侧栏固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"agent-browser-cross-window-banner\"] > span",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.89",
+    "source": "Remote agents are busy",
+    "target": "远程智能体繁忙",
+    "context": "Antigravity 2.29.0 远程会话容量错误标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"input-box-notification-card\"] .flex.items-center.gap-1\\.5.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.90",
+    "source": "Daily environment time used",
+    "target": "今日环境使用时间已用完",
+    "context": "Antigravity 2.29.0 远程会话容量错误标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"input-box-notification-card\"] .flex.items-center.gap-1\\.5.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.91",
+    "source": "Too many environments running",
+    "target": "运行中的环境过多",
+    "context": "Antigravity 2.29.0 远程会话容量错误标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"input-box-notification-card\"] .flex.items-center.gap-1\\.5.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.92",
+    "source": "Daily conversation limit reached",
+    "target": "已达到每日会话上限",
+    "context": "Antigravity 2.29.0 远程会话容量错误标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"input-box-notification-card\"] .flex.items-center.gap-1\\.5.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.93",
+    "source": "Conversation limit reached",
+    "target": "已达到会话上限",
+    "context": "Antigravity 2.29.0 远程会话容量错误标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"input-box-notification-card\"] .flex.items-center.gap-1\\.5.min-w-0 > span.truncate",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.94",
+    "source": "{0} lines added, {1} lines removed",
+    "target": "新增 {0} 行，删除 {1} 行",
+    "context": "Antigravity 2.29.0 文件差异行数无障碍说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"overview-panel-row-review-diff-stats\"], [data-testid=\"diff-view-mode-stats\"], [data-testid=\"commit-modal-diff-stats\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": [
+      "\\d+",
+      "\\d+"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "v229.chat.95",
+    "source": "Runs remotely",
+    "target": "在远程运行",
+    "context": "Antigravity 2.29.0 自动化运行位置",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-icon\"]",
+    "kind": "attribute",
+    "selectorMode": "self",
+    "reviewed": true
+  }
+]

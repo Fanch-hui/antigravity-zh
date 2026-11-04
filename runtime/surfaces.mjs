@@ -8,11 +8,26 @@ const protectedSelectors = [
   '[data-testid="side-question-answer"]', '[data-testid="overview-goals-body"]',
   '[data-testid="sidecar-logs-content"]', '[data-testid="settings-error-messages-card"]',
   '[data-testid="file-title-name"]', '[data-testid="breadcrumb-segment"]',
+  '[data-testid="webview-download-filename"]',
+  '[data-testid="browser-autocomplete-option"] .truncate.text-foreground.font-normal',
+  '[data-testid="browser-autocomplete-option"]:not([data-suggestion-kind="search-web"]) .truncate.text-muted-foreground.font-normal',
+  '[data-testid="voice-settings-name"]', '[data-testid="voice-settings-mic"]',
+  'body:has([data-testid="voice-settings-mic"] [role="combobox"][aria-expanded="true"]) [data-select-popup]',
+  '[data-testid="running-row"] span.text-sm.text-foreground.truncate',
+  '[data-testid="running-group"] > div > span.truncate.font-medium',
+  '[data-testid="automation-name"]',
+  '.col-start-1.row-start-1.min-w-0:has(> .flex > [data-testid="automation-name"]) > .truncate',
+  '[data-testid="automation-run"] span.truncate', '[data-testid="automation-instructions-markdown"]',
+  '[data-testid="sidecar-project-link"]',
+  '[data-testid="sidecar-detail"] p.m-0.leading-7.text-secondary-foreground[class~="text-[15px]"]',
+  '[data-testid="sidecar-detail"] p.m-0.text-muted-foreground[class~="text-[13px]"]:not([data-testid])',
+  '[data-testid="automation-model-value"] span.text-sm.leading-5.text-foreground',
   '[data-testid="comment-card-text"]', '[data-testid="browser-url-input"]',
   '[data-testid="featured-carousel-headline"]', '[data-testid="featured-carousel-description"]',
   '[role="dialog"] .mt-3.border.rounded.p-2.overflow-y-auto[class~="bg-background/50"][class~="border-border/50"][class~="max-h-40"] > ul.space-y-1 > li.text-xs.text-muted-foreground.truncate[class~="max-w-[340px]"]',
   '[data-testid="subagent-tab-header-title"]', '[data-testid="settings-nav-item-Account"]',
   '[data-testid="project-selector-item"]', '[data-testid="branch-option"]',
+  '[data-testid="project-selector-github-repo-item"] > span.truncate.flex-1.min-w-0',
   '[data-testid="entity-pill"]', '[data-testid="activity-lane-label"]', 'button.truncate',
   '[data-testid^="accumulated-item-"] > span', '[data-testid="background-task-row"] > span',
   '[data-testid="model-selector-item"]:not(:has(span.truncate.text-xs.text-left))',
@@ -48,7 +63,7 @@ const protectedSelectors = [
   '.mt-2:has(h1.text-2xl.font-bold.tracking-tight) > p.text-sm.text-muted-foreground.mt-3.leading-relaxed',
   '.flex.flex-col.gap-3:has(h1.tracking-tight) > p.text-sm.text-muted-foreground.leading-relaxed'
 ].join(',');
-const protectedAttributeSelectors = '[data-testid^="accumulated-item-"], [data-testid="background-task-row"], [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]), [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]) > div.flex.justify-start > button';
+const protectedAttributeSelectors = '[data-testid^="accumulated-item-"], [data-testid="background-task-row"], [data-testid="webview-download-open"], [data-testid="running-group"], [data-testid="running-row-stop"], [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]), [data-testid="customizations-marketplace"] section.flex.flex-col.gap-3:not([data-testid="marketplace-bundles-shelf"]) > div.flex.justify-start > button';
 const settingsSelector = '.max-w-2xl.mx-auto.flex-col.gap-4, [id^="dropdown-label-"], [id^="dropdown-description-"], [id^="dropdown-value-"], [data-testid^="settings-nav-item-"]';
 const scopes = {
   settings: settingsSelector,

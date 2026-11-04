@@ -1,0 +1,1564 @@
+[
+  {
+    "id": "v229.settings.chat",
+    "source": "Chat",
+    "target": "聊天",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4603722,
+        "end": 4603728,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "h3.m-0.text-sm.font-medium",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.chat-width",
+    "source": "Chat Width",
+    "target": "聊天宽度",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4603775,
+        "end": 4603787,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "h3.m-0.text-sm.font-medium",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.accessibility",
+    "source": "Accessibility",
+    "target": "辅助功能",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4603936,
+        "end": 4603951,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "h3.m-0.text-sm.font-medium",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.chat-input",
+    "source": "Chat Input",
+    "target": "聊天输入",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4604106,
+        "end": 4604118,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "h3.m-0.text-sm.font-medium",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.enter-send",
+    "source": "Enter to Send",
+    "target": "按 Enter 发送",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4606526,
+        "end": 4606541,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.enter-send-description",
+    "source": "Send messages with the keyboard's Enter key instead of starting a new line.",
+    "target": "按键盘上的 Enter 键发送消息，而不是换行。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4606554,
+        "end": 4606631,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.steps",
+    "source": "Conversation Steps",
+    "target": "会话步骤",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4610674,
+        "end": 4610694,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.steps-description",
+    "source": "Choose how much detail is shown during a conversation.",
+    "target": "选择会话中显示的详细程度。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4610707,
+        "end": 4610763,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.steps-verbose",
+    "source": "Verbose",
+    "target": "详细",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4610834,
+        "end": 4610843,
+        "kind": "option:display"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.screen-reader",
+    "source": "Screen Reader Mode",
+    "target": "屏幕阅读器模式",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4611127,
+        "end": 4611147,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.screen-reader-description",
+    "source": "Optimize the interface and terminal output for screen readers.",
+    "target": "优化界面和终端输出，以便屏幕阅读器使用。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4611160,
+        "end": 4611224,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.terminal-placement",
+    "source": "Terminal Placement",
+    "target": "终端位置",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4611648,
+        "end": 4611668,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.terminal-placement-description",
+    "source": "Choose where terminal sessions appear.",
+    "target": "选择终端会话的显示位置。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4611681,
+        "end": 4611721,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.terminal-bottom",
+    "source": "Bottom Panel",
+    "target": "底部面板",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4611844,
+        "end": 4611858,
+        "kind": "option:display"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.context-indicator",
+    "source": "Context and Quota Indicator",
+    "target": "上下文与用量指示器",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4612274,
+        "end": 4612303,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.context-indicator-description",
+    "source": "Show how full the context window is next to the send button. Click it for a breakdown and to see your model quota.",
+    "target": "在发送按钮旁显示上下文窗口的使用情况。点击可查看明细和模型用量。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4612316,
+        "end": 4612432,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.voice-mode",
+    "source": "Voice mode",
+    "target": "语音模式",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4778111,
+        "end": 4778121,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.voice",
+    "source": "Voice",
+    "target": "语音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4778038,
+        "end": 4778045,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.voice-description",
+    "source": "The voice used in Voice mode. Powered by Gemini Live.",
+    "target": "语音模式使用的声音，由 Gemini Live 提供支持。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4778093,
+        "end": 4778146,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.microphone",
+    "source": "Microphone",
+    "target": "麦克风",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4778964,
+        "end": 4778976,
+        "kind": "property:label"
+      },
+      {
+        "start": 7849930,
+        "end": 7849942,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.microphone-description",
+    "source": "Input device for voice mode and dictation.",
+    "target": "语音模式和语音输入使用的输入设备。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4778989,
+        "end": 4779033,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.record-audio",
+    "source": "Save audio recordings",
+    "target": "保存录音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4779750,
+        "end": 4779773,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.record-audio-description",
+    "source": "Only stored on your machine.",
+    "target": "仅保存在本机。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4779786,
+        "end": 4779816,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.voice-volume-description",
+    "source": "How loud Antigravity's voice is.",
+    "target": "调整 Antigravity 的语音音量。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4782192,
+        "end": 4782224,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.voice-volume-description-internal",
+    "source": "How loud Jetski's voice is.",
+    "target": "调整 Jetski 的语音音量。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4782162,
+        "end": 4782189,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.permissions-description",
+    "source": "Configure what the agent can do in local and remote conversations.",
+    "target": "配置智能体在本地和远程会话中可以执行的操作。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4846704,
+        "end": 4846772,
+        "kind": "element:children"
+      },
+      {
+        "start": 4850312,
+        "end": 4850380,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.remote-permissions-description",
+    "source": "Controls permissions for remote conversations.",
+    "target": "控制远程会话的权限。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4847610,
+        "end": 4847658,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.download-location",
+    "source": "Download Location",
+    "target": "下载位置",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4854762,
+        "end": 4854781,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.download-location-description",
+    "source": "Folder where files downloaded in the built-in browser are saved.",
+    "target": "内置浏览器下载文件的保存文件夹。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4854898,
+        "end": 4854964,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.browsing-history",
+    "source": "Browsing History",
+    "target": "浏览历史记录",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4856076,
+        "end": 4856094,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.browsing-history-description",
+    "source": "Clear visited URLs and autocomplete suggestions from the built-in browser.",
+    "target": "清除内置浏览器访问过的网址和自动补全建议。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4856185,
+        "end": 4856259,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.browsing-history-side",
+    "source": "Clear visited URLs and autocomplete suggestions from side panel preview.",
+    "target": "清除侧边面板预览中访问过的网址和自动补全建议。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4856110,
+        "end": 4856182,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.new-chat",
+    "source": "New Conversation Button",
+    "target": "新建会话按钮",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4857521,
+        "end": 4857546,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.new-chat-description",
+    "source": "Which workspace the New Conversation button and keyboard shortcut start you in.",
+    "target": "选择使用新建会话按钮或快捷键时进入的工作区。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4857559,
+        "end": 4857640,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.workspace-last",
+    "source": "Last Workspace",
+    "target": "上次使用的工作区",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4850903,
+        "end": 4850917,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.workspace-new-description",
+    "source": "Create a new workspace from your first message.",
+    "target": "根据你的第一条消息创建新工作区。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4850973,
+        "end": 4851020,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.workspace-none-description",
+    "source": "Start without a workspace, for general questions.",
+    "target": "不使用工作区开始会话，适合一般问题。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4851046,
+        "end": 4851095,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.workspace-last-description",
+    "source": "Reuse your last workspace.",
+    "target": "继续使用上次的工作区。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4851125,
+        "end": 4851151,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.running-description",
+    "source": "Background tasks and terminals agents left running, across all conversations.",
+    "target": "所有会话中由智能体留在后台运行的任务和终端。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4702165,
+        "end": 4702244,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.this-computer",
+    "source": "This Computer",
+    "target": "此电脑",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4831557,
+        "end": 4831572,
+        "kind": "property:label"
+      },
+      {
+        "start": 4943497,
+        "end": 4943512,
+        "kind": "property:title"
+      },
+      {
+        "start": 5696586,
+        "end": 5696601,
+        "kind": "property:label"
+      },
+      {
+        "start": 7679504,
+        "end": 7679519,
+        "kind": "property:title"
+      },
+      {
+        "start": 8106036,
+        "end": 8106051,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[id^=\"dropdown-label-\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.remote",
+    "source": "Remote",
+    "target": "远程",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4831592,
+        "end": 4831600,
+        "kind": "property:label"
+      },
+      {
+        "start": 4847589,
+        "end": 4847597,
+        "kind": "property:label"
+      },
+      {
+        "start": 4943687,
+        "end": 4943695,
+        "kind": "property:title"
+      },
+      {
+        "start": 5696722,
+        "end": 5696730,
+        "kind": "property:label"
+      },
+      {
+        "start": 7680324,
+        "end": 7680332,
+        "kind": "property:title"
+      },
+      {
+        "start": 8106090,
+        "end": 8106098,
+        "kind": "property:label"
+      },
+      {
+        "start": 8644130,
+        "end": 8644138,
+        "kind": "property:title"
+      },
+      {
+        "start": 8649636,
+        "end": 8649644,
+        "kind": "element:children"
+      },
+      {
+        "start": 8649827,
+        "end": 8649835,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[id^=\"dropdown-label-\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.feedback-chat",
+    "source": "Join the Google Chat space",
+    "target": "加入 Google Chat 群组",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4667798,
+        "end": 4667826,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"feedback-chat-space-card\"]"
+  },
+  {
+    "id": "v229.settings.feedback-description",
+    "source": "Ask questions, report issues, and discuss features",
+    "target": "提问、报告问题并讨论功能",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4667908,
+        "end": 4667960,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"feedback-chat-space-card\"]"
+  },
+  {
+    "id": "v229.settings.running-heading",
+    "source": "Running (Dev only)",
+    "target": "运行中（仅开发环境）",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4702131,
+        "end": 4702151,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"running-heading\"]"
+  },
+  {
+    "id": "v229.settings.running-empty",
+    "source": "Nothing is running right now",
+    "target": "当前没有运行中的任务",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4703558,
+        "end": 4703588,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"running-empty\"]"
+  },
+  {
+    "id": "v229.settings.recordings",
+    "source": "Recordings",
+    "target": "录音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4780926,
+        "end": 4780938,
+        "kind": "property:label"
+      }
+    ],
+    "selector": "[data-testid=\"voice-settings-recordings\"] > .flex-1 > .flex > span"
+  },
+  {
+    "id": "v229.settings.recordings-none",
+    "source": "No recordings",
+    "target": "暂无录音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4780150,
+        "end": 4780163,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-settings-recordings\"] > .flex-1 > span"
+  },
+  {
+    "id": "v229.settings.recordings-delete",
+    "source": "Delete all",
+    "target": "全部删除",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4781112,
+        "end": 4781124,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"voice-settings-delete-recordings\"]"
+  },
+  {
+    "id": "v229.settings.recordings-delete-title",
+    "source": "Delete all recordings?",
+    "target": "删除所有录音？",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4781183,
+        "end": 4781207,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"voice-delete-recordings-modal\"])"
+  },
+  {
+    "id": "v229.settings.download-change",
+    "source": "Change…",
+    "target": "更改…",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4856027,
+        "end": 4856041,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"builtin-browser-download-dir-change\"]"
+  },
+  {
+    "id": "v229.settings.running-daemon",
+    "source": "daemon",
+    "target": "守护进程",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4706426,
+        "end": 4706434,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"running-row\"] span.shrink-0.rounded.border"
+  },
+  {
+    "id": "v229.settings.running-stopping",
+    "source": "Stopping…",
+    "target": "正在停止…",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4706551,
+        "end": 4706567,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"running-row\"] span.shrink-0.rounded.border"
+  },
+  {
+    "id": "v229.settings.running-still",
+    "source": "Still running",
+    "target": "仍在运行",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4706613,
+        "end": 4706628,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[data-testid=\"running-row\"] span.shrink-0.rounded.border"
+  },
+  {
+    "id": "v229.settings.running-warning",
+    "source": "Running processes are killed. This cannot be undone.",
+    "target": "运行中的进程将被终止，此操作无法撤销。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4704227,
+        "end": 4704281,
+        "kind": "element:children"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"running-confirm-stop\"])"
+  },
+  {
+    "id": "v229.settings.voice-volume",
+    "source": "Voice volume",
+    "target": "语音音量",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4782337,
+        "end": 4782351,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.selected",
+    "source": "{0} selected",
+    "target": "已选择 {0} 项",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"running-selection-bar\"] > span.text-foreground",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.settings.selected-stop",
+    "source": "Stop {0} selected",
+    "target": "停止所选的 {0} 项",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4702846,
+        "end": 4702873,
+        "kind": "property:aria-label"
+      }
+    ],
+    "selector": "[data-testid=\"running-selection-stop\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.settings.running-confirm-item",
+    "source": "Stop {0} item?",
+    "target": "停止 {0} 项？",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"running-confirm-stop\"])",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.settings.running-confirm-items",
+    "source": "Stop {0} items?",
+    "target": "停止 {0} 项？",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"running-confirm-stop\"])",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.settings.recordings-count-call",
+    "source": "{0} call · {1} MB",
+    "target": "{0} 条通话录音 · {1} MB",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-settings-recordings\"] > .flex-1 > span",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "\\d+\\.\\d"
+    }
+  },
+  {
+    "id": "v229.settings.recordings-count-calls",
+    "source": "{0} calls · {1} MB",
+    "target": "{0} 条通话录音 · {1} MB",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-settings-recordings\"] > .flex-1 > span",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "\\d+\\.\\d"
+    }
+  },
+  {
+    "id": "v229.settings.recordings-delete-call-recording",
+    "source": "This deletes {0} call recording ({1} MB) from your machine. You can't undo this.",
+    "target": "将从本机删除 {0} 条通话录音（{1} MB）。此操作无法撤销。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-delete-recordings-modal\"] > p",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "\\d+\\.\\d"
+    }
+  },
+  {
+    "id": "v229.settings.recordings-delete-call-recordings",
+    "source": "This deletes {0} call recordings ({1} MB) from your machine. You can't undo this.",
+    "target": "将从本机删除 {0} 条通话录音（{1} MB）。此操作无法撤销。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-delete-recordings-modal\"] > p",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "\\d+\\.\\d"
+    }
+  },
+  {
+    "id": "v229.settings.recording-shortcut",
+    "source": "Recording shortcut for {0}. Press keys to bind, Enter to save, Escape to cancel.",
+    "target": "正在为 {0} 录制快捷键。按下组合键进行绑定，按 Enter 保存，按 Escape 取消。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4713630,
+        "end": 4713713,
+        "kind": "property:aria-label"
+      }
+    ],
+    "selector": "[data-testid=\"inline-keybinding-recorder\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,256}"
+    }
+  },
+  {
+    "id": "v229.settings.billing-heading",
+    "source": "Select Billing Model",
+    "target": "选择计费方式",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4433107,
+        "end": 4433127,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": ".font-medium.mb-4.text-base.text-center.select-none"
+  },
+  {
+    "id": "v229.settings.billing-subscription",
+    "source": "Subscription",
+    "target": "订阅",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4433285,
+        "end": 4433299,
+        "kind": "property:title"
+      }
+    ],
+    "selector": "[role=\"radiogroup\"]:is([aria-label=\"Billing model\"], [aria-label=\"计费模式\"])"
+  },
+  {
+    "id": "v229.settings.billing-subscription-description",
+    "source": "Use Antigravity through your Gemini subscription.",
+    "target": "通过 Gemini 订阅使用 Antigravity。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4433306,
+        "end": 4433355,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"radiogroup\"]:is([aria-label=\"Billing model\"], [aria-label=\"计费模式\"])"
+  },
+  {
+    "id": "v229.settings.billing-paygo",
+    "source": "Pay As You Go",
+    "target": "按量付费",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4433390,
+        "end": 4433403,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"radiogroup\"]:is([aria-label=\"Billing model\"], [aria-label=\"计费模式\"])"
+  },
+  {
+    "id": "v229.settings.billing-paygo-description",
+    "source": "Pay only for the tokens you use, billed through Gemini platform.",
+    "target": "仅为实际使用的 token 付费，通过 Gemini 平台计费。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4433411,
+        "end": 4433475,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"radiogroup\"]:is([aria-label=\"Billing model\"], [aria-label=\"计费模式\"])"
+  },
+  {
+    "id": "v229.settings.choose-subscription",
+    "source": "Choose a Subscription",
+    "target": "选择订阅",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "dialog",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4434745,
+        "end": 4434768,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.vcs-description",
+    "source": "Give each Best of N fork a full clone of your workspace, including its local commit history. Choosing a winner then gives your workspace that fork's state, so the commits it made are kept. Forks take longer to create than the default CitC clone.",
+    "target": "为 Best of N 的每个分支完整克隆工作区，包括本地提交历史。选定胜出分支后，工作区将采用该分支的状态并保留其提交。创建分支所需的时间比默认的 CitC 克隆更长。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4617470,
+        "end": 4617715,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.vcs-description-link",
+    "source": "Give each Best of N fork a full clone of your workspace, including its local commit history. Choosing a winner then gives your workspace that fork's state, so the commits it made are kept. Forks take longer to create than the default CitC clone. See {0}.",
+    "target": "为 Best of N 的每个分支完整克隆工作区，包括本地提交历史。选定胜出分支后，工作区将采用该分支的状态并保留其提交。创建分支所需的时间比默认的 CitC 克隆更长。 参见 {0}。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "https?://[^\\s]{1,1024}"
+    }
+  },
+  {
+    "id": "v229.settings.git-description",
+    "source": "Give each Best of N fork its own clone of your Git repository instead of a copy-on-write overlay. Each fork is then a real repository, so commits it makes are kept when you choose it as the winner. Forks take longer to create, and the wait grows with the size of your repository.",
+    "target": "为 Best of N 的每个分支单独克隆 Git 仓库，而不是使用写时复制覆盖层。每个分支都是独立仓库，选为胜出分支后会保留其中的提交。创建分支需要更长时间，仓库越大等待越久。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4617862,
+        "end": 4618141,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.git-description-link",
+    "source": "Give each Best of N fork its own clone of your Git repository instead of a copy-on-write overlay. Each fork is then a real repository, so commits it makes are kept when you choose it as the winner. Forks take longer to create, and the wait grows with the size of your repository. See {0}.",
+    "target": "为 Best of N 的每个分支单独克隆 Git 仓库，而不是使用写时复制覆盖层。每个分支都是独立仓库，选为胜出分支后会保留其中的提交。创建分支需要更长时间，仓库越大等待越久。 参见 {0}。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "https?://[^\\s]{1,1024}"
+    }
+  },
+  {
+    "id": "v229.settings.voice-picker-title",
+    "source": "Choose Antigravity's Voice",
+    "target": "选择 Antigravity 的声音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"voice-picker-use\"])"
+  },
+  {
+    "id": "v229.settings.voice-picker-title-internal",
+    "source": "Choose Jetski's Voice",
+    "target": "选择 Jetski 的声音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[role=\"dialog\"]:has([data-testid=\"voice-picker-use\"])"
+  },
+  {
+    "id": "v229.settings.voice-picker-prefix",
+    "source": "You can change this in",
+    "target": "稍后可前往",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4774817,
+        "end": 4774839,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.voice-picker-prefix-powered",
+    "source": "Powered by Gemini Live · You can change this in",
+    "target": "由 Gemini Live 提供支持 · 稍后可前往",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.voice-picker-suffix",
+    "source": "later.",
+    "target": "更改。",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4775208,
+        "end": 4775214,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.voice-previous",
+    "source": "Previous voice",
+    "target": "上一个声音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4769441,
+        "end": 4769455,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-picker-prev\"]",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.voice-next",
+    "source": "Next voice",
+    "target": "下一个声音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4769458,
+        "end": 4769468,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-picker-next\"]",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.voice-options",
+    "source": "Voices",
+    "target": "声音",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4775875,
+        "end": 4775881,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"group\"]:has(> [data-testid^=\"voice-picker-dot-\"])",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.voice-picker-dot",
+    "source": "{0}, voice {1} of {2}",
+    "target": "{0}，第 {1} 个声音，共 {2} 个",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid^=\"voice-picker-dot-\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,100}",
+      "1": "\\d+",
+      "2": "\\d+"
+    }
+  },
+  {
+    "id": "v229.settings.voice-picker-use",
+    "source": "Use {0}",
+    "target": "使用 {0}",
+    "context": "Antigravity 2.29.0 设置界面固定文案",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"voice-picker-use\"]",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,100}"
+    }
+  },
+  {
+    "id": "v229.settings.voice-picker-settings",
+    "source": "Settings",
+    "target": "设置",
+    "context": "Antigravity 2.29.0 语音选择窗口设置链接",
+    "scope": "generic",
+    "selector": "[data-testid=\"voice-picker-settings-link\"]",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.shortcut-name",
+    "source": "Shortcut {0} for {1}",
+    "target": "{1} 的快捷键：{0}",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,100}",
+      "1": "[^\\n]{1,256}"
+    }
+  },
+  {
+    "id": "v229.settings.shortcut-remove",
+    "source": "Remove shortcut {0} for {1}",
+    "target": "移除 {1} 的快捷键 {0}",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,100}",
+      "1": "[^\\n]{1,256}"
+    }
+  },
+  {
+    "id": "v229.settings.shortcut-add",
+    "source": "Add shortcut for {0}",
+    "target": "为 {0} 添加快捷键",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,256}"
+    }
+  },
+  {
+    "id": "v229.settings.shortcut-reset",
+    "source": "Reset {0} to default",
+    "target": "将 {0} 重置为默认值",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "derived:display-2.29.0"
+      }
+    ],
+    "selector": "[data-testid^=\"shortcut-row-\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\n]{1,256}"
+    }
+  },
+  {
+    "id": "v229.settings.shortcut-cancel",
+    "source": "Cancel recording",
+    "target": "取消录制",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4714847,
+        "end": 4714863,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"inline-keybinding-recorder\"] button",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.shortcut-prompt",
+    "source": "Press keys...",
+    "target": "请按下组合键…",
+    "context": "Antigravity 2.29.0 快捷键设置固定提示",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4714742,
+        "end": 4714755,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"inline-keybinding-recorder\"] .italic"
+  }
+]

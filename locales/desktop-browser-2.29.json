@@ -1,0 +1,612 @@
+[
+  {
+    "id": "v229.browser.1",
+    "source": "Mute Voice Mic",
+    "target": "将语音麦克风静音",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1861768,
+        "end": 1861784,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.2",
+    "source": "Mute Voice Speaker",
+    "target": "将语音扬声器静音",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1861855,
+        "end": 1861875,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.3",
+    "source": "Toggle Side Panel",
+    "target": "显示或隐藏侧面板",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1862312,
+        "end": 1862331,
+        "kind": "property:label"
+      },
+      {
+        "start": 8211107,
+        "end": 8211126,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 8542254,
+        "end": 8542273,
+        "kind": "property:aria-label"
+      },
+      {
+        "start": 8542381,
+        "end": 8542400,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.4",
+    "source": "Toggle Maximize Side Panel",
+    "target": "切换侧面板最大化",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1862409,
+        "end": 1862437,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.5",
+    "source": "Previous Side Panel Tab",
+    "target": "上一个侧面板标签页",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1868023,
+        "end": 1868048,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.6",
+    "source": "Next Side Panel Tab",
+    "target": "下一个侧面板标签页",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"tooltip\"], [data-testid^=\"shortcut-row-\"] span, button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1868110,
+        "end": 1868131,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.7",
+    "source": "Open in New Tab",
+    "target": "在新标签页中打开",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"menuitem\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2958281,
+        "end": 2958298,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.8",
+    "source": "Open in Side Panel",
+    "target": "在侧面板中打开",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"menuitem\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3120365,
+        "end": 3120385,
+        "kind": "property:label"
+      },
+      {
+        "start": 4404110,
+        "end": 4404130,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.9",
+    "source": "Open In",
+    "target": "打开方式",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"menu-option-label\"], [role=\"menuitem\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3123721,
+        "end": 3123730,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.10",
+    "source": "Copy gh auth login command",
+    "target": "复制 gh auth login 命令",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "button[aria-label]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3133276,
+        "end": 3133304,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.browser.11",
+    "source": "Grant repository access",
+    "target": "授予仓库访问权限",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "button",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3134850,
+        "end": 3134875,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.12",
+    "source": "Attackers might be able to see the images you're looking at on this site and trick you by modifying them.",
+    "target": "攻击者可能查看你在此网站浏览的图片，并通过篡改图片来欺骗你。",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"] + span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3428626,
+        "end": 3428733,
+        "kind": "property:description"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.13",
+    "source": "Address bar suggestions",
+    "target": "地址栏建议",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-autocomplete-dropdown\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3485077,
+        "end": 3485102,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.browser.14",
+    "source": "Google Search",
+    "target": "Google 搜索",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-autocomplete-option\"][data-suggestion-kind=\"search-web\"] span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3423909,
+        "end": 3423924,
+        "kind": "property:secondaryText"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.15",
+    "source": "Remove from history",
+    "target": "从历史记录中删除",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-history-delete-item\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3486142,
+        "end": 3486163,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.browser.16",
+    "source": "Remove from history (Shift+Delete)",
+    "target": "从历史记录中删除（Shift+Delete）",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-history-delete-item\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3486205,
+        "end": 3486241,
+        "kind": "property:title"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.browser.17",
+    "source": "Downloads",
+    "target": "下载",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-url-bar-downloads\"], [data-testid=\"webview-download-drawer\"] > div > span.text-sm.font-medium",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4337152,
+        "end": 4337163,
+        "kind": "property:title"
+      },
+      {
+        "start": 4338282,
+        "end": 4338293,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.18",
+    "source": "Close downloads",
+    "target": "关闭下载列表",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-downloads-close\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4338845,
+        "end": 4338862,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.19",
+    "source": "No recent downloads",
+    "target": "近期没有下载",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-downloads-empty\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4339088,
+        "end": 4339109,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.20",
+    "source": "Show in folder",
+    "target": "在文件夹中显示",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-show-in-folder\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4341835,
+        "end": 4341851,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.21",
+    "source": "Cancel download",
+    "target": "取消下载",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-cancel\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4342240,
+        "end": 4342257,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.22",
+    "source": "Remove from list",
+    "target": "从列表中移除",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-remove\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4342653,
+        "end": 4342671,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.23",
+    "source": "Agent",
+    "target": "智能体",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-agent-badge\"]",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.browser.24",
+    "source": "Canceled",
+    "target": "已取消",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-status\"]",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.browser.25",
+    "source": "Interrupted",
+    "target": "已中断",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-status\"]",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.browser.26",
+    "source": "Completed",
+    "target": "已完成",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-status\"]",
+    "selectorMode": "self",
+    "reviewed": true
+  },
+  {
+    "id": "v229.browser.27",
+    "source": "{0} download progress",
+    "target": "{0} 的下载进度",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-item\"] [role=\"progressbar\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4341171,
+        "end": 4341195,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.browser.28",
+    "source": "Show {0} in folder",
+    "target": "在文件夹中显示 {0}",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-show-in-folder\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4341807,
+        "end": 4341828,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.browser.29",
+    "source": "Cancel {0}",
+    "target": "取消下载 {0}",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-cancel\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4342220,
+        "end": 4342233,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.browser.30",
+    "source": "Remove {0} from list",
+    "target": "从列表中移除 {0}",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-download-remove\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4342623,
+        "end": 4342646,
+        "kind": "property:aria-label"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.browser.32",
+    "source": "Downloads, {0}% complete",
+    "target": "下载，已完成 {0}%",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-url-bar-downloads\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d{1,3}"
+    }
+  },
+  {
+    "id": "v229.browser.33",
+    "source": "Downloads, in progress",
+    "target": "正在下载",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"webview-url-bar-downloads\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.browser.34",
+    "source": "This page isn’t working",
+    "target": "此页面无法正常运行",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-error-overlay\"] h1",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4368671,
+        "end": 4368701,
+        "kind": "property:title"
+      }
+    ]
+  },
+  {
+    "id": "v229.browser.35",
+    "source": "{0} could not find the requested page.",
+    "target": "{0} 找不到请求的页面。",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-error-overlay\"] p",
+    "selectorMode": "self",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s<>]+"
+    }
+  },
+  {
+    "id": "v229.browser.36",
+    "source": "{0} is currently unable to handle this request.",
+    "target": "{0} 目前无法处理此请求。",
+    "context": "Antigravity 2.29.0 浏览器、下载及侧面板固定控件；文件名、网址与页面内容保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"browser-error-overlay\"] p",
+    "selectorMode": "self",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s<>]+"
+    }
+  }
+]

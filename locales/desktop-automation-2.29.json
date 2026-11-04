@@ -1,0 +1,1969 @@
+[
+  {
+    "id": "v229.automation.323",
+    "source": "Every hour",
+    "target": "每小时",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"] > span, [data-testid=\"schedule-repeat-option\"], [data-testid=\"schedule-repeat-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567064,
+        "end": 8567076,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.324",
+    "source": "Every day",
+    "target": "每天",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"] > span, [data-testid=\"schedule-repeat-option\"], [data-testid=\"schedule-repeat-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567099,
+        "end": 8567110,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.325",
+    "source": "Every weekday",
+    "target": "每个工作日",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"] > span, [data-testid=\"schedule-repeat-option\"], [data-testid=\"schedule-repeat-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567136,
+        "end": 8567151,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.326",
+    "source": "Every week",
+    "target": "每周",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"] > span, [data-testid=\"schedule-repeat-option\"], [data-testid=\"schedule-repeat-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567175,
+        "end": 8567187,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.327",
+    "source": "hours",
+    "target": "小时",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-custom-unit\"] > span, [data-testid=\"schedule-custom-unit-option\"], [data-testid=\"schedule-custom-unit-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567286,
+        "end": 8567293,
+        "kind": "property:label"
+      },
+      {
+        "start": 8571593,
+        "end": 8571600,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.328",
+    "source": "week",
+    "target": "周",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-custom-unit\"] > span, [data-testid=\"schedule-custom-unit-option\"], [data-testid=\"schedule-custom-unit-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567315,
+        "end": 8567321,
+        "kind": "property:label"
+      },
+      {
+        "start": 8572338,
+        "end": 8572344,
+        "kind": "element:children"
+      },
+      {
+        "start": 8572353,
+        "end": 8572359,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.329",
+    "source": "month",
+    "target": "月",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-custom-unit\"] > span, [data-testid=\"schedule-custom-unit-option\"], [data-testid=\"schedule-custom-unit-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8567344,
+        "end": 8567351,
+        "kind": "property:label"
+      },
+      {
+        "start": 8571956,
+        "end": 8571963,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.331",
+    "source": "at",
+    "target": "于",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-editor\"] span.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8569987,
+        "end": 8569991,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.335",
+    "source": "Repeat every",
+    "target": "每隔",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-editor\"] span.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8571573,
+        "end": 8571587,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.338",
+    "source": "on the",
+    "target": "的第",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-editor\"] span.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8572068,
+        "end": 8572076,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.510",
+    "source": "on",
+    "target": "在",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-editor\"] span.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.332",
+    "source": "How often",
+    "target": "多久执行一次",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8570920,
+        "end": 8570931,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.334",
+    "source": "Day of the week",
+    "target": "星期几",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-weekday\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8571263,
+        "end": 8571280,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.336",
+    "source": "Number of hours",
+    "target": "小时间隔",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-every-hours\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8571817,
+        "end": 8571834,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.337",
+    "source": "Repeat unit",
+    "target": "重复单位",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-custom-unit\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8571936,
+        "end": 8571949,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.339",
+    "source": "Day of the month",
+    "target": "每月日期",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-day-of-month\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8572312,
+        "end": 8572330,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.340",
+    "source": "Days",
+    "target": "星期",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-custom\"] [data-slot=\"toggle-group\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8572728,
+        "end": 8572734,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.517",
+    "source": "{0}st",
+    "target": "{0}日",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-day-of-month\"] > span, [data-testid=\"schedule-day-of-month-option\"], [data-testid=\"schedule-day-of-month-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-9]|2[0-8])"
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.518",
+    "source": "{0}nd",
+    "target": "{0}日",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-day-of-month\"] > span, [data-testid=\"schedule-day-of-month-option\"], [data-testid=\"schedule-day-of-month-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-9]|2[0-8])"
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.519",
+    "source": "{0}rd",
+    "target": "{0}日",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-day-of-month\"] > span, [data-testid=\"schedule-day-of-month-option\"], [data-testid=\"schedule-day-of-month-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-9]|2[0-8])"
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.520",
+    "source": "{0}th",
+    "target": "{0}日",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-day-of-month\"] > span, [data-testid=\"schedule-day-of-month-option\"], [data-testid=\"schedule-day-of-month-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-9]|2[0-8])"
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.345",
+    "source": "Reads",
+    "target": "读取",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-pipeline\"] span[class~=\"text-[11px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586193,
+        "end": 8586200,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.346",
+    "source": "Runs",
+    "target": "运行记录",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-runs\"] h2",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586330,
+        "end": 8586336,
+        "kind": "element:children"
+      },
+      {
+        "start": 8590840,
+        "end": 8590846,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.352",
+    "source": "No upcoming run.",
+    "target": "暂无即将执行的任务。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-settings\"] > div > [data-testid=\"automation-next-run\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586947,
+        "end": 8586965,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.353",
+    "source": "Paused. Resume it to schedule the next run.",
+    "target": "已暂停。恢复后将安排下一次执行。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-settings\"] > div > [data-testid=\"automation-next-run\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586969,
+        "end": 8587014,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.354",
+    "source": "Edit schedule and model",
+    "target": "编辑执行计划和模型",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-settings-edit\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8587153,
+        "end": 8587178,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.355",
+    "source": "No instructions.",
+    "target": "暂无指令。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-instructions\"] p.m-0.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8588383,
+        "end": 8588401,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.356",
+    "source": "Show all",
+    "target": "显示全部",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-instructions-text\"] > button",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8588896,
+        "end": 8588906,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.357",
+    "source": "Instructions",
+    "target": "指令",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-instructions\"] > div > h2, [data-testid=\"new-sidecar-modal\"] section > h2",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8589668,
+        "end": 8589682,
+        "kind": "element:children"
+      },
+      {
+        "start": 8652938,
+        "end": 8652952,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.360",
+    "source": "What should the agent do on each run?",
+    "target": "每次运行时智能体应执行什么操作？",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-editor-prompt\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "placeholder",
+    "origins": [
+      {
+        "start": 8590055,
+        "end": 8590094,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.361",
+    "source": "All runs",
+    "target": "全部运行记录",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-runs-all\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8590827,
+        "end": 8590837,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.362",
+    "source": "No runs yet",
+    "target": "暂无运行记录",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-runs\"] p.m-0.px-3[class~=\"py-2.5\"].text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8591056,
+        "end": 8591069,
+        "kind": "element:children"
+      },
+      {
+        "start": 8630065,
+        "end": 8630078,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.363",
+    "source": "Loading runs…",
+    "target": "正在加载运行记录…",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-runs\"] p.m-0.px-3[class~=\"py-2.5\"].text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8591070,
+        "end": 8591090,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.364",
+    "source": "When",
+    "target": "触发时间",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-event-fields\"] > div:first-child > span.truncate.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8595956,
+        "end": 8595962,
+        "kind": "element:children"
+      },
+      {
+        "start": 8646864,
+        "end": 8646870,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.365",
+    "source": "Only for",
+    "target": "仅限",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-event-fields\"] > div:has(> [data-testid=\"trigger-add-filter\"]) > span.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8597913,
+        "end": 8597923,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.366",
+    "source": "Add filter",
+    "target": "添加筛选条件",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-add-filter\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8598141,
+        "end": 8598153,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.368",
+    "source": "On a schedule",
+    "target": "按计划执行",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-option-selector\"] > [data-slot=\"toggle-group\"] > button",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8599410,
+        "end": 8599425,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.369",
+    "source": "When something happens",
+    "target": "事件发生时执行",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-option-selector\"] > [data-slot=\"toggle-group\"] > button",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8599499,
+        "end": 8599523,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.370",
+    "source": "When it runs",
+    "target": "执行时机",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"trigger-option-selector\"] > [data-slot=\"toggle-group\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8599609,
+        "end": 8599623,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.380",
+    "source": "Next run",
+    "target": "下次运行",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-group\"] > span.hidden",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8622772,
+        "end": 8622782,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.381",
+    "source": "Last run",
+    "target": "上次运行",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-group\"] > span.hidden",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8622875,
+        "end": 8622885,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.382",
+    "source": "Untrusted sidecar",
+    "target": "未受信任的后台任务",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-untrusted-warning\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8623345,
+        "end": 8623364,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.383",
+    "source": "Restart {0}",
+    "target": "重新启动 {0}",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-restart\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    },
+    "origins": [
+      {
+        "start": 8629180,
+        "end": 8629194,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.384",
+    "source": "Up {0}",
+    "target": "已运行 {0}",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-row\"] [data-testid=\"automation-last-run\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+[smhd](?: \\d+[smhd]){0,2}"
+    },
+    "origins": [
+      {
+        "start": 8630282,
+        "end": 8630327,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.385",
+    "source": "This computer",
+    "target": "此电脑",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-toggle\"] span.flex.items-center, [data-testid=\"automation-kind-toggle-option\"], [data-testid=\"automation-kind-toggle-option\"] span, [data-testid=\"automation-kind-local\"] > span.flex, [data-testid=\"new-sidecar-modal\"] div.flex.flex-wrap.items-center.gap-2.text-sm.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8644077,
+        "end": 8644092,
+        "kind": "property:title"
+      },
+      {
+        "start": 8649620,
+        "end": 8649635,
+        "kind": "element:children"
+      },
+      {
+        "start": 8649811,
+        "end": 8649826,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.545",
+    "source": "Remote",
+    "target": "远程",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-toggle\"] span.flex.items-center, [data-testid=\"automation-kind-toggle-option\"], [data-testid=\"automation-kind-toggle-option\"] span, [data-testid=\"automation-kind-cloud\"] > span.flex, [data-testid=\"new-sidecar-modal\"] div.flex.flex-wrap.items-center.gap-2.text-sm.text-muted-foreground > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.386",
+    "source": "Task",
+    "target": "任务",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-steps\"] > li > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8646790,
+        "end": 8646796,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.387",
+    "source": "Where",
+    "target": "位置",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-steps\"] > li > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8646832,
+        "end": 8646839,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.548",
+    "source": "When",
+    "target": "时间",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-steps\"] > li > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.388",
+    "source": "Untitled",
+    "target": "未命名",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-name\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "placeholder",
+    "origins": [
+      {
+        "start": 8649010,
+        "end": 8649020,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.550",
+    "source": "An {0} with the ID “{1}” already exists.",
+    "target": "ID 为“{1}”的{0}已存在。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-name\"] + span.text-xs.text-error",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "automation|scheduled task",
+      "1": "[^“”\\r\\n]+"
+    },
+    "captureMappings": {
+      "0": {
+        "automation": "自动化",
+        "scheduled task": "计划任务"
+      }
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.551",
+    "source": "A {0} with ID {1} already exists.",
+    "target": "ID 为 {1} 的{0}已存在。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-name\"] + span.text-xs.text-red-500",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "automation|scheduled task",
+      "1": "[^\\r\\n]+"
+    },
+    "captureMappings": {
+      "0": {
+        "automation": "自动化",
+        "scheduled task": "计划任务"
+      }
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.392",
+    "source": "Where it runs",
+    "target": "运行位置",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-kind-toggle\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8649762,
+        "end": 8649777,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.393",
+    "source": "Create a project first.",
+    "target": "请先创建项目。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-no-project\"], [data-testid=\"new-sidecar-project\"] > span.text-xs.text-error",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8650290,
+        "end": 8650315,
+        "kind": "element:children"
+      },
+      {
+        "start": 8657921,
+        "end": 8657946,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.394",
+    "source": "Remove trigger",
+    "target": "移除触发条件",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-remove-trigger\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8651449,
+        "end": 8651465,
+        "kind": "property:aria-label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.395",
+    "source": "Add schedule",
+    "target": "添加计划",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-add-trigger\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8652013,
+        "end": 8652027,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.396",
+    "source": "Add trigger",
+    "target": "添加触发条件",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-add-trigger\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8652302,
+        "end": 8652315,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.398",
+    "source": "What should the agent do on each run? For example: summarize new bugs assigned to me and anything that changed overnight.",
+    "target": "每次运行时智能体应执行什么操作？例如：汇总分配给我的新问题以及昨晚发生的所有变更。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-prompt\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "placeholder",
+    "origins": [
+      {
+        "start": 8653023,
+        "end": 8653146,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.399",
+    "source": "Machine",
+    "target": "机器",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-modal\"] div:has(> [data-testid=\"new-sidecar-cloud-environment\"]) > span.text-foreground, [data-testid=\"new-sidecar-modal\"] span.text-muted-foreground:has(+ div > [data-testid=\"new-sidecar-cloud-environment\"])",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8653611,
+        "end": 8653620,
+        "kind": "element:children"
+      },
+      {
+        "start": 8653817,
+        "end": 8653826,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.399",
+    "source": "Machine",
+    "target": "机器",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-cloud-environment\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8653611,
+        "end": 8653620,
+        "kind": "element:children"
+      },
+      {
+        "start": 8653817,
+        "end": 8653826,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.400",
+    "source": "Runs as",
+    "target": "运行身份",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-modal\"] div:has(> [data-testid=\"new-sidecar-cloud-identity\"]) > span.text-foreground, [data-testid=\"new-sidecar-modal\"] span.text-muted-foreground:has(+ div > [data-testid=\"new-sidecar-cloud-identity\"])",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8653986,
+        "end": 8653995,
+        "kind": "element:children"
+      },
+      {
+        "start": 8654187,
+        "end": 8654196,
+        "kind": "property:ariaLabel"
+      },
+      {
+        "start": 8658593,
+        "end": 8658602,
+        "kind": "element:children"
+      },
+      {
+        "start": 8658821,
+        "end": 8658830,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.400",
+    "source": "Runs as",
+    "target": "运行身份",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-cloud-identity\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8653986,
+        "end": 8653995,
+        "kind": "element:children"
+      },
+      {
+        "start": 8654187,
+        "end": 8654196,
+        "kind": "property:ariaLabel"
+      },
+      {
+        "start": 8658593,
+        "end": 8658602,
+        "kind": "element:children"
+      },
+      {
+        "start": 8658821,
+        "end": 8658830,
+        "kind": "property:ariaLabel"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.401",
+    "source": "What should it do?",
+    "target": "需要执行什么操作？",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-prompt\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "aria-label",
+    "origins": [
+      {
+        "start": 8655449,
+        "end": 8655469,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.401",
+    "source": "What should it do?",
+    "target": "需要执行什么操作？",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-modal\"] span:has(+ [data-testid=\"new-sidecar-prompt\"])",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8655449,
+        "end": 8655469,
+        "kind": "property:label"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.402",
+    "source": "For example: every morning, summarize new bugs assigned to me and anything that changed overnight.",
+    "target": "例如：每天早上汇总分配给我的新问题以及昨晚发生的所有变更。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-prompt\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "placeholder",
+    "origins": [
+      {
+        "start": 8655482,
+        "end": 8655582,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.403",
+    "source": "For example: Morning bug summary",
+    "target": "例如：早间问题汇总",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-name\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "attribute": "placeholder",
+    "origins": [
+      {
+        "start": 8655705,
+        "end": 8655739,
+        "kind": "property:placeholder"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.405",
+    "source": "Where should it run?",
+    "target": "应在哪里运行？",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-modal\"] > div > span.text-sm.font-medium.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8655887,
+        "end": 8655909,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.408",
+    "source": "When should it run?",
+    "target": "应何时运行？",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-modal\"] > div > span.text-sm.font-medium.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8657076,
+        "end": 8657097,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.568",
+    "source": "An {0} with this name already exists on this computer. Run it remotely, or go back and rename it.",
+    "target": "本机已存在同名{0}。请改为远程运行，或返回修改名称。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-name-exists\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "automation|scheduled task"
+    },
+    "captureMappings": {
+      "0": {
+        "automation": "自动化",
+        "scheduled task": "计划任务"
+      }
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.409",
+    "source": "Step {0} of {1}",
+    "target": "第 {0} 步，共 {1} 步",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-summary\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-3]",
+      "1": "[1-3]"
+    },
+    "origins": [
+      {
+        "start": 8659225,
+        "end": 8659255,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.570",
+    "source": "Create automation",
+    "target": "创建自动化",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-submit\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.571",
+    "source": "Create scheduled task",
+    "target": "创建计划任务",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"new-sidecar-submit\"]",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.572",
+    "source": "No {0} match “{1}”.",
+    "target": "没有与“{1}”匹配的{0}。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "p[data-testid=\"sidecar-list-empty\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "automations|scheduled tasks",
+      "1": "[^“”\\r\\n]+"
+    },
+    "captureMappings": {
+      "0": {
+        "automations": "自动化",
+        "scheduled tasks": "计划任务"
+      }
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.573",
+    "source": "No {0} yet",
+    "target": "暂无{0}",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-list-empty\"] > p.m-0.text-base.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "automations|scheduled tasks"
+    },
+    "captureMappings": {
+      "0": {
+        "automations": "自动化",
+        "scheduled tasks": "计划任务"
+      }
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.automation.414",
+    "source": "Run a prompt on a schedule, like a morning summary of yesterday's changes. Runs show up here.",
+    "target": "按计划运行提示词，例如每天早上汇总昨天的变更。运行记录将显示在这里。",
+    "context": "Antigravity 2.29 自动化与计划任务的固定界面文案",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-list-empty\"] > p.m-0.mt-1.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8663936,
+        "end": 8664031,
+        "kind": "element:children"
+      }
+    ]
+  },
+  {
+    "id": "v229.schedule-summary.1",
+    "source": "Every hour",
+    "target": "每小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.schedule-summary.2",
+    "source": "Every {0} minutes",
+    "target": "每 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.3",
+    "source": "Every {0} hours",
+    "target": "每 {0} 小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.4",
+    "source": "Every hour at :{0}",
+    "target": "每小时第 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-5]\\d"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.5",
+    "source": "every hour",
+    "target": "每小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.schedule-summary.6",
+    "source": "every {0} minutes",
+    "target": "每 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.7",
+    "source": "every {0} hours",
+    "target": "每 {0} 小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.8",
+    "source": "every hour at :{0}",
+    "target": "每小时第 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-5]\\d"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.9",
+    "source": "Daily at {0}",
+    "target": "每天 {0}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.10",
+    "source": "daily at {0}",
+    "target": "每天 {0}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.11",
+    "source": "Monthly on the {0}st at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.12",
+    "source": "Monthly on the {0}nd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.13",
+    "source": "Monthly on the {0}rd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.14",
+    "source": "Monthly on the {0}th at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.15",
+    "source": "monthly on the {0}st at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.16",
+    "source": "monthly on the {0}nd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.17",
+    "source": "monthly on the {0}rd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.18",
+    "source": "monthly on the {0}th at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    }
+  },
+  {
+    "id": "v229.schedule-summary.19",
+    "source": "{0} at {1}",
+    "target": "{0} {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "Mondays|Tuesdays|Wednesdays|Thursdays|Fridays|Saturdays|Sundays|Weekdays|Weekends|mondays|tuesdays|wednesdays|thursdays|fridays|saturdays|sundays|weekdays|weekends",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "captureMappings": {
+      "0": {
+        "Mondays": "每周一",
+        "Tuesdays": "每周二",
+        "Wednesdays": "每周三",
+        "Thursdays": "每周四",
+        "Fridays": "每周五",
+        "Saturdays": "每周六",
+        "Sundays": "每周日",
+        "Weekdays": "每个工作日",
+        "Weekends": "每个周末",
+        "mondays": "每周一",
+        "tuesdays": "每周二",
+        "wednesdays": "每周三",
+        "thursdays": "每周四",
+        "fridays": "每周五",
+        "saturdays": "每周六",
+        "sundays": "每周日",
+        "weekdays": "每个工作日",
+        "weekends": "每个周末"
+      }
+    }
+  },
+  {
+    "id": "v229.schedule-summary.20",
+    "source": "Custom schedule",
+    "target": "自定义计划",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.schedule-summary.21",
+    "source": "custom schedule",
+    "target": "自定义计划",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-schedule-value\"] span.text-sm.leading-5.text-foreground, button[data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.schedule-summary.keep",
+    "source": "Keep: {0}",
+    "target": "保留：{0}",
+    "context": "保留当前不支持编辑的原有计划",
+    "scope": "generic",
+    "selector": "[data-testid=\"schedule-repeat\"] > span, [data-testid=\"schedule-repeat-option\"], [data-testid=\"schedule-repeat-option\"] span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    },
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ]
+  }
+]

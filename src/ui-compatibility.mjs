@@ -1,5 +1,6 @@
 import { isAppPath } from './app-page.mjs';
 import { checkOwnedLabelCompatibility } from './owned-label-compatibility.mjs';
+import { checkContentCompatibility } from './content-compatibility.mjs';
 
 function closing(source, start, open, close) {
   let depth = 0;
@@ -32,7 +33,8 @@ function readElements(source) {
     const propsEnd = closing(source, propsStart, '{', '}');
     if (propsEnd < 0) continue;
     const props = source.slice(propsStart, propsEnd + 1);
-    const classes = props.match(/\bclassName\s*:\s*(?:[\w$]+\(\s*)?["']([^"']*)["']/)?.[1] ?? '';
+    const classes = props.match(/\bclassName\s*:\s*(?:[\w$]+\(\s*)?["']([^"']*)["']/)?.[1]
+      ?? props.match(/\bclassName\s*:\s*[\w$]+\(\s*[\w$]+\s*\?\s*["'][^"']*["']\s*:\s*["'][^"']*["']\s*,\s*["']([^"']*)["']\s*\)/)?.[1] ?? '';
     nodes.push({ start: match.index, open: source.indexOf('(', match.index), propsEnd,
       tag: match[2], props, classes: new Set(classes.split(/\s+/)) });
   }
@@ -158,7 +160,7 @@ function hasActivityRows(source, nodes) {
   const fragmentEnd = closing(body, fragmentOpen, '(', ')');
   const contentNodes = readElements(body);
   const label = contentNodes.find(node => node.tag === 'span' && node.start > fragmentOpen && node.start < fragmentEnd
-    && new RegExp(`^\\{\\s*className\\s*:\\s*${declaration[2]}\\s*\\}$`).test(node.props)
+    && new RegExp(`^\\{\\s*className\\s*:\\s*(?:${declaration[2]}|[\\w$]+\\(\\s*["']agy-hover-label["']\\s*,\\s*${declaration[2]}\\s*\\))\\s*\\}$`).test(node.props)
     && new RegExp(`^,\\s*${declaration[1]}\\s*$`).test(body.slice(node.propsEnd + 1, closing(body, node.open, '(', ')'))));
   return !!label && !contentNodes.some(node => node !== label && node.start > fragmentOpen && node.start < label.start
     && closing(body, node.open, '(', ')') > label.start);
@@ -169,6 +171,7 @@ export function checkUiCompatibility(source) {
   const nodes = readElements(source);
   missing.push(...checkOwnedLabelCompatibility(source, nodes, closing));
   const queries = structureQueries(source, nodes);
+  missing.push(...checkContentCompatibility(source, queries, closing));
   const { matching, childOf, marker } = queries;
   const customizations = customizationStructures(queries);
   const requireRule = (name, valid) => { if (!valid) missing.push(name); };
@@ -235,7 +238,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkOwnedLabelCompatibility, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkOwnedLabelCompatibility, checkContentCompatibility, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

@@ -1,0 +1,375 @@
+[
+  {
+    "id": "v229.screenshot.feedback",
+    "source": "Give Feedback",
+    "target": "提供反馈",
+    "context": "设置侧栏、反馈页面标题及面包屑的固定名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-nav-item-Provide Feedback\"] > span, .max-w-2xl.mx-auto:has(input[name=\"feedbackType\"]) > .flex.flex-col.gap-2.w-full.mb-2 h2.m-0.font-medium.truncate, body:has(.max-w-2xl.mx-auto input[name=\"feedbackType\"]) .h-12.w-full.bg-background > .flex.items-center.gap-1\\.5.select-none > span.text-xs.font-medium.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 4419551,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-project-folders",
+    "source": "Manage project folders and settings.",
+    "target": "管理项目的文件夹和设置。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-project-folders-permissions",
+    "source": "Manage project folders, agent settings, and permissions.",
+    "target": "管理项目的文件夹、智能体设置和权限。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-project-resources",
+    "source": "Manage project resources and settings.",
+    "target": "管理项目的资源和设置。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-project-resources-permissions",
+    "source": "Manage project resources, agent settings, and permissions.",
+    "target": "管理项目的资源、智能体设置和权限。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-workspace-folders",
+    "source": "Manage workspace folders and settings.",
+    "target": "管理工作区的文件夹和设置。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-workspace-folders-permissions",
+    "source": "Manage workspace folders, agent settings, and permissions.",
+    "target": "管理工作区的文件夹、智能体设置和权限。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-workspace-resources",
+    "source": "Manage workspace resources and settings.",
+    "target": "管理工作区的资源和设置。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-workspace-resources-permissions",
+    "source": "Manage workspace resources, agent settings, and permissions.",
+    "target": "管理工作区的资源、智能体设置和权限。",
+    "context": "项目或工作区设置页固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012280,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-outside-projects",
+    "source": "Settings for conversations outside of projects.",
+    "target": "项目外会话的设置。",
+    "context": "项目或工作区外会话设置页的固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012210,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.settings-outside-workspaces",
+    "source": "Settings for conversations outside of workspaces.",
+    "target": "工作区外会话的设置。",
+    "context": "项目或工作区外会话设置页的固定说明",
+    "scope": "generic",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 > .flex.flex-col.gap-2.w-full.mb-2 .text-sm.text-muted-foreground.bg-transparent",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 5012210,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.greeting",
+    "source": "Hi {0}, what can we get done today?",
+    "target": "{0}，你好，今天想完成什么？",
+    "context": "首页问候，保留用户名称原样",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.text-center",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s]{1,200}"
+    },
+    "origins": [
+      {
+        "start": 8308440,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.greeting-anonymous",
+    "source": "What can we get done today?",
+    "target": "今天想完成什么？",
+    "context": "首页无姓名时的固定问候",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.text-center",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 8308510,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-ask",
+    "source": "Request Review",
+    "target": "请求审阅",
+    "context": "会话输入框权限预设触发按钮的固定模式名",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 7762130,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-default",
+    "source": "Default",
+    "target": "默认",
+    "context": "会话输入框权限预设触发按钮的固定模式名",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 7762130,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-auto",
+    "source": "Auto (Preview)",
+    "target": "自动（预览）",
+    "context": "会话输入框权限预设触发按钮的固定模式名",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 7762130,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-vetted",
+    "source": "Vetted (Preview)",
+    "target": "安全审查（预览）",
+    "context": "会话输入框权限预设触发按钮的固定模式名",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"] > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 7762130,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-aria-current",
+    "source": "Agent permissions preset selector, current: {0}",
+    "target": "智能体权限预设选择器，当前：{0}",
+    "context": "会话权限预设触发按钮的无障碍名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Request Review|Default|Auto \\(Preview\\)|Vetted \\(Preview\\)|Turbo)"
+    },
+    "captureMappings": {
+      "0": {
+        "Request Review": "请求审阅",
+        "Default": "默认",
+        "Auto (Preview)": "自动（预览）",
+        "Vetted (Preview)": "安全审查（预览）",
+        "Turbo": "Turbo"
+      }
+    },
+    "origins": [
+      {
+        "start": 7762200,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.permission-aria-locked",
+    "source": "Agent permissions preset: {0}, {1}",
+    "target": "智能体权限预设：{0}，{1}",
+    "context": "不可更改权限预设的无障碍名称，保留锁定原因",
+    "scope": "generic",
+    "selector": "[data-testid=\"permissions-selector-trigger\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Request Review|Default|Auto \\(Preview\\)|Vetted \\(Preview\\)|Turbo)",
+      "1": "[^\\r\\n]{1,500}"
+    },
+    "captureMappings": {
+      "0": {
+        "Request Review": "请求审阅",
+        "Default": "默认",
+        "Auto (Preview)": "自动（预览）",
+        "Vetted (Preview)": "安全审查（预览）",
+        "Turbo": "Turbo"
+      }
+    },
+    "origins": [
+      {
+        "start": 7762200,
+        "kind": "static-template:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.screenshot.third-party-privacy",
+    "source": "Google does not control the availability or functionality of third party developer tools. Your data from third party developer tools connected to your Antigravity instance may be shared with Google. Google will protect any such data in accordance with the Google Privacy Policy, found here:",
+    "target": "Google 无法控制第三方开发者工具的可用性或功能。连接到你的 Antigravity 实例的第三方开发者工具产生的数据可能会与 Google 共享。Google 将根据 Google 隐私权政策保护这些数据，详情请参阅：",
+    "context": "第三方工具隐私提示完整文案，保留隐私政策链接",
+    "scope": "generic",
+    "selector": "[data-testid=\"third-party-tools-disclaimer\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "origins": [
+      {
+        "start": 7346011,
+        "kind": "screenshot-static-component:2.29.0"
+      }
+    ]
+  }
+]

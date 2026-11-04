@@ -32,6 +32,7 @@ export function runtimeDictionary(records) {
     context: record.context, scope: record.scope ?? 'generic',
     ...(record.selector ? { selector: record.selector } : {}),
     ...(record.selectorMode ? { selectorMode: record.selectorMode } : {}),
+    ...(record.contentBoundary ? { contentBoundary: record.contentBoundary } : {}),
     ...(record.kind ? { kind: record.kind } : {}),
     ...(record.attribute ? { attribute: record.attribute } : {}),
     ...(record.settingLabel ? { settingLabel: record.settingLabel } : {}),

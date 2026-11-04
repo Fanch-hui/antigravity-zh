@@ -5,13 +5,14 @@
   if (window.top !== window || location.protocol !== 'https:' || location.hostname !== '127.0.0.1') return;
   const scriptStartedMs = performance.now();
 
-  const attributes = ['title', 'placeholder', 'aria-label'];
-  const { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu } = /*__AGY_ZH_SURFACES__*/ null;
+  const attributes = ['title', 'placeholder', 'aria-label', 'data-tooltip'];
+  const { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu,
+    contentBoundaries, tooltipAttributes } = /*__AGY_ZH_SURFACES__*/ null;
   const index = new Map();
   const templates = [];
   const originals = new WeakMap();
   const combinedParents = new WeakMap();
-  const ownedLabels = (/*__AGY_ZH_OWNED_LABELS__*/ null)(dictionary, protectedSelectors, element => translate(element));
+  const ownedLabels = (/*__AGY_ZH_OWNED_LABELS__*/ null)(dictionary, protectedSelectors, contentBoundaries, element => translate(element));
 
   for (const record of dictionary) {
     if (typeof record.source !== 'string' || typeof record.target !== 'string') continue;
@@ -36,7 +37,7 @@
   }
 
   function safe(element, attribute, record) {
-    if (!element || ownedLabels.isProtected(element, record)) return false;
+    if (!element || ownedLabels.isProtected(element, record, attribute)) return false;
     if (attribute && element.matches(protectedAttributeSelectors) && !record?.marketplaceShelf) return false;
     const toast = closest(element, '.border-l-orange-500');
     const button = closest(element, 'button');
@@ -77,6 +78,8 @@
   }
 
   function matches(record, element, attribute) {
+    if (attribute === 'data-tooltip' && (record.kind !== 'attribute' || record.attribute !== attribute
+      || record.selectorMode !== 'self' || !record.selector)) return false;
     if (!ownedLabels.matches(record, element)) return false;
     if (!matchesSlashCommand(record, element, attribute)) return false;
     // Permission options use the same Markdown renderer as agent-authored questions.
@@ -231,6 +234,7 @@
 
   function translateAttributes(element) {
     for (const attribute of attributes) {
+      if (attribute === 'data-tooltip' && !element.matches(tooltipAttributes)) continue;
       const value = element.getAttribute(attribute);
       if (!value) continue;
       const target = localized(value, element, attribute);
@@ -284,7 +288,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.12', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.13', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

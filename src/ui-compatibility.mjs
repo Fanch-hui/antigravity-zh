@@ -1,6 +1,6 @@
 import { isAppPath } from './app-page.mjs';
 import { checkOwnedLabelCompatibility } from './owned-label-compatibility.mjs';
-import { checkContentCompatibility } from './content-compatibility.mjs';
+import { checkContentCompatibility, checkFixedControlCompatibility, checkAdditionalContentCompatibility } from './content-compatibility.mjs';
 
 function closing(source, start, open, close) {
   let depth = 0;
@@ -172,6 +172,8 @@ export function checkUiCompatibility(source) {
   missing.push(...checkOwnedLabelCompatibility(source, nodes, closing));
   const queries = structureQueries(source, nodes);
   missing.push(...checkContentCompatibility(source, queries, closing));
+  missing.push(...checkFixedControlCompatibility(source, queries, closing));
+  missing.push(...checkAdditionalContentCompatibility(source, queries, closing));
   const { matching, childOf, marker } = queries;
   const customizations = customizationStructures(queries);
   const requireRule = (name, valid) => { if (!valid) missing.push(name); };
@@ -238,7 +240,7 @@ export async function assertUiCompatibility(client, origin) {
       const response = await fetch('/main.js', { method: 'GET', credentials: 'omit',
         redirect: 'error', mode: 'same-origin', cache: 'force-cache', signal: AbortSignal.timeout(5000) });
       if (!response.ok) return { compatible: false, missing: ['static-script'] };
-      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkOwnedLabelCompatibility, checkContentCompatibility, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
+      ${[closing, readElements, structureQueries, customizationStructures, checkPluginConfiguration, hasActivityRows, checkOwnedLabelCompatibility, checkContentCompatibility, checkFixedControlCompatibility, checkAdditionalContentCompatibility, checkUiCompatibility].map(fn => fn.toString()).join('\n')}
       return checkUiCompatibility(await response.text());
     } catch { return { compatible: false, missing: ['static-script'] }; }
   })()`;

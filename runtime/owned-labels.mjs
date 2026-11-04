@@ -1,6 +1,13 @@
-export function createOwnedLabels(records, protectedSelectors, retranslate) {
+export function createOwnedLabels(records, protectedSelectors, contentBoundaries, retranslate) {
   const owned = record => Boolean(record.marketplaceShelf || record.systemEvent);
-  const selectors = [...new Set(records.filter(owned).map(record => record.selector))].join(',');
+  const boundaryFor = record => record?.selectorMode === 'self' && contentBoundaries.find(boundary =>
+    boundary.owner === record.contentBoundary && boundary.selector === record.selector && boundary.kind === record.kind
+    && (record.kind === 'text' ? !record.attribute : boundary.attributes.includes(record.attribute))
+    && (!boundary.equivalentTo || records.some(reference => reference.selector === boundary.equivalentTo
+      && reference.kind === 'text' && reference.source === record.source
+      && reference.template?.pattern === record.template?.pattern)));
+  const selectors = [...new Set(records.filter(record => owned(record) || boundaryFor(record))
+    .map(record => record.selector))].join(',');
   const tracked = new Map();
   const rendererTypes = new WeakMap();
   let timer;
@@ -58,11 +65,14 @@ export function createOwnedLabels(records, protectedSelectors, retranslate) {
     return !record.systemEvent || systemEvent(element, record.systemEvent);
   }
 
-  function isProtected(element, record) {
+  function isProtected(element, record, attribute) {
     const section = record?.marketplaceShelf ? element.closest('section') : null;
+    const boundary = boundaryFor(record);
     for (let owner = element.closest(protectedSelectors); owner; owner = owner.parentElement?.closest(protectedSelectors)) {
       // Only the verified shelf header may cross the marketplace metadata boundary.
       if (section && owner.parentElement === section && owner.matches('div.flex.flex-col.gap-1.px-3')) continue;
+      if (boundary && element.matches(boundary.selector) && owner.matches(boundary.owner)
+        && (boundary.kind === 'text' ? !attribute : boundary.attributes.includes(attribute))) continue;
       return true;
     }
     return false;

@@ -8,6 +8,20 @@ const protectedSelectors = [
   '[data-testid="side-question-answer"]', '[data-testid="overview-goals-body"]',
   '[data-testid="sidecar-logs-content"]', '[data-testid="settings-error-messages-card"]',
   '[data-testid="file-title-name"]', '[data-testid="breadcrumb-segment"]',
+  '[data-testid="media-modal-title"]',
+  '[data-testid="url-security-host"]', '[data-testid="url-security-origin"]',
+  '[data-testid="url-security-certificate"] dd',
+  '.pdf-sdk-root.jetski-pdf-viewer-host [data-testid="pdf-viewport"]',
+  '.pdf-sdk-root.jetski-pdf-viewer-host .floating-comment-card',
+  '[data-hover-card-popup] .grid[class~="grid-cols-[auto_1fr]"] > span.text-foreground.min-w-0.break-words',
+  '[data-testid="plugin-connection-local"] > [class~="min-w-[10rem]"] > div.truncate',
+  '[data-testid="plugin-connection-cloud"] > [class~="min-w-[10rem]"] > div.truncate',
+  '[data-testid="location-selector-trigger"] > span.truncate',
+  '[data-testid="location-local"] span.flex.items-baseline.min-w-0 > span.truncate',
+  '[data-testid^="location-cloud"]:not(:has(> span.flex.min-w-0.flex-col))',
+  '[data-testid^="location-cloud"] > span.flex.min-w-0.flex-col > span.truncate:not(.text-xs)',
+  '[data-testid^="location-cloud"] > span.flex.min-w-0.flex-col > span.text-xs.text-muted-foreground:not(:has(> span.flex))',
+  '[data-testid^="location-cloud"] > span.flex.min-w-0.flex-col > span.text-xs.text-muted-foreground > span.flex > span:first-child',
   '[data-testid="webview-download-filename"]',
   '[data-testid="browser-autocomplete-option"] .truncate.text-foreground.font-normal',
   '[data-testid="browser-autocomplete-option"]:not([data-suggestion-kind="search-web"]) .truncate.text-muted-foreground.font-normal',
@@ -107,4 +121,15 @@ const commandMenu = {
   source: '[data-testid="menu-option-trailing-label"]',
 };
 
-export const surfaces = { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu };
+const contentBoundaries = [
+  { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] [data-testid="revert-button"]', kind: 'attribute', attributes: ['aria-label'] },
+  { owner: '[data-testid="side-question-question"]', selector: '[data-testid="side-question-question"] > span.shrink-0', kind: 'text' },
+  { owner: '[data-testid="settings-error-messages-card"]', selector: '[data-testid="settings-error-messages-card"] > div.flex-1.flex.flex-col.gap-1.min-w-0 > span.text-sm.font-medium.text-foreground', kind: 'text' },
+  { owner: '[data-testid="settings-error-messages-card"]', selector: '[data-testid="settings-error-messages-card"] > [data-testid="settings-error-messages-copy-button"]', kind: 'attribute', attributes: ['aria-label', 'title'] },
+  { owner: '[data-testid="sidecar-detail"] [data-testid="automation-settings"] > p.m-0.leading-7.text-secondary-foreground[class~="text-[15px]"]', selector: '[data-testid="sidecar-detail"] [data-testid="automation-settings"] > p.m-0.leading-7.text-secondary-foreground[class~="text-[15px]"]', kind: 'text' },
+  { owner: '[data-testid="sidecar-detail"] [data-testid="automation-settings"] > p.m-0.leading-7.text-secondary-foreground[class~="text-[15px]"]', selector: '[data-testid="sidecar-detail"] [data-testid="automation-settings"] > p.m-0.leading-7.text-secondary-foreground[class~="text-[15px]"] > [data-testid="automation-schedule-value"]', kind: 'text', equivalentTo: '[data-testid="automation-schedule-value"] span.text-sm.leading-5.text-foreground, button[data-testid="automation-schedule-value"]' },
+];
+const tooltipAttributes = '.pdf-sdk-root.jetski-pdf-viewer-host [data-testid="pdf-floating-toolbar"] button';
+
+export const surfaces = { protectedSelectors, protectedAttributeSelectors, scopes, staticSurface, controls, commandMenu,
+  contentBoundaries, tooltipAttributes };

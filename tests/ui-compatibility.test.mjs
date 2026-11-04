@@ -289,14 +289,21 @@ function newContentFixture() {
     element('span', 'truncate font-medium', 'group.title')) + ','
     + element('div', '', element('span', 'text-sm text-foreground truncate', 'item.title'),
       ',"data-testid":"running-row"'), ',"data-testid":"running-group","aria-label":group.title');
-  const automation = [element('div', 'col-start-1 row-start-1 min-w-0',
+  const automation = ['function Value({children:value,onClick:click,testId:id}){return click?A.createElement(Button,{"data-testid":id,className:"inline"},value):A.createElement("span",{},value)}',
+  element('div', 'col-start-1 row-start-1 min-w-0',
     `${element('div', 'flex', element('div', 'truncate', 'name', ',"data-testid":"automation-name"'))},`
       + element('div', 'truncate text-muted-foreground', 'metadata')),
   element('button', '', element('span', 'truncate', 'summary'), ',"data-testid":"automation-run"'),
   element('div', '', element('div', '', 'prompt', ',"data-testid":"automation-instructions-markdown"'),
     ',"data-testid":"automation-instructions-text"'),
   element('div', '', element('p', 'm-0 text-[15px] leading-7 text-secondary-foreground', 'description') + ','
-    + element('p', 'm-0 text-[13px] text-muted-foreground', 'error'), ',"data-testid":"sidecar-detail"')].join(';');
+    + element('p', 'm-0 text-[13px] text-muted-foreground', 'error'), ',"data-testid":"sidecar-detail"'),
+  element('div', '', element('p', 'm-0 text-[15px] leading-7 text-secondary-foreground',
+    '"Runs"," ",A.createElement(Value,{testId:"automation-schedule-value"},schedule),'
+    + 'project&&project!==sidecar.sidecarId&&A.createElement(A.Fragment,null," ","in"," ",'
+    + 'A.createElement(Value,{testId:"sidecar-project-link"},project))," ","with"," ",'
+    + 'A.createElement(Value,{testId:"automation-model-value"},model)," ","on this computer."'),
+  ',"data-testid":"automation-settings"')].join(';');
   return [autocomplete, 'const search={kind:"search-web",secondaryText:"Google Search"}', github, download,
     voice, running, automation].join(';');
 }
@@ -315,6 +322,28 @@ test('new browser, voice, running and automation content retains protective stru
     ['text-sm text-foreground truncate"},item.title', 'text-sm text-foreground"},item.title', 'running-content'],
     ['"aria-label":group.title', '"aria-label":"Running"', 'running-content'],
     ['automation-instructions-markdown', 'changed-instructions', 'automation-content'],
+    ['},schedule),project&&', '},schedule),dynamic,project&&', 'automation-settings-sentence'],
+  ]) assert(checkUiCompatibility(source.replace(before, after)).missing.includes(rule), before);
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});
+
+test('protected fixed controls require the observed source and leaf structure', async () => {
+  const question = element('span', '', element('span', 'shrink-0', 'flag?"Side Question:":"Side Question"'),
+    ',"data-testid":"side-question-question"');
+  const card = element('div', '', element('div', 'flex-1 flex flex-col gap-1 min-w-0',
+    element('span', 'text-sm font-medium text-foreground', '"Failed to parse settings. Fix and restart."')) + ','
+    + element('button', '', '', ',"data-testid":"settings-error-messages-copy-button",'
+      + '"aria-label":copied?"Copied":"Copy error messages",title:copied?"Copied":"Copy error messages"'),
+  ',"data-testid":"settings-error-messages-card"');
+  const source = fixture() + ';const tip=state.revertTooltip;'
+    + element('button', '', '', ',"data-testid":"revert-button","aria-label":tip') + ';'
+    + element('div', '', question, ',"data-testid":"side-question-panel"') + ';' + card;
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after, rule] of [
+    ['tip=state.revertTooltip', 'tip=message.body', 'revert-control'],
+    ['flag?"Side Question:":"Side Question"', 'question.title', 'side-question-label'],
+    ['"aria-label":copied?"Copied":"Copy error messages"', '"aria-label":error.message', 'settings-error-controls'],
   ]) assert(checkUiCompatibility(source.replace(before, after)).missing.includes(rule), before);
   const { client } = executingClient(source);
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);

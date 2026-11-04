@@ -1,0 +1,1290 @@
+[
+  {
+    "id": "v229.workflow-completion.01",
+    "source": "No matching conversations",
+    "target": "没有匹配的会话",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5678408,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.02",
+    "source": "No archived conversations",
+    "target": "暂无已归档的会话",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5678447,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.03",
+    "source": "No pinned conversations",
+    "target": "暂无已固定的会话",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5699391,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.04",
+    "source": "Current Workspace",
+    "target": "当前工作区",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id=\"workspace\"] > [data-testid=\"section-header\"] h2 span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5682217,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.05",
+    "source": "Same Project",
+    "target": "同一项目",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id=\"project\"] > [data-testid=\"section-header\"] h2 span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5682325,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.06",
+    "source": "Other Projects",
+    "target": "其他项目",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id=\"other\"] > [data-testid=\"section-header\"] h2 span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5682508,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.07",
+    "source": "Other Conversations",
+    "target": "其他会话",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id=\"other\"] > [data-testid=\"section-header\"] h2 span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5682525,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.08",
+    "source": "Recent",
+    "target": "最近使用",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] .text-xs.text-muted-foreground.font-medium.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7679231,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.09",
+    "source": "No matching projects",
+    "target": "没有匹配的项目",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.10",
+    "source": "No matching workspaces",
+    "target": "没有匹配的工作区",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.11",
+    "source": "No remote projects",
+    "target": "暂无远程项目",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.12",
+    "source": "No remote workspaces",
+    "target": "暂无远程工作区",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.13",
+    "source": "No projects found",
+    "target": "未找到项目",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.14",
+    "source": "No workspaces found",
+    "target": "未找到工作区",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-selector-list\"] div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-cloud-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid=\"project-selector-this-machine-search\"]) div.text-xs.px-2.py-2.text-muted-foreground, [role=\"menu\"]:has([data-testid^=\"project-selector-machine-search-\"]) div.text-xs.px-2.py-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7680938,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.15",
+    "source": "Starting",
+    "target": "正在启动",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid^=\"location-cloud\"] span.flex.items-center[class~=\"gap-1.5\"] > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6684222,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.16",
+    "source": "Online",
+    "target": "在线",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid^=\"location-cloud\"] span.flex.items-center[class~=\"gap-1.5\"] > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653227,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.17",
+    "source": "Offline",
+    "target": "离线",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid^=\"location-cloud\"] span.flex.items-center[class~=\"gap-1.5\"] > span:last-child",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7653236,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.18",
+    "source": "Harness per Response",
+    "target": "每个回答的执行框架",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid=\"best-of-n-harness-clear\"]) .text-xs.text-muted-foreground.font-medium.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7879270,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.19",
+    "source": "Loading harnesses…",
+    "target": "正在加载执行框架…",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid=\"best-of-n-harness-clear\"]) div.text-xs.px-2.py-1.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7877913,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.20",
+    "source": "Couldn't load harnesses.",
+    "target": "无法加载执行框架。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid=\"best-of-n-harness-clear\"]) div.text-xs.px-2.py-1.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7877946,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.21",
+    "source": "Harnesses are unavailable from this language server.",
+    "target": "当前语言服务不提供执行框架。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid=\"best-of-n-harness-clear\"]) div.text-xs.px-2.py-1.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7877985,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.22",
+    "source": "{0}% left",
+    "target": "剩余 {0}%",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"] div.grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"] > span.flex.items-center.justify-end > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7690314,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d{1,3}"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.23",
+    "source": "{0} on",
+    "target": "已启用 {0} 个",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"composer-connectors-submenu\"] > span.tabular-nums.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7718300,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.24",
+    "source": "{0} on for this conversation",
+    "target": "此会话已启用 {0} 个",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "div.flex.items-baseline.justify-between.gap-2.px-2.pt-1.pb-2 > div.text-xs.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7719302,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.25",
+    "source": "Listening. Ask anything.",
+    "target": "正在聆听，你可以随时提问。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"live-docked-scroll\"] p.m-0.flex.items-center.gap-2.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7917551,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.26",
+    "source": "Connect an account so the agent can run automations.",
+    "target": "连接账号后，智能体即可运行自动化。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": ":is([data-testid=\"remote-automation-oauth-consent-callout\"], [data-testid=\"new-sidecar-oauth-consent-prompt\"]) > div > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8258678,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.27",
+    "source": "Card",
+    "target": "卡片",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"card-deck-counter\"] > span.sr-only",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8308216,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.28",
+    "source": "{0} of {1}",
+    "target": "第 {0} 张，共 {1} 张",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"card-deck-counter\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8308216,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+",
+      "1": "\\d+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.29",
+    "source": "Show {0} more subagent",
+    "target": "再显示 {0} 个子智能体",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"subagent-node-children-toggle\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7237435,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.30",
+    "source": "Show {0} more subagents",
+    "target": "再显示 {0} 个子智能体",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"subagent-node-children-toggle\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7237435,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.31",
+    "source": "Could not load the app view: {0}",
+    "target": "无法加载应用视图：{0}",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-app-view-error\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6619264,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[\\s\\S]+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.32",
+    "source": "Could not load {0}",
+    "target": "无法加载 {0}",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-app-pane-error\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7199911,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+: [\\s\\S]+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.33",
+    "source": "Loading {0}",
+    "target": "正在加载 {0}",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"mcp-app-pane-loading\"] > span.animate-shimmer-text",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7199728,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.34",
+    "source": "Search filters…",
+    "target": "搜索筛选条件…",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid^=\"trigger-add-filter-\"]) [data-testid=\"menu-search\"] > input",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8598252,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v229.workflow-completion.35",
+    "source": "Search triggers…",
+    "target": "搜索触发条件…",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"menu\"]:has([data-testid=\"new-sidecar-trigger-scheduled\"]) [data-testid=\"menu-search\"] > input",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8652402,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v229.workflow-completion.36",
+    "source": "Reads {0}, read-only",
+    "target": "读取：{0}（只读）",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-instructions-reads\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8589885,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Calendar|Gmail|Chat|Critique|Buganizer|Docs|Drive|Sheets)(?:(?:, | and )(?:Calendar|Gmail|Chat|Critique|Buganizer|Docs|Drive|Sheets))*"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.37",
+    "source": "Reads {0}",
+    "target": "读取：{0}",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"automation-instructions-reads\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8589885,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Calendar|Gmail|Chat|Critique|Buganizer|Docs|Drive|Sheets)(?:(?:, | and )(?:Calendar|Gmail|Chat|Critique|Buganizer|Docs|Drive|Sheets))*"
+    }
+  },
+  {
+    "id": "v229.workflow-completion.38",
+    "source": "Runs",
+    "target": "执行计划：",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586330,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.39",
+    "source": "in",
+    "target": "项目：",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7923584,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.40",
+    "source": "with",
+    "target": "模型：",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3594899,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.41",
+    "source": "on this computer.",
+    "target": "在此电脑上。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8586704,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.42",
+    "source": "Undo to this point",
+    "target": "撤销到此处",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381164,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.43",
+    "source": "Cannot revert this message",
+    "target": "无法撤销到此消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381131,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.44",
+    "source": "Cannot revert to a message that was cleared to save space",
+    "target": "无法撤销到为节省空间而清除的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381189,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.45",
+    "source": "Cannot revert a message sent while the agent was running",
+    "target": "无法撤销到智能体运行期间发送的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381254,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.46",
+    "source": "Cannot revert messages before or at the point where Best of N mode was triggered",
+    "target": "无法撤销到 Best of N 模式启动时或启动前的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381317,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.47",
+    "source": "Cannot revert messages with artifact comments",
+    "target": "无法撤销包含产物评论的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381434,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.48",
+    "source": "Cannot revert messages with file diff comments",
+    "target": "无法撤销包含文件差异评论的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381512,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.49",
+    "source": "Cannot revert messages with file comments",
+    "target": "无法撤销包含文件评论的消息",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"user-input-step\"] [data-testid=\"revert-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6381589,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"user-input-step\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.workflow-completion.50",
+    "source": "Side Question",
+    "target": "附加问题",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"side-question-question\"] > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7700096,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"side-question-question\"]"
+  },
+  {
+    "id": "v229.workflow-completion.51",
+    "source": "Side Question:",
+    "target": "附加问题：",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[data-testid=\"side-question-question\"] > span.shrink-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 7702185,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"side-question-question\"]"
+  },
+  {
+    "id": "v229.workflow-completion.52",
+    "source": "Only the conversation will be rewound; your files will be left as-is.",
+    "target": "只回退会话，文件保持不变。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"revert-workspace-checkbox\"]) p.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6385790,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.53",
+    "source": "Undo restores your entire workspace to its state at this point.",
+    "target": "撤销会将整个工作区恢复到此时的状态。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"revert-workspace-checkbox\"]) p.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6385959,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.54",
+    "source": "Confirming this undo action will make the following changes:",
+    "target": "确认撤销后将进行以下更改：",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"revert-workspace-checkbox\"]) p.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6386360,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.55",
+    "source": "This undo action will not make any code changes.",
+    "target": "本次撤销不会更改代码。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"]:has([data-testid=\"revert-workspace-checkbox\"]) p.text-sm.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6386423,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.56",
+    "source": "The files below were changed by the agent and will be reverted, but other files may also be affected if your workspace changed for other reasons (e.g. a sync) in the meantime.",
+    "target": "下列由智能体更改的文件将被还原。如果工作区期间因其他原因（例如同步）发生变化，其他文件也可能受到影响。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] div[class~=\"max-w-[280px]\"].whitespace-normal.leading-normal",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6386030,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.57",
+    "source": "The agent made no code changes, but other files may still be affected if your workspace changed for other reasons (e.g. a sync) in the meantime.",
+    "target": "智能体未更改代码。如果工作区期间因其他原因（例如同步）发生变化，其他文件仍可能受到影响。",
+    "context": "Antigravity 2.29.0 会话、自动化和项目选择器固定控件",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] div[class~=\"max-w-[280px]\"].whitespace-normal.leading-normal",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6386208,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.workflow-completion.schedule.58",
+    "source": "every hour",
+    "target": "每小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.59",
+    "source": "every {0} minutes",
+    "target": "每 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.60",
+    "source": "every {0} hours",
+    "target": "每 {0} 小时",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.61",
+    "source": "every hour at :{0}",
+    "target": "每小时第 {0} 分钟",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-5]\\d"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.62",
+    "source": "daily at {0}",
+    "target": "每天 {0}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.63",
+    "source": "monthly on the {0}st at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.64",
+    "source": "monthly on the {0}nd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.65",
+    "source": "monthly on the {0}rd at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.66",
+    "source": "monthly on the {0}th at {1}",
+    "target": "每月 {0} 日 {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:[1-9]|[12]\\d|3[01])",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.67",
+    "source": "{0} at {1}",
+    "target": "{0} {1}",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "Mondays|Tuesdays|Wednesdays|Thursdays|Fridays|Saturdays|Sundays|Weekdays|Weekends|mondays|tuesdays|wednesdays|thursdays|fridays|saturdays|sundays|weekdays|weekends",
+      "1": "(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM)(?:(?:, | and )(?:[1-9]|1[0-2]):[0-5]\\d (?:AM|PM))*"
+    },
+    "captureMappings": {
+      "0": {
+        "Mondays": "每周一",
+        "Tuesdays": "每周二",
+        "Wednesdays": "每周三",
+        "Thursdays": "每周四",
+        "Fridays": "每周五",
+        "Saturdays": "每周六",
+        "Sundays": "每周日",
+        "Weekdays": "每个工作日",
+        "Weekends": "每个周末",
+        "mondays": "每周一",
+        "tuesdays": "每周二",
+        "wednesdays": "每周三",
+        "thursdays": "每周四",
+        "fridays": "每周五",
+        "saturdays": "每周六",
+        "sundays": "每周日",
+        "weekdays": "每个工作日",
+        "weekends": "每个周末"
+      }
+    },
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  },
+  {
+    "id": "v229.workflow-completion.schedule.68",
+    "source": "custom schedule",
+    "target": "自定义计划",
+    "context": "自动化计划根据 Cron 生成的固定时间说明",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"] > [data-testid=\"automation-schedule-value\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static:2.29.0"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"sidecar-detail\"] [data-testid=\"automation-settings\"] > p.m-0.leading-7.text-secondary-foreground[class~=\"text-[15px]\"]"
+  }
+]

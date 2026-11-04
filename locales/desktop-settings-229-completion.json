@@ -1,0 +1,980 @@
+[
+  {
+    "id": "v229.settings.complete.01",
+    "source": "Enable Sandbox Mode",
+    "target": "启用沙箱模式",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4843341,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.02",
+    "source": "When enabled, the values below replace the auto-detected OS, host, and user type used for feature gating.",
+    "target": "启用后，下方值将替代自动检测的操作系统、宿主环境和用户类型，用于控制功能是否启用。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4631312,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.03",
+    "source": "Voice Mode",
+    "target": "语音模式",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654989,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.04",
+    "source": "Voice engine",
+    "target": "语音引擎",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4655053,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.05",
+    "source": "Whatever the voice-engine-addr flag serves you.",
+    "target": "使用 voice-engine-addr 参数指定的语音引擎。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654520,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.06",
+    "source": "Type a voice variant name, such as rev27.",
+    "target": "输入语音变体名称，例如 rev27。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654617,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.07",
+    "source": "Sets the `workspaceUri` URL parameter and reloads, repointing the active workspace. Pick a folder from an existing project or enter a custom URI (e.g. file:///path/to/workspace).",
+    "target": "设置 `workspaceUri` 网址参数并重新加载，以切换当前工作区。可从已有项目选择文件夹，或输入自定义 URI（例如 file:///path/to/workspace）。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4657459,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.08",
+    "source": "A Google Cloud project is required to use Antigravity.",
+    "target": "使用 Antigravity 需要 Google Cloud 项目。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447025,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.09",
+    "source": "A license or project selection is required to use Antigravity.",
+    "target": "使用 Antigravity 需要选择许可证或项目。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4447082,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.10",
+    "source": "Authenticated via Enterprise Gateway",
+    "target": "已通过 Enterprise Gateway 验证身份",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4446140,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.11",
+    "source": "This client was started with no custom flags.",
+    "target": "此客户端启动时未使用自定义参数。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4628327,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.12",
+    "source": "No custom flag matches your search.",
+    "target": "没有与搜索条件匹配的自定义参数。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4628375,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.13",
+    "source": "Modify permissions for file and terminal tools.",
+    "target": "修改文件和终端工具的权限。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "settings",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4839436,
+        "kind": "static:2.29.0"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.14",
+    "source": "Default (Mendel)",
+    "target": "默认（Mendel）",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654489,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "button[aria-labelledby^=\"voice-engine-label-\"] > span.truncate, body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"], body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"] .truncate",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.15",
+    "source": "Custom…",
+    "target": "自定义…",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654590,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "button[aria-labelledby^=\"voice-engine-label-\"] > span.truncate, body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"], body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"] .truncate",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.16",
+    "source": "Voice engine address",
+    "target": "语音引擎地址",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4655474,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "input[aria-label=\"Voice engine address\"]",
+    "selectorMode": "self",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.complete.17",
+    "source": "You cannot sign out from Remote Control. Please sign out on your local application.",
+    "target": "无法通过远程控制退出登录。请在本机应用中退出登录。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4444669,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.18",
+    "source": "You are logged in using Application Default Credentials (ADC). To log out, undo any changes to ~/.gemini/config/config.json (or unset AGY_ADC_AUTH if launched from terminal) and restart the application.",
+    "target": "你已使用应用默认凭据（ADC）登录。如需退出，请撤销对 ~/.gemini/config/config.json 的更改（若从终端启动，也可取消设置 AGY_ADC_AUTH），然后重新启动应用。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4444758,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.19",
+    "source": "Copy error messages",
+    "target": "复制错误信息",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4416449,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"settings-error-messages-card\"] > [data-testid=\"settings-error-messages-copy-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "contentBoundary": "[data-testid=\"settings-error-messages-card\"]",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.complete.19-title",
+    "source": "Copy error messages",
+    "target": "复制错误信息",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4416449,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"settings-error-messages-card\"] > [data-testid=\"settings-error-messages-copy-button\"]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "contentBoundary": "[data-testid=\"settings-error-messages-card\"]",
+    "attribute": "title"
+  },
+  {
+    "id": "v229.settings.complete.20",
+    "source": "Failed to parse settings. Fix and restart.",
+    "target": "无法解析设置。请修正后重新启动。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"settings-error-messages-card\"] > div.flex-1.flex.flex-col.gap-1.min-w-0 > span.text-sm.font-medium.text-foreground",
+    "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"settings-error-messages-card\"]",
+    "kind": "text"
+  },
+  {
+    "id": "v229.settings.complete.21",
+    "source": "CitC workspace paths are world-readable and permanently snapshotted. Choose a local folder outside CitC.",
+    "target": "CitC 工作区路径对所有用户可读，且会永久保存快照。请选择 CitC 之外的本地文件夹。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4855830,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"builtin-browser-download-dir-error\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.22",
+    "source": "Failed to save cloud permission settings: {0}",
+    "target": "保存云端权限设置失败：{0}",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4796718,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"toast-notification\"][data-notification-tag=\"cloud-permissions-preset-save-error\"] .text-sm.font-medium.leading-normal",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.settings.complete.23",
+    "source": "Copy version details",
+    "target": "复制版本详情",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5016127,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"settings-app-version-copy\"]",
+    "selectorMode": "self",
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.settings.complete.24",
+    "source": "Copied version details",
+    "target": "已复制版本详情",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5016102,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"settings-app-version-copy\"]",
+    "selectorMode": "self",
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.settings.complete.25",
+    "source": "Stop Editing",
+    "target": "停止编辑",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4714818,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.26",
+    "source": "Reset All to Defaults",
+    "target": "全部重置为默认值",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4728840,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[role=\"tooltip\"]",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.27",
+    "source": "e.g. work",
+    "target": "例如：工作",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4932762,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) input[maxlength=\"40\"].h-6.w-32",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v229.settings.complete.28",
+    "source": "Label for {0}",
+    "target": "为 {0} 添加标签",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4932787,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) input[maxlength=\"40\"].h-6.w-32",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.29",
+    "source": "Add label for {0}",
+    "target": "为 {0} 添加标签",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) button:is([aria-label^=\"Add label for \"], [aria-label^=\"为\"][aria-label$=\"添加标签\"])",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.30",
+    "source": "Add label",
+    "target": "添加标签",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4928687,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "section:is([aria-label=\"Accounts\"], [aria-label=\"账户\"]) button:is([aria-label^=\"Add label for \"], [aria-label^=\"为\"][aria-label$=\"添加标签\"])",
+    "selectorMode": "self",
+    "kind": "text"
+  },
+  {
+    "id": "v229.settings.complete.31",
+    "source": "Connections",
+    "target": "连接",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4941662,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "section:is([aria-label=\"Connections\"], [aria-label=\"连接\"])",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.settings.complete.32",
+    "source": "Connections",
+    "target": "连接",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4941662,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "section:is([aria-label=\"Connections\"], [aria-label=\"连接\"]) > h2.text-sm.text-muted-foreground",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.33",
+    "source": "This Computer",
+    "target": "此电脑",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"plugin-connection-local\"] > div.min-w-\\[10rem\\] > div:first-child, [data-testid=\"plugin-connection-cloud\"] > div.min-w-\\[10rem\\] > div:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.34",
+    "source": "Remote",
+    "target": "远程",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"plugin-connection-local\"] > div.min-w-\\[10rem\\] > div:first-child, [data-testid=\"plugin-connection-cloud\"] > div.min-w-\\[10rem\\] > div:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.35",
+    "source": "Sign in to {0} on this computer",
+    "target": "在此电脑上登录 {0}",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4943016,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"plugin-connection-local\"] button, [data-testid=\"plugin-connection-cloud\"] button",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.36",
+    "source": "Sign in to {0} remotely",
+    "target": "在远程登录 {0}",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4943882,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "[data-testid=\"plugin-connection-local\"] button, [data-testid=\"plugin-connection-cloud\"] button",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.37",
+    "source": "More for {0} on this computer",
+    "target": "{0} 在此电脑上的更多选项",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"plugin-connection-local\"] button, [data-testid=\"plugin-connection-cloud\"] button",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.38",
+    "source": "More for {0} (Remote)",
+    "target": "{0} 的远程连接更多选项",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "[data-testid=\"plugin-connection-local\"] button, [data-testid=\"plugin-connection-cloud\"] button",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]{1,300}"
+    }
+  },
+  {
+    "id": "v229.settings.complete.39",
+    "source": "Pre Tool Use",
+    "target": "工具使用前",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4881512,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.inline-flex > button > span:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.40",
+    "source": "Post Tool Use",
+    "target": "工具使用后",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4881539,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.inline-flex > button > span:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.41",
+    "source": "Pre Invocation",
+    "target": "调用前",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4881569,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.inline-flex > button > span:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.42",
+    "source": "Post Invocation",
+    "target": "调用后",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4881601,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.inline-flex > button > span:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.43",
+    "source": "Stop",
+    "target": "结束",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.inline-flex > button > span:first-child",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.44",
+    "source": "Fires before a tool step executes.",
+    "target": "在工具步骤执行前触发。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4882147,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.text-xs.mt-2.px-1",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.45",
+    "source": "Fires after a tool step completes.",
+    "target": "在工具步骤完成后触发。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4882196,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.text-xs.mt-2.px-1",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.46",
+    "source": "Fires before the model is called.",
+    "target": "在调用模型前触发。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4882247,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.text-xs.mt-2.px-1",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.47",
+    "source": "Fires after tool calls finish.",
+    "target": "在工具调用完成后触发。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4882298,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.text-xs.mt-2.px-1",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.48",
+    "source": "Fires when the execution loop terminates.",
+    "target": "在执行循环结束时触发。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4882336,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.text-xs.mt-2.px-1",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.49",
+    "source": "All tools (*)",
+    "target": "所有工具（*）",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm select > option",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.50",
+    "source": "run_command or view_file",
+    "target": "run_command 或 view_file",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm select > option",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.51",
+    "source": "Browser tools (browser_.*)",
+    "target": "浏览器工具（browser_.*）",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm select > option",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.52",
+    "source": "Hook will trigger if any tool is executed.",
+    "target": "执行任意工具时触发 Hook。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm div.text-xs",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.53",
+    "source": "Hook will only trigger if the tool name matches run_command.",
+    "target": "仅当工具名称为 run_command 时触发 Hook。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm div.text-xs",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.54",
+    "source": "Hook will only trigger if the tool name matches run_command or view_file.",
+    "target": "仅当工具名称为 run_command 或 view_file 时触发 Hook。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm div.text-xs",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.55",
+    "source": "Hook will only trigger if the tool name starts with browser_.",
+    "target": "仅当工具名称以 browser_ 开头时触发 Hook。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm div.text-xs",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.56",
+    "source": "No handlers configured for {0}.",
+    "target": "尚未配置{0}的处理程序。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.mt-4 span",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Pre Tool Use|Post Tool Use|Pre Invocation|Post Invocation|Stop)"
+    },
+    "captureMappings": [
+      {
+        "Pre Tool Use": "工具使用前",
+        "Post Tool Use": "工具使用后",
+        "Pre Invocation": "调用前",
+        "Post Invocation": "调用后",
+        "Stop": "结束"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.57",
+    "source": "Add New Handler to {0}",
+    "target": "为{0}添加处理程序",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm > div.mt-4 > h4",
+    "selectorMode": "self",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:Pre Tool Use|Post Tool Use|Pre Invocation|Post Invocation|Stop)"
+    },
+    "captureMappings": [
+      {
+        "Pre Tool Use": "工具使用前",
+        "Post Tool Use": "工具使用后",
+        "Pre Invocation": "调用前",
+        "Post Invocation": "调用后",
+        "Stop": "结束"
+      }
+    ]
+  },
+  {
+    "id": "v229.settings.complete.58",
+    "source": "Command is required",
+    "target": "请输入命令",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4886262,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm span.text-xs.text-red-500",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.59",
+    "source": "Must be positive",
+    "target": "请输入正数",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4884969,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "div.p-8.font-sans.text-left.text-foreground.min-h-screen > div.flex.flex-col.gap-6 > div.border.border-border.p-6.rounded-lg.shadow-sm span.text-xs.text-red-500",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.copied-aria-label",
+    "source": "Copied",
+    "target": "已复制",
+    "context": "Antigravity 2.29.0 设置错误卡片的复制按钮状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-error-messages-card\"] > [data-testid=\"settings-error-messages-copy-button\"]",
+    "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"settings-error-messages-card\"]",
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "reviewed": true
+  },
+  {
+    "id": "v229.settings.complete.copied-title",
+    "source": "Copied",
+    "target": "已复制",
+    "context": "Antigravity 2.29.0 设置错误卡片的复制按钮状态",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-error-messages-card\"] > [data-testid=\"settings-error-messages-copy-button\"]",
+    "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"settings-error-messages-card\"]",
+    "kind": "attribute",
+    "attribute": "title",
+    "reviewed": true
+  },
+  {
+    "id": "v229.settings.complete.05-option",
+    "source": "Whatever the voice-engine-addr flag serves you.",
+    "target": "使用 voice-engine-addr 参数指定的语音引擎。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654520,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"] span.text-xs.text-muted-foreground",
+    "selectorMode": "self"
+  },
+  {
+    "id": "v229.settings.complete.06-option",
+    "source": "Type a voice variant name, such as rev27.",
+    "target": "输入语音变体名称，例如 rev27。",
+    "context": "Antigravity 2.29.0 设置、权限与账户固定界面文案；名称、数据和错误详情保持原值",
+    "scope": "generic",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4654617,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "selector": "body:has(button[aria-labelledby^=\"voice-engine-label-\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"] span.text-xs.text-muted-foreground",
+    "selectorMode": "self"
+  }
+]

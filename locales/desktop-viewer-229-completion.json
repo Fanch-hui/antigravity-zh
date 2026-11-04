@@ -1,0 +1,793 @@
+[
+  {
+    "id": "v229.viewer.completion.1",
+    "source": "Copy image",
+    "target": "复制图片",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"media-modal-copy\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3036758,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.2",
+    "source": "Download image",
+    "target": "下载图片",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"media-modal-download\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3036906,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.3",
+    "source": "Download video",
+    "target": "下载视频",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"media-modal-download\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3036889,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.4",
+    "source": "Enlarged media",
+    "target": "放大的媒体",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"media-modal-video\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3034453,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.5",
+    "source": "Enlarged media: {0}",
+    "target": "放大的媒体：{0}",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"media-modal-video\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "attribute",
+    "attribute": "aria-label",
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\r\\n]+"
+    }
+  },
+  {
+    "id": "v229.viewer.completion.6",
+    "source": "You're viewing a blank page",
+    "target": "你正在查看空白页面",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3426883,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.7",
+    "source": "You're viewing a local or shared file",
+    "target": "你正在查看本地或共享文件",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3427083,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.8",
+    "source": "Your connection to this site is not fully secure",
+    "target": "你与此网站的连接并非完全安全",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3428563,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.9",
+    "source": "Certificate is not valid",
+    "target": "证书无效",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-certificate-row\"] > span.flex-1, [data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3428283,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.10",
+    "source": "This site cannot provide a secure connection.",
+    "target": "此网站无法提供安全连接。",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3425009,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.11",
+    "source": "This site uses an unsupported TLS protocol or cipher suite.",
+    "target": "此网站使用了不受支持的 TLS 协议或加密套件。",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3425099,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.12",
+    "source": "The certificate was rejected ({0}).",
+    "target": "证书被拒绝（{0}）。",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "template": true,
+    "capturePatterns": {
+      "0": "(?:net::)?ERR_[A-Z0-9_]+"
+    }
+  },
+  {
+    "id": "v229.viewer.completion.13",
+    "source": "Members",
+    "target": "成员",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] > div.grid[class~=\"grid-cols-[auto_1fr]\"].gap-x-3[class~=\"gap-y-0.5\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3127576,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.14",
+    "source": "From",
+    "target": "发件人",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] > div.grid[class~=\"grid-cols-[auto_1fr]\"].gap-x-3[class~=\"gap-y-0.5\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3127619,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.15",
+    "source": "Sent",
+    "target": "发送时间",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] > div.grid[class~=\"grid-cols-[auto_1fr]\"].gap-x-3[class~=\"gap-y-0.5\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3127659,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.16",
+    "source": "Owner",
+    "target": "负责人",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] > div.grid[class~=\"grid-cols-[auto_1fr]\"].gap-x-3[class~=\"gap-y-0.5\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3130357,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.17",
+    "source": "Author",
+    "target": "作者",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] > div.grid[class~=\"grid-cols-[auto_1fr]\"].gap-x-3[class~=\"gap-y-0.5\"] > span.text-muted-foreground",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3137240,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.18",
+    "source": "Grant repository access",
+    "target": "授予仓库访问权限",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-testid=\"github-hover-action-url\"], [data-testid=\"github-overview-action-url\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3134850,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.19",
+    "source": "Run",
+    "target": "运行",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] .flex.flex-wrap.items-center[class~=\"gap-x-1.5\"].gap-y-1 > span, [data-testid=\"github-overview-auth-secondary\"] .flex.flex-wrap.items-center[class~=\"gap-x-1.5\"].gap-y-1 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3134153,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.20",
+    "source": "in a terminal",
+    "target": "（在终端中）",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": "[data-hover-card-popup] .flex.flex-wrap.items-center[class~=\"gap-x-1.5\"].gap-y-1 > span, [data-testid=\"github-overview-auth-secondary\"] .flex.flex-wrap.items-center[class~=\"gap-x-1.5\"].gap-y-1 > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 3134463,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.21",
+    "source": "Hide Thumbnail Sidebar",
+    "target": "隐藏缩略图侧栏",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-thumbnail-sidebar-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10786887,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.22",
+    "source": "Show Thumbnail Sidebar",
+    "target": "显示缩略图侧栏",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-thumbnail-sidebar-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10786912,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.23",
+    "source": "Fit to Width",
+    "target": "适合宽度",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-fit-mode-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10789751,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.24",
+    "source": "Fit to Page",
+    "target": "适合页面",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-fit-mode-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10789766,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute"
+  },
+  {
+    "id": "v229.viewer.completion.25",
+    "source": "Toggle Thumbnails",
+    "target": "切换缩略图",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-thumbnail-sidebar-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10786986,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.26",
+    "source": "Previous Page",
+    "target": "上一页",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] button.nav-button-prev",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10787485,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.27",
+    "source": "Next Page",
+    "target": "下一页",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] button.nav-button-next",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10788179,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.28",
+    "source": "Zoom Out",
+    "target": "缩小",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-zoom-out\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1864705,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.29",
+    "source": "Zoom In",
+    "target": "放大",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-zoom-in\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 1864651,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.30",
+    "source": "Fit to Width",
+    "target": "适合宽度",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-fit-mode-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10789751,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.31",
+    "source": "Fit to Page",
+    "target": "适合页面",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-fit-mode-button\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10789766,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.32",
+    "source": "More",
+    "target": "更多",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] [data-testid=\"toolbar-overflow-trigger\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10790779,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "data-tooltip"
+  },
+  {
+    "id": "v229.viewer.completion.33",
+    "source": "Thumbnails",
+    "target": "缩略图",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] .toolbar-overflow-dropdown-item",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10793661,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.viewer.completion.34",
+    "source": "Navigation",
+    "target": "导航",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] .toolbar-overflow-dropdown-item",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4722933,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.viewer.completion.35",
+    "source": "Zoom",
+    "target": "缩放",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] .toolbar-overflow-dropdown-item",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2983065,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.viewer.completion.36",
+    "source": "Fit Mode",
+    "target": "适应方式",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host [data-testid=\"pdf-floating-toolbar\"] .toolbar-overflow-dropdown-item",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10793998,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "aria-label"
+  },
+  {
+    "id": "v229.viewer.completion.37",
+    "source": "Comments ({0})",
+    "target": "评论（{0}）",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > .comments-header-bar > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "kind": "text",
+    "template": true,
+    "capturePatterns": {
+      "0": "\\d+"
+    }
+  },
+  {
+    "id": "v229.viewer.completion.38",
+    "source": "+ Add",
+    "target": "＋ 添加",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > .comments-header-bar > div[role=\"none\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10932559,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.39",
+    "source": "Cancel",
+    "target": "取消",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > .comments-header-bar > div[role=\"none\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4301602,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.40",
+    "source": "Target text in PDF...",
+    "target": "PDF 中的目标文字…",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > form > input",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10932934,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v229.viewer.completion.41",
+    "source": "Write a comment...",
+    "target": "输入评论…",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > form > textarea",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10933244,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "attribute",
+    "attribute": "placeholder"
+  },
+  {
+    "id": "v229.viewer.completion.42",
+    "source": "Post",
+    "target": "发布",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > form button[type=\"submit\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10934012,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.43",
+    "source": "Posting...",
+    "target": "正在发布…",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > form button[type=\"submit\"]",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10933999,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.44",
+    "source": "No comments yet",
+    "target": "暂无评论",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > .no-comments > div",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10934240,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.45",
+    "source": "Select text in the PDF and click + Add to start commenting.",
+    "target": "在 PDF 中选择文字并点击“＋ 添加”开始评论。",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .document-comments-floating > .no-comments > div",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10934299,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  },
+  {
+    "id": "v229.viewer.completion.46",
+    "source": "Text selection is paused for smoother viewing. Search, comments, and annotations still work. Use the toolbar text button when selection is needed.",
+    "target": "为使浏览更流畅，文字选择已暂停。搜索、评论和批注仍可使用。需要选择文字时，请使用工具栏中的文字按钮。",
+    "context": "Antigravity 2.29.0 浏览器、媒体与 PDF 预览固定界面；文档、网址、文件名和动态详情保持原值",
+    "scope": "generic",
+    "selector": ".pdf-sdk-root.jetski-pdf-viewer-host .pdf-smart-text-notice > span",
+    "selectorMode": "self",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10984008,
+        "kind": "static:2.29.0"
+      }
+    ],
+    "kind": "text"
+  }
+]

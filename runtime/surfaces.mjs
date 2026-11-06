@@ -3,7 +3,8 @@ const protectedSelectors = [
   '[contenteditable]:not([contenteditable="false"])', '.monaco-editor', '.xterm',
   '.md-divider-spacing:not([data-testid="ask-question-option-text"] > .md-divider-spacing)', '.markdown', '.markdown-body', '.notebook-cell', '.font-mono',
   '[data-uri]', '[data-quotable-inline]', '[data-line-start]', '[dir="rtl"]',
-  '[data-testid="user-input-step"]', '[data-testid="planner-response-text"]',
+  '[data-testid="user-input-step"]', '[data-testid="user-message-content"]',
+  '[data-testid="user-message-bubble"] > div.relative.flex-1[class~="p-0.5"]', '[data-testid="planner-response-text"]',
   '[data-testid="pending-user-messages"]', '[data-testid="side-question-question"]',
   '[data-testid="side-question-answer"]', '[data-testid="overview-goals-body"]',
   '[data-testid="sidecar-logs-content"]', '[data-testid="settings-error-messages-card"]',
@@ -123,6 +124,7 @@ const commandMenu = {
 
 const contentBoundaries = [
   { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] [data-testid="revert-button"]', kind: 'attribute', attributes: ['aria-label'] },
+  { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-xs.text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },
   { owner: '[data-testid="side-question-question"]', selector: '[data-testid="side-question-question"] > span.shrink-0', kind: 'text' },
   { owner: '[data-testid="settings-error-messages-card"]', selector: '[data-testid="settings-error-messages-card"] > div.flex-1.flex.flex-col.gap-1.min-w-0 > span.text-sm.font-medium.text-foreground', kind: 'text' },
   { owner: '[data-testid="settings-error-messages-card"]', selector: '[data-testid="settings-error-messages-card"] > [data-testid="settings-error-messages-copy-button"]', kind: 'attribute', attributes: ['aria-label', 'title'] },

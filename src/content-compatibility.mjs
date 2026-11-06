@@ -95,6 +95,24 @@ export function checkFixedControlCompatibility(source, queries, closing) {
     });
     requireRule('revert-control', valid);
   }
+  if (marker('user-message-actions').length) {
+    const times = matching('span', 'text-xs text-muted-foreground select-none px-1 mr-1 self-center whitespace-nowrap');
+    const valid = marker('user-message-actions').some(owner => times.some(node => {
+      const value = content(node).match(/^,\s*([\w$]+)\s*$/)?.[1];
+      if (!value || !/["']data-screenshot-volatile["']\s*:\s*!0/.test(node.props)) return false;
+      const name = escape(value);
+      const prefix = source.slice(Math.max(0, node.start - 600), node.start);
+      const child = new RegExp(`^,\\s*${name}\\s*,`);
+      return new RegExp(`\\bformattedTime\\s*:\\s*${name}\\b`).test(prefix)
+        && child.test(content(owner))
+        && matching('div', 'user-input-buttons-container').some(legacy => child.test(content(legacy)));
+    }));
+    const message = marker('user-input-step').some(owner => marker('user-message-bubble').some(bubble =>
+      contains(owner, bubble) && marker('user-message-content').some(body => contains(bubble, body))))
+      && marker('user-message-bubble').some(bubble => matching('div', 'relative flex-1 p-0.5')
+        .some(body => childOf(bubble, body)));
+    requireRule('user-message-time-control', valid && message);
+  }
   if (marker('side-question-panel').length) {
     const valid = marker('side-question-question').some(owner => matching('span', 'shrink-0').some(node =>
       childOf(owner, node) && /^,\s*[\w$]+\s*\?\s*["']Side Question:["']\s*:\s*["']Side Question["']\s*$/.test(content(node))));

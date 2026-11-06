@@ -349,6 +349,30 @@ test('protected fixed controls require the observed source and leaf structure', 
   assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
 });
 
+test('user message time controls preserve the separate message bodies', async () => {
+  const label = element('span', 'text-xs text-muted-foreground select-none px-1 mr-1 self-center whitespace-nowrap',
+    'time', ',"data-screenshot-volatile":!0');
+  const actions = element('div', '', 'time,copy', ',"data-testid":"user-message-actions"');
+  const legacyActions = element('div', 'user-input-buttons-container', 'time,copy');
+  const modernBody = element('div', '', 'body', ',"data-testid":"user-message-content"');
+  const legacyBody = element('div', 'relative flex-1 p-0.5', 'body');
+  const modernBubble = element('div', '', modernBody, ',"data-testid":"user-message-bubble"');
+  const legacyBubble = element('div', '', `${legacyBody},${legacyActions}`, ',"data-testid":"user-message-bubble"');
+  const source = fixture() + ';'
+    + `const Time=({formattedTime:time})=>{time=${label};return ${actions}};`
+    + element('div', '', `${modernBubble},${legacyBubble}`, ',"data-testid":"user-input-step"');
+  assert.deepEqual(checkUiCompatibility(source), { compatible: true, missing: [] });
+  for (const [before, after] of [
+    ['formattedTime:time', 'messageText:time'],
+    ['"data-screenshot-volatile":!0', '"data-volatile":!0'],
+    ['"data-testid":"user-message-content"', '"data-testid":"changed-content"'],
+    ['relative flex-1 p-0.5', 'relative flex-1'],
+    ['user-input-buttons-container"},time,copy', 'user-input-buttons-container"},message,copy'],
+  ]) assert(checkUiCompatibility(source.replace(before, after)).missing.includes('user-message-time-control'), before);
+  const { client } = executingClient(source);
+  assert.equal((await assertUiCompatibility(client, origin)).compatible, true);
+});
+
 test('carousel metadata and active update task names retain their content protection structure', async () => {
   const metadata = 'A.createElement("h3",{"data-testid":shown?"featured-carousel-headline":void 0},plugin.name);'
     + 'A.createElement("p",{"data-testid":shown?"featured-carousel-description":void 0},plugin.description);'

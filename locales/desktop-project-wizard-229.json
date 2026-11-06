@@ -1,0 +1,61 @@
+[
+  {
+    "id": "v229.project-wizard.new-remote-project",
+    "source": "New Remote Project",
+    "target": "新建远程项目",
+    "context": "侧栏新建项目弹层中的固定远程项目操作",
+    "scope": "generic",
+    "selector": "[data-popover-popup].agy-overlay[class~=\"!w-max\"][class~=\"max-w-[80vw]\"].origin-top-left.overflow-hidden button.main-row-trigger > div.flex.items-center.justify-start.w-full > span.truncate.flex-grow.min-w-0",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{ "start": 7658129, "kind": "static:2.29.0" }]
+  },
+  {
+    "id": "v229.project-wizard.add-resource",
+    "source": "Add Resource",
+    "target": "添加资源",
+    "context": "创建远程项目时的资源选择按钮",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-add-folder-button\"] > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{ "start": 4994410, "kind": "static:2.29.0" }]
+  },
+  {
+    "id": "v229.project-wizard.add-folder",
+    "source": "Add Folder",
+    "target": "添加文件夹",
+    "context": "项目创建及设置中的文件夹选择按钮",
+    "scope": "generic",
+    "selector": "[data-testid=\"project-add-folder-button\"] > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{ "start": 4994425, "kind": "static:2.29.0" }]
+  },
+  {
+    "id": "v229.project-wizard.set-project-name",
+    "source": "Set Project Name",
+    "target": "设置项目名称",
+    "context": "项目创建流程的命名步骤标题",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"].agy-dialog:has(form input:is([placeholder=\"Enter project name...\"], [placeholder=\"输入项目名称...\"])) > div.flex.items-center.mb-4 > .text-md.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true
+  },
+  {
+    "id": "v229.project-wizard.project-name-label",
+    "source": "Project Name",
+    "target": "项目名称",
+    "context": "项目创建流程的命名输入框标签，输入值保持原样",
+    "scope": "generic",
+    "selector": "[role=\"dialog\"].agy-dialog form.w-full.flex.flex-col.gap-2 > div.flex.flex-col.w-full.text-left:has(> input:is([placeholder=\"Enter project name...\"], [placeholder=\"输入项目名称...\"])) > div.text-xs.text-secondary-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [{ "start": 8349981, "kind": "static:2.29.0" }]
+  }
+]

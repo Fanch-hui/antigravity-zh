@@ -14935,8 +14935,8 @@
     "id": "483166d9eabb",
     "source": "New {0}",
     "target": "新建{0}",
-    "context": "自动化、任务的创建、安排与管理",
-    "scope": "generic",
+    "context": "新建自动化或计划任务的标题",
+    "scope": "dialog",
     "reviewed": true,
     "origins": [
       {
@@ -14945,7 +14945,9 @@
         "kind": "property:title"
       }
     ],
-    "template": true
+    "template": true,
+    "capturePatterns": { "0": "(?:automation|scheduled task)" },
+    "captureMappings": { "0": { "automation": "自动化", "scheduled task": "计划任务" } }
   },
   {
     "id": "7db34a7fd10f",
@@ -14996,8 +14998,10 @@
     "id": "882c2180a5e9",
     "source": "Add {0}",
     "target": "添加{0}",
-    "context": "自动化、任务的创建、安排与管理",
+    "context": "新建自动化或计划任务按钮的无障碍标签",
     "scope": "generic",
+    "kind": "attribute",
+    "attribute": "aria-label",
     "reviewed": true,
     "origins": [
       {
@@ -15016,7 +15020,9 @@
         "kind": "property:aria-label"
       }
     ],
-    "template": true
+    "template": true,
+    "capturePatterns": { "0": "(?:automation|scheduled task)" },
+    "captureMappings": { "0": { "automation": "自动化", "scheduled task": "计划任务" } }
   },
   {
     "id": "04b5c97c28f8",

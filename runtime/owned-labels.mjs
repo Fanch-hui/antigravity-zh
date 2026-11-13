@@ -68,10 +68,13 @@ export function createOwnedLabels(records, protectedSelectors, contentBoundaries
   function isProtected(element, record, attribute) {
     const section = record?.marketplaceShelf ? element.closest('section') : null;
     const boundary = boundaryFor(record);
+    const boundaryOwner = boundary && element.closest(boundary.owner);
     for (let owner = element.closest(protectedSelectors); owner; owner = owner.parentElement?.closest(protectedSelectors)) {
       // Only the verified shelf header may cross the marketplace metadata boundary.
       if (section && owner.parentElement === section && owner.matches('div.flex.flex-col.gap-1.px-3')) continue;
-      if (boundary && element.matches(boundary.selector) && owner.matches(boundary.owner)
+      const exactBoundaryOwner = boundary && (owner.matches(boundary.owner) || owner === element);
+      if (boundary && boundaryOwner && exactBoundaryOwner && boundaryOwner.contains(element)
+        && element.matches(boundary.selector)
         && (boundary.kind === 'text' ? !attribute : boundary.attributes.includes(attribute))) continue;
       return true;
     }

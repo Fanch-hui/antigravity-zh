@@ -78,6 +78,13 @@ test('compatible rendering structures accept additional and reordered classes an
   assert.deepEqual(checkUiCompatibility(fixture({ bundles: false })), { compatible: true, missing: [] });
 });
 
+test('mutually exclusive class branches cannot satisfy a structural selector', () => {
+  const source = fixture({ bundles: false }).replace(
+    'className:"flex-1 min-w-0 flex flex-col gap-0.5 pr-4"',
+    'className:compact?"flex-1 min-w-0 flex flex-col gap-0.5 pr-4":"flex-1 min-w-0 flex flex-col gap-0.5"');
+  assert(checkUiCompatibility(source).missing.includes('plugin-card-content'));
+});
+
 test('the older customization layout checks its corresponding terminal, reference and subagent protection', () => {
   assert.deepEqual(checkUiCompatibility(fixture({ bundles: false, legacy: true })), { compatible: true, missing: [] });
   for (const [before, after, rule] of [
@@ -88,6 +95,18 @@ test('the older customization layout checks its corresponding terminal, referenc
     ['text-xl font-medium', 'text-lg font-medium', 'marketplace-shelf-content'],
     ['mt-3 leading-relaxed', 'mt-4 leading-relaxed', 'plugin-detail-content'],
   ]) assert(checkUiCompatibility(fixture({ bundles: false, legacy: true }).replaceAll(before, after)).missing.includes(rule), rule);
+});
+
+test('legacy security origin leaves retain source checks alongside certificate content', () => {
+  const security = [
+    element('span', '', 'site.host', ',"data-testid":"url-security-host"'),
+    element('span', '', 'site.origin', ',"data-testid":"url-security-origin"'),
+    element('span', '', 'site.summary', ',"data-testid":"url-security-summary"'),
+    element('dl', '', `${element('dd', 'text-foreground', 'certificate.subjectName')},${element('dd', 'text-foreground', 'certificate.issuer')}`,
+      ',"data-testid":"url-security-certificate"'),
+  ].join(';');
+  assert.deepEqual(checkUiCompatibility(`${fixture()};${security}`), { compatible: true, missing: [] });
+  assert(checkUiCompatibility(`${fixture()};${security.replace('site.origin', 'site.unverified')}`).missing.includes('security-certificate-content'));
 });
 
 test('missing critical content attributes reject injection even when marker strings remain elsewhere', () => {

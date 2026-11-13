@@ -7,6 +7,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -23,6 +25,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -39,6 +43,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -159,6 +165,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -175,6 +183,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -191,6 +201,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {
@@ -207,6 +219,8 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-popover\"] .flex.flex-col.gap-1.min-w-0 > span.text-error",
+    "kind": "text",
     "reviewed": true,
     "origins": [
       {

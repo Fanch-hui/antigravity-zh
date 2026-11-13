@@ -1,49 +1,11 @@
 import { isAppPath } from './app-page.mjs';
 import { checkOwnedLabelCompatibility } from './owned-label-compatibility.mjs';
 import { checkContentCompatibility, checkFixedControlCompatibility, checkAdditionalContentCompatibility } from './content-compatibility.mjs';
-
-function closing(source, start, open, close) {
-  let depth = 0;
-  for (let index = start; index < source.length; index++) {
-    const char = source[index];
-    if (char === '"' || char === "'" || char === '`') {
-      const quote = char;
-      while (++index < source.length) {
-        if (source[index] === '\\') index++;
-        else if (source[index] === quote) break;
-      }
-    } else if (char === '/' && source[index + 1] === '*') {
-      index = source.indexOf('*/', index + 2);
-      if (index < 0) return -1;
-      index++;
-    } else if (char === '/' && source[index + 1] === '/') {
-      index = source.indexOf('\n', index + 2);
-      if (index < 0) return -1;
-    } else if (char === open) depth++;
-    else if (char === close && --depth === 0) return index;
-  }
-  return -1;
-}
-
-function readElements(source) {
-  const nodes = [];
-  const calls = /\.createElement\s*\(\s*(?:(["'])([\w-]+)\1|[\w$]+)\s*,\s*\{/g;
-  for (const match of source.matchAll(calls)) {
-    const propsStart = match.index + match[0].length - 1;
-    const propsEnd = closing(source, propsStart, '{', '}');
-    if (propsEnd < 0) continue;
-    const props = source.slice(propsStart, propsEnd + 1);
-    const classes = props.match(/\bclassName\s*:\s*(?:[\w$]+\(\s*)?["']([^"']*)["']/)?.[1]
-      ?? props.match(/\bclassName\s*:\s*[\w$]+\(\s*[\w$]+\s*\?\s*["'][^"']*["']\s*:\s*["'][^"']*["']\s*,\s*["']([^"']*)["']\s*\)/)?.[1] ?? '';
-    nodes.push({ start: match.index, open: source.indexOf('(', match.index), propsEnd,
-      tag: match[2], props, classes: new Set(classes.split(/\s+/)) });
-  }
-  return nodes;
-}
+import { closing, readElements } from './ui-structure.mjs';
 
 function structureQueries(source, nodes) {
   function hasClasses(node, classes) {
-    return classes.split(' ').every(name => node.classes.has(name));
+    return !classes || classes.split(' ').every(name => node.classes.has(name));
   }
   function matching(tag, classes) {
     return nodes.filter(node => (!tag || node.tag === tag) && hasClasses(node, classes));
@@ -60,19 +22,22 @@ function structureQueries(source, nodes) {
   function marker(name, prefix = false) {
     const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const pattern = prefix ? `\x60${escaped}\\$\\{` : `["']${escaped}["']`;
-    return nodes.filter(node => new RegExp(`["']data-testid["']\\s*:\\s*${pattern}`).test(node.props));
+    return nodes.filter(node => {
+      const value = node.attributes.get('data-testid');
+      return value && new RegExp(pattern).test(value);
+    });
   }
   return { matching, contains, childOf, marker };
 }
 
 function customizationStructures({ matching, contains, childOf }) {
   const cards = matching('div', 'relative flex items-center gap-3 p-3 rounded-xl');
-  const titles = matching(null, 'font-medium text-sm text-foreground truncate');
+  const titles = matching(null, 'font-medium text-foreground truncate');
   const protectedCard = (bodies, descriptions, candidates = cards) => candidates.some(card =>
     bodies.some(body => childOf(card, body) && titles.some(title => contains(body, title))
       && descriptions.some(description => childOf(body, description))));
   const modernCard = protectedCard(matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5 pr-4'),
-    matching(null, 'text-xs text-muted-foreground truncate'));
+    matching(null, 'text-muted-foreground truncate'));
   const legacyCard = protectedCard(matching('div', 'flex-1 min-w-0 flex flex-col gap-0.5')
     .filter(body => !body.classes.has('pr-4')), matching(null, 'text-sm text-muted-foreground truncate'),
   cards.filter(card => card.classes.has('h-[72px]')));
@@ -86,8 +51,8 @@ function customizationStructures({ matching, contains, childOf }) {
   const detail = (parents, headings, descriptions) => parents.some(parent =>
     headings.some(title => contains(parent, title)) && descriptions.some(description => childOf(parent, description)));
   const modernDetail = detail(matching('div', 'flex flex-col gap-3'),
-    matching('h1', 'text-lg font-medium tracking-tight leading-tight text-foreground truncate min-w-0'),
-    matching('p', 'text-sm text-muted-foreground leading-relaxed'));
+    matching('h1', 'font-medium tracking-tight leading-tight text-foreground truncate min-w-0'),
+    matching('p', 'text-muted-foreground leading-relaxed'));
   const legacyDetail = detail(matching('div', 'mt-2'),
     matching('h1', 'text-2xl font-bold tracking-tight leading-tight text-foreground truncate min-w-0'),
     matching('p', 'text-sm text-muted-foreground mt-3 leading-relaxed'));
@@ -102,20 +67,20 @@ function checkPluginConfiguration(source, nodes, queries, requireRule) {
     requireRule('plugin-conflict-content', ['conflict-current-plugin', 'conflict-incoming-plugin']
       .every(name => source.includes(`"${name}"`))
       && cards.some(card => matching('div', 'flex items-start').some(body => childOf(card, body)
-        && matching('span', 'font-medium text-sm text-foreground truncate').some(title => contains(body, title))
-        && matching('div', 'text-xs text-muted-foreground truncate').some(description => contains(body, description)))));
+        && matching('span', 'font-medium text-foreground truncate').some(title => contains(body, title))
+        && matching('div', 'text-muted-foreground truncate').some(description => contains(body, description)))));
   }
   if (marker('mcp-config-variable').length) {
     requireRule('mcp-configuration-content', marker('mcp-config-variable').some(variable =>
       nodes.some(label => label.tag === 'label' && contains(variable, label))
-      && matching('span', 'text-xs text-muted-foreground').some(description => childOf(variable, description))
+      && matching('span', 'text-muted-foreground').some(description => childOf(variable, description))
       && marker('mcp-config-variable-input').some(input => childOf(variable, input))));
   }
   if (marker('plugin-context-provider-list').length) {
     requireRule('context-provider-content', marker('plugin-context-provider-list').some(list =>
       marker('plugin-context-provider-', true).some(card => contains(list, card)
-        && matching('span', 'text-sm font-medium text-foreground truncate').some(title => contains(card, title))
-        && matching('p', 'text-xs text-muted-foreground leading-relaxed').some(description => childOf(card, description)))));
+        && matching('span', 'font-medium text-foreground truncate').some(title => contains(card, title))
+        && matching('p', 'text-muted-foreground leading-relaxed').some(description => childOf(card, description)))));
   }
 }
 
@@ -185,7 +150,7 @@ export function checkUiCompatibility(source) {
   if (source.includes('"Active Tasks & Conversations:"')) {
     requireRule('update-task-content', matching('div', 'mt-3 bg-background/50 border border-border/50 rounded p-2 max-h-40 overflow-y-auto')
       .some(panel => matching('ul', 'space-y-1').some(list => childOf(panel, list)
-        && matching('li', 'text-xs text-muted-foreground truncate max-w-[340px]').some(item => childOf(list, item)))));
+        && matching('li', 'text-muted-foreground truncate max-w-[340px]').some(item => childOf(list, item)))));
   }
   for (const name of ['user-input-step', 'planner-response-text', 'pending-user-messages',
     'terminal-active', 'setup-script-output', 'file-title-name',
@@ -206,7 +171,7 @@ export function checkUiCompatibility(source) {
       name === 'github-repo-option').length > 0 || customizations.legacy && legacyReplacement);
   }
   requireRule('settings-surface', matching(null, 'max-w-2xl mx-auto flex-col gap-4').length > 0);
-  const modelNames = matching('span', 'truncate text-xs text-left');
+  const modelNames = matching('span', 'truncate text-left');
   requireRule('model-name-content', marker('model-selector-panel').length > 0
     && marker('model-selector-effort-group').some(group => modelNames.includes(group))
     && marker('model-selector-effort-option').length > 0
@@ -220,8 +185,8 @@ export function checkUiCompatibility(source) {
       shelfHeaders.some(header => childOf(section, header))));
     requireRule('bundle-card-content', marker('bundle-card-', true).some(card =>
       matching('div', 'min-w-0 flex flex-col gap-2').some(body => childOf(card, body)
-        && matching('h3', 'font-medium text-sm text-foreground truncate').some(title => queries.contains(body, title))
-        && matching('div', 'text-xs text-muted-foreground leading-relaxed').some(description => childOf(body, description)))));
+        && matching('h3', 'font-medium text-foreground truncate').some(title => queries.contains(body, title))
+        && matching('div', 'text-muted-foreground leading-relaxed').some(description => childOf(body, description)))));
   }
   requireRule('plugin-detail-content', customizations.modernDetail || customizations.legacyDetail);
   return { compatible: missing.length === 0, missing };

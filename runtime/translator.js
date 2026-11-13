@@ -28,6 +28,14 @@
   for (const group of index.values()) group.sort((a, b) => specificity(b) - specificity(a));
   templates.sort((a, b) => specificity(b) - specificity(a));
 
+  const textBoundaries = dictionary.flatMap(record => {
+    if (record.kind !== 'text' || record.selectorMode !== 'self' || record.attribute || !record.contentBoundary) return [];
+    const boundary = contentBoundaries.find(candidate => candidate.owner === record.contentBoundary
+      && candidate.selector === record.selector && candidate.kind === 'text');
+    return boundary ? [{ owner: boundary.owner, selector: boundary.selector }] : [];
+  });
+  const textBoundarySelector = [...new Set(textBoundaries.map(boundary => boundary.selector))].join(',');
+
   function specificity(record) {
     return record.settingLabel ? 3 : record.selector ? 2 : record.scope && record.scope !== 'generic' ? 1 : 0;
   }
@@ -44,6 +52,11 @@
     if (toast && button && !button.hasAttribute('aria-label') && !closest(button, '.justify-start')) return false;
     if (element.localName === 'input' || element.localName === 'textarea') return attributes.includes(attribute);
     return true;
+  }
+
+  function hasTextBoundary(element) {
+    return Boolean(textBoundarySelector && element?.matches(textBoundarySelector)
+      && textBoundaries.some(boundary => element.matches(boundary.selector) && element.closest(boundary.owner)));
   }
 
   function settingLabels(element) {
@@ -157,11 +170,13 @@
     let snapshot = combinedParents.get(parent);
     const sameNodes = snapshot && nodes.length === snapshot.entries.length &&
       nodes.every((node, position) => node === snapshot.entries[position].node);
-    if (snapshot && (!sameNodes || !safe(parent))) {
+    if (nodes.length < 2 && !snapshot) return false;
+    const canTranslate = safe(parent) || hasTextBoundary(parent);
+    if (snapshot && (!sameNodes || !canTranslate)) {
       recoverCombined(parent, snapshot);
       snapshot = undefined;
     }
-    if (nodes.length < 2 || !safe(parent)) return false;
+    if (nodes.length < 2 || !canTranslate) return false;
     const sources = nodes.map((node, position) => sourceText(node, snapshot?.entries[position]));
     const source = sources.join('');
     // Joining around inline shortcuts requires an exact label selector.
@@ -200,7 +215,7 @@
 
   function translateTextRun(node) {
     const parent = node.parentElement;
-    if (!parent?.children.length || !safe(parent)) return false;
+    if (!parent?.children.length || (!safe(parent) && !hasTextBoundary(parent))) return false;
     let first = node;
     while (first.previousSibling?.nodeType === Node.TEXT_NODE) first = first.previousSibling;
     const nodes = [];
@@ -288,7 +303,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.13', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.14', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

@@ -51,7 +51,7 @@ export function checkOwnedLabelCompatibility(source, nodes, closing) {
     if (!fixedValid || !dynamicValid) missing.push('marketplace-heading-source');
   }
   if (source.includes('"Goal Verification"')) {
-    const renderer = /\bsystemMessage\s*:\s*\{[\s\S]*?\brenderer\s*:\s*\(\s*\{\s*step\s*:\s*[\w$]+\s*,\s*debugMode\s*:\s*[\w$]+\s*}\s*\)\s*=>\s*\{/.exec(source);
+    const renderer = /\bsystemMessage\s*:\s*\{[\s\S]*?\brenderer\s*:\s*\(\s*\{\s*step\s*:\s*[\w$]+\s*,\s*(?:metadata\s*:\s*[\w$]+\s*,\s*)?debugMode\s*:\s*[\w$]+\s*}\s*\)\s*=>\s*\{/.exec(source);
     const start = renderer ? renderer.index + renderer[0].length - 1 : -1;
     const body = start < 0 ? '' : source.slice(start, closing(source, start, '{', '}') + 1);
     const events = [['goal_stop', 'Goal Verification'], ['idle_no_message', 'Idle Guard Warning'], ['fork_notice', 'Fork Environment Notice']];

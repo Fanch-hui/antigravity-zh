@@ -54,11 +54,15 @@ export function checkContentCompatibility(source, queries, closing) {
   }
 
   if (marker('running-group').length) {
-    const group = marker('running-group').some(owner => /["']aria-label["']\s*:\s*[\w$]+\.[\w$]+/.test(owner.props)
-      && matching('div', 'flex items-center').some(header => childOf(owner, header)
-        && matching('span', 'truncate font-medium').some(node => childOf(header, node))));
-    const row = marker('running-row').some(owner => matching('span', 'text-sm text-foreground truncate')
-      .some(node => contains(owner, node)));
+    const group = marker('running-group').some(owner => /["']aria-label["']\s*:\s*([\w$]+)\.title\b/.test(owner.props)
+      && matching('div', 'flex items-center').some(header => {
+        if (!childOf(owner, header)) return false;
+        const titles = ['button', 'span'].flatMap(tag => matching(tag, 'truncate font-medium')
+          .filter(node => childOf(header, node)));
+        return titles.length > 0 && titles.every(node => /^,\s*[\w$]+\.title\s*$/.test(content(node)));
+      }));
+    const row = marker('running-row').some(owner => matching('span', 'text-foreground truncate')
+      .some(node => contains(owner, node) && /^,\s*[\w$]+\.title\s*$/.test(content(node))));
     requireRule('running-content', group && row);
   }
 
@@ -69,13 +73,55 @@ export function checkContentCompatibility(source, queries, closing) {
     const metadata = matching('div', 'col-start-1 row-start-1 min-w-0').some(owner =>
       matching('div', 'flex').some(header => childOf(owner, header) && names.some(node => childOf(header, node)))
       && matching('div', 'truncate text-muted-foreground').some(node => childOf(owner, node)));
-    const runs = marker('automation-run').some(owner => matching('span', 'truncate')
-      .some(node => contains(owner, node)));
-    const details = marker('sidecar-detail').some(owner =>
-      matching('p', 'm-0 text-[15px] leading-7 text-secondary-foreground').some(node => contains(owner, node))
-      && matching('p', 'm-0 text-[13px] text-muted-foreground').some(node => contains(owner, node)
-        && !/["']data-testid["']\s*:/.test(node.props)));
-    requireRule('automation-content', instructions && metadata && runs && details);
+    const runs = marker('automation-run').some(owner => matching('span', 'truncate').some(node =>
+      contains(owner, node) && /^[,]\s*[\w$]+\s*$/.test(content(node))));
+    const modelCalls = matching(null, '').filter(node => /\btestId\s*:\s*["']automation-model-value["']/.test(node.props));
+    const modelValue = modelCalls.some(call => {
+      const component = source.slice(call.open + 1).match(/^\s*([\w$]+)/)?.[1];
+      const declaration = component && new RegExp(`function\\s+${escape(component)}\\s*\\(\\s*\\{[^}]*?(?:\\bvalue\\s*:\\s*|\\bchildren\\s*:\\s*)([\\w$]+)[^}]*\\btestId\\s*:\\s*([\\w$]+)[^}]*\\}`).exec(source);
+      if (!declaration) return false;
+      const current = matching('div', 'flex min-w-0 items-center p-3').some(owner =>
+        new RegExp(`["']data-testid["']\\s*:\\s*${escape(declaration[2])}(?=\\s*[,}])`).test(owner.props)
+        && matching('span', 'leading-5 text-foreground').some(value => contains(owner, value)
+          && new RegExp(`^,\\s*${escape(declaration[1])}\\s*$`).test(content(value))));
+      if (current) return true;
+      const bodyStart = declaration.index + declaration[0].length;
+      const helper = source.slice(bodyStart, closing(source, bodyStart, '{', '}') + 1);
+      const rendersValue = new RegExp(`\\.createElement\\([^;]*,\\s*${escape(declaration[1])}\\s*\\)`).test(helper);
+      return rendersValue && marker('automation-settings').some(owner => contains(owner, call)
+        && matching('p', 'm-0 text-[15px] leading-7 text-secondary-foreground').some(sentence =>
+          contains(owner, sentence) && contains(sentence, call)));
+    });
+    const details = marker('sidecar-detail').some(owner => {
+      const current = matching('span', 'text-foreground truncate').some(title => contains(owner, title)
+        && /^,\s*[\w$]+\s*$/.test(content(title)))
+        && matching('p', 'm-0 text-[15px] leading-7 text-secondary-foreground').some(node => contains(owner, node))
+        && matching('p', 'm-0 text-muted-foreground').some(node => contains(owner, node)
+          && (node.classes.has('text-compact') || node.classes.has('text-[13px]'))
+          && /\.status\s*===/.test(content(node)) && /lastError|startTimeMs/.test(content(node)));
+      const legacy = matching('p', 'm-0 text-[15px] leading-7 text-secondary-foreground').some(description =>
+        contains(owner, description) && /^,\s*[\w$]+\s*$/.test(content(description)))
+        && matching('p', 'm-0 text-muted-foreground').some(error => contains(owner, error)
+          && (error.classes.has('text-[13px]') || error.classes.has('text-compact'))
+          && /^,\s*[\w$]+\s*$/.test(content(error)));
+      return current || legacy;
+    });
+    const nextRun = !marker('automation-next-run').length || marker('automation-next-run').some(node => {
+      if (node.tag !== 'p') return false;
+      const value = content(node);
+      if (/\.timestamp\b/.test(value)) return true;
+      const call = value.match(/^,\s*([\w$]+)\s*\?\s*([\w$]+)\s*\?\s*[\w$]+\(\s*([\w$]+)\s*,\s*([\w$]+)\s*,\s*([\w$]+)\s*\)\s*:/);
+      if (!call || call[2] !== call[3]) return false;
+      const start = source.lastIndexOf('function ', node.start);
+      const component = source.slice(start < 0 ? 0 : start, node.start);
+      const now = component.match(/\bnow\s*:\s*([\w$]+)/)?.[1];
+      const pattern = component.match(/\bcronPattern\s*:\s*([\w$]+)/)?.[1];
+      const timeZone = component.match(/\btimeZone\s*:\s*([\w$]+)/)?.[1];
+      const enabled = component.match(/\benabled\s*:\s*([\w$]+)/)?.[1];
+      return enabled === call[1] && now === call[4] && timeZone === call[5] && pattern
+        && new RegExp(`\\b${escape(call[2])}\\s*=\\s*\\([^)]*\\.userConfig\\?\\.enabled[^)]*\\)\\s*\\?\\s*[\\w$]+\\(\\s*${escape(pattern)}\\s*,\\s*${escape(now)}\\s*\\)`).test(component);
+    });
+    requireRule('automation-content', instructions && metadata && runs && modelValue && nextRun && details);
   }
   return missing;
 }
@@ -96,32 +142,42 @@ export function checkFixedControlCompatibility(source, queries, closing) {
     requireRule('revert-control', valid);
   }
   if (marker('user-message-actions').length) {
-    const times = matching('span', 'text-xs text-muted-foreground select-none px-1 mr-1 self-center whitespace-nowrap');
+    const times = matching('span', 'text-muted-foreground select-none px-1 mr-1 self-center whitespace-nowrap');
     const valid = marker('user-message-actions').some(owner => times.some(node => {
       const value = content(node).match(/^,\s*([\w$]+)\s*$/)?.[1];
       if (!value || !/["']data-screenshot-volatile["']\s*:\s*!0/.test(node.props)) return false;
       const name = escape(value);
       const prefix = source.slice(Math.max(0, node.start - 600), node.start);
       const child = new RegExp(`^,\\s*${name}\\s*,`);
-      return new RegExp(`\\bformattedTime\\s*:\\s*${name}\\b`).test(prefix)
-        && child.test(content(owner))
-        && matching('div', 'user-input-buttons-container').some(legacy => child.test(content(legacy)));
+      const dynamicTimestamp = new RegExp(`\\bformattedTime\\s*:\\s*${name}\\b`).test(prefix)
+        && child.test(content(owner));
+      const legacyActions = matching('div', 'user-input-buttons-container').some(legacy => child.test(content(legacy)));
+      const currentActions = owner.props.includes('user-input-buttons-container');
+      return dynamicTimestamp && (legacyActions || currentActions);
     }));
+    const contentMarkers = marker('user-message-content');
+    const contentBodies = contentMarkers.filter(body => body.classes.has('relative') && body.classes.has('p-0.5'));
+    const legacyBodies = matching('div', 'relative flex-1 p-0.5');
     const message = marker('user-input-step').some(owner => marker('user-message-bubble').some(bubble =>
-      contains(owner, bubble) && marker('user-message-content').some(body => contains(bubble, body))))
-      && marker('user-message-bubble').some(bubble => matching('div', 'relative flex-1 p-0.5')
-        .some(body => childOf(bubble, body)));
+      contains(owner, bubble) && (contentBodies.some(body => contains(bubble, body))
+        || contentMarkers.some(body => contains(owner, body))
+          && legacyBodies.some(body => childOf(bubble, body)))));
     requireRule('user-message-time-control', valid && message);
   }
   if (marker('side-question-panel').length) {
-    const valid = marker('side-question-question').some(owner => matching('span', 'shrink-0').some(node =>
-      childOf(owner, node) && /^,\s*[\w$]+\s*\?\s*["']Side Question:["']\s*:\s*["']Side Question["']\s*$/.test(content(node))));
+    const valid = marker('side-question-question').some(owner => matching('span', 'shrink-0').some(node => {
+      if (!childOf(owner, node)) return false;
+      const label = content(node);
+      const oldLabel = /^,\s*[\w$]+\s*\?\s*["']Side Question:["']\s*:\s*["']Side Question["']\s*$/.test(label);
+      const currentLabel = /^,\s*[\w$]+\s*\?\s*[\w$]+\s*\?\s*["']Help:["']\s*:\s*["']Help["']\s*:\s*[\w$]+\s*\?\s*["']Side Question:["']\s*:\s*["']Side Question["']\s*$/.test(label);
+      return oldLabel || currentLabel;
+    }));
     requireRule('side-question-label', valid);
   }
   if (marker('settings-error-messages-card').length) {
     const valid = marker('settings-error-messages-card').some(owner =>
       matching('div', 'flex-1 flex flex-col gap-1 min-w-0').some(body => childOf(owner, body)
-        && matching('span', 'text-sm font-medium text-foreground').some(node => childOf(body, node)
+        && matching('span', 'font-medium text-foreground').some(node => childOf(body, node)
           && /^,\s*["']Failed to parse settings\. Fix and restart\.["']\s*$/.test(content(node))))
       && marker('settings-error-messages-copy-button').some(node => childOf(owner, node)
         && /["']aria-label["']\s*:\s*[\w$]+\s*\?\s*["']Copied["']\s*:\s*["']Copy error messages["']/.test(node.props)
@@ -159,16 +215,47 @@ export function checkAdditionalContentCompatibility(source, queries, closing) {
   const content = node => source.slice(node.propsEnd + 1, closing(source, node.open, '(', ')'));
   const escape = name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+  if (marker('side-question-tab-header-title').length) {
+    const dynamicHeader = marker('side-question-tab-header-title').some(owner =>
+      /\btitle\s*:\s*[\w$]+\b/.test(owner.props)
+      && marker('side-question-tab-header-prefix').some(prefix => childOf(owner, prefix)
+        && /^,\s*[\w$]+\s*\|\|[\w$]+\.isEditing\s*\?\s*["']Side Question: ["']\s*:\s*["']Side Question["']\s*$/.test(content(prefix)))
+      && marker('side-question-tab-header-name').some(name => childOf(owner, name)
+        && /["']aria-label["']\s*:\s*[\w$]+\.isEditing\s*\?\s*void 0\s*:\s*`Edit side question title: \$\{[\w$]+\}`/.test(name.props)));
+    const newHeader = marker('side-question-tab-header-title').some(owner =>
+      /\btitle\s*:\s*["']New Side Question["']/.test(owner.props)
+      && /,\s*["']New Side Question["']\s*$/.test(content(owner)));
+    requireRule('side-question-header-content', dynamicHeader && newHeader);
+  }
+
+  if (marker('instance-selector-trigger').length) {
+    const trigger = marker('instance-selector-trigger').some(owner =>
+      matching('span', 'truncate text-left flex-1').some(node => contains(owner, node)
+        && /^,\s*[\w$]+\s*\?\s*[\w$]+\.displayName\s*:\s*["']Loading instances\.\.\.["']\s*$/.test(content(node))));
+    const items = marker('instance-selector-item-', true).some(item =>
+      /\bvalue\s*:\s*[\w$]+\.uuid/.test(item.props)
+      && /^,\s*[\w$]+\.displayName\s*$/.test(content(item)));
+    const heading = marker('instance-selector-instances-heading').some(node =>
+      /^,\s*["']Remote Control Instances["']\s*$/.test(content(node)));
+    const error = marker('instance-selector-listing-error').some(node => {
+      const value = content(node).match(/^,\s*([\w$]+)\s*$/)?.[1];
+      if (!value) return false;
+      const start = source.lastIndexOf('function ', node.start);
+      const component = source.slice(start < 0 ? 0 : start, node.start);
+      const parameter = component.match(/\{\s*message\s*:\s*([\w$]+)/)?.[1];
+      const template = component.match(/\b([\w$]+)\s*=\s*`Failed to load instances: \$\{([\w$]+)\}`/)?.slice(1);
+      return parameter && template?.[0] === value && template[1] === parameter;
+    });
+    requireRule('instance-selector-content', trigger && items && heading && error);
+  }
+
   if (marker('location-local').length) {
     const local = marker('location-local').some(owner => matching('span', 'flex items-baseline min-w-0')
       .some(body => contains(owner, body) && matching('span', 'truncate').some(node => childOf(body, node))));
     const cloud = matching(null, '').some(node => /["']data-testid["']\s*:\s*[\w$]+\.id===\s*["']default["']\s*\?\s*["']location-cloud["']\s*:\s*`location-cloud-\$\{/.test(node.props)
       && /["']data-env-id["']\s*:\s*[\w$]+\.id/.test(node.props)
       && /^,\s*[\w$]+\.name\s*$/.test(content(node)));
-    const wrapper = matching('span', 'flex min-w-0 flex-col').some(owner =>
-      matching('span', 'truncate').some(node => childOf(owner, node))
-      && matching('span', 'truncate text-xs text-muted-foreground').some(node => childOf(owner, node)));
-    requireRule('location-content', local && cloud && wrapper);
+    requireRule('location-content', local && cloud);
   }
 
   if (source.includes('"plugin-connection-local"')) {
@@ -176,29 +263,74 @@ export function checkAdditionalContentCompatibility(source, queries, closing) {
     const names = calls.map(node => source.slice(node.open + 1).match(/^\s*([\w$]+)/)?.[1]);
     const declaration = names[0] && new RegExp(`function\\s+${escape(names[0])}\\s*\\(\\s*\\{[^}]*\\bsubtitle\\s*:\\s*([\\w$]+)[^}]*\\btestId\\s*:\\s*([\\w$]+)[^}]*\\}\\s*\\)`).exec(source);
     const valid = calls.length >= 2 && names.every(name => name === names[0]) && declaration
-      && matching('div', 'flex flex-wrap items-center gap-3 p-3 text-sm text-foreground').some(owner =>
+      && matching('div', 'flex flex-wrap items-center gap-3 p-3').some(owner =>
         new RegExp(`["']data-testid["']\\s*:\\s*${escape(declaration[2])}(?=\\s*[,}])`).test(owner.props)
         && matching('div', 'min-w-[10rem]').some(body => childOf(owner, body)
-          && matching('div', 'truncate text-xs text-muted-foreground').some(node => childOf(body, node)
+          && matching('div', 'truncate text-muted-foreground').some(node => childOf(body, node)
             && new RegExp(`\\btitle\\s*:\\s*${escape(declaration[1])}(?=\\s*[,}])`).test(node.props)
             && new RegExp(`^,\\s*${escape(declaration[1])}\\s*$`).test(content(node)))));
     requireRule('plugin-connection-content', Boolean(valid));
   }
 
   if (marker('media-modal-header').length) {
-    const valid = marker('media-modal-title').some(owner => matching('div', 'truncate text-sm font-medium text-white')
+    const valid = marker('media-modal-title').some(owner => matching('div', 'truncate font-medium text-white')
       .some(node => contains(owner, node) && /^,\s*[\w$]+\.title\s*$/.test(content(node)))
-      && matching('div', 'line-clamp-2 text-xs text-white/70')
+      && matching('div', 'line-clamp-2 text-white/70')
         .some(node => contains(owner, node) && /^,\s*[\w$]+\.description\s*$/.test(content(node))));
     requireRule('media-title-content', valid);
   }
 
   if (marker('url-security-host').length) {
-    const values = ['url-security-host', 'url-security-origin'].every(id => marker(id).some(node =>
-      node.tag === 'span' && new RegExp(`^,\\s*[\\w$]+\\.${id === 'url-security-host' ? 'host' : 'origin'}\\s*$`).test(content(node))));
-    const certificate = /["']data-testid["']\s*:\s*["']url-security-certificate["']/.test(source)
-      && /\.subjectName\b/.test(source) && /\.issuer\b/.test(source);
-    requireRule('security-certificate-content', values && certificate);
+    const host = marker('url-security-host').some(node => node.tag === 'span'
+      && /^,\s*[\w$]+\.host\s*$/.test(content(node)));
+    const originCall = matching(null, '').find(node => /\bsubtitleTestId\s*:\s*["']url-security-origin["']/.test(node.props)
+      && /\bsubtitle\s*:\s*[\w$]+\.origin\b/.test(node.props));
+    const originComponent = originCall && source.slice(originCall.open + 1).match(/^\s*([\w$]+)/)?.[1];
+    const originParameters = originComponent && new RegExp(
+      'function\\s+' + escape(originComponent) + '\\s*\\(\\s*\\{[^}]*\\bsubtitle\\s*:\\s*([\\w$]+)[^}]*\\bsubtitleTestId\\s*:\\s*([\\w$]+)[^}]*\\}'
+    ).exec(source);
+    const directOrigin = marker('url-security-origin').some(node => node.tag === 'span'
+      && /^,\s*[\w$]+\.origin\s*$/.test(content(node)));
+    const origin = directOrigin || originParameters && matching('span', 'text-secondary-foreground break-all').some(node =>
+      node.props.match(/["']data-testid["']\s*:\s*([\w$]+)/)?.[1] === originParameters[2]
+      && new RegExp('^,\\s*' + escape(originParameters[1]) + '\\s*$').test(content(node)));
+    const summary = marker('url-security-summary').some(node => /^,\s*[\w$]+\.summary\s*$/.test(content(node)));
+    const certificate = marker('url-security-certificate').some(owner => {
+      const direct = ['subjectName', 'issuer'].every(field => matching('dd', 'text-foreground').some(node =>
+        contains(owner, node) && new RegExp('\\.' + field + '\\b').test(content(node))));
+      if (direct) return true;
+      const scopeStart = Math.max(0, owner.start - 5000);
+      const scope = source.slice(scopeStart, owner.start);
+      const declaration = [...scope.matchAll(
+        /([\w$]+)\s*=\s*\(\s*\{[^}]*\bcertificate\s*:\s*[\w$]+[^}]*\}\s*\)\s*=>\s*\{/g
+      )].at(-1);
+      if (!declaration) return false;
+      const bodyStart = scopeStart + declaration.index + declaration[0].length - 1;
+      const bodyEnd = closing(source, bodyStart, '{', '}');
+      if (bodyEnd < owner.start) return false;
+      const body = source.slice(bodyStart, bodyEnd);
+      const args = content(owner);
+      return ['subjectName', 'issuer'].every(field => {
+        const node = matching('dd', 'break-all text-foreground').find(candidate =>
+          candidate.start > bodyStart && candidate.start < owner.start
+          && new RegExp('\\.' + field + '\\b').test(content(candidate)));
+        if (!node) return false;
+        const prefix = source.slice(Math.max(bodyStart, node.start - 100), node.start);
+        const variable = prefix.match(/(?:^|[,;])\s*(?:var\s+)?([\w$]+)\s*=\s*[\w$]+$/)?.[1];
+        return Boolean(variable && body.includes('.' + field)
+          && new RegExp('(?:^|,)\\s*' + escape(variable) + '\\s*(?=,|$)').test(args));
+      });
+    });
+    const siteData = !marker('url-security-site-data-cleared').length || marker('url-security-popover').some(owner => {
+      const warning = matching('span', 'text-secondary-foreground leading-relaxed').some(node => contains(owner, node)
+        && /^,\s*["']Clearing cookies and site data for ["']\s*,\s*[\w$]+\.host\s*,\s*["'] may sign you out of this site\.["']\s*$/.test(content(node)));
+      const cleared = marker('url-security-site-data-cleared').some(node => contains(owner, node)
+        && /^,\s*["']Site data cleared for ["']\s*,\s*[\w$]+\.host\s*,\s*["']\.["']\s*$/.test(content(node)));
+      const failed = matching('span', 'text-error').some(node => contains(owner, node)
+        && /^,\s*["']Could not clear site data for ["']\s*,\s*[\w$]+\.host\s*,\s*["']\.["']\s*$/.test(content(node)));
+      return warning && cleared && failed;
+    });
+    requireRule('security-certificate-content', host && origin && summary && certificate && siteData);
   }
   if (marker('pdf-floating-toolbar').length) {
     const viewport = /element\(\s*["']div["']\s*,\s*\{\s*className\s*:\s*["']pdf-viewport["']\s*,\s*["']data-testid["']\s*:\s*["']pdf-viewport["']/.test(source);

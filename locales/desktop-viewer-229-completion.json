@@ -91,6 +91,7 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
     "reviewed": true,
     "origins": [
       {
@@ -108,6 +109,7 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
     "reviewed": true,
     "origins": [
       {
@@ -125,6 +127,7 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] [data-testid=\"url-security-summary\"]",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-summary\"]",
     "reviewed": true,
     "origins": [
       {
@@ -176,6 +179,7 @@
     "scope": "generic",
     "selector": "[data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "selectorMode": "self",
+    "contentBoundary": "[data-testid=\"url-security-popover\"] > .flex.items-start.gap-3.px-3[class~=\"py-2.5\"].text-xs > .flex.flex-col.gap-1.min-w-0 > span.text-error",
     "reviewed": true,
     "origins": [
       {

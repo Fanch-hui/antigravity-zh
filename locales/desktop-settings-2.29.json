@@ -13,7 +13,7 @@
         "kind": "property:title"
       }
     ],
-    "selector": "h3.m-0.text-sm.font-medium",
+    "selector": "h3.m-0.font-medium",
     "selectorMode": "self"
   },
   {
@@ -30,7 +30,7 @@
         "kind": "property:title"
       }
     ],
-    "selector": "h3.m-0.text-sm.font-medium",
+    "selector": "h3.m-0.font-medium",
     "selectorMode": "self"
   },
   {
@@ -47,7 +47,7 @@
         "kind": "property:title"
       }
     ],
-    "selector": "h3.m-0.text-sm.font-medium",
+    "selector": "h3.m-0.font-medium",
     "selectorMode": "self"
   },
   {
@@ -64,7 +64,7 @@
         "kind": "property:title"
       }
     ],
-    "selector": "h3.m-0.text-sm.font-medium",
+    "selector": "h3.m-0.font-medium",
     "selectorMode": "self"
   },
   {
@@ -1301,7 +1301,7 @@
         "kind": "static:2.29.0"
       }
     ],
-    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selector": "div.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
     "selectorMode": "self"
   },
   {
@@ -1316,7 +1316,7 @@
         "kind": "derived:display-2.29.0"
       }
     ],
-    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selector": "div.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
     "selectorMode": "self"
   },
   {
@@ -1333,7 +1333,7 @@
         "kind": "static:2.29.0"
       }
     ],
-    "selector": "div.text-xs.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
+    "selector": "div.text-muted-foreground:has(> [data-testid=\"voice-picker-settings-link\"])",
     "selectorMode": "self"
   },
   {

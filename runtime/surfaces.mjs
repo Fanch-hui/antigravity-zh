@@ -35,7 +35,7 @@ const protectedSelectors = [
   '[data-testid="webview-download-filename"]',
   '[data-testid="browser-autocomplete-option"] .truncate.text-foreground.font-normal',
   '[data-testid="browser-autocomplete-option"]:not([data-suggestion-kind="search-web"]) .truncate.text-muted-foreground.font-normal',
-  '[data-testid="voice-settings-name"]', '[data-testid="voice-settings-mic"]',
+  '[data-testid="voice-settings-name"]', '[data-testid="voice-settings-mic"]', '[data-testid="voice-picker-name"]',
   'body:has([data-testid="voice-settings-mic"] [role="combobox"][aria-expanded="true"]) [data-select-popup]',
   '[data-testid="running-row"] span.text-foreground.truncate',
   '[data-testid="running-group"] > div > :is(button.truncate.font-medium, span.truncate.font-medium)',
@@ -137,10 +137,12 @@ const commandMenu = {
 };
 
 const contentBoundaries = [
+  { owner: '[data-testid="voice-settings-name"]', selector: '[data-testid="voice-settings-name"]', kind: 'text' },
+  { owner: '[data-testid="voice-settings-mic"]', selector: '[data-testid="voice-settings-mic"] span[id^="dropdown-value-"]', kind: 'text' },
+  { owner: 'body:has([data-testid="voice-settings-mic"] [role="combobox"][aria-expanded="true"]) [data-select-popup]', selector: 'body:has([data-testid="voice-settings-mic"] [role="combobox"][aria-expanded="true"]) [data-select-popup] [role="option"] .truncate', kind: 'text' },
   { owner: '[role="tooltip"] [class~="max-w-[200px]"]', selector: '[role="tooltip"] [class~="max-w-[200px]"]', kind: 'text' },
   { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] [data-testid="revert-button"]', kind: 'attribute', attributes: ['aria-label'] },
-  { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-xs.text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },
-  { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-sm.text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },
+  { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },
   { owner: '[data-testid="side-question-question"]', selector: '[data-testid="side-question-question"] > span.shrink-0', kind: 'text' },
   { owner: '[data-testid="side-question-tab-header-title"]', selector: '[data-testid="side-question-tab-header-title"] > [data-testid="side-question-tab-header-prefix"]', kind: 'text' },
   { owner: '[data-testid="side-question-tab-header-title"]', selector: '[data-testid="side-question-tab-header-title"]', kind: 'text' },

@@ -218,7 +218,7 @@
     "target": "{0} 前",
     "context": "消息底部操作栏中的相对时间，只翻译 ago，数字及原单位保持不变",
     "scope": "generic",
-    "selector": "[data-testid=\"cascade-system-message-toolbar\"] span[data-screenshot-volatile][data-tooltip-id].text-xs.text-muted-foreground.select-none.px-1.whitespace-nowrap",
+    "selector": "[data-testid=\"cascade-system-message-toolbar\"] span[data-screenshot-volatile][data-tooltip-id].text-muted-foreground.select-none.px-1.whitespace-nowrap",
     "selectorMode": "self",
     "kind": "text",
     "reviewed": true,

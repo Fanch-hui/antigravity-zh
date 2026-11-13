@@ -301,6 +301,7 @@ function newContentFixture() {
     + ';A.createElement(MenuItem,{"data-testid":"project-selector-github-repo-item","data-repo-slug":slug},'
     + element('span', 'truncate flex-1 min-w-0', 'repo.displayName||slug') + ')';
   const voice = [element('span', '', 'voice||"Not set"', ',"data-testid":"voice-settings-name"'),
+    element('div', '', 'selectedVoice.name', ',"data-testid":"voice-picker-name"'),
     element('button', '', '"Change"', ',"data-testid":"voice-settings-change"'),
     element('div', '', 'A.createElement(Select,{options:items,displayResolver:x=>x.label,ariaLabelledBy:"voice-microphone-label"})',
       ',"data-testid":"voice-settings-mic"'), 'const popup={"data-select-popup":"","aria-expanded":false}'].join(';');
@@ -338,6 +339,8 @@ test('new browser, voice, running and automation content retains protective stru
     ['"data-testid":"project-selector-github-repo-item"', '"data-testid":"changed-repo-item"', 'project-selector-github-content'],
     ['"data-testid":"webview-download-filename",title:name', '"data-testid":"webview-download-filename",title:other', 'webview-download-content'],
     ['ariaLabelledBy:"voice-microphone-label"', 'ariaLabelledBy:"other-label"', 'voice-settings-content'],
+    ['voice||"Not set"', 'voice', 'voice-settings-content'],
+    ['selectedVoice.name', 'selectedVoice', 'voice-picker-content'],
     ['text-sm text-foreground truncate"},item.title', 'text-sm text-foreground"},item.title', 'running-content'],
     ['"aria-label":group.title', '"aria-label":"Running"', 'running-content'],
     ['automation-instructions-markdown', 'changed-instructions', 'automation-content'],

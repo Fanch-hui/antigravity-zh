@@ -46,11 +46,17 @@ export function checkContentCompatibility(source, queries, closing) {
   }
 
   if (marker('voice-settings-change').length) {
-    requireRule('voice-settings-content', marker('voice-settings-name').some(node => node.tag === 'span')
+    requireRule('voice-settings-content', marker('voice-settings-name').some(node => node.tag === 'span'
+        && /^,\s*[\w$]+\s*\|\|\s*["']Not set["']\s*$/.test(content(node)))
       && marker('voice-settings-mic').some(owner => matching(null, '').some(node => contains(owner, node)
         && /\bariaLabelledBy\s*:\s*["']voice-microphone-label["']/.test(node.props)
         && /\boptions\s*:/.test(node.props) && /\bdisplayResolver\s*:/.test(node.props)))
       && source.includes('"data-select-popup"') && source.includes('"aria-expanded"'));
+  }
+
+  if (marker('voice-picker-name').length) {
+    requireRule('voice-picker-content', marker('voice-picker-name').every(node =>
+      /^,\s*[\w$]+\.name\s*$/.test(content(node))));
   }
 
   if (marker('running-group').length) {

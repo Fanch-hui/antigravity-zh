@@ -1,0 +1,562 @@
+[
+  {
+    "id": "v231.remaining.1",
+    "source": "{0} limit, resets in {1}",
+    "target": "{0}额度，{1}后重置",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.col-span-2.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度明细的完整组合文案，固定周期与受限时长",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "Daily|Weekly",
+      "1": "(?:<1m|[0-9]+[dhm](?: [0-9]+[hm])?)"
+    },
+    "captureMappings": {
+      "0": {
+        "Daily": "每日",
+        "Weekly": "每周"
+      }
+    },
+    "captureFormats": {
+      "1": "duration"
+    }
+  },
+  {
+    "id": "v231.remaining.2",
+    "source": "{0}h limit, resets in {1}",
+    "target": "{0} 小时额度，{1}后重置",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.col-span-2.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口及重置倒计时完整组合文案",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*",
+      "1": "(?:<1m|[0-9]+[dhm](?: [0-9]+[hm])?)"
+    },
+    "captureFormats": {
+      "1": "duration"
+    }
+  },
+  {
+    "id": "v231.remaining.3",
+    "source": "{0}m limit",
+    "target": "{0} 分钟额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口的固定单位；模型组名不做短语替换",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*"
+    }
+  },
+  {
+    "id": "v231.remaining.4",
+    "source": "{0}m limit, resets in {1}",
+    "target": "{0} 分钟额度，{1}后重置",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.col-span-2.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口及重置倒计时完整组合文案",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*",
+      "1": "(?:<1m|[0-9]+[dhm](?: [0-9]+[hm])?)"
+    },
+    "captureFormats": {
+      "1": "duration"
+    }
+  },
+  {
+    "id": "v231.remaining.5",
+    "source": "{0}s limit",
+    "target": "{0} 秒额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口的固定单位；模型组名不做短语替换",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*"
+    }
+  },
+  {
+    "id": "v231.remaining.6",
+    "source": "{0}s limit, resets in {1}",
+    "target": "{0} 秒额度，{1}后重置",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.col-span-2.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口及重置倒计时完整组合文案",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*",
+      "1": "(?:<1m|[0-9]+[dhm](?: [0-9]+[hm])?)"
+    },
+    "captureFormats": {
+      "1": "duration"
+    }
+  },
+  {
+    "id": "v231.remaining.7",
+    "source": "{0}d limit",
+    "target": "{0} 天额度",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口的固定单位；模型组名不做短语替换",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*"
+    }
+  },
+  {
+    "id": "v231.remaining.8",
+    "source": "{0}d limit, resets in {1}",
+    "target": "{0} 天额度，{1}后重置",
+    "selector": ".grid[class~=\"grid-cols-[minmax(0,1fr)_auto]\"].items-center.gap-x-3.px-2.py-1.rounded-md > span.col-span-2.truncate.text-muted-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "quota",
+    "context": "额度窗口及重置倒计时完整组合文案",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8355315,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*",
+      "1": "(?:<1m|[0-9]+[dhm](?: [0-9]+[hm])?)"
+    },
+    "captureFormats": {
+      "1": "duration"
+    }
+  },
+  {
+    "id": "v231.remaining.9",
+    "source": "just now",
+    "target": "刚刚",
+    "selector": "[data-testid=\"cascade-system-message-toolbar\"] span[data-screenshot-volatile][data-tooltip-id].text-muted-foreground.select-none.px-1.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "消息操作栏固定相对时间，不匹配消息正文",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 2548743,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.10",
+    "source": "Pin",
+    "target": "置顶",
+    "selector": "[role=\"menuitem\"] > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "menu",
+    "context": "会话操作菜单固定入口及相反状态",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8152675,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.11",
+    "source": "Unpin",
+    "target": "取消置顶",
+    "selector": "[role=\"menuitem\"] > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "menu",
+    "context": "会话操作菜单固定入口及相反状态",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8152667,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.12",
+    "source": "Remote Control",
+    "target": "远程控制",
+    "selector": "[role=\"menuitem\"] > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "menu",
+    "context": "会话操作菜单固定入口及相反状态",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4921015,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.13",
+    "source": "Font",
+    "target": "字体",
+    "selector": "[id^=\"dropdown-label-\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "外观设置固定字段标签；字体名称与字号数值保留原样",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 11125125,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.14",
+    "source": "Font Size",
+    "target": "字号",
+    "selector": "[id^=\"dropdown-label-\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "外观设置固定字段标签；字体名称与字号数值保留原样",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 10575527,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.15",
+    "source": "Strong",
+    "target": "高对比度",
+    "selector": ".py-2.px-3.justify-between .shrink-0 button",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "外观对比度固定选项",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 11123732,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.16",
+    "source": "Default Light",
+    "target": "默认浅色",
+    "selector": "[id^=\"dropdown-value-\"], [data-select-popup] [role=\"option\"] .truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "内置主题预设名称；其他主题与插件名称保持原文",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6072960,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "settingLabel": "Preset"
+  },
+  {
+    "id": "v231.remaining.17",
+    "source": "Default Dark",
+    "target": "默认深色",
+    "selector": "[id^=\"dropdown-value-\"], [data-select-popup] [role=\"option\"] .truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "内置主题预设名称；其他主题与插件名称保持原文",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 6072996,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "settingLabel": "Preset"
+  },
+  {
+    "id": "v231.remaining.18",
+    "source": "Code Preview",
+    "target": "代码预览",
+    "selector": "[data-testid=\"theme-code-preview-toggle\"] > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "主题设置的固定代码预览开关",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 11123437,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.19",
+    "source": "Configure allowed and denied URLs for the browser subagent. It runs in the built-in browser, so no separate browser install is needed.",
+    "target": "配置浏览器子智能体允许和禁止访问的网址。它在内置浏览器中运行，无需另行安装浏览器。",
+    "selector": ".py-2.px-3.justify-between > .flex-1.flex.flex-col > span.text-muted-foreground.whitespace-pre-wrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "内置浏览器操作规则的完整说明",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4991900,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.20",
+    "source": "Not set",
+    "target": "未设置",
+    "selector": "[data-testid=\"voice-settings-name\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "语音设置的固定未选择状态；已选择的语音名称保留原文",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5153968,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"voice-settings-name\"]"
+  },
+  {
+    "id": "v231.remaining.21",
+    "source": "Change",
+    "target": "更改",
+    "selector": "[data-testid=\"voice-settings-change\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "语音设置更改操作",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5154089,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.22",
+    "source": "System default",
+    "target": "系统默认",
+    "selector": "[data-testid=\"voice-settings-mic\"] span[id^=\"dropdown-value-\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "麦克风列表固定首项；设备名称去重后保留原文",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5152829,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "contentBoundary": "[data-testid=\"voice-settings-mic\"]"
+  },
+  {
+    "id": "v231.remaining.23",
+    "source": "System default",
+    "target": "系统默认",
+    "selector": "body:has([data-testid=\"voice-settings-mic\"] [role=\"combobox\"][aria-expanded=\"true\"]) [data-select-popup] [role=\"option\"] .truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "麦克风下拉固定默认项；同名真实设备由上游去重为带编号名称",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 5152829,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "contentBoundary": "body:has([data-testid=\"voice-settings-mic\"] [role=\"combobox\"][aria-expanded=\"true\"]) [data-select-popup]"
+  },
+  {
+    "id": "v231.remaining.24",
+    "source": "Outside of Project",
+    "target": "未归入项目",
+    "selector": "[data-hover-card-popup] .flex.items-center.gap-1.text-muted-foreground:has(> span.shrink-0.flex.items-center > [data-project-glyph]) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "会话详情悬浮卡的固定项目外标记；图标与字段结构限定",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8162944,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.25",
+    "source": "Configure allowed and denied URLs for the browser subagent (invoked with /browser). Requires",
+    "target": "配置浏览器子智能体允许和禁止访问的网址（通过 /browser 调用）。需要安装",
+    "selector": ".py-2.px-3.justify-between > .flex-1.flex.flex-col > span.text-muted-foreground.whitespace-pre-wrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "settings",
+    "context": "外部浏览器模式说明的固定链接前文，浏览器链接保持原样",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 4992070,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.26",
+    "source": "Unread",
+    "target": "未读",
+    "selector": "[data-hover-card-popup] .flex.items-center.gap-1.text-muted-foreground:has(> span.shrink-0.flex.items-center > [data-testid=\"status-unread-dot\"]) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "会话悬浮卡未读状态，限定未读标记以区分项目名称",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8156641,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.27",
+    "source": "Canceling",
+    "target": "正在取消",
+    "selector": "[data-hover-card-popup] .flex.items-center.gap-1.text-muted-foreground:has(> span.shrink-0.flex.items-center > :is([data-testid=\"status-loading-spinner\"], [data-testid=\"status-task-running\"])) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "会话悬浮卡取消中状态，限定动态状态图标",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8156578,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.28",
+    "source": "1 task running",
+    "target": "1 个任务正在运行",
+    "selector": "[data-hover-card-popup] .flex.items-center.gap-1.text-muted-foreground:has(> span.shrink-0.flex.items-center > :is([data-testid=\"status-loading-spinner\"], [data-testid=\"status-task-running\"])) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "会话悬浮卡单任务后台运行状态",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8156604,
+        "kind": "static:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "v231.remaining.29",
+    "source": "{0} tasks running",
+    "target": "{0} 个任务正在运行",
+    "selector": "[data-hover-card-popup] .flex.items-center.gap-1.text-muted-foreground:has(> span.shrink-0.flex.items-center > :is([data-testid=\"status-loading-spinner\"], [data-testid=\"status-task-running\"])) > span.truncate",
+    "selectorMode": "self",
+    "kind": "text",
+    "scope": "generic",
+    "context": "会话悬浮卡后台运行任务数量",
+    "reviewed": true,
+    "origins": [
+      {
+        "start": 8156604,
+        "kind": "static:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[1-9][0-9]*"
+    }
+  }
+]

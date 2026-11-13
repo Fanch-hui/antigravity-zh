@@ -150,7 +150,7 @@
         "kind": "property:screen"
       }
     ],
-    "selector": "a[href=\"/customizations\"], .max-w-4xl.mx-auto.px-8.pt-8.pb-4 h1"
+    "selector": "a[href=\"/customizations\"], .max-w-4xl.mx-auto.px-8.pt-8.pb-4 h1, .max-w-4xl.mx-auto.pt-8.pb-4:has([data-testid=\"customizations-search\"]) > .flex.flex-wrap > h1.font-medium.text-foreground.select-none"
   },
   {
     "id": "ui.fefd31c65e97",

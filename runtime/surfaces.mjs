@@ -126,7 +126,7 @@ const staticSurface = [
   '[data-testid="setup-script-status"]', '[data-testid="input-card-drag-highlight"]',
   '[data-testid="new-conversation-button"]', '[data-testid="plugins-tabs"]',
   '.sticky.top-0.z-20.bg-background.pt-8.pb-4 > .flex.items-start.rounded-lg.border.bg-card.select-none',
-  '[data-sidebar-section-drop-id] > span.select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap'
+  '[data-sidebar-section-drop-id] > span.select-none.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap'
 ].join(',');
 const controls = 'button, label, select, option, [role="button"], [role="tab"], [role="checkbox"], [role="switch"], [role="menuitem"], [role="option"]';
 const commandMenu = {
@@ -137,6 +137,7 @@ const commandMenu = {
 };
 
 const contentBoundaries = [
+  { owner: '[role="tooltip"] [class~="max-w-[200px]"]', selector: '[role="tooltip"] [class~="max-w-[200px]"]', kind: 'text' },
   { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] [data-testid="revert-button"]', kind: 'attribute', attributes: ['aria-label'] },
   { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-xs.text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },
   { owner: '[data-testid="user-input-step"]', selector: '[data-testid="user-input-step"] :is([data-testid="user-message-actions"], .user-input-buttons-container) > span[data-screenshot-volatile].text-sm.text-muted-foreground.select-none.px-1.mr-1.self-center.whitespace-nowrap', kind: 'text' },

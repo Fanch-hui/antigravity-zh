@@ -1,0 +1,719 @@
+[
+  {
+    "id": "screenshot231.1",
+    "source": "Settings",
+    "target": "设置",
+    "context": "设置侧栏固定分区标题，不匹配项目按钮中的动态名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-sidebar\"] > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .px-4 > :is(h1,h2).font-medium.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.2",
+    "source": "Workspaces",
+    "target": "工作区",
+    "context": "设置侧栏固定分区标题，不匹配项目按钮中的动态名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-sidebar\"] > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .px-4 > :is(h1,h2).font-medium.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.3",
+    "source": "Projects",
+    "target": "项目",
+    "context": "设置侧栏固定分区标题，不匹配项目按钮中的动态名称",
+    "scope": "generic",
+    "selector": "[data-testid=\"settings-sidebar\"] > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .px-4 > :is(h1,h2).font-medium.text-muted-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.7",
+    "source": "Interface Layout",
+    "target": "界面布局",
+    "context": "设置页固定分区标题",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 h3.m-0.font-medium",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.8",
+    "source": "Folders",
+    "target": "文件夹",
+    "context": "设置页固定分区标题",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 h3.m-0.font-medium",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.9",
+    "source": "Resources",
+    "target": "资源",
+    "context": "设置页固定分区标题",
+    "scope": "settings",
+    "selector": ".space-y-2 > .flex.flex-col.gap-1 h3.m-0.font-medium",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.10",
+    "source": "Knowledge Work",
+    "target": "知识工作",
+    "context": "布局模式选择卡片的固定服务端标题和说明",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"] :is(span.font-medium.text-foreground, div.text-muted-foreground.leading-snug)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.11",
+    "source": "Knowledge Work",
+    "target": "知识工作",
+    "context": "布局模式选择卡片无障碍标签",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"][aria-label]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "attribute": "aria-label"
+  },
+  {
+    "id": "screenshot231.12",
+    "source": "Software Engineering",
+    "target": "软件开发",
+    "context": "布局模式选择卡片的固定服务端标题和说明",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"] :is(span.font-medium.text-foreground, div.text-muted-foreground.leading-snug)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.13",
+    "source": "Software Engineering",
+    "target": "软件开发",
+    "context": "布局模式选择卡片无障碍标签",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"][aria-label]",
+    "selectorMode": "self",
+    "kind": "attribute",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "attribute": "aria-label"
+  },
+  {
+    "id": "screenshot231.14",
+    "source": "Simplified interface for research, writing, and everyday tasks.",
+    "target": "适用于调研、写作和日常任务的简洁界面。",
+    "context": "布局模式选择卡片的固定服务端标题和说明",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"] :is(span.font-medium.text-foreground, div.text-muted-foreground.leading-snug)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.15",
+    "source": "Full interface for coding, developer tools, and managing agents.",
+    "target": "提供编程、开发工具和智能体管理功能的完整界面。",
+    "context": "布局模式选择卡片的固定服务端标题和说明",
+    "scope": "settings",
+    "selector": "[data-testid^=\"mode-option-\"] :is(span.font-medium.text-foreground, div.text-muted-foreground.leading-snug)",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.16",
+    "source": "Sort Projects",
+    "target": "项目排序",
+    "context": "侧栏显示选项中的固定项目/工作区排序入口",
+    "scope": "generic",
+    "selector": "[data-testid=\"sort-folders-submenu-trigger\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.17",
+    "source": "Sort Workspaces",
+    "target": "工作区排序",
+    "context": "侧栏显示选项中的固定项目/工作区排序入口",
+    "scope": "generic",
+    "selector": "[data-testid=\"sort-folders-submenu-trigger\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.20",
+    "source": "Unavailable",
+    "target": "不可用",
+    "context": "模型菜单固定状态标记；模型名和努力等级保留原文",
+    "scope": "generic",
+    "selector": "[data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"]:is(.text-xs,.text-sm), [data-testid=\"model-selector-panel\"] div.bg-secondary.rounded-full[class~=\"px-1.5\"]:is(.text-xs,.text-sm) > span",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.21",
+    "source": "Argon that may offload routine steps to Hydrogen. Same Argon-level quality, fewer tokens used.",
+    "target": "可将常规步骤交给 Hydrogen 处理的 Argon。保持 Argon 级别的质量，同时减少 token 用量。",
+    "context": "截图确认的完整模型说明；保留模型和方案名称，不扩大日期或模型名模板",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "contentBoundary": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]"
+  },
+  {
+    "id": "screenshot231.22",
+    "source": "GPT-OSS will be removed from Antigravity on November 18, 2026.",
+    "target": "GPT-OSS 将于 2026 年 11 月 18 日从 Antigravity 下线。",
+    "context": "截图确认的完整模型说明；保留模型和方案名称，不扩大日期或模型名模板",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "contentBoundary": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]"
+  },
+  {
+    "id": "screenshot231.23",
+    "source": "Gemini 4 Carbon is currently available to Ultra plan subscribers.",
+    "target": "Gemini 4 Carbon 目前仅向 Ultra 方案订阅用户开放。",
+    "context": "截图确认的完整模型说明；保留模型和方案名称，不扩大日期或模型名模板",
+    "scope": "generic",
+    "selector": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "contentBoundary": "[role=\"tooltip\"] [class~=\"max-w-[200px]\"]"
+  },
+  {
+    "id": "screenshot231.24",
+    "source": "Hey {0}, what should we build today?",
+    "target": "你好，{0}，今天想做些什么？",
+    "context": "首页固定问候模板，仅保留应用提供的称呼",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,100}"
+    }
+  },
+  {
+    "id": "screenshot231.25",
+    "source": "Welcome back, {0}. Where should we pick up?",
+    "target": "欢迎回来，{0}。我们从哪里继续？",
+    "context": "首页固定问候模板，仅保留应用提供的称呼",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,100}"
+    }
+  },
+  {
+    "id": "screenshot231.26",
+    "source": "Good to see you, {0}. What's next?",
+    "target": "很高兴见到你，{0}。接下来做些什么？",
+    "context": "首页固定问候模板，仅保留应用提供的称呼",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,100}"
+    }
+  },
+  {
+    "id": "screenshot231.27",
+    "source": "Hey there, what should we build today?",
+    "target": "你好，今天想做些什么？",
+    "context": "首页未提供称呼时的固定问候",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.28",
+    "source": "Welcome back. Where should we pick up?",
+    "target": "欢迎回来。我们从哪里继续？",
+    "context": "首页未提供称呼时的固定问候",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.29",
+    "source": "Good to see you. What's next?",
+    "target": "很高兴见到你。接下来做些什么？",
+    "context": "首页未提供称呼时的固定问候",
+    "scope": "generic",
+    "selector": "[data-testid=\"home-greeting\"] > h1.home-greeting-title",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.30",
+    "source": "Allow the browser agent to download a file?",
+    "target": "是否允许浏览器智能体下载文件？",
+    "context": "新版下载权限申请的固定标题",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.31",
+    "source": "Save rule to always allow browser downloads from this site?",
+    "target": "是否保存规则，始终允许从此网站下载文件？",
+    "context": "新版下载权限申请的固定标题",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-header-text\"] .flex.flex-col.w-full.min-w-0.pb-1:not(:has([data-testid=\"permission-app-header\"])) > span.font-medium.text-foreground",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.32",
+    "source": "Yes, allow this download",
+    "target": "是，允许本次下载",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.33",
+    "source": "Yes, allow downloads from {0} for this run",
+    "target": "是，本次运行允许从 {0} 下载",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,2048}"
+    }
+  },
+  {
+    "id": "screenshot231.34",
+    "source": "Yes, allow downloads from {0} in this conversation",
+    "target": "是，在此会话中允许从 {0} 下载",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,2048}"
+    }
+  },
+  {
+    "id": "screenshot231.35",
+    "source": "Yes, always allow downloads from {0}",
+    "target": "是，始终允许从 {0} 下载",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,2048}"
+    }
+  },
+  {
+    "id": "screenshot231.36",
+    "source": "Yes, allow {0} in this conversation",
+    "target": "是，在此会话中允许 {0}",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,2048}"
+    }
+  },
+  {
+    "id": "screenshot231.37",
+    "source": "Yes, always allow {0}",
+    "target": "是，始终允许 {0}",
+    "context": "新版下载和网址权限申请的固定授权范围；网址值保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"ask-question-option-text\"]:not(:has(*)), [data-testid=\"ask-question-option-text\"] > .md-divider-spacing > p:not(:has(*))",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[^\\s\\r\\n]{1,2048}"
+    }
+  },
+  {
+    "id": "screenshot231.38",
+    "source": "File",
+    "target": "文件",
+    "context": "下载权限申请固定字段名；相邻文件名、网址、类型和保存路径保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"permission-download-details\"] > dt",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.39",
+    "source": "From",
+    "target": "来源",
+    "context": "下载权限申请固定字段名；相邻文件名、网址、类型和保存路径保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"permission-download-details\"] > dt",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.40",
+    "source": "Redirected from",
+    "target": "重定向来源",
+    "context": "下载权限申请固定字段名；相邻文件名、网址、类型和保存路径保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"permission-download-details\"] > dt",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.41",
+    "source": "Type",
+    "target": "类型",
+    "context": "下载权限申请固定字段名；相邻文件名、网址、类型和保存路径保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"permission-download-details\"] > dt",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.42",
+    "source": "Save to",
+    "target": "保存位置",
+    "context": "下载权限申请固定字段名；相邻文件名、网址、类型和保存路径保持原文",
+    "scope": "permission-request",
+    "selector": "[data-testid=\"permission-download-details\"] > dt",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.43",
+    "source": "Automations",
+    "target": "自动化任务",
+    "context": "自动化及计划任务页的固定标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecars-view\"] .min-w-0.px-3 > h1.font-medium.text-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.44",
+    "source": "Scheduled Tasks",
+    "target": "计划任务",
+    "context": "自动化及计划任务页的固定标题",
+    "scope": "generic",
+    "selector": "[data-testid=\"sidecars-view\"] .min-w-0.px-3 > h1.font-medium.text-foreground.select-none",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.45",
+    "source": "No coordinators",
+    "target": "暂无协调者",
+    "context": "会话列表协调者分区固定空状态",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ]
+  },
+  {
+    "id": "screenshot231.46",
+    "source": "{0} pinned conversation",
+    "target": "{0} 个已固定的会话",
+    "context": "会话列表固定计数提示，仅捕获数字",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  },
+  {
+    "id": "screenshot231.47",
+    "source": "{0} pinned conversations",
+    "target": "{0} 个已固定的会话",
+    "context": "会话列表固定计数提示，仅捕获数字",
+    "scope": "generic",
+    "selector": "[data-sidebar-section-drop-id] > span.select-none.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap",
+    "selectorMode": "self",
+    "kind": "text",
+    "reviewed": true,
+    "origins": [
+      {
+        "kind": "static-and-screenshot:2.31.2"
+      }
+    ],
+    "template": true,
+    "capturePatterns": {
+      "0": "[0-9]+"
+    }
+  }
+]

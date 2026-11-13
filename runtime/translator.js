@@ -95,8 +95,8 @@
       || record.selectorMode !== 'self' || !record.selector)) return false;
     if (!ownedLabels.matches(record, element)) return false;
     if (!matchesSlashCommand(record, element, attribute)) return false;
-    // Permission options use the same Markdown renderer as agent-authored questions.
-    if (closest(element, '[data-testid="ask-question-option-text"] > .md-divider-spacing')
+    // Question options share both plain-text and Markdown renderers with permission prompts.
+    if (closest(element, '[data-testid="ask-question-option-text"], [data-testid="ask-question-option-hover-card"]')
       && (record.scope !== 'permission-request' || record.selectorMode !== 'self')) return false;
     if (record.kind === 'attribute' && (!attribute || (record.attribute && record.attribute !== attribute))) return false;
     if (record.kind === 'text' && attribute) return false;
@@ -303,7 +303,7 @@
       subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: [...attributes, 'aria-labelledby', 'aria-controls']
     });
     const timing = Object.freeze({ scriptStartedMs, firstPassStartedMs, firstPassMs, readyMs: performance.now() });
-    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.14', translate, timing });
+    window.__AGY_ZH_RUNTIME__ = Object.freeze({ version: '0.2.15', translate, timing });
   }
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start, { once: true });

@@ -289,7 +289,7 @@
     "target": "显示全部",
     "context": "设置侧栏项目列表的展开和收起按钮",
     "scope": "generic",
-    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button:is(.text-xs,.text-sm).mx-4.py-1[class~=\"hover:underline\"]",
     "reviewed": true,
     "origins": [
       {
@@ -306,7 +306,7 @@
     "target": "收起",
     "context": "设置侧栏项目列表的展开和收起按钮",
     "scope": "generic",
-    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button.text-xs.mx-4.py-1[class~=\"hover:underline\"]",
+    "selector": ".h-full.w-full.flex.flex-col.bg-sidebar > .flex-1.flex.flex-col.gap-1.py-3.overflow-y-auto > .flex.flex-col[class~=\"gap-0.5\"] > button:is(.text-xs,.text-sm).mx-4.py-1[class~=\"hover:underline\"]",
     "reviewed": true,
     "origins": [
       {
@@ -323,7 +323,7 @@
     "target": "您可以升级到 Google AI Ultra 方案，以获得更高的使用限额。",
     "context": "订阅方案说明；rate limits 在订阅用量语境指使用限额，不承诺模型速度",
     "scope": "generic",
-    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 .py-2.px-3.justify-between > .flex-1.flex.flex-col[class~=\"gap-0.5\"] > span.text-xs.text-muted-foreground.whitespace-pre-wrap",
+    "selector": ".max-w-2xl.mx-auto.flex-col.gap-4 .py-2.px-3.justify-between > .flex-1.flex.flex-col[class~=\"gap-0.5\"] > span:is(.text-xs,.text-sm).text-muted-foreground.whitespace-pre-wrap",
     "reviewed": true,
     "origins": [
       {
@@ -339,7 +339,7 @@
     "target": "选择项目",
     "context": "项目选择按钮的提示；相邻快捷键和项目名称保持原样",
     "scope": "generic",
-    "selector": ".compact-tooltip[role=\"tooltip\"] > div.text-xs > span:first-child",
+    "selector": ".compact-tooltip[role=\"tooltip\"] > div:is(.text-xs,.text-sm) > span:first-child",
     "reviewed": true,
     "origins": [
       {

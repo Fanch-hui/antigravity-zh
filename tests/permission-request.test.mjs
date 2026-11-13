@@ -109,6 +109,63 @@ test('non-command permissions use the same prompt without a command-plugin state
   }
 });
 
+test('2.31 plain permission options and size-free headings translate all verified action scopes', () => {
+  const actions = [
+    ['Allow read access to this path?', '是否允许读取此路径？'],
+    ['Allow write access to this path?', '是否允许写入此路径？'],
+    ['Allow reading this URL?', '是否允许读取此网址？'],
+    ['Allow executing actions on this URL?', '是否允许在此网址执行操作？'],
+    ['Allow running this command?', '是否允许运行此命令？'],
+    ['Allow running this command outside the sandbox?', '是否允许在沙盒外运行此命令？'],
+    ['Allow using this MCP tool?', '是否允许使用此 MCP 工具？'],
+    ['Allow a one-time administrator (UAC) elevation?', '是否允许本次提升至管理员权限（UAC）？'],
+    ['Allow the browser agent to download a file?', '是否允许浏览器智能体下载文件？'],
+  ];
+  for (const [source, target] of actions) {
+    const dom = mount(request(source, ['Yes, allow this time', "Yes, save rule for '/tmp/My Project/$file' in this conversation"], 'Review')
+      .replace('text-sm font-medium text-foreground', 'font-medium text-foreground')
+      .replaceAll('<div class="leading-relaxed md-divider-spacing"><p>', '').replaceAll('</p></div></div>', '</div>'));
+    const doc = dom.window.document;
+    assert.equal(doc.querySelector('[data-command-plugin-state] > span').textContent, target);
+    assert.deepEqual([...doc.querySelectorAll('[data-testid="ask-question-option-text"]')].map(el => el.textContent), ['是，仅允许本次', '是，在此对话中保存‘/tmp/My Project/$file’的规则']);
+    assert.equal(doc.querySelector('pre').textContent, 'Yes, allow this time');
+    assert.equal(doc.querySelector('[data-testid="permission-target-editor"]').value, 'Yes, allow this time');
+    assert.equal(doc.querySelector('.pb-0\\.5').textContent, 'Review');
+    dom.window.close();
+  }
+});
+
+test('2.31 download permission choices translate scope while preserving site and URL values', () => {
+  const choices = [
+    ['Yes, allow this download', '是，允许本次下载'],
+    ['Yes, allow downloads from example.com for this run', '是，本次运行允许从 example.com 下载'],
+    ['Yes, allow downloads from https://example.com/files in this conversation', '是，在此会话中允许从 https://example.com/files 下载'],
+    ['Yes, always allow downloads from example.com', '是，始终允许从 example.com 下载'],
+    ['Yes, allow https://example.com in this conversation', '是，在此会话中允许 https://example.com'],
+    ['Yes, always allow https://example.com', '是，始终允许 https://example.com'],
+  ];
+  const dom = mount(request('Allow the browser agent to download a file?', choices.map(([source]) => source))
+    .replace('text-sm font-medium text-foreground', 'font-medium text-foreground')
+    .replaceAll('<div class="leading-relaxed md-divider-spacing"><p>', '').replaceAll('</p></div></div>', '</div>'));
+  assert.deepEqual([...dom.window.document.querySelectorAll('[data-testid="ask-question-option-text"]')].map(el => el.textContent), choices.map(([, target]) => target));
+  dom.window.close();
+});
+
+test('download permission detail labels translate while their values remain original', () => {
+  const details = '<dl data-testid="permission-download-details"><dt>File</dt><dd>Review</dd><dt>From</dt><dd>https://example.com/Settings</dd><dt>Redirected from</dt><dd>https://example.org</dd><dt>Type</dt><dd>application/pdf</dd><dt>Save to</dt><dd>/tmp/Show All</dd></dl>';
+  const dom = mount(request('Allow the browser agent to download a file?', []).replace('<div role="radiogroup">', details + '<div role="radiogroup">'));
+  const doc = dom.window.document;
+  assert.deepEqual([...doc.querySelectorAll('dt')].map(el => el.textContent), ['文件', '来源', '重定向来源', '类型', '保存位置']);
+  assert.deepEqual([...doc.querySelectorAll('dd')].map(el => el.textContent), ['Review', 'https://example.com/Settings', 'https://example.org', 'application/pdf', '/tmp/Show All']);
+  dom.window.close();
+});
+
+test('ordinary plain question options remain authored content', () => {
+  const dom = mount('<div data-testid="ask-question-header-text">Which action?</div><div data-testid="ask-question-option-text">Yes, allow this time</div><div data-testid="ask-question-option-text">Review</div><div data-testid="ask-question-option-hover-card">Review</div>');
+  assert.deepEqual([...dom.window.document.querySelectorAll('[data-testid^="ask-question-option"]')].map(el => el.textContent), ['Yes, allow this time', 'Review', 'Review']);
+  dom.window.close();
+});
+
 test('all saved permission scopes retain the exact rule value', () => {
   const choices = [
     ["Yes, save rule for '/tmp/a' in this conversation", '是，在此对话中保存‘/tmp/a’的规则'],

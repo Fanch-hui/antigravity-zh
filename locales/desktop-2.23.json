@@ -865,7 +865,7 @@
         "kind": "element:children"
       }
     ],
-    "selector": ".select-none.text-sm.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap"
+    "selector": ".select-none.opacity-30.h-8.flex.items-center.justify-start.truncate.whitespace-nowrap"
   },
   {
     "id": "v223.61e8d44ad423",
